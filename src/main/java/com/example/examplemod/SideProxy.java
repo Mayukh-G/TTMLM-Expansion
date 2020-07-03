@@ -1,6 +1,9 @@
 package com.example.examplemod;
 
+import com.example.examplemod.init.ModBlocks;
+import com.example.examplemod.init.ModItems;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.event.lifecycle.*;
 import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -8,10 +11,14 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 public class SideProxy {
     SideProxy() {
+        //Life-cycle events
         FMLJavaModLoadingContext.get().getModEventBus().addListener(SideProxy::commonSetup);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(SideProxy::enqueueIMC);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(SideProxy::processIMC);
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(ModBlocks::registerAll);
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(ModItems::registerALL);
 
+        //Other
         MinecraftForge.EVENT_BUS.addListener(SideProxy::serverStarting);
     }
 
@@ -25,8 +32,8 @@ public class SideProxy {
     private static void processIMC(final InterModProcessEvent event) {
 
     }
-
-    private static void serverStarting(FMLServerStartingEvent event){
+    @SubscribeEvent
+    public static void serverStarting(FMLServerStartingEvent event){
 
     }
 

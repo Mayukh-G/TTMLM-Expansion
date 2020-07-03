@@ -31,10 +31,15 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JSON file" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1e71Uzy3ogrAxfTyMsIb6qDduxn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -42,7 +47,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="show.migrate.to.gradle.popup" value="false" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
@@ -83,6 +88,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="340" y="223" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593723333645" />
+    <state x="1079" y="210" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog" timestamp="1593734438505">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1079" y="210" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593734438505" />
     <state x="808" y="408" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1593723249444">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -91,25 +100,33 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1593723278918" />
-    <state width="914" height="281" key="GridCell.Tab.0.bottom" timestamp="1593726370557">
+    <state width="1286" height="204" key="GridCell.Tab.0.bottom" timestamp="1593740036061">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593726370557" />
-    <state width="914" height="281" key="GridCell.Tab.0.center" timestamp="1593726370556">
+    <state width="1286" height="204" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593740036061" />
+    <state width="1286" height="204" key="GridCell.Tab.0.center" timestamp="1593740036060">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593726370556" />
-    <state width="914" height="281" key="GridCell.Tab.0.left" timestamp="1593726370556">
+    <state width="1286" height="204" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593740036060" />
+    <state width="1286" height="204" key="GridCell.Tab.0.left" timestamp="1593740036060">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593726370556" />
-    <state width="914" height="281" key="GridCell.Tab.0.right" timestamp="1593726370557">
+    <state width="1286" height="204" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593740036060" />
+    <state width="1286" height="204" key="GridCell.Tab.0.right" timestamp="1593740036061">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593726370557" />
+    <state width="1286" height="204" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593740036061" />
+    <state x="922" y="165" key="SettingsEditor" timestamp="1593730062080">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="922" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1593730062080" />
     <state x="582" y="392" key="com.intellij.ide.util.TipDialog" timestamp="1593704637409">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="582" y="392" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593704637409" />
+    <state x="1103" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1593735315554">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1103" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1593735315554" />
   </component>
 </project>

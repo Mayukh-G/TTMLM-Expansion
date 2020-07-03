@@ -1,0 +1,6 @@
+{
+    "Parent": "block/cube_all",
+    "texture": {
+      "all": "examplemod:block/big_slip"
+    }
+}
