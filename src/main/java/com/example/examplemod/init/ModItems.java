@@ -19,6 +19,9 @@ public class ModItems {
         BLOCKS_TO_REGISTER.forEach(ModItems::register);
 
         //Items
+        for(CoalVariants coalVariants : CoalVariants.values()){
+            register(coalVariants.getName(), coalVariants.getCoalVariant());
+        }
 
 
     }

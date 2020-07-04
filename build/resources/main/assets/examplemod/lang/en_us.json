@@ -1,0 +1,13 @@
+{
+  "block.examplemod.big_slip": "Slippery Stone",
+  "block.examplemod.super_heated_carbon_ore": "Super Heater Carbon Ore",
+  "block.examplemod.blazing_coal_block": "Blazing Coal Block",
+  "block.examplemod.freezing_coal_block": "Freezing Coal Block",
+
+  "item.examplemod.blazing_coal": "Blazing Coal",
+  "item.examplemod.freezing_coal": "Freezing Coal"
+
+
+
+
+}

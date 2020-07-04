@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "examplemod:block/super_heated_carbon_ore"
+  }
+}

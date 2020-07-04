@@ -27,7 +27,7 @@ particles:0
 maxFps:120
 difficulty:2
 fancyGraphics:false
-ao:1
+ao:2
 biomeBlendRadius:2
 renderClouds:fast
 resourcePacks:[]

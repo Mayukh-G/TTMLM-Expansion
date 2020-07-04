@@ -1,7 +1,10 @@
 package com.example.examplemod;
 
+import com.example.examplemod.init.ModBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
@@ -30,6 +33,13 @@ public class ExampleMod
     public static final String MOD_ID = "examplemod";
     // Directly reference a log4j logger.
     public static final Logger LOGGER = LogManager.getLogger();
+    //ITEM GROUP FOR CREATIVE TAB
+    public static final ItemGroup ITEM_GROUP = new ItemGroup(MOD_ID) {
+        @Override
+        public ItemStack createIcon() {
+            return new ItemStack(ModBlocks.bigSlip);
+        }
+    };
 
     public ExampleMod() {
         DistExecutor.unsafeRunForDist(

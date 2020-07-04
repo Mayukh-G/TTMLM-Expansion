@@ -34,7 +34,7 @@ public class SideProxy {
     }
     @SubscribeEvent
     public static void serverStarting(FMLServerStartingEvent event){
-
+        
     }
 
     static class Client extends  SideProxy {

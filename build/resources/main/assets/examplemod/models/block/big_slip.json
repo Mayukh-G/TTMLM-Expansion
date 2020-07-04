@@ -1,6 +1,6 @@
 {
-    "Parent": "block/cube_all",
-    "texture": {
+    "parent": "minecraft:block/cube_all",
+    "textures": {
       "all": "examplemod:block/big_slip"
     }
 }
