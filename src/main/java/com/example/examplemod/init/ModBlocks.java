@@ -1,6 +1,7 @@
 package com.example.examplemod.init;
 
 import com.example.examplemod.ExampleMod;
+import com.example.examplemod.item.BlockItemsForVariantBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
@@ -24,8 +25,10 @@ public class ModBlocks {
         ));
 
         for(CoalVariants coalVariants : CoalVariants.values()){
-            //BlockItem needs to be added, with overridden class
-            register(coalVariants.getName() + "_block", coalVariants.getCoalVariantBlock());
+            //Custom BlockItem Subclass so item can be detected as fuel
+            register(coalVariants.getName() + "_block", coalVariants.getCoalVariantBlock(),
+                    new BlockItemsForVariantBlocks(coalVariants.getCoalVariantBlock(), new Item.Properties().group(ExampleMod.ITEM_GROUP), coalVariants.getName() + "_block")
+            );
         }
 
         for (CoalVariants coalVariants : CoalVariants.values()){
@@ -33,10 +36,10 @@ public class ModBlocks {
             register(coalVariants.getName() + "_ore", coalVariants.getOreBlocks());
         }
 
-
     }
 
     private static <T extends Block> T register(String name,T block ) {
+        //If statement here for carbon
         BlockItem item = new BlockItem(block, new Item.Properties().group(ExampleMod.ITEM_GROUP));
         return register(name, block, item);
     }

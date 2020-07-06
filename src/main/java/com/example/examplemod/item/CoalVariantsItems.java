@@ -17,9 +17,6 @@ public class CoalVariantsItems extends Item {
         if (this.name.equals("blazing_carbon")){
             return 3200;
         }
-        else if(this.name.equals("freezing_carbon")){
-            return 0;
-        }
         return 0;
     }
 }

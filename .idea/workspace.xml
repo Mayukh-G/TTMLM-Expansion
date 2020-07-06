@@ -11,7 +11,7 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/init/ModBlocks.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/init/ModBlocks.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-05-1.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-05-1.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-05-1.log.gz" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/2020-07-05-10.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-05-10.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/2020-07-05-11.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-05-11.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/2020-07-05-12.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-05-12.log.gz" afterDir="false" />
@@ -23,6 +23,8 @@
       <change beforePath="$PROJECT_DIR$/run/logs/2020-07-05-18.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-05-18.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/2020-07-05-19.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-05-19.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/2020-07-05-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-05-2.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-05-20.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-05-20.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-05-21.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-05-21.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/2020-07-05-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-05-3.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/2020-07-05-4.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-05-4.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/2020-07-05-5.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-05-5.log.gz" afterDir="false" />
@@ -37,6 +39,7 @@
       <change beforePath="$PROJECT_DIR$/run/logs/debug-5.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-5.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/latest.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/latest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/advancements/380df991-f603-344c-a090-369bad2a924a.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/advancements/380df991-f603-344c-a090-369bad2a924a.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/data/raids.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/data/raids.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/level.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/level.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/level.dat_old" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/level.dat_old" afterDir="false" />
@@ -49,6 +52,7 @@
       <change beforePath="$PROJECT_DIR$/run/saves/New World/stats/380df991-f603-344c-a090-369bad2a924a.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/stats/380df991-f603-344c-a090-369bad2a924a.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/usercache.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/usercache.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/init/ModBlocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/examplemod/init/ModBlocks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/item/CoalVariantsItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/examplemod/item/CoalVariantsItems.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,8 +83,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="JSON file" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -149,10 +153,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1079" y="210" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593829848149" />
-    <state x="636" y="198" key="#com.intellij.ide.util.MemberChooser" timestamp="1593988470456">
+    <state x="636" y="198" key="#com.intellij.ide.util.MemberChooser" timestamp="1594056623823">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="636" y="198" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1593988470456" />
+    <state x="636" y="198" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1594056623823" />
     <state x="808" y="408" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1593723249444">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -165,22 +169,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1593804193712" />
-    <state width="1287" height="276" key="GridCell.Tab.0.bottom" timestamp="1593998579699">
+    <state width="1287" height="204" key="GridCell.Tab.0.bottom" timestamp="1594058912360">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1287" height="276" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593998579699" />
-    <state width="1287" height="276" key="GridCell.Tab.0.center" timestamp="1593998579697">
+    <state width="1287" height="204" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594058912360" />
+    <state width="1287" height="204" key="GridCell.Tab.0.center" timestamp="1594058912360">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1287" height="276" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593998579697" />
-    <state width="1287" height="276" key="GridCell.Tab.0.left" timestamp="1593998579696">
+    <state width="1287" height="204" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594058912360" />
+    <state width="1287" height="204" key="GridCell.Tab.0.left" timestamp="1594058912359">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1287" height="276" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593998579696" />
-    <state width="1287" height="276" key="GridCell.Tab.0.right" timestamp="1593998579697">
+    <state width="1287" height="204" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594058912359" />
+    <state width="1287" height="204" key="GridCell.Tab.0.right" timestamp="1594058912360">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1287" height="276" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593998579697" />
+    <state width="1287" height="204" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594058912360" />
     <state width="1287" height="276" key="GridCell.Tab.1.bottom" timestamp="1593998579705">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -201,10 +205,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="922" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1593730062080" />
-    <state x="582" y="392" key="com.intellij.ide.util.TipDialog" timestamp="1593972286618">
+    <state x="582" y="392" key="com.intellij.ide.util.TipDialog" timestamp="1594049893984">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="582" y="392" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593972286618" />
+    <state x="582" y="392" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594049893984" />
     <state x="1182" y="142" key="refactoring.ChangeSignatureDialog" timestamp="1593890071882">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
