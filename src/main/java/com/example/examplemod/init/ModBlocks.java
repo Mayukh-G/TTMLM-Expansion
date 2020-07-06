@@ -24,10 +24,12 @@ public class ModBlocks {
         ));
 
         for(CoalVariants coalVariants : CoalVariants.values()){
+            //BlockItem needs to be added, with overridden class
             register(coalVariants.getName() + "_block", coalVariants.getCoalVariantBlock());
         }
 
         for (CoalVariants coalVariants : CoalVariants.values()){
+            //GENERATE THESE IN CORRECT BIOMES
             register(coalVariants.getName() + "_ore", coalVariants.getOreBlocks());
         }
 
