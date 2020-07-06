@@ -2,7 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9b96a67-8588-4e05-a58e-58a5085116ad" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/block/OreBlocks.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/examplemod/blockstates/blazing_carbon_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/examplemod/blockstates/blazing_carbon_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/examplemod/blockstates/freezing_carbon_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/examplemod/blockstates/freezing_carbon_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/block/blazing_carbon_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/block/freezing_carbon_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/blazing_carbon_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/blazing_carbon_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/freezing_carbon_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/freezing_carbon_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/block/blazing_carbon_block.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/block/freezing_carbon_ore.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/item/blazing_carbon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/item/freezing_carbon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-03-16.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-03-17.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-04-2.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-04-3.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-04-4.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/examplemod/block/OreBlocks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/examplemod/blockstates/blazing_carbon_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/examplemod/blockstates/blazing_carbon_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/examplemod/blockstates/freezing_carbon_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/examplemod/blockstates/freezing_carbon_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/block/blazing_carbon_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/block/freezing_carbon_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/blazing_carbon_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/blazing_carbon_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/freezing_carbon_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/freezing_carbon_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/block/blazing_carbon_block.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/block/freezing_carbon_ore.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/item/blazing_carbon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/item/freezing_carbon.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
@@ -12,20 +46,36 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/ExampleMod$RegistryEvents.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/ExampleMod$RegistryEvents.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/ExampleMod.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/ExampleMod.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/init/CoalVariants.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/init/CoalVariants.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/init/ModBlocks.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/init/ModBlocks.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/init/ModItems.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/init/ModItems.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/blockstates/blazing_coal_block.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/blockstates/freezing_coal_block.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/blockstates/super_heated_carbon_ore.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/lang/en_us.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/examplemod/lang/en_us.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/block/big_slip.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/block/big_slip.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/block/big_slip.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/block/big_slip.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-02-1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-02-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-02-2.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-02-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-02-3.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-02-4.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-02-4.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-02-5.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-02-5.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-02-6.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-02-6.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-02-7.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-02-7.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/block/blazing_coal_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/block/freezing_carbon_ore.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/block/freezing_coal_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/block/blazing_carbon_ore.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/block/super_heated_carbon_ore.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/blazing_coal.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/freezing_carbon.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/blazing_coal_block.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/freezing_coal.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/blazing_carbon.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/freezing_coal_block.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/super_heated_carbon_ore.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/block/super_heated_carbon_ore.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/block/blazing_carbon_ore.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-03-1.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-03-10.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-03-10.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-03-11.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-03-11.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-03-12.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-03-12.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-03-13.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-03-13.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-03-14.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-03-14.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-03-15.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-03-15.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-03-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-03-2.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-03-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-03-3.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-03-4.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-03-4.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-03-5.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-03-5.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-03-6.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-03-6.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-03-7.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-03-7.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-03-8.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-03-8.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-03-9.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-03-9.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-1.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-1.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-2.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-3.log.gz" afterDir="false" />
@@ -39,6 +89,7 @@
       <change beforePath="$PROJECT_DIR$/run/saves/New World/level.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/level.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/level.dat_old" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/level.dat_old" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/playerdata/380df991-f603-344c-a090-369bad2a924a.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/playerdata/380df991-f603-344c-a090-369bad2a924a.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/poi/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/poi/r.-1.-1.mca" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/region/r.-1.-1.mca" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/region/r.-1.0.mca" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/region/r.0.-1.mca" afterDir="false" />
@@ -46,13 +97,22 @@
       <change beforePath="$PROJECT_DIR$/run/saves/New World/session.lock" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/session.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/stats/380df991-f603-344c-a090-369bad2a924a.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/stats/380df991-f603-344c-a090-369bad2a924a.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/usercache.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/usercache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/ExampleMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/examplemod/ExampleMod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/SideProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/examplemod/SideProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/init/CoalVariants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/examplemod/init/CoalVariants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/init/ModBlocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/examplemod/init/ModBlocks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/init/ModItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/examplemod/init/ModItems.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/blockstates/blazing_coal_block.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/blockstates/freezing_coal_block.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/blockstates/super_heated_carbon_ore.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/lang/en_us.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/examplemod/lang/en_us.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/block/big_slip.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/block/big_slip.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/block/big_slip.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/block/blazing_coal_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/block/freezing_carbon_ore.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/block/freezing_coal_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/block/blazing_carbon_ore.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/block/super_heated_carbon_ore.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/blazing_coal.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/blazing_carbon.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/blazing_coal_block.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/freezing_coal.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/freezing_carbon.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/freezing_coal_block.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/super_heated_carbon_ore.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/block/super_heated_carbon_ore.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/block/blazing_carbon_ore.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,9 +142,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
         <option value="JSON file" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -101,13 +161,14 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/block" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/block" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="show.migrate.to.gradle.popup" value="false" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Mayukh\Forge Modding\src\main\resources\assets\examplemod\textures\block" />
       <recent name="C:\Users\Mayukh\Forge Modding\src\main\resources\assets\examplemod\models\block" />
     </key>
   </component>
@@ -152,6 +213,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1079" y="210" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593829848149" />
+    <state x="636" y="198" key="#com.intellij.ide.util.MemberChooser" timestamp="1593988470456">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="636" y="198" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1593988470456" />
     <state x="808" y="408" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1593723249444">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -164,33 +229,53 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1593804193712" />
-    <state width="1287" height="204" key="GridCell.Tab.0.bottom" timestamp="1593833603996">
+    <state width="1287" height="204" key="GridCell.Tab.0.bottom" timestamp="1593993393117">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1287" height="204" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593833603996" />
-    <state width="1287" height="204" key="GridCell.Tab.0.center" timestamp="1593833603995">
+    <state width="1287" height="204" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593993393117" />
+    <state width="1287" height="204" key="GridCell.Tab.0.center" timestamp="1593993393116">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1287" height="204" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593833603995" />
-    <state width="1287" height="204" key="GridCell.Tab.0.left" timestamp="1593833603995">
+    <state width="1287" height="204" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593993393116" />
+    <state width="1287" height="204" key="GridCell.Tab.0.left" timestamp="1593993393115">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1287" height="204" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593833603995" />
-    <state width="1287" height="204" key="GridCell.Tab.0.right" timestamp="1593833603996">
+    <state width="1287" height="204" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593993393115" />
+    <state width="1287" height="204" key="GridCell.Tab.0.right" timestamp="1593993393117">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1287" height="204" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593833603996" />
+    <state width="1287" height="204" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593993393117" />
+    <state width="1287" height="276" key="GridCell.Tab.1.bottom" timestamp="1593987055279">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1287" height="276" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593987055279" />
+    <state width="1287" height="276" key="GridCell.Tab.1.center" timestamp="1593987055279">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1287" height="276" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593987055279" />
+    <state width="1287" height="276" key="GridCell.Tab.1.left" timestamp="1593987055279">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1287" height="276" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593987055279" />
+    <state width="1287" height="276" key="GridCell.Tab.1.right" timestamp="1593987055279">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1287" height="276" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593987055279" />
     <state x="922" y="165" key="SettingsEditor" timestamp="1593730062080">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="922" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1593730062080" />
-    <state x="582" y="392" key="com.intellij.ide.util.TipDialog" timestamp="1593879748965">
+    <state x="582" y="392" key="com.intellij.ide.util.TipDialog" timestamp="1593972286618">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="582" y="392" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593879748964" />
-    <state x="774" y="269" width="672" height="678" key="search.everywhere.popup" timestamp="1593832059510">
+    <state x="582" y="392" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593972286618" />
+    <state x="1182" y="142" key="refactoring.ChangeSignatureDialog" timestamp="1593890071882">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="774" y="269" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1593832059510" />
+    <state x="1182" y="142" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593890071882" />
+    <state x="637" y="276" width="672" height="678" key="search.everywhere.popup" timestamp="1593991494229">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="637" y="276" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1593991494229" />
   </component>
 </project>

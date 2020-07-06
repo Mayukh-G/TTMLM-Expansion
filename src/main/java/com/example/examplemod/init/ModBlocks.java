@@ -2,7 +2,6 @@ package com.example.examplemod.init;
 
 import com.example.examplemod.ExampleMod;
 import net.minecraft.block.Block;
-import net.minecraft.block.OreBlock;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.BlockItem;
@@ -15,7 +14,6 @@ import javax.annotation.Nullable;
 
 public class ModBlocks {
     public static Block bigSlip;
-    public static Block superHeatedCarbonOre;
 
     public static void  registerAll(RegistryEvent.Register<Block> event) {
         if (!event.getName().equals(ForgeRegistries.BLOCKS.getRegistryName())) return;
@@ -24,14 +22,13 @@ public class ModBlocks {
                 .hardnessAndResistance(1.5f,6f)
                 .sound(SoundType.STONE)
         ));
-        superHeatedCarbonOre = register("super_heated_carbon_ore", new OreBlock(OreBlock.Properties.create(Material.GOURD)
-                .hardnessAndResistance(2f, 10f)
-                .sound(SoundType.STONE)
-                .lightValue(6)
-        ));
 
         for(CoalVariants coalVariants : CoalVariants.values()){
-            register(coalVariants.getName() + "_block", coalVariants.getStorageBlock());
+            register(coalVariants.getName() + "_block", coalVariants.getCoalVariantBlock());
+        }
+
+        for (CoalVariants coalVariants : CoalVariants.values()){
+            register(coalVariants.getName() + "_ore", coalVariants.getOreBlocks());
         }
 
 

@@ -1,11 +1,12 @@
 {
   "block.examplemod.big_slip": "Slippery Stone",
-  "block.examplemod.super_heated_carbon_ore": "Super Heater Carbon Ore",
-  "block.examplemod.blazing_coal_block": "Blazing Coal Block",
-  "block.examplemod.freezing_coal_block": "Freezing Coal Block",
+  "block.examplemod.blazing_carbon_ore": "Blazing Carbon Ore",
+  "block.examplemod.blazing_carbon_block": "Blazing Carbon Block",
+  "block.examplemod.freezing_carbon_ore": "Freezing Carbon Ore",
+  "block.examplemod.freezing_carbon_block": "Freezing Carbon Block",
 
-  "item.examplemod.blazing_coal": "Blazing Coal",
-  "item.examplemod.freezing_coal": "Freezing Coal"
+  "item.examplemod.blazing_carbon": "Blazing Carbon",
+  "item.examplemod.freezing_carbon": "Freezing Carbon"
 
 
 

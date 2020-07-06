@@ -1,12 +1,17 @@
 package com.example.examplemod.init;
 
 import com.example.examplemod.ExampleMod;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.BlockItem;
+import net.minecraft.item.IItemPropertyGetter;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.world.World;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.registries.ForgeRegistries;
 
+import javax.annotation.Nullable;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
@@ -20,7 +25,7 @@ public class ModItems {
 
         //Items
         for(CoalVariants coalVariants : CoalVariants.values()){
-            register(coalVariants.getName(), coalVariants.getCoalVariant());
+            register(coalVariants.getName(), coalVariants.getCoalVariantItem());
         }
 
 

@@ -19,10 +19,10 @@ bobView:true
 toggleCrouch:false
 toggleSprint:false
 mouseSensitivity:0.5
-fov:0.0
+fov:0.5
 gamma:1.0
 renderDistance:5
-guiScale:0
+guiScale:2
 particles:0
 maxFps:120
 difficulty:2
