@@ -18,14 +18,7 @@ public enum CoalVariants {
     private final LazyValue<OreBlocks> oreBlocks;
     private final LazyValue<Block> coalVariantBlock;
     private final LazyValue<Item> coalVariantItem;
-    /*
 
-    -FIGURE OUT HOW TO MAKE COAL INTO FUEL ITEM
-        To do this override the method getBurnTime and make it return a burn time properly
-        0 for non burn -1 for default vanilla logic
-         **** Didn't Work Try Something Else
-
-     */
 
     CoalVariants() {
         oreBlocks = new LazyValue<>(OreBlocks::new);

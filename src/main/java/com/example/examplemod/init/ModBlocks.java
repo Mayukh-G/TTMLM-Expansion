@@ -32,7 +32,7 @@ public class ModBlocks {
         }
 
         for (CoalVariants coalVariants : CoalVariants.values()){
-            //GENERATE THESE IN CORRECT BIOMES
+            // TO DO ::: GENERATE THESE IN CORRECT BIOMES
             register(coalVariants.getName() + "_ore", coalVariants.getOreBlocks());
         }
 
