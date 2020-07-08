@@ -2,13 +2,15 @@
   "block.examplemod.big_slip": "Slippery Stone",
   "block.examplemod.blazing_carbon_ore": "Blazing Carbon Ore",
   "block.examplemod.blazing_carbon_block": "Blazing Carbon Block",
+  "block.examplemod.blazing_carbon_block_upper": "Blazing Carbon Block Top Half",
+  "block.examplemod.blazing_carbon_block_lower": "Blazing Carbon Block Bottom Half",
   "block.examplemod.freezing_carbon_ore": "Freezing Carbon Ore",
   "block.examplemod.freezing_carbon_block": "Freezing Carbon Block",
+  "block.examplemod.freezing_carbon_block_upper": "Freezing Carbon Block Top Half",
+  "block.examplemod.freezing_carbon_block_lower": "Freezing Carbon Block Bottom Half",
+
 
   "item.examplemod.blazing_carbon": "Blazing Carbon",
   "item.examplemod.freezing_carbon": "Freezing Carbon"
-
-
-
 
 }

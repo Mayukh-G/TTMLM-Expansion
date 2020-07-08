@@ -31,6 +31,14 @@ public class ModBlocks {
             );
         }
 
+        for(CoalVariants coalVariants: CoalVariants.values()){
+            register(coalVariants.getName() + "_block_upper", coalVariants.getCoalVariantBlockUpper());
+        }
+
+        for(CoalVariants coalVariants: CoalVariants.values()){
+            register(coalVariants.getName() + "_block_lower", coalVariants.getCoalVariantBlockLower());
+        }
+
         for (CoalVariants coalVariants : CoalVariants.values()){
             // TO DO ::: GENERATE THESE IN CORRECT BIOMES
             register(coalVariants.getName() + "_ore", coalVariants.getOreBlocks());

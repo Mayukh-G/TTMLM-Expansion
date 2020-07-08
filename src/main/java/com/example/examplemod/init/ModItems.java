@@ -23,7 +23,6 @@ public class ModItems {
             register(coalVariants.getName(), coalVariants.getCoalVariantItem());
         }
 
-
     }
     private static <T extends Item> T register(String name, T item) {
         ResourceLocation id = ExampleMod.getID(name);

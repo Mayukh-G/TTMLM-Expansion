@@ -1,0 +1,23 @@
+{
+  "type": "crafting_shaped",
+  "group": "examplemod:freezing_carbon_block",
+  "pattern": [
+    "XXX",
+    "XOX",
+    "III"
+  ],
+  "key": {
+    "X" : {
+      "item": "examplemod:freezing_carbon"
+    },
+    "I": {
+      "item": "minecraft:packed_ice"
+    },
+    "O": {
+      "item": "minecraft:blue_ice"
+    }
+  },
+  "result": {
+    "item": "examplemod:freezing_carbon_block_upper"
+  }
+}

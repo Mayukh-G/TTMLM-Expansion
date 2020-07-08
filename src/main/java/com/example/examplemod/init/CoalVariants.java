@@ -4,6 +4,7 @@ import com.example.examplemod.ExampleMod;
 import com.example.examplemod.block.OreBlocks;
 import com.example.examplemod.item.CoalVariantsItems;
 import net.minecraft.block.Block;
+import net.minecraft.block.SlabBlock;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
@@ -17,12 +18,22 @@ public enum CoalVariants {
 
     private final LazyValue<OreBlocks> oreBlocks;
     private final LazyValue<Block> coalVariantBlock;
+    private final LazyValue<SlabBlock> coalVariantBlocksUpper;
+    private final LazyValue<SlabBlock> coalVariantBlocksLower;
     private final LazyValue<Item> coalVariantItem;
 
 
     CoalVariants() {
         oreBlocks = new LazyValue<>(OreBlocks::new);
         coalVariantBlock = new LazyValue<>(() -> new Block(Block.Properties.create(Material.ROCK)
+                .hardnessAndResistance(3f,10f)
+                .sound(SoundType.STONE)
+        ));
+        coalVariantBlocksUpper =  new LazyValue<>(() -> new SlabBlock(Block.Properties.create(Material.ROCK)
+                .hardnessAndResistance(3f,10f)
+                .sound(SoundType.STONE)
+        ));
+        coalVariantBlocksLower =  new LazyValue<>(() -> new SlabBlock(Block.Properties.create(Material.ROCK)
                 .hardnessAndResistance(3f,10f)
                 .sound(SoundType.STONE)
         ));
@@ -34,6 +45,14 @@ public enum CoalVariants {
     public OreBlocks getOreBlocks(){ return oreBlocks.getValue(); }
 
     public Block getCoalVariantBlock() { return coalVariantBlock.getValue(); }
+
+    public Block getCoalVariantBlockUpper(){
+        return coalVariantBlocksUpper.getValue();
+    }
+
+    public Block getCoalVariantBlockLower(){
+        return coalVariantBlocksLower.getValue();
+    }
 
     public Item getCoalVariantItem(){ return coalVariantItem.getValue(); }
 

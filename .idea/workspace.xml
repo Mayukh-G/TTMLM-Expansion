@@ -2,11 +2,55 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9b96a67-8588-4e05-a58e-58a5085116ad" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileContent/fileContent.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/ExampleMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/examplemod/ExampleMod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/ExampleMod$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/ExampleMod$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/ExampleMod$RegistryEvents.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/ExampleMod$RegistryEvents.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/ExampleMod.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/ExampleMod.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/init/CoalVariants.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/init/CoalVariants.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/init/ModBlocks.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/init/ModBlocks.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/init/ModItems.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/init/ModItems.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/item/BlockItemsForVariantBlocks.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/item/BlockItemsForVariantBlocks.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/lang/en_us.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/examplemod/lang/en_us.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-06-1.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-06-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-06-2.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-06-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-06-3.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug-1.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-1.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-2.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-3.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug-4.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-4.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug-5.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-5.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/latest.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/latest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/options.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/options.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/advancements/380df991-f603-344c-a090-369bad2a924a.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/advancements/380df991-f603-344c-a090-369bad2a924a.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/data/raids.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/data/raids.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/level.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/level.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/level.dat_old" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/level.dat_old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/playerdata/380df991-f603-344c-a090-369bad2a924a.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/playerdata/380df991-f603-344c-a090-369bad2a924a.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/poi/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/poi/r.-1.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/region/r.-1.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/region/r.-1.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/region/r.0.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/region/r.0.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/session.lock" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/session.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/stats/380df991-f603-344c-a090-369bad2a924a.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/stats/380df991-f603-344c-a090-369bad2a924a.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/usercache.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/usercache.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/init/CoalVariants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/examplemod/init/CoalVariants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/init/ModBlocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/examplemod/init/ModBlocks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/init/ModItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/examplemod/init/ModItems.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/lang/en_us.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/examplemod/lang/en_us.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +70,30 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Forge Modding" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Forge Modding" type="f1a62948:ProjectNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Forge Modding" type="f1a62948:ProjectNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+                <item name="main" type="396b929e:GradleViewContributor$SourceSetNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Forge Modding" type="f1a62948:ProjectNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+                <item name="main" type="396b929e:GradleViewContributor$SourceSetNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -37,8 +104,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="JSON file" />
         <option value="Class" />
+        <option value="JSON file" />
       </list>
     </option>
   </component>
@@ -55,15 +122,18 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/block" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/data/examplemod/recipes" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="show.migrate.to.gradle.popup" value="false" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Mayukh\Forge Modding\src\main\resources\assets\examplemod\textures\block" />
+      <recent name="C:\Users\Mayukh\Forge Modding\src\main\resources\data\examplemod\recipes" />
+      <recent name="C:\Users\Mayukh\Forge Modding\src\main\resources\data\examplemod\loot_tables\blocks" />
       <recent name="C:\Users\Mayukh\Forge Modding\src\main\resources\assets\examplemod\models\block" />
+      <recent name="C:\Users\Mayukh\Forge Modding\src\main\resources\assets\examplemod\blockstates" />
+      <recent name="C:\Users\Mayukh\Forge Modding\src\main\resources\assets\examplemod\models\item" />
     </key>
   </component>
   <component name="RunManager" selected="Application.runClient">
@@ -123,22 +193,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1593804193712" />
-    <state width="1287" height="204" key="GridCell.Tab.0.bottom" timestamp="1594058912360">
+    <state width="1287" height="204" key="GridCell.Tab.0.bottom" timestamp="1594167427838">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1287" height="204" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594058912360" />
-    <state width="1287" height="204" key="GridCell.Tab.0.center" timestamp="1594058912360">
+    <state width="1287" height="204" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594167427838" />
+    <state width="1287" height="204" key="GridCell.Tab.0.center" timestamp="1594167427838">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1287" height="204" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594058912360" />
-    <state width="1287" height="204" key="GridCell.Tab.0.left" timestamp="1594058912359">
+    <state width="1287" height="204" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594167427838" />
+    <state width="1287" height="204" key="GridCell.Tab.0.left" timestamp="1594167427838">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1287" height="204" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594058912359" />
-    <state width="1287" height="204" key="GridCell.Tab.0.right" timestamp="1594058912360">
+    <state width="1287" height="204" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594167427838" />
+    <state width="1287" height="204" key="GridCell.Tab.0.right" timestamp="1594167427838">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1287" height="204" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594058912360" />
+    <state width="1287" height="204" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594167427838" />
     <state width="1287" height="276" key="GridCell.Tab.1.bottom" timestamp="1593998579705">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -159,17 +229,17 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="922" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1593730062080" />
-    <state x="582" y="392" key="com.intellij.ide.util.TipDialog" timestamp="1594049893984">
+    <state x="582" y="392" key="com.intellij.ide.util.TipDialog" timestamp="1594140144112">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="582" y="392" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594049893984" />
+    <state x="582" y="392" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594140144112" />
     <state x="1182" y="142" key="refactoring.ChangeSignatureDialog" timestamp="1593890071882">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1182" y="142" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593890071882" />
-    <state x="637" y="276" width="672" height="678" key="search.everywhere.popup" timestamp="1593995353267">
+    <state x="637" y="276" width="672" height="678" key="search.everywhere.popup" timestamp="1594149411446">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="637" y="276" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1593995353267" />
+    <state x="637" y="276" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1594149411446" />
   </component>
 </project>

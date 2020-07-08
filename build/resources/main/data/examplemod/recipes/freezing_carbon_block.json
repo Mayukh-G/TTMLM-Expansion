@@ -1,0 +1,19 @@
+{
+  "type": "crafting_shaped",
+  "group": "examplemod:freezing_carbon_block",
+  "pattern": [
+    "X",
+    "I"
+  ],
+  "key": {
+    "X" : {
+      "item": "examplemod:freezing_carbon_block_upper"
+    },
+    "I": {
+      "item": "examplemod:freezing_carbon_block_lower"
+    }
+  },
+  "result": {
+    "item": "examplemod:freezing_carbon_block"
+  }
+}
