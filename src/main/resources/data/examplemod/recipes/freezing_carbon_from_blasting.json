@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "examplemod:freezing_carbon_ore"
+  },
+  "result": "examplemod:freezing_carbon",
+  "experience": 3,
+  "cookingtime": 400
+}
