@@ -8,9 +8,33 @@
   "block.examplemod.freezing_carbon_block": "Freezing Carbon Block",
   "block.examplemod.freezing_carbon_block_upper": "Freezing Carbon Block Top Half",
   "block.examplemod.freezing_carbon_block_lower": "Freezing Carbon Block Bottom Half",
+  "block.examplemod.mutable_alloy_ore": "Mutable Alloy Ore",
+  "block.examplemod.nether_mutable_alloy_ore": "Nether Mutable Alloy Ore",
+  "block.examplemod.end_mutable_alloy_ore": "End Mutable Alloy Ore",
+  "block.examplemod.mutable_alloy_block": "Mutable Alloy Block",
+  "block.examplemod.weak_blazing_alloy_block": "Weak Blazing Alloy Block",
+  "block.examplemod.weak_freezing_alloy_block": "Weak Freezing Alloy Block",
+  "block.examplemod.weak_ender_alloy_block": "Weak Ender Alloy Block",
+  "block.examplemod.blazing_alloy_block": "Blazing Alloy Block",
+  "block.examplemod.freezing_alloy_block": "Freezing Alloy Block",
+  "block.examplemod.ender_alloy_block": "Ender Alloy BLock",
+
 
 
   "item.examplemod.blazing_carbon": "Blazing Carbon",
-  "item.examplemod.freezing_carbon": "Freezing Carbon"
-
+  "item.examplemod.freezing_carbon": "Freezing Carbon",
+  "item.examplemod.mutable_alloy": "Mutable Alloy",
+  "item.examplemod.weak_blazing_alloy": "Weak Blazing Alloy",
+  "item.examplemod.weak_freezing_alloy": "Weak Freezing Alloy",
+  "item.examplemod.weak_ender_alloy": "Weak Ender Alloy",
+  "item.examplemod.mutable_alloy_sword": "Mutable Alloy Sword",
+  "item.examplemod.weak_blazing_alloy_sword": "Weak Blazing Alloy Sword",
+  "item.examplemod.weak_freezing_alloy_sword": "Weak Freezing Alloy Sword",
+  "item.examplemod.weak_ender_alloy_sword": "Weak Ender Alloy Sword",
+  "item.examplemod.blazing_alloy": "Blazing Alloy",
+  "item.examplemod.freezing_alloy": "Freezing Alloy",
+  "item.examplemod.ender_alloy": "Ender Alloy",
+  "item.examplemod.blazing_alloy_sword": "Blazing Alloy Sword",
+  "item.examplemod.freezing_alloy_sword": "Freezing Alloy Sword",
+  "item.examplemod.ender_alloy_sword": "Ender Alloy Sword"
 }

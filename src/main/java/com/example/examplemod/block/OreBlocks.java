@@ -14,9 +14,8 @@ import javax.annotation.Nullable;
 public class OreBlocks extends OreBlock {
     public OreBlocks() {
         this(Properties.create(Material.ROCK)
-        .hardnessAndResistance(3f,7f)
-        .sound(SoundType.STONE)
-        .lightValue(5));
+        .hardnessAndResistance(4f,6f)
+        .sound(SoundType.STONE));
     }
     public OreBlocks(Properties builder) {
         super(builder);
@@ -37,4 +36,6 @@ public class OreBlocks extends OreBlock {
     public ToolType getHarvestTool(BlockState state) {
         return ToolType.PICKAXE;
     }
+
+
 }

@@ -11,6 +11,105 @@
     },
     "done": true
   },
+  "minecraft:end/enter_end_gateway": {
+    "criteria": {
+      "entered_end_gateway": "2020-07-10 22:04:56 -0400"
+    },
+    "done": true
+  },
+  "minecraft:end/root": {
+    "criteria": {
+      "entered_end": "2020-07-10 22:04:04 -0400"
+    },
+    "done": true
+  },
+  "minecraft:story/enter_the_nether": {
+    "criteria": {
+      "entered_nether": "2020-07-08 23:28:03 -0400"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/end_crystal": {
+    "criteria": {
+      "has_ender_eye": "2020-07-10 22:03:57 -0400"
+    },
+    "done": true
+  },
+  "minecraft:story/enter_the_end": {
+    "criteria": {
+      "entered_end": "2020-07-10 22:04:04 -0400"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/blue_carpet_from_white_carpet": {
+    "criteria": {
+      "has_white_carpet": "2020-07-08 23:29:40 -0400"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/cyan_carpet_from_white_carpet": {
+    "criteria": {
+      "has_white_carpet": "2020-07-08 23:29:40 -0400"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/ender_chest": {
+    "criteria": {
+      "has_ender_eye": "2020-07-10 22:03:57 -0400"
+    },
+    "done": true
+  },
+  "minecraft:nether/root": {
+    "criteria": {
+      "entered_nether": "2020-07-08 23:28:03 -0400"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/lime_carpet_from_white_carpet": {
+    "criteria": {
+      "has_white_carpet": "2020-07-08 23:29:40 -0400"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/magenta_carpet_from_white_carpet": {
+    "criteria": {
+      "has_white_carpet": "2020-07-08 23:29:40 -0400"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/brown_carpet_from_white_carpet": {
+    "criteria": {
+      "has_white_carpet": "2020-07-08 23:29:40 -0400"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_nugget_from_smelting": {
+    "criteria": {
+      "has_iron_pickaxe": "2020-07-08 23:51:43 -0400"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:cold_ocean": "2020-07-08 23:49:03 -0400",
+      "minecraft:forest": "2020-07-08 23:49:17 -0400",
+      "minecraft:mountains": "2020-07-10 22:02:56 -0400",
+      "minecraft:deep_cold_ocean": "2020-07-08 23:49:07 -0400",
+      "minecraft:snowy_tundra": "2020-07-08 23:29:32 -0400",
+      "minecraft:snowy_beach": "2020-07-08 23:30:56 -0400",
+      "minecraft:beach": "2020-07-08 23:49:16 -0400",
+      "minecraft:river": "2020-07-08 23:49:21 -0400",
+      "minecraft:stone_shore": "2020-07-10 22:03:03 -0400",
+      "minecraft:plains": "2020-07-08 23:26:01 -0400"
+    },
+    "done": false
+  },
+  "minecraft:nether/find_fortress": {
+    "criteria": {
+      "fortress": "2020-07-10 21:55:52 -0400"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/yellow_carpet_from_white_carpet": {
     "criteria": {
       "has_white_carpet": "2020-07-08 23:29:40 -0400"
@@ -32,12 +131,6 @@
   "minecraft:recipes/decorations/enchanting_table": {
     "criteria": {
       "has_obsidian": "2020-07-08 23:27:44 -0400"
-    },
-    "done": true
-  },
-  "minecraft:story/enter_the_nether": {
-    "criteria": {
-      "entered_nether": "2020-07-08 23:28:03 -0400"
     },
     "done": true
   },
@@ -71,12 +164,6 @@
     },
     "done": true
   },
-  "minecraft:recipes/decorations/blue_carpet_from_white_carpet": {
-    "criteria": {
-      "has_white_carpet": "2020-07-08 23:29:40 -0400"
-    },
-    "done": true
-  },
   "minecraft:recipes/decorations/pink_carpet_from_white_carpet": {
     "criteria": {
       "has_white_carpet": "2020-07-08 23:29:40 -0400"
@@ -89,15 +176,9 @@
     },
     "done": true
   },
-  "minecraft:recipes/decorations/cyan_carpet_from_white_carpet": {
+  "minecraft:story/follow_ender_eye": {
     "criteria": {
-      "has_white_carpet": "2020-07-08 23:29:40 -0400"
-    },
-    "done": true
-  },
-  "minecraft:nether/root": {
-    "criteria": {
-      "entered_nether": "2020-07-08 23:28:03 -0400"
+      "in_stronghold": "2020-07-10 22:03:20 -0400"
     },
     "done": true
   },
@@ -107,48 +188,11 @@
     },
     "done": true
   },
-  "minecraft:recipes/decorations/lime_carpet_from_white_carpet": {
-    "criteria": {
-      "has_white_carpet": "2020-07-08 23:29:40 -0400"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/magenta_carpet_from_white_carpet": {
-    "criteria": {
-      "has_white_carpet": "2020-07-08 23:29:40 -0400"
-    },
-    "done": true
-  },
   "minecraft:recipes/decorations/light_gray_carpet_from_white_carpet": {
     "criteria": {
       "has_white_carpet": "2020-07-08 23:29:40 -0400"
     },
     "done": true
-  },
-  "minecraft:recipes/decorations/brown_carpet_from_white_carpet": {
-    "criteria": {
-      "has_white_carpet": "2020-07-08 23:29:40 -0400"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/iron_nugget_from_smelting": {
-    "criteria": {
-      "has_iron_pickaxe": "2020-07-08 23:51:43 -0400"
-    },
-    "done": true
-  },
-  "minecraft:adventure/adventuring_time": {
-    "criteria": {
-      "minecraft:cold_ocean": "2020-07-08 23:49:03 -0400",
-      "minecraft:forest": "2020-07-08 23:49:17 -0400",
-      "minecraft:deep_cold_ocean": "2020-07-08 23:49:07 -0400",
-      "minecraft:snowy_tundra": "2020-07-08 23:29:32 -0400",
-      "minecraft:snowy_beach": "2020-07-08 23:30:56 -0400",
-      "minecraft:beach": "2020-07-08 23:49:16 -0400",
-      "minecraft:river": "2020-07-08 23:49:21 -0400",
-      "minecraft:plains": "2020-07-08 23:26:01 -0400"
-    },
-    "done": false
   },
   "DataVersion": 2230
 }

@@ -29,6 +29,11 @@ public class ExampleMod
         public ItemStack createIcon() {
             return new ItemStack(ModBlocks.bigSlip);
         }
+
+        @Override
+        public String getTabLabel() {
+            return "Variants";
+        }
     };
 
     public ExampleMod() {

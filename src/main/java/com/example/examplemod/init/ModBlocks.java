@@ -1,8 +1,10 @@
 package com.example.examplemod.init;
 
 import com.example.examplemod.ExampleMod;
+import com.example.examplemod.block.OreBlocks;
 import com.example.examplemod.item.BlockItemsForVariantBlocks;
 import net.minecraft.block.Block;
+import net.minecraft.block.OreBlock;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.BlockItem;
@@ -15,6 +17,10 @@ import javax.annotation.Nullable;
 
 public class ModBlocks {
     public static Block bigSlip;
+    public static Block mutableAlloyOre;
+    public static Block mutableAlloyOreNether;
+    public static Block mutableAlloyOreEnd;
+
 
     public static void  registerAll(RegistryEvent.Register<Block> event) {
         if (!event.getName().equals(ForgeRegistries.BLOCKS.getRegistryName())) return;
@@ -24,24 +30,35 @@ public class ModBlocks {
                 .sound(SoundType.STONE)
         ));
 
+        //IngotVariant Registration
+        mutableAlloyOre = register("mutable_alloy_ore", new OreBlocks());
+        mutableAlloyOreNether = register("nether_mutable_alloy_ore", new OreBlocks());
+        mutableAlloyOreEnd = register("end_mutable_alloy_ore", new OreBlocks());
+
+        for (IngotVariants ingotVariants: IngotVariants.values()){
+            register(ingotVariants.getIngotVariantName() + "_block", ingotVariants.getIngotBlock());
+        }
+
+
+        // CoalVariant registration
         for(CoalVariants coalVariants : CoalVariants.values()){
             //Custom BlockItem Subclass so item can be detected as fuel
-            register(coalVariants.getName() + "_block", coalVariants.getCoalVariantBlock(),
-                    new BlockItemsForVariantBlocks(coalVariants.getCoalVariantBlock(), new Item.Properties().group(ExampleMod.ITEM_GROUP), coalVariants.getName() + "_block")
+            register(coalVariants.getCoalVariantName() + "_block", coalVariants.getCoalVariantBlock(),
+                    new BlockItemsForVariantBlocks(coalVariants.getCoalVariantBlock(), new Item.Properties().group(ExampleMod.ITEM_GROUP), coalVariants.getCoalVariantName() + "_block")
             );
         }
 
         for(CoalVariants coalVariants: CoalVariants.values()){
-            register(coalVariants.getName() + "_block_upper", coalVariants.getCoalVariantBlockUpper());
+            register(coalVariants.getCoalVariantName() + "_block_upper", coalVariants.getCoalVariantBlockUpper());
         }
 
         for(CoalVariants coalVariants: CoalVariants.values()){
-            register(coalVariants.getName() + "_block_lower", coalVariants.getCoalVariantBlockLower());
+            register(coalVariants.getCoalVariantName() + "_block_lower", coalVariants.getCoalVariantBlockLower());
         }
 
         for (CoalVariants coalVariants : CoalVariants.values()){
-            // TO DO ::: GENERATE THESE IN CORRECT BIOMES
-            register(coalVariants.getName() + "_ore", coalVariants.getOreBlocks());
+
+            register(coalVariants.getCoalVariantName() + "_ore", coalVariants.getOreBlocks());
         }
 
     }

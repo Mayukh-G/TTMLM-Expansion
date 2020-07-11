@@ -19,9 +19,19 @@ public class ModItems {
         BLOCKS_TO_REGISTER.forEach(ModItems::register);
 
         //Items
+        //Coal Variant Items
         for(CoalVariants coalVariants : CoalVariants.values()){
-            register(coalVariants.getName(), coalVariants.getCoalVariantItem());
+            register(coalVariants.getCoalVariantName(), coalVariants.getCoalVariantItem());
         }
+        //Ingot Variant Items
+        for(IngotVariants ingotVariants: IngotVariants.values()){
+            register(ingotVariants.getIngotVariantName(), ingotVariants.getIngotItem());
+        }
+        //Ingot Variant Sword Items
+        for(IngotVariants ingotVariants: IngotVariants.values()){
+            register(ingotVariants.getIngotVariantName()+ "_sword", ingotVariants.getIngotSwordItem());
+        }
+
 
     }
     private static <T extends Item> T register(String name, T item) {

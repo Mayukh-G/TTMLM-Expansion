@@ -37,10 +37,10 @@ public enum CoalVariants {
                 .hardnessAndResistance(3f,10f)
                 .sound(SoundType.STONE)
         ));
-        coalVariantItem = new LazyValue<>(() -> new CoalVariantsItems(this.getName(), new Item.Properties()));
+        coalVariantItem = new LazyValue<>(() -> new CoalVariantsItems(this.getCoalVariantName(), new Item.Properties()));
     }
 
-    public String getName() { return name().toLowerCase(Locale.ROOT); }
+    public String getCoalVariantName() { return name().toLowerCase(Locale.ROOT); }
 
     public OreBlocks getOreBlocks(){ return oreBlocks.getValue(); }
 
