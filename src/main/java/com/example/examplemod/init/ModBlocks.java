@@ -4,7 +4,6 @@ import com.example.examplemod.ExampleMod;
 import com.example.examplemod.block.OreBlocks;
 import com.example.examplemod.item.BlockItemsForVariantBlocks;
 import net.minecraft.block.Block;
-import net.minecraft.block.OreBlock;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.BlockItem;

@@ -1,0 +1,7 @@
+{
+  "variants": {
+      "": {
+        "model":"examplemod:block/nether_mutable_alloy_ore"
+      }
+  }
+}

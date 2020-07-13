@@ -7,6 +7,7 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.*;
 import net.minecraft.util.LazyValue;
+import net.minecraftforge.common.ToolType;
 
 import java.util.Locale;
 
@@ -51,6 +52,8 @@ public enum IngotVariants {
         ingotBlocks = new LazyValue<>(() -> new Block(Block.Properties.create(Material.IRON)
                 .hardnessAndResistance(5f,6f)
                 .sound(SoundType.METAL)
+                .harvestLevel(2)
+                .harvestTool(ToolType.PICKAXE)
         ));
         ingotSwordItems = new LazyValue<>(()-> new IngotVariantSwords(this.tier, this.atkDmg, this.atkSpeed, this.getVariant(), new Item.Properties()));
     }

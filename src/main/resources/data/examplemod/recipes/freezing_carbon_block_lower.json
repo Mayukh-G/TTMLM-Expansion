@@ -11,10 +11,10 @@
       "item": "examplemod:freezing_carbon"
     },
     "I": {
-      "item": "minecraft:packed_ice"
+      "item": "minecraft:snow_block"
     },
     "O": {
-      "item": "minecraft:blue_ice"
+      "item": "minecraft:iron_block"
     }
   },
   "result": {

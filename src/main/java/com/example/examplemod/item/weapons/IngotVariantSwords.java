@@ -33,7 +33,7 @@ public class IngotVariantSwords extends SwordItem { //FINISH EFFECT FOR EACH TYP
             case FREEZING_ALLOY:
                 entityAttacked.addPotionEffect(new EffectInstance(Effects.SLOWNESS, 30,2,false,true));
             break;
-            default: System.out.print("DEFAULT CASE WORKS_FINDME");
+            default:
         }
     }
 }

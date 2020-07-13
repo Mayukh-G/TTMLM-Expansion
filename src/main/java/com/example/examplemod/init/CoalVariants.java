@@ -9,6 +9,7 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
 import net.minecraft.util.LazyValue;
+import net.minecraftforge.common.ToolType;
 
 import java.util.Locale;
 
@@ -28,14 +29,20 @@ public enum CoalVariants {
         coalVariantBlock = new LazyValue<>(() -> new Block(Block.Properties.create(Material.ROCK)
                 .hardnessAndResistance(3f,10f)
                 .sound(SoundType.STONE)
+                .harvestLevel(2)
+                .harvestTool(ToolType.PICKAXE)
         ));
         coalVariantBlocksUpper =  new LazyValue<>(() -> new SlabBlock(Block.Properties.create(Material.ROCK)
                 .hardnessAndResistance(3f,10f)
                 .sound(SoundType.STONE)
+                .harvestLevel(2)
+                .harvestTool(ToolType.PICKAXE)
         ));
         coalVariantBlocksLower =  new LazyValue<>(() -> new SlabBlock(Block.Properties.create(Material.ROCK)
                 .hardnessAndResistance(3f,10f)
                 .sound(SoundType.STONE)
+                .harvestLevel(2)
+                .harvestTool(ToolType.PICKAXE)
         ));
         coalVariantItem = new LazyValue<>(() -> new CoalVariantsItems(this.getCoalVariantName(), new Item.Properties()));
     }

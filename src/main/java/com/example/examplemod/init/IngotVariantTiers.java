@@ -7,16 +7,16 @@ import net.minecraft.util.LazyValue;
 import java.util.function.Supplier;
 
 public enum IngotVariantTiers implements IItemTier {
-    WEAK_VARIANT(2, 550, 6.5F, 2.5F, 12, () -> {
+    WEAK_VARIANT(2, 550, 6.5F, 1.5F, 12, () -> {
         return Ingredient.fromItems(IngotVariants.MUTABLE_ALLOY.getIngotItem());
     }),
-    VARIANT(3, 2000, 10.0F, 3.5F, 15, () -> {
+    VARIANT(3, 2000, 10.0F, 4F, 15, () -> {
         return Ingredient.fromItems(IngotVariants.MUTABLE_ALLOY.getIngotItem());
     }),
-    WEAK_ENDER(3, 2500, 12.0F, 4F, 12, () -> {
+    WEAK_ENDER(3, 2500, 12.0F, 3F, 12, () -> {
         return Ingredient.fromItems(IngotVariants.MUTABLE_ALLOY.getIngotItem());
     }),
-    ENDER(4, 3000, 15.0F, 4.5F, 18, () -> {
+    ENDER(4, 3000, 15.0F, 5F, 18, () -> {
         return Ingredient.fromItems(IngotVariants.MUTABLE_ALLOY.getIngotItem());
     });
 

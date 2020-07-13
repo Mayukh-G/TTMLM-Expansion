@@ -1,0 +1,7 @@
+{
+  "variants": {
+      "": {
+        "model":"examplemod:block/mutable_alloy_block"
+      }
+  }
+}

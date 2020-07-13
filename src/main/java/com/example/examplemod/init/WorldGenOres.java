@@ -34,7 +34,7 @@ public class WorldGenOres {
                     //Add features
                     biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES,
                             Feature.ORE
-                                    .withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, coalVariants.getOreBlocks().getDefaultState(), 8))
+                                    .withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, coalVariants.getOreBlocks().getDefaultState(), 12))
                                     .withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(9,30,0,128))));
 
                 }
@@ -54,6 +54,7 @@ public class WorldGenOres {
                     Feature.ORE
                             .withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, ModBlocks.mutableAlloyOre.getDefaultState(),10))
                             .withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(5,2,0,128))));
+
 
         }
     }

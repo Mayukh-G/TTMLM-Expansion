@@ -1,0 +1,22 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "XIX",
+    "IOI",
+    "XIX"
+  ],
+  "key": {
+    "X" : {
+      "item": "examplemod:mutable_alloy"
+    },
+    "I": {
+      "item": "minecraft:diamond"
+    },
+    "O": {
+      "item": "minecraft:ender_pearl"
+    }
+  },
+  "result": {
+    "item": "examplemod:weak_ender_alloy"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "XXX",
+    "XXX",
+    "XXX"
+  ],
+  "key": {
+    "X" : {
+      "item": "examplemod:weak_ender_alloy"
+    }
+  },
+  "result": {
+    "item": "examplemod:weak_ender_alloy_block"
+  }
+}

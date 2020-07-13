@@ -1,0 +1,22 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "OXO",
+    "XIX",
+    "OXO"
+  ],
+  "key": {
+    "X" : {
+      "item": "examplemod:mutable_alloy_block"
+    },
+    "I": {
+      "item": "examplemod:weak_freezing_alloy_block"
+    },
+    "O": {
+      "item": "examplemod:freezing_carbon_block"
+    }
+  },
+  "result": {
+    "item": "examplemod:freezing_alloy"
+  }
+}

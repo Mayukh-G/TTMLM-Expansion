@@ -1,0 +1,19 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "X",
+    "X",
+    "I"
+  ],
+  "key": {
+    "X" : {
+      "item": "examplemod:weak_ender_alloy_block"
+    },
+    "I": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "examplemod:weak_ender_alloy_sword"
+  }
+}

@@ -11,17 +11,24 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/SideProxy$Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/SideProxy$Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/SideProxy$Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/SideProxy$Server.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/SideProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/SideProxy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/block/OreBlocks.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/block/OreBlocks.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/init/CoalVariants.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/init/CoalVariants.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/init/IngotVariantTiers.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/init/IngotVariantTiers.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/init/IngotVariants.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/init/IngotVariants.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/init/ModBlocks.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/init/ModBlocks.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/init/ModItems.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/init/ModItems.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/init/WorldGenOres.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/init/WorldGenOres.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/lang/en_us.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/examplemod/lang/en_us.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-08-1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-08-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-08-2.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/item/weapons/IngotVariantSwords.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/item/weapons/IngotVariantSwords.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/recipes/freezing_carbon_block_lower.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/data/examplemod/recipes/freezing_carbon_block_lower.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/recipes/freezing_carbon_block_upper.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/data/examplemod/recipes/freezing_carbon_block_upper.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-10-1.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-10-10.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-10-10.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-10-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-10-2.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-10-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-10-3.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-10-4.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-10-4.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-10-5.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-10-5.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-10-6.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-10-6.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-10-7.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-10-7.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-10-8.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-10-8.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-10-9.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-10-9.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-1.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-1.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-2.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-3.log.gz" afterDir="false" />
@@ -29,6 +36,11 @@
       <change beforePath="$PROJECT_DIR$/run/logs/debug-5.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-5.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/latest.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/latest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/DIM-1/data/raids_nether.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/DIM-1/data/raids_nether.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/DIM-1/region/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/DIM-1/region/r.-1.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/DIM-1/region/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/DIM-1/region/r.-1.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/DIM-1/region/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/DIM-1/region/r.0.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/DIM-1/region/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/DIM-1/region/r.0.0.mca" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/advancements/380df991-f603-344c-a090-369bad2a924a.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/advancements/380df991-f603-344c-a090-369bad2a924a.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/data/raids.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/data/raids.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/level.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/level.dat" afterDir="false" />
@@ -39,38 +51,23 @@
       <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/region/r.-1.0.mca" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/region/r.0.-1.mca" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/region/r.0.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.2.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/region/r.2.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.2.1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/region/r.2.1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.2.2.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/region/r.2.2.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.3.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/region/r.3.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.3.1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/region/r.3.1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.3.2.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/region/r.3.2.mca" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/session.lock" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/session.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/stats/380df991-f603-344c-a090-369bad2a924a.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/stats/380df991-f603-344c-a090-369bad2a924a.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/Ore gen test/DIM-1/data/raids_nether.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/Ore gen test/DIM-1/data/raids_nether.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/Ore gen test/DIM-1/poi/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/Ore gen test/DIM-1/poi/r.0.-1.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/Ore gen test/DIM-1/region/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/Ore gen test/DIM-1/region/r.-1.-1.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/Ore gen test/DIM-1/region/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/Ore gen test/DIM-1/region/r.-1.0.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/Ore gen test/DIM-1/region/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/Ore gen test/DIM-1/region/r.0.-1.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/Ore gen test/DIM-1/region/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/Ore gen test/DIM-1/region/r.0.0.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/Ore gen test/DIM-1/region/r.1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/Ore gen test/DIM-1/region/r.1.-1.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/Ore gen test/DIM-1/region/r.1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/Ore gen test/DIM-1/region/r.1.0.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/Ore gen test/advancements/380df991-f603-344c-a090-369bad2a924a.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/Ore gen test/advancements/380df991-f603-344c-a090-369bad2a924a.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/Ore gen test/data/raids.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/Ore gen test/data/raids.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/Ore gen test/level.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/Ore gen test/level.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/Ore gen test/level.dat_old" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/Ore gen test/level.dat_old" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/Ore gen test/playerdata/380df991-f603-344c-a090-369bad2a924a.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/Ore gen test/playerdata/380df991-f603-344c-a090-369bad2a924a.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/Ore gen test/region/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/Ore gen test/region/r.-1.-1.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/Ore gen test/region/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/Ore gen test/region/r.-1.0.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/Ore gen test/region/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/Ore gen test/region/r.0.-1.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/Ore gen test/region/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/Ore gen test/region/r.0.0.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/Ore gen test/region/r.2.-2.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/Ore gen test/region/r.2.-2.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/Ore gen test/region/r.2.-3.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/Ore gen test/region/r.2.-3.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/Ore gen test/session.lock" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/Ore gen test/session.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/Ore gen test/stats/380df991-f603-344c-a090-369bad2a924a.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/Ore gen test/stats/380df991-f603-344c-a090-369bad2a924a.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/usercache.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/usercache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/ExampleMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/examplemod/ExampleMod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/SideProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/examplemod/SideProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/block/OreBlocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/examplemod/block/OreBlocks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/init/CoalVariants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/examplemod/init/CoalVariants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/init/IngotVariantTiers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/examplemod/init/IngotVariantTiers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/init/IngotVariants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/examplemod/init/IngotVariants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/init/ModBlocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/examplemod/init/ModBlocks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/init/ModItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/examplemod/init/ModItems.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/init/WorldGenOres.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/examplemod/init/WorldGenOres.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/lang/en_us.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/examplemod/lang/en_us.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/item/weapons/IngotVariantSwords.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/examplemod/item/weapons/IngotVariantSwords.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/recipes/freezing_carbon_block_lower.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/examplemod/recipes/freezing_carbon_block_lower.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/recipes/freezing_carbon_block_upper.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/examplemod/recipes/freezing_carbon_block_upper.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,18 +139,18 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/data/examplemod/recipes" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="show.migrate.to.gradle.popup" value="false" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Mayukh\Forge Modding\src\main\resources\assets\examplemod\models\item" />
       <recent name="C:\Users\Mayukh\Forge Modding\src\main\resources\data\examplemod\recipes" />
-      <recent name="C:\Users\Mayukh\Forge Modding\src\main\resources\data\examplemod\loot_tables\blocks" />
       <recent name="C:\Users\Mayukh\Forge Modding\src\main\resources\assets\examplemod\models\block" />
       <recent name="C:\Users\Mayukh\Forge Modding\src\main\resources\assets\examplemod\blockstates" />
-      <recent name="C:\Users\Mayukh\Forge Modding\src\main\resources\assets\examplemod\models\item" />
+      <recent name="C:\Users\Mayukh\Forge Modding\src\main\resources\data\examplemod\loot_tables\blocks" />
     </key>
   </component>
   <component name="RunManager" selected="Application.runClient">
@@ -213,22 +210,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1593804193712" />
-    <state width="1287" height="204" key="GridCell.Tab.0.bottom" timestamp="1594432355703">
+    <state width="1287" height="204" key="GridCell.Tab.0.bottom" timestamp="1594613524741">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1287" height="204" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594432355703" />
-    <state width="1287" height="204" key="GridCell.Tab.0.center" timestamp="1594432355701">
+    <state width="1287" height="204" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594613524741" />
+    <state width="1287" height="204" key="GridCell.Tab.0.center" timestamp="1594613524740">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1287" height="204" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594432355701" />
-    <state width="1287" height="204" key="GridCell.Tab.0.left" timestamp="1594432355686">
+    <state width="1287" height="204" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594613524740" />
+    <state width="1287" height="204" key="GridCell.Tab.0.left" timestamp="1594613524739">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1287" height="204" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594432355686" />
-    <state width="1287" height="204" key="GridCell.Tab.0.right" timestamp="1594432355702">
+    <state width="1287" height="204" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594613524739" />
+    <state width="1287" height="204" key="GridCell.Tab.0.right" timestamp="1594613524740">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1287" height="204" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594432355702" />
+    <state width="1287" height="204" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594613524740" />
     <state width="1287" height="276" key="GridCell.Tab.1.bottom" timestamp="1594423258734">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -249,17 +246,17 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="922" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1593730062080" />
-    <state x="582" y="392" key="com.intellij.ide.util.TipDialog" timestamp="1594424871656">
+    <state x="582" y="392" key="com.intellij.ide.util.TipDialog" timestamp="1594583122062">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="582" y="392" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594424871656" />
+    <state x="582" y="392" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594583122062" />
     <state x="1182" y="142" key="refactoring.ChangeSignatureDialog" timestamp="1593890071882">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1182" y="142" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593890071882" />
-    <state x="633" y="219" width="672" height="678" key="search.everywhere.popup" timestamp="1594431174890">
+    <state x="633" y="219" width="672" height="678" key="search.everywhere.popup" timestamp="1594610782840">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="633" y="219" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1594431174890" />
+    <state x="633" y="219" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1594610782840" />
   </component>
 </project>
