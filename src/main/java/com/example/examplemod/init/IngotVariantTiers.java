@@ -11,13 +11,13 @@ public enum IngotVariantTiers implements IItemTier {
         return Ingredient.fromItems(IngotVariants.MUTABLE_ALLOY.getIngotItem());
     }),
     VARIANT(3, 2000, 10.0F, 4F, 15, () -> {
-        return Ingredient.fromItems(IngotVariants.MUTABLE_ALLOY.getIngotItem());
+        return Ingredient.fromItems(IngotVariants.MUTABLE_ALLOY.getIngotBlock());
     }),
     WEAK_ENDER(3, 2500, 12.0F, 3F, 12, () -> {
-        return Ingredient.fromItems(IngotVariants.MUTABLE_ALLOY.getIngotItem());
+        return Ingredient.fromItems(IngotVariants.WEAK_ENDER_ALLOY.getIngotItem());
     }),
     ENDER(4, 3000, 15.0F, 5F, 18, () -> {
-        return Ingredient.fromItems(IngotVariants.MUTABLE_ALLOY.getIngotItem());
+        return Ingredient.fromItems(IngotVariants.ENDER_ALLOY.getIngotItem());
     });
 
 

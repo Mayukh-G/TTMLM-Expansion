@@ -5,10 +5,13 @@ import com.example.examplemod.init.ModItems;
 import com.example.examplemod.init.WorldGenOres;
 import com.example.examplemod.item.weapons.IngotVariantSwords;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.DamageSource;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.entity.living.LivingAttackEvent;
+import net.minecraftforge.event.entity.living.LivingHurtEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.event.lifecycle.*;
 import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
@@ -53,14 +56,19 @@ public class SideProxy {
         WorldGenOres.onInitBiomesGen();
     }
 
-    public static void onAttackVariantSword(LivingAttackEvent event){
-        Object attacker = event.getSource().getTrueSource();
+    public static void onAttackVariantSword(LivingHurtEvent event){
+        Object attacker = event.getSource().getTrueSource(); // Getting whom attacked
         if(attacker instanceof LivingEntity){
-            LivingEntity Entityattacker = (LivingEntity)attacker;
+            LivingEntity Entityattacker = (LivingEntity)attacker; //If LivingEntity type is attacker
             ItemStack HeldItemStack = Entityattacker.getHeldItemMainhand();
-            Item HeldItem = HeldItemStack.getItem();
+            Item HeldItem = HeldItemStack.getItem(); //Checking what was used to attack
             if(HeldItem instanceof IngotVariantSwords){
-                ((IngotVariantSwords) HeldItem).onAttack(event.getEntityLiving());
+                if(Entityattacker instanceof PlayerEntity) { //If attacker is a Player
+                    PlayerEntity PlayerAttacker = (PlayerEntity) Entityattacker;
+                    ((IngotVariantSwords) HeldItem).onAttack(event.getEntityLiving(), PlayerAttacker, event.getAmount());
+                }else { //If attacker is not a player
+                    ((IngotVariantSwords) HeldItem).onAttack(event.getEntityLiving(), null, event.getAmount());
+                }
             }
         }
     }

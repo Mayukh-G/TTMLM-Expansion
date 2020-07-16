@@ -5,6 +5,8 @@ import net.minecraft.block.Block;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.DistExecutor;
@@ -31,8 +33,8 @@ public class ExampleMod
         }
 
         @Override
-        public String getTabLabel() {
-            return "Variants";
+        public String getTranslationKey() {
+            return this.getTabLabel() + " : Variants";
         }
     };
 
