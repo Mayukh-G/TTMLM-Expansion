@@ -1,6 +1,6 @@
 {
-  "parent": "item/handheld",
+  "parent": "examplemod:item/cleavertype",
   "textures": {
-    "layer0": "item/ender_alloy_sword"
+    "layer0": "examplemod:item/ender_alloy_sword"
   }
 }

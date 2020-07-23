@@ -10,7 +10,6 @@ import net.minecraft.item.IItemTier;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.SwordItem;
-import net.minecraft.particles.ParticleTypes;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Effects;
 import net.minecraft.util.CombatRules;
@@ -20,8 +19,6 @@ import net.minecraft.util.SoundEvents;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TextComponent;
 import net.minecraft.world.World;
-import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.api.distmarker.OnlyIn;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
@@ -33,14 +30,14 @@ public class IngotVariantSwords extends SwordItem {
     private final IngotVariants variant;
     private static boolean loopCheck = false;
 
-    public IngotVariantSwords(IItemTier tier, int attackDamage, float attackSpeed, IngotVariants variants, Item.Properties builder){
+    public IngotVariantSwords(IItemTier tier, int attackDamage, float attackSpeed, IngotVariants variants, Item.Properties builder) {
         super(tier, attackDamage, attackSpeed, builder.group(ExampleMod.ITEM_GROUP));
         this.variant = variants;
     }
 
     @Override //Adding lore text to explain item function
     public void addInformation(ItemStack stack, @Nullable World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn) {
-        switch (this.variant){
+        switch (this.variant) {
             case WEAK_BLAZING_AllOY:
                 tooltip.add(new TextComponent() {
                     @Override
@@ -48,6 +45,7 @@ public class IngotVariantSwords extends SwordItem {
                     public String getUnformattedComponentText() {
                         return "\u00A76\u00A7oFire Slash :\u00A7d 3 seconds";
                     }
+
                     @Override
                     @Nonnull
                     public ITextComponent shallowCopy() {
@@ -92,6 +90,7 @@ public class IngotVariantSwords extends SwordItem {
                     public String getUnformattedComponentText() {
                         return "\u00A76\u00A7oFire Slash :\u00A7d 10 seconds";
                     }
+
                     @Override
                     @Nonnull
                     public ITextComponent shallowCopy() {
@@ -119,7 +118,7 @@ public class IngotVariantSwords extends SwordItem {
                     @Override
                     @Nonnull
                     public String getUnformattedComponentText() {
-                        return "\u00A74\u00A7oMarked For Slaughter II :\u00A7d 40% Hp execute";
+                        return "\u00A74\u00A7oMarked For Slaughter II :\u00A7d 30% Hp execute";
                     }
 
                     @Override
@@ -131,93 +130,72 @@ public class IngotVariantSwords extends SwordItem {
         }
     }
 
-    public void onAttack(LivingEntity entityAttacked, @Nullable PlayerEntity playerEntity, float amountDealt){
+    public void onAttack(LivingEntity entityAttacked, @Nullable PlayerEntity playerEntity, float amountDealt) {
         //Line underneath mitigated dmg
-        amountDealt = CombatRules.getDamageAfterAbsorb(amountDealt, (float)entityAttacked.getTotalArmorValue(), (float)entityAttacked.getAttribute(SharedMonsterAttributes.ARMOR_TOUGHNESS).getValue());
+        amountDealt = CombatRules.getDamageAfterAbsorb(amountDealt, (float) entityAttacked.getTotalArmorValue(), (float) entityAttacked.getAttribute(SharedMonsterAttributes.ARMOR_TOUGHNESS).getValue());
         World attackedEntityWorld = entityAttacked.getEntityWorld();
-        switch (this.variant){
+        switch (this.variant) {
             case WEAK_BLAZING_AllOY:
-                if(!entityAttacked.isBurning()) { //Play sound only if Entity is not on fire
+                if (!entityAttacked.isBurning() && !entityAttacked.isImmuneToFire()) { //Play sound only if Entity is not on fire
                     attackedEntityWorld.playSound(null, entityAttacked.getPosition(), SoundEvents.ENTITY_BLAZE_SHOOT, SoundCategory.HOSTILE, 1.0F, 1.0F);
                 }
                 entityAttacked.setFire(3);
-            break;
+                break;
 
             case WEAK_FREEZING_ALLOY: //Slow entity
-                entityAttacked.addPotionEffect(new EffectInstance(Effects.SLOWNESS, 60,0,false,true));
-            break;
+                entityAttacked.addPotionEffect(new EffectInstance(Effects.SLOWNESS, 60, 0, false, true));
+                break;
 
             case WEAK_ENDER_ALLOY: //Execute by either player or random source and play ender dragon growl (this causes a loop the event is called again which resets the loop causing a stackoverflow)
-                if(entityAttacked.getHealth()-amountDealt <= entityAttacked.getMaxHealth()*0.2 && !attackedEntityWorld.isRemote()){
-                    if(playerEntity != null){
+                if (entityAttacked.getHealth() - amountDealt <= entityAttacked.getMaxHealth() * 0.2 && !attackedEntityWorld.isRemote()) {
+                    if (playerEntity != null) {
                         if (!loopCheck) {
                             loopCheck = true;
-                            entityAttacked.attackEntityFrom(DamageSource.causePlayerDamage(playerEntity), entityAttacked.getMaxHealth()*10);
+                            entityAttacked.attackEntityFrom(DamageSource.causePlayerDamage(playerEntity), entityAttacked.getMaxHealth() * 10);
                             attackedEntityWorld.playSound(null, playerEntity.getPosition(), SoundEvents.ENTITY_ENDER_DRAGON_GROWL, SoundCategory.PLAYERS, 0.8F, 1.0F);
-                            spawnDragonBreath(attackedEntityWorld, entityAttacked, true);
                             loopCheck = false;
                         }
-                    }else{
-                        if(!loopCheck) {
+                    } else {
+                        if (!loopCheck) {
                             loopCheck = true;
-                            entityAttacked.attackEntityFrom(DamageSource.MAGIC, entityAttacked.getMaxHealth()*10);
+                            entityAttacked.attackEntityFrom(DamageSource.MAGIC, entityAttacked.getMaxHealth() * 10);
                             attackedEntityWorld.playSound(null, entityAttacked.getPosition(), SoundEvents.ENTITY_ENDER_DRAGON_GROWL, SoundCategory.PLAYERS, 0.8F, 1.0F);
-                            spawnDragonBreath(attackedEntityWorld, entityAttacked, true);
                             loopCheck = false;
                         }
                     }
                 }
-            break;
+                break;
 
             case BLAZING_ALLOY: //Burn for longer
-                if(!entityAttacked.isBurning()) {
+                if (!entityAttacked.isBurning() && !entityAttacked.isImmuneToFire()) {
                     attackedEntityWorld.playSound(null, entityAttacked.getPosition(), SoundEvents.ENTITY_BLAZE_SHOOT, SoundCategory.HOSTILE, 1.0F, 1.0F);
                 }
                 entityAttacked.setFire(10);
-            break;
+                break;
 
             case FREEZING_ALLOY: //Stronger Slow
-                entityAttacked.addPotionEffect(new EffectInstance(Effects.SLOWNESS, 60,2,false,true));
-            break;
+                entityAttacked.addPotionEffect(new EffectInstance(Effects.SLOWNESS, 60, 2, false, true));
+                break;
 
             case ENDER_ALLOY: //Execute but higher threshold
-                if(entityAttacked.getHealth()-amountDealt <= entityAttacked.getMaxHealth()*0.4 && !attackedEntityWorld.isRemote()){
-                    if(playerEntity != null){
-                        if(!loopCheck) {
+                if (entityAttacked.getHealth() - amountDealt <= entityAttacked.getMaxHealth() * 0.3 && !attackedEntityWorld.isRemote()) {
+                    if (playerEntity != null) {
+                        if (!loopCheck) {
                             loopCheck = true;
-                            entityAttacked.attackEntityFrom(DamageSource.causePlayerDamage(playerEntity), entityAttacked.getMaxHealth()*10);
+                            entityAttacked.attackEntityFrom(DamageSource.causePlayerDamage(playerEntity), entityAttacked.getMaxHealth() * 10);
                             attackedEntityWorld.playSound(null, playerEntity.getPosition(), SoundEvents.ENTITY_ENDER_DRAGON_GROWL, SoundCategory.PLAYERS, 0.8F, 1.0F);
-                            spawnDragonBreath(attackedEntityWorld, entityAttacked, false);
                             loopCheck = false;
                         }
-                    }else{
-                        if(!loopCheck) {
+                    } else {
+                        if (!loopCheck) {
                             loopCheck = true;
-                            entityAttacked.attackEntityFrom(DamageSource.MAGIC, entityAttacked.getMaxHealth()*10);
+                            entityAttacked.attackEntityFrom(DamageSource.MAGIC, entityAttacked.getMaxHealth() * 10);
                             attackedEntityWorld.playSound(null, entityAttacked.getPosition(), SoundEvents.ENTITY_ENDER_DRAGON_GROWL, SoundCategory.PLAYERS, 0.8F, 1.0F);
-                            spawnDragonBreath(attackedEntityWorld, entityAttacked, false);
                             loopCheck = false;
                         }
                     }
                 }
-
-            break;
-        }
-    }
-
-    @OnlyIn(Dist.CLIENT)
-    private void spawnDragonBreath(World world, LivingEntity entity, boolean weak){ //MAKE LOOK BETTER. WORKS WELL
-        int maxCount;
-        if(weak){
-            maxCount = 5;
-        }else {
-            maxCount = 10;
-        }
-        for(int i = 0; i < maxCount; i++) {
-            world.addParticle(ParticleTypes.DRAGON_BREATH, true, entity.getPosX() + 0.5, entity.getPosY(), entity.getPosZ() + 0.5, 0.0D, 0.0D, 0.0D);
-            world.addParticle(ParticleTypes.DRAGON_BREATH, true, entity.getPosX() + 0.5, entity.getPosY(), entity.getPosZ() - 0.5, 0.0D, 0.0D, 0.0D);
-            world.addParticle(ParticleTypes.DRAGON_BREATH, true, entity.getPosX() - 0.5, entity.getPosY(), entity.getPosZ() + 0.5, 0.0D, 0.0D, 0.0D);
-            world.addParticle(ParticleTypes.DRAGON_BREATH, true, entity.getPosX() - 0.5, entity.getPosY(), entity.getPosZ() - 0.5, 0.0D, 0.0D, 0.0D);
+                break;
         }
     }
 }

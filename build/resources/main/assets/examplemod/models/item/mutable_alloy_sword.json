@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "item/mutable_alloy_sword"
+    "layer0": "examplemod:item/mutable_alloy_sword"
   }
 }

@@ -14,11 +14,47 @@
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/SideProxy$Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/SideProxy$Client.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/SideProxy$Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/SideProxy$Server.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/SideProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/SideProxy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/init/WorldGenOres.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/init/WorldGenOres.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/init/IngotVariantTiers.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/init/IngotVariantTiers.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/init/IngotVariants.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/init/IngotVariants.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/init/ModItems.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/init/ModItems.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/item/weapons/IngotVariantSwords$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/item/weapons/IngotVariantSwords$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/item/weapons/IngotVariantSwords$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/item/weapons/IngotVariantSwords$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/item/weapons/IngotVariantSwords$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/item/weapons/IngotVariantSwords$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/item/weapons/IngotVariantSwords$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/item/weapons/IngotVariantSwords$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/item/weapons/IngotVariantSwords$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/item/weapons/IngotVariantSwords$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/item/weapons/IngotVariantSwords$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/item/weapons/IngotVariantSwords$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/item/weapons/IngotVariantSwords$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/item/weapons/IngotVariantSwords$7.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/item/weapons/IngotVariantSwords.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/item/weapons/IngotVariantSwords.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-13-1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-13-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-13-2.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/lang/en_us.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/examplemod/lang/en_us.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/blazing_alloy_sword.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/blazing_alloy_sword.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/ender_alloy_sword.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/ender_alloy_sword.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/freezing_alloy_sword.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/freezing_alloy_sword.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/mutable_alloy_sword.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/mutable_alloy_sword.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/weak_blazing_alloy_sword.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/weak_blazing_alloy_sword.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/weak_ender_alloy_sword.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/weak_ender_alloy_sword.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/weak_freezing_alloy_sword.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/weak_freezing_alloy_sword.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-15-1.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-15-10.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-15-10.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-15-11.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-15-11.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-15-12.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-15-12.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-15-13.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-15-13.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-15-14.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-15-14.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-15-15.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-15-15.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-15-16.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-15-16.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-15-17.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-15-17.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-15-18.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-15-18.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-15-19.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-15-19.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-15-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-15-2.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-15-20.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-15-20.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-15-21.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-15-21.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-15-22.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-15-22.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-15-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-15-3.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-15-4.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-15-4.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-15-5.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-15-5.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-15-6.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-15-6.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-15-7.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-15-7.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-15-8.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-15-8.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-15-9.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-15-9.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-1.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-1.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-2.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-3.log.gz" afterDir="false" />
@@ -31,7 +67,6 @@
       <change beforePath="$PROJECT_DIR$/run/saves/New World/level.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/level.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/level.dat_old" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/level.dat_old" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/playerdata/380df991-f603-344c-a090-369bad2a924a.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/playerdata/380df991-f603-344c-a090-369bad2a924a.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/poi/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/poi/r.-1.-1.mca" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/region/r.-1.-1.mca" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/region/r.-1.0.mca" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/region/r.0.-1.mca" afterDir="false" />
@@ -39,10 +74,19 @@
       <change beforePath="$PROJECT_DIR$/run/saves/New World/session.lock" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/session.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/stats/380df991-f603-344c-a090-369bad2a924a.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/stats/380df991-f603-344c-a090-369bad2a924a.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/usercache.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/usercache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/ExampleMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/examplemod/ExampleMod.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/SideProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/examplemod/SideProxy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/init/IngotVariantTiers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/examplemod/init/IngotVariantTiers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/init/IngotVariants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/examplemod/init/IngotVariants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/init/ModItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/examplemod/init/ModItems.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/item/weapons/IngotVariantSwords.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/examplemod/item/weapons/IngotVariantSwords.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/lang/en_us.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/examplemod/lang/en_us.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/blazing_alloy_sword.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/blazing_alloy_sword.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/ender_alloy_sword.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/ender_alloy_sword.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/freezing_alloy_sword.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/freezing_alloy_sword.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/mutable_alloy_sword.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/mutable_alloy_sword.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/weak_blazing_alloy_sword.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/weak_blazing_alloy_sword.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/weak_ender_alloy_sword.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/weak_ender_alloy_sword.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/weak_freezing_alloy_sword.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/weak_freezing_alloy_sword.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,8 +140,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JSON file" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -173,10 +217,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1079" y="210" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593829848149" />
-    <state x="742" y="189" key="#com.intellij.ide.util.MemberChooser" timestamp="1594849300310">
+    <state x="742" y="189" key="#com.intellij.ide.util.MemberChooser" timestamp="1595529093111">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="742" y="189" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1594849300310" />
+    <state x="742" y="189" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1595529093111" />
     <state x="808" y="408" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1593723249444">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -193,46 +237,46 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1593804193712" />
-    <state width="1287" height="240" key="GridCell.Tab.0.bottom" timestamp="1594858435762">
+    <state width="1287" height="204" key="GridCell.Tab.0.bottom" timestamp="1595536472658">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1287" height="240" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594858435762" />
-    <state width="1287" height="240" key="GridCell.Tab.0.center" timestamp="1594858435761">
+    <state width="1287" height="204" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1595536472658" />
+    <state width="1287" height="204" key="GridCell.Tab.0.center" timestamp="1595536472658">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1287" height="240" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594858435761" />
-    <state width="1287" height="240" key="GridCell.Tab.0.left" timestamp="1594858435760">
+    <state width="1287" height="204" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1595536472658" />
+    <state width="1287" height="204" key="GridCell.Tab.0.left" timestamp="1595536472655">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1287" height="240" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594858435760" />
-    <state width="1287" height="240" key="GridCell.Tab.0.right" timestamp="1594858435761">
+    <state width="1287" height="204" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1595536472655" />
+    <state width="1287" height="204" key="GridCell.Tab.0.right" timestamp="1595536472658">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1287" height="240" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594858435761" />
-    <state width="1287" height="240" key="GridCell.Tab.1.bottom" timestamp="1594858712526">
+    <state width="1287" height="204" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1595536472658" />
+    <state width="1287" height="241" key="GridCell.Tab.1.bottom" timestamp="1594952103896">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1287" height="240" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594858712526" />
-    <state width="1287" height="240" key="GridCell.Tab.1.center" timestamp="1594858712526">
+    <state width="1287" height="241" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594952103896" />
+    <state width="1287" height="241" key="GridCell.Tab.1.center" timestamp="1594952103895">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1287" height="240" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594858712526" />
-    <state width="1287" height="240" key="GridCell.Tab.1.left" timestamp="1594858712526">
+    <state width="1287" height="241" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594952103895" />
+    <state width="1287" height="241" key="GridCell.Tab.1.left" timestamp="1594952103895">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1287" height="240" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594858712526" />
-    <state width="1287" height="240" key="GridCell.Tab.1.right" timestamp="1594858712526">
+    <state width="1287" height="241" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594952103895" />
+    <state width="1287" height="241" key="GridCell.Tab.1.right" timestamp="1594952103896">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1287" height="240" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594858712526" />
+    <state width="1287" height="241" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594952103896" />
     <state x="922" y="165" key="SettingsEditor" timestamp="1593730062080">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="922" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1593730062080" />
-    <state x="582" y="392" key="com.intellij.ide.util.TipDialog" timestamp="1594839186200">
+    <state x="582" y="392" key="com.intellij.ide.util.TipDialog" timestamp="1595520898656">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="582" y="392" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594839186200" />
+    <state x="582" y="392" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595520898656" />
     <state x="261" y="312" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1594853824784">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -249,9 +293,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="535" y="260" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1594776595880" />
-    <state x="633" y="219" width="672" height="678" key="search.everywhere.popup" timestamp="1594857131899">
+    <state x="633" y="219" width="672" height="678" key="search.everywhere.popup" timestamp="1595530709828">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="633" y="219" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1594857131899" />
+    <state x="633" y="219" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1595530709828" />
   </component>
 </project>

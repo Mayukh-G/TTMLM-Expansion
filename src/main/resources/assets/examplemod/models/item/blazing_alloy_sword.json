@@ -1,6 +1,6 @@
 {
-  "parent": "item/handheld",
+  "parent": "examplemod:item/scimitartype",
   "textures": {
-    "layer0": "item/blazing_alloy_sword"
+    "layer0": "examplemod:item/blazing_alloy_sword"
   }
 }

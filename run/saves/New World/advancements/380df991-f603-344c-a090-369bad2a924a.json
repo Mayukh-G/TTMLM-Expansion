@@ -302,6 +302,7 @@
   "minecraft:husbandry/balanced_diet": {
     "criteria": {
       "cooked_beef": "2020-07-05 14:47:42 -0400",
+      "rotten_flesh": "2020-07-18 12:35:22 -0400",
       "enchanted_golden_apple": "2020-07-10 18:17:48 -0400"
     },
     "done": false
@@ -327,6 +328,12 @@
   "minecraft:recipes/building_blocks/cobblestone_slab": {
     "criteria": {
       "has_cobblestone": "2020-07-07 19:12:49 -0400"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_cod": {
+    "criteria": {
+      "has_cod": "2020-07-17 12:46:06 -0400"
     },
     "done": true
   },
@@ -441,6 +448,12 @@
   "minecraft:recipes/redstone/tnt": {
     "criteria": {
       "has_gunpowder": "2020-07-08 23:11:43 -0400"
+    },
+    "done": true
+  },
+  "minecraft:nether/get_wither_skull": {
+    "criteria": {
+      "wither_skull": "2020-07-18 12:44:19 -0400"
     },
     "done": true
   },
@@ -767,6 +780,7 @@
       "minecraft:blaze": "2020-07-11 16:51:55 -0400",
       "minecraft:skeleton": "2020-07-08 23:11:35 -0400",
       "minecraft:zombie_pigman": "2020-07-11 16:52:40 -0400",
+      "minecraft:ravager": "2020-07-16 14:46:00 -0400",
       "minecraft:ghast": "2020-07-11 16:51:58 -0400",
       "minecraft:magma_cube": "2020-07-11 16:54:29 -0400",
       "minecraft:spider": "2020-07-15 18:23:49 -0400",
@@ -899,6 +913,12 @@
   "minecraft:recipes/transportation/oak_boat": {
     "criteria": {
       "in_water": "2020-07-07 15:29:09 -0400"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_cod_from_campfire_cooking": {
+    "criteria": {
+      "has_cod": "2020-07-17 12:46:06 -0400"
     },
     "done": true
   },
@@ -1232,6 +1252,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/skull_banner_pattern": {
+    "criteria": {
+      "has_wither_skeleton_skull": "2020-07-18 12:44:19 -0400"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/sandstone_stairs_from_sandstone_stonecutting": {
     "criteria": {
       "has_sandstone": "2020-07-03 13:37:54 -0400"
@@ -1554,6 +1580,12 @@
   "minecraft:recipes/combat/golden_leggings": {
     "criteria": {
       "has_gold_ingot": "2020-07-12 15:54:26 -0400"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_cod_from_smoking": {
+    "criteria": {
+      "has_cod": "2020-07-17 12:46:06 -0400"
     },
     "done": true
   },
