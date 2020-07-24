@@ -18,7 +18,7 @@ public enum IngotVariants {
     WEAK_BLAZING_AllOY(4,-2.4F, IngotVariantTiers.WEAK_VARIANT_BLAZING, VariantArmorMaterial.WEAK_VARIANT_BLAZING),
     WEAK_FREEZING_ALLOY(4,-2.4F, IngotVariantTiers.WEAK_VARIANT_FREEZING, VariantArmorMaterial.WEAK_VARIANT_FREEZING),
     WEAK_ENDER_ALLOY(4,-2.8F, IngotVariantTiers.WEAK_ENDER, VariantArmorMaterial.WEAK_ENDER),
-    BLAZING_ALLOY(4,-2.4F, IngotVariantTiers.VARIANT_BLAZING, VariantArmorMaterial.WEAK_VARIANT_FREEZING),
+    BLAZING_ALLOY(4,-2.4F, IngotVariantTiers.VARIANT_BLAZING, VariantArmorMaterial.VARIANT_BLAZING),
     FREEZING_ALLOY(4,-2.4F, IngotVariantTiers.VARIANT_FREEZING, VariantArmorMaterial.VARIANT_FREEZING),
     ENDER_ALLOY(4,-2.8F, IngotVariantTiers.ENDER, VariantArmorMaterial.ENDER);
 

@@ -32,20 +32,15 @@ public class ModItems {
             register(ingotVariants.getIngotVariantName()+ "_sword", ingotVariants.getIngotSwordItem());
         }
         //Ingot Variant ArmorItems
-        //Helmets
+
         for (IngotVariants ingotVariants: IngotVariants.values()){
+            //Helmets
             register(ingotVariants.getIngotVariantName() + "_helmet", ingotVariants.getHelmetItem());
-        }
-        //Chestplates
-        for (IngotVariants ingotVariants: IngotVariants.values()){
+            //Chestplates
             register(ingotVariants.getIngotVariantName() + "_chestplate", ingotVariants.getChestplateItem());
-        }
-        //Leggings
-        for (IngotVariants ingotVariants: IngotVariants.values()){
+            //Leggings
             register(ingotVariants.getIngotVariantName() + "_leggings", ingotVariants.getLegginsItem());
-        }
-        //Boots
-        for (IngotVariants ingotVariants: IngotVariants.values()){
+            //Boots
             register(ingotVariants.getIngotVariantName() + "_boots", ingotVariants.getBootsItem());
         }
 

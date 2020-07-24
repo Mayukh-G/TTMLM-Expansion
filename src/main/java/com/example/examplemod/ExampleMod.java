@@ -34,7 +34,7 @@ public class ExampleMod
 
         @Override
         public String getTranslationKey() {
-            return this.getTabLabel() + " : Variants";
+            return "Variants";
         }
     };
 
