@@ -1,16 +1,20 @@
 package com.example.examplemod;
 
-import com.example.examplemod.init.ModBlocks;
-import com.example.examplemod.init.ModItems;
-import com.example.examplemod.init.WorldGenOres;
+import com.example.examplemod.init.*;
+import com.example.examplemod.entity.SpawnEntities;
 import com.example.examplemod.item.weapons.IngotVariantSwords;
+import net.minecraft.client.renderer.entity.CreeperRenderer;
+import net.minecraft.client.renderer.entity.SkeletonRenderer;
+import net.minecraft.client.renderer.entity.ZombieRenderer;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.monster.CreeperEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.entity.living.LivingHurtEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.client.registry.RenderingRegistry;
 import net.minecraftforge.fml.event.lifecycle.*;
 import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -25,12 +29,15 @@ public class SideProxy {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(SideProxy::enqueueIMC);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(SideProxy::processIMC);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(SideProxy::loadComplete);
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(ModRegistries::registerALL);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(ModBlocks::registerAll);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(ModItems::registerALL);
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(ModEntities::registerALL);
 
 
         //Other
         MinecraftForge.EVENT_BUS.addListener(SideProxy::serverStarting);
+        MinecraftForge.EVENT_BUS.addListener(SpawnEntities::trySpawning);
         MinecraftForge.EVENT_BUS.addListener(SideProxy::onAttackVariantSword);
     }
 
@@ -78,6 +85,9 @@ public class SideProxy {
         }
 
         private static void clientSetup(FMLClientSetupEvent event) {
+            RenderingRegistry.registerEntityRenderingHandler(ModEntities.HARD_ZOMBIE, ZombieRenderer::new);
+            RenderingRegistry.registerEntityRenderingHandler(ModEntities.HARD_SKELETON, SkeletonRenderer::new);
+            RenderingRegistry.registerEntityRenderingHandler(ModEntities.HARD_CREEPER, CreeperRenderer::new);
 
         }
     }
