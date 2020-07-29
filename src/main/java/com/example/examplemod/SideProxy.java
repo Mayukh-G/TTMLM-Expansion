@@ -3,11 +3,8 @@ package com.example.examplemod;
 import com.example.examplemod.init.*;
 import com.example.examplemod.entity.SpawnEntities;
 import com.example.examplemod.item.weapons.IngotVariantSwords;
-import net.minecraft.client.renderer.entity.CreeperRenderer;
-import net.minecraft.client.renderer.entity.SkeletonRenderer;
-import net.minecraft.client.renderer.entity.ZombieRenderer;
+import net.minecraft.client.renderer.entity.*;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.monster.CreeperEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -29,7 +26,6 @@ public class SideProxy {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(SideProxy::enqueueIMC);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(SideProxy::processIMC);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(SideProxy::loadComplete);
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(ModRegistries::registerALL);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(ModBlocks::registerAll);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(ModItems::registerALL);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(ModEntities::registerALL);
@@ -85,6 +81,9 @@ public class SideProxy {
         }
 
         private static void clientSetup(FMLClientSetupEvent event) {
+            RenderingRegistry.registerEntityRenderingHandler(ModEntities.HARD_Z_PIGMAN, PigZombieRenderer::new);
+            RenderingRegistry.registerEntityRenderingHandler(ModEntities.HARD_DROWNED, DrownedRenderer::new);
+            RenderingRegistry.registerEntityRenderingHandler(ModEntities.HARD_HUSK, HuskRenderer::new);
             RenderingRegistry.registerEntityRenderingHandler(ModEntities.HARD_ZOMBIE, ZombieRenderer::new);
             RenderingRegistry.registerEntityRenderingHandler(ModEntities.HARD_SKELETON, SkeletonRenderer::new);
             RenderingRegistry.registerEntityRenderingHandler(ModEntities.HARD_CREEPER, CreeperRenderer::new);

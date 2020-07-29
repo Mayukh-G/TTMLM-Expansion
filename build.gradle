@@ -115,6 +115,7 @@ dependencies {
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
 
     compile('com.github.mezz:JustEnoughItems:1.15-SNAPSHOT')
+    implementation 'org.jetbrains:annotations:15.0'
 
 }
 

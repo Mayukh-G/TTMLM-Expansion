@@ -7,7 +7,7 @@ import net.minecraft.entity.monster.CreeperEntity;
 import java.util.EnumSet;
 
 
-public class HardCreeperSwellGoal extends ProxyClassGoal {
+public class HardCreeperSwellGoal extends Goal {
     private final CreeperEntity swellingHardCreeper;
     private LivingEntity creeperAttackTarget;
 
@@ -21,15 +21,18 @@ public class HardCreeperSwellGoal extends ProxyClassGoal {
         return this.swellingHardCreeper.getCreeperState() > 0 || livingentity != null && this.swellingHardCreeper.getDistanceSq(livingentity) < 20.0D;
     }
 
+    @Override
     public void startExecuting() {
         this.swellingHardCreeper.getNavigator().clearPath();
         this.creeperAttackTarget = this.swellingHardCreeper.getAttackTarget();
     }
 
+    @Override
     public void resetTask() {
         this.creeperAttackTarget = null;
     }
 
+    @Override
     public void tick() {
         if (this.creeperAttackTarget == null) {
             this.swellingHardCreeper.setCreeperState(-1);

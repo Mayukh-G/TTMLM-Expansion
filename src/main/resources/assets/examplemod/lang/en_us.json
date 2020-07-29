@@ -64,5 +64,13 @@
   "item.examplemod.ender_alloy_helmet": "Ender Alloy Helmet",
   "item.examplemod.ender_alloy_chestplate": "Ender Alloy Chestplate",
   "item.examplemod.ender_alloy_leggings": "Ender Alloy Leggings",
-  "item.examplemod.ender_alloy_boots": "Ender Alloy Boots"
+  "item.examplemod.ender_alloy_boots": "Ender Alloy Boots",
+
+  "entity.examplemod.hard_zombie": "Hard Zombie",
+  "entity.examplemod.hard_husk": "Hard Husk",
+  "entity.examplemod.hard_drowned": "Hard Drowned",
+  "entity.examplemod.hard_creeper": "Hard Creeper",
+  "entity.examplemod.hard_skeleton": "Hard Skeleton",
+
+  "entity.examplemod.hard_zombie_pigman": "Hard Zombie Pigman"
 }

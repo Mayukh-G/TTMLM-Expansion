@@ -1,6 +1,6 @@
 package com.example.examplemod.entity.changed;
 
-import com.example.examplemod.init.ModEntities;;
+import com.example.examplemod.init.ModEntities;
 import net.minecraft.entity.*;
 import net.minecraft.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.entity.ai.goal.RangedBowAttackGoal;
@@ -19,7 +19,7 @@ import javax.annotation.Nullable;
 
 public class HardSkeleton extends SkeletonEntity {
     public static final String name = "hard_skeleton";
-    private final RangedBowAttackGoal<AbstractSkeletonEntity> aiArrow = new RangedBowAttackGoal<>(this, 1.0D, 10, 30.0F);
+    private final RangedBowAttackGoal<AbstractSkeletonEntity> aiArrow = new RangedBowAttackGoal<>(this, 1.0D, 17, 20.0F);
     private final MeleeAttackGoal aiAttack = new MeleeAttackGoal(this, 1.3D, false) {
         //Reset task when interrupted
         public void resetTask() {
@@ -52,9 +52,9 @@ public class HardSkeleton extends SkeletonEntity {
                 this.goalSelector.removeGoal(this.aiArrow);
                 ItemStack itemstack = this.getHeldItem(ProjectileHelper.getHandWith(this, Items.BOW));
                 if (itemstack.getItem() instanceof net.minecraft.item.BowItem) {
-                    int i = 10;
+                    int i = 17;
                     if (this.world.getDifficulty() != Difficulty.HARD) {
-                        i = 15;
+                        i = 20;
                     }
 
                     this.aiArrow.setAttackCooldown(i);
@@ -75,7 +75,7 @@ public class HardSkeleton extends SkeletonEntity {
                 LivingEntity target = this.getAttackTarget();
                 if (target != null) {
                     double flatDist = this.getDistanceSq(target);
-                    if (flatDist <= 9.0D){
+                    if (flatDist <= 8.0D){
                         this.goalSelector.removeGoal(this.aiArrow);
                         this.goalSelector.addGoal(4, this.aiAttack);
                     } else {
@@ -93,7 +93,7 @@ public class HardSkeleton extends SkeletonEntity {
         this.getAttribute(SharedMonsterAttributes.ATTACK_KNOCKBACK).setBaseValue(4.0D);
         this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(3.5D);
         this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.3D);
-        this.getAttribute(SharedMonsterAttributes.FOLLOW_RANGE).setBaseValue(100.0D);
+        this.getAttribute(SharedMonsterAttributes.FOLLOW_RANGE).setBaseValue(40.0D);
         this.getAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(30.0f);
     }
 

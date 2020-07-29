@@ -10,7 +10,9 @@ import net.minecraft.entity.monster.CreeperEntity;
 import net.minecraft.entity.passive.CatEntity;
 import net.minecraft.entity.passive.OcelotEntity;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.potion.Effect;
 import net.minecraft.potion.EffectInstance;
+import net.minecraft.potion.Effects;
 import net.minecraft.world.Explosion;
 import net.minecraft.world.World;
 
@@ -47,7 +49,7 @@ public class HardCreeper extends CreeperEntity {
     @Override
     protected void registerAttributes() {
         super.registerAttributes();
-        this.getAttribute(SharedMonsterAttributes.FOLLOW_RANGE).setBaseValue(100.0D);
+        this.getAttribute(SharedMonsterAttributes.FOLLOW_RANGE).setBaseValue(40.0D);
         this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.27D);
         this.getAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(30.0D);
         this.getAttribute(SharedMonsterAttributes.KNOCKBACK_RESISTANCE).setBaseValue(0.85D);
@@ -67,6 +69,7 @@ public class HardCreeper extends CreeperEntity {
         int fuseTime = 25;
         if (this.timeSinceIgnited >= fuseTime) {
             this.timeSinceIgnited = fuseTime;
+            this.addPotionEffect(new EffectInstance(Effects.BLINDNESS, 100, 2, false, false));
             this.bigBoom();
         }
 
