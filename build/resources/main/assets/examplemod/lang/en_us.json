@@ -71,6 +71,11 @@
   "entity.examplemod.hard_drowned": "Hard Drowned",
   "entity.examplemod.hard_creeper": "Hard Creeper",
   "entity.examplemod.hard_skeleton": "Hard Skeleton",
+  "entity.examplemod.hard_spider": "Hard Spider",
+  "entity.examplemod.hard_cave_spider": "Hard Cave Spider",
+  "entity.examplemod.hard_ender_man": "Hard Enderman",
 
-  "entity.examplemod.hard_zombie_pigman": "Hard Zombie Pigman"
+  "entity.examplemod.hard_zombie_pigman": "Hard Zombie Pigman",
+  "entity.examplemod.hard_ghast": "Hard Ghast"
+
 }

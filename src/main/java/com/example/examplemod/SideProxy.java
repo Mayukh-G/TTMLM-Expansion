@@ -86,7 +86,12 @@ public class SideProxy {
             RenderingRegistry.registerEntityRenderingHandler(ModEntities.HARD_HUSK, HuskRenderer::new);
             RenderingRegistry.registerEntityRenderingHandler(ModEntities.HARD_ZOMBIE, ZombieRenderer::new);
             RenderingRegistry.registerEntityRenderingHandler(ModEntities.HARD_SKELETON, SkeletonRenderer::new);
+            RenderingRegistry.registerEntityRenderingHandler(ModEntities.HARD_STRAY, StrayRenderer::new);
             RenderingRegistry.registerEntityRenderingHandler(ModEntities.HARD_CREEPER, CreeperRenderer::new);
+            RenderingRegistry.registerEntityRenderingHandler(ModEntities.HARD_SPIDER, SpiderRenderer::new);
+            RenderingRegistry.registerEntityRenderingHandler(ModEntities.HARD_CAVE_SPIDER, CaveSpiderRenderer::new);
+            RenderingRegistry.registerEntityRenderingHandler(ModEntities.HARD_ENDERMAN, EndermanRenderer::new);
+            RenderingRegistry.registerEntityRenderingHandler(ModEntities.HARD_GHAST, GhastRenderer::new);
 
         }
     }

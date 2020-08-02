@@ -70,7 +70,10 @@
           "name": "minecraft:iron_ingot",
           "weight": 6
         }
-      ]
+      ],
+      "conditions":[{
+        "condition": "minecraft:killed_by_player"
+      }]
     }
   ]
 }

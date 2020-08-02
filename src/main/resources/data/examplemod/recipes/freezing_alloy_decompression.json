@@ -1,0 +1,12 @@
+{
+  "type": "crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "examplemod:freezing_alloy_block"
+    }
+  ],
+  "result": {
+    "item": "examplemod:freezing_alloy",
+    "count": 9
+  }
+}

@@ -1,6 +1,7 @@
 package com.example.examplemod.entity.changed;
 
 import com.example.examplemod.ExampleMod;
+import com.example.examplemod.init.ModEntities;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
@@ -10,6 +11,7 @@ import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Effects;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.text.TextComponent;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.NotNull;
 
@@ -17,15 +19,27 @@ import javax.annotation.Nonnull;
 
 public class HardHusk extends HuskEntity implements IAbstractHardZombie {
     public static final String name = "hard_husk";
+    public boolean isLEADER;
 
     public HardHusk(EntityType<?> type, World world) {
-        super(EntityType.HUSK, world);
+        super(ModEntities.HARD_HUSK, world);
+        this.isLEADER = rand.nextInt(99) <= 5;
+    }
+
+    @Override
+    public void tick() {
+        super.tick();
+        TextComponent currentName = (TextComponent) this.getCustomName();
+        if (currentName != this.leaderName && this.isLEADER){
+            this.setCustomName(this.leaderName);
+            this.setCustomNameVisible(true);
+        }
     }
 
     @Override
     protected void registerAttributes() {
         super.registerAttributes();
-        this.getAttribute(SharedMonsterAttributes.FOLLOW_RANGE).setBaseValue(40.0D);
+        this.getAttribute(SharedMonsterAttributes.FOLLOW_RANGE).setBaseValue(35.0D);
         this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.35D);
         this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(6.0D);
         this.getAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(30.0D);
@@ -39,7 +53,7 @@ public class HardHusk extends HuskEntity implements IAbstractHardZombie {
         if (flag && this.getHeldItemMainhand().isEmpty() && entityIn instanceof LivingEntity) {
             float f = this.world.getDifficultyForLocation(new BlockPos(this)).getAdditionalDifficulty();
             ((LivingEntity)entityIn).addPotionEffect(new EffectInstance(Effects.HUNGER, 140 * (int)f));
-            ((LivingEntity)entityIn).addPotionEffect(new EffectInstance(Effects.NAUSEA, 140 * (int)f));
+            ((LivingEntity)entityIn).addPotionEffect(new EffectInstance(Effects.NAUSEA, 70 * (int)f));
         }
 
         return flag;
@@ -48,7 +62,7 @@ public class HardHusk extends HuskEntity implements IAbstractHardZombie {
     @NotNull
     @Override
     protected ResourceLocation getLootTable() {
-        if(this.getCustomName() == this.leaderName) {
+        if(this.isLEADER) {
             return ExampleMod.getID("entities/leader_zombie_type");
         }else {
             return super.getLootTable();

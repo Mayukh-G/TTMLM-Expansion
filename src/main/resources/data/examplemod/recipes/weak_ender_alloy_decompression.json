@@ -1,0 +1,12 @@
+{
+  "type": "crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "examplemod:weak_ender_alloy_block"
+    }
+  ],
+  "result": {
+    "item": "examplemod:weak_ender_alloy",
+    "count": 9
+  }
+}

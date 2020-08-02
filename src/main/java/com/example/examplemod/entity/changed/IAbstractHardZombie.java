@@ -11,7 +11,7 @@ public interface IAbstractHardZombie {
         @Override
         @Nonnull
         public String getUnformattedComponentText() {
-            return "\u00A7l\u00A7k\u00A75LEADER";
+            return "\u00A7l\u00A7k\u00A75SWARM CALLER";
         }
 
         @Override

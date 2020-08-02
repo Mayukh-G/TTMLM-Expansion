@@ -1,5 +1,6 @@
 package com.example.examplemod.init;
 
+import com.example.examplemod.ExampleMod;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.IArmorMaterial;
 import net.minecraft.item.crafting.Ingredient;
@@ -13,25 +14,25 @@ import javax.annotation.Nonnull;
 import java.util.function.Supplier;
 
 public enum VariantArmorMaterial implements IArmorMaterial {
-    MUTABLE("mutable", 15, new int[]{2,5,6,2},10, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F, () -> {
+    MUTABLE(ExampleMod.MOD_ID + ":mutable", 15, new int[]{2,5,6,2},10, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F, () -> {
         return Ingredient.fromItems(IngotVariants.MUTABLE_ALLOY.getIngotItem());
     }),
-    WEAK_VARIANT_BLAZING("weak_variant_blazing", 45, new int[]{3,5,7,3},12, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F, () -> {
+    WEAK_VARIANT_BLAZING(ExampleMod.MOD_ID + ":weak_variant_blazing", 45, new int[]{3,5,7,3},12, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F, () -> {
         return Ingredient.fromItems(IngotVariants.WEAK_BLAZING_AllOY.getIngotItem());
     }),
-    WEAK_VARIANT_FREEZING("weak_variant_freezing", 45, new int[]{3,5,7,3},12, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F, () -> {
+    WEAK_VARIANT_FREEZING(ExampleMod.MOD_ID + ":weak_variant_freezing", 45, new int[]{3,5,7,3},12, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F, () -> {
         return Ingredient.fromItems(IngotVariants.WEAK_FREEZING_ALLOY.getIngotItem());
     }),
-    WEAK_ENDER("weak_ender", 50, new int[]{5,8,9,5},12, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.5F, () -> {
+    WEAK_ENDER(ExampleMod.MOD_ID + ":weak_ender", 50, new int[]{5,8,9,5},12, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.5F, () -> {
         return Ingredient.fromItems(IngotVariants.WEAK_ENDER_ALLOY.getIngotItem());
     }),
-    VARIANT_BLAZING("variant_blazing", 70, new int[]{6,8,10,6},13, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 4.0F, () -> {
+    VARIANT_BLAZING(ExampleMod.MOD_ID + ":variant_blazing", 70, new int[]{6,8,10,6},13, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 4.0F, () -> {
         return Ingredient.fromItems(IngotVariants.BLAZING_ALLOY.getIngotItem());
     }),
-    VARIANT_FREEZING("variant_freezing", 70, new int[]{6,8,10,6},13, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 4.0F, () -> {
+    VARIANT_FREEZING(ExampleMod.MOD_ID + ":variant_freezing", 70, new int[]{6,8,10,6},13, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 4.0F, () -> {
         return Ingredient.fromItems(IngotVariants.FREEZING_ALLOY.getIngotItem());
     }),
-    ENDER("ender", 100, new int[]{7,9,11,7},13, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 5.0F, () -> {
+    ENDER(ExampleMod.MOD_ID + ":ender", 100, new int[]{7,9,11,7},13, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 5.0F, () -> {
         return Ingredient.fromItems(IngotVariants.ENDER_ALLOY.getIngotItem());
     });
 
