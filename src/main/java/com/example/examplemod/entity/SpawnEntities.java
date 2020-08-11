@@ -2,6 +2,7 @@ package com.example.examplemod.entity;
 
 import com.example.examplemod.entity.changed.*;
 import com.example.examplemod.init.ModEntities;
+import net.minecraft.client.renderer.entity.BlazeRenderer;
 import net.minecraft.entity.*;
 import net.minecraft.entity.monster.*;
 import net.minecraft.world.World;
@@ -89,13 +90,20 @@ public class SpawnEntities {
                     event.setCanceled(true);
                 }
                 //If Skeleton
-                else if(entity instanceof AbstractSkeletonEntity && !(entity instanceof HardSkeleton) && !(entity instanceof HardStray)){
+                else if(entity instanceof AbstractSkeletonEntity && !(entity instanceof HardSkeleton) && !(entity instanceof HardStray) && !(entity instanceof HardWitherSkeleton)){
                     if(entity instanceof StrayEntity){
                         //summon Stray and set pos and call on spawn initial func
                         HardStray stray = new HardStray(ModEntities.HARD_STRAY, world);
                         stray.setPositionAndRotation(X, Y, Z, entity.rotationYaw, entity.rotationPitch);
                         stray.onInitialSpawn(world, world.getDifficultyForLocation(stray.getPosition()), SpawnReason.MOB_SUMMONED, null, null);
                         world.addEntity(stray);
+                    }
+                    else if(entity instanceof WitherSkeletonEntity){
+                        //summon WitherSkeleton and set pos and call on spawn initial func
+                        HardWitherSkeleton witherSkeleton = new HardWitherSkeleton(ModEntities.HARD_WITHER_SKELETON, world);
+                        witherSkeleton.setPositionAndRotation(X, Y, Z, entity.rotationYaw, entity.rotationPitch);
+                        witherSkeleton.onInitialSpawn(world, world.getDifficultyForLocation(witherSkeleton.getPosition()), SpawnReason.MOB_SUMMONED, null, null);
+                        world.addEntity(witherSkeleton);
                     }
                     else {
                         //summon Skeleton and set pos and call on spawn initial func
@@ -133,6 +141,13 @@ public class SpawnEntities {
                     enderman.setPositionAndRotation(X, Y, Z, entity.rotationYaw, entity.rotationPitch);
                     enderman.onInitialSpawn(world, world.getDifficultyForLocation(enderman.getPosition()), SpawnReason.MOB_SUMMONED, null, null);
                     world.addEntity(enderman);
+                    event.setCanceled(true);
+                }
+                else if(entity instanceof BlazeEntity && !(entity instanceof HardBlaze)){
+                    HardBlaze blaze = new HardBlaze(ModEntities.HARD_BLAZE, world);
+                    blaze.setPositionAndRotation(X, Y, Z, entity.rotationYaw, entity.rotationPitch);
+                    blaze.onInitialSpawn(world, world.getDifficultyForLocation(blaze.getPosition()), SpawnReason.MOB_SUMMONED, null, null);
+                    world.addEntity(blaze);
                     event.setCanceled(true);
                 }
             }

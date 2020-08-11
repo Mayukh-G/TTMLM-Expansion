@@ -13,6 +13,8 @@ import net.minecraftforge.fml.DistExecutor;
 import net.minecraftforge.fml.ModContainer;
 import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.registries.IForgeRegistry;
+import net.minecraftforge.registries.IForgeRegistryEntry;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -60,6 +62,13 @@ public class ExampleMod
 
     public static ResourceLocation getID(String path){
         return new ResourceLocation(MOD_ID, path);
+    }
+
+    public static <T extends IForgeRegistryEntry<T>> T register(IForgeRegistry<T> registry, T entry, String registryKey)
+    {
+        entry.setRegistryName(new ResourceLocation(ExampleMod.MOD_ID, registryKey));
+        registry.register(entry);
+        return entry;
     }
 
     // You can use EventBusSubscriber to automatically subscribe events on the contained class (this is subscribing to the MOD

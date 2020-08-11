@@ -23,7 +23,7 @@ import net.minecraft.world.World;
 import java.util.function.Predicate;
 
 public class HardEnderman extends EndermanEntity {
-    public static final String name = "hard_ender_man";
+    public static final String name = "hard_enderman";
     private static final Predicate<LivingEntity> field_213627_bA = (p_213626_0_) -> p_213626_0_ instanceof EndermiteEntity && ((EndermiteEntity)p_213626_0_).isSpawnedByPlayer();
 
     public HardEnderman(EntityType<? extends EndermanEntity> type, World worldIn) {

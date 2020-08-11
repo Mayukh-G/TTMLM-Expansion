@@ -9,13 +9,8 @@ import net.minecraft.entity.monster.SkeletonEntity;
 import net.minecraft.entity.projectile.ProjectileHelper;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
-import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.world.Difficulty;
-import net.minecraft.world.DifficultyInstance;
-import net.minecraft.world.IWorld;
 import net.minecraft.world.World;
-
-import javax.annotation.Nullable;
 
 public class HardSkeleton extends SkeletonEntity {
     public static final String name = "hard_skeleton";
@@ -89,7 +84,7 @@ public class HardSkeleton extends SkeletonEntity {
         this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(3.5D);
         this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.3D);
         this.getAttribute(SharedMonsterAttributes.FOLLOW_RANGE).setBaseValue(35.0D);
-        this.getAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(30.0f);
+        this.getAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(30.0D);
     }
 
 }

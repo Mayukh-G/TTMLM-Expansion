@@ -24,6 +24,8 @@ public class ModEntities {
     //Nether
     public static EntityType<HardZPigMan> HARD_Z_PIGMAN = (EntityType<HardZPigMan>) EntityType.Builder.create(HardZPigMan::new, EntityClassification.MONSTER).immuneToFire().build(HardZPigMan.name).setRegistryName(ExampleMod.getID(HardZPigMan.name));
     public static EntityType<HardGhast> HARD_GHAST = (EntityType<HardGhast>) EntityType.Builder.create(HardGhast::new, EntityClassification.MONSTER).immuneToFire().size(4.0F, 4.0F).build(HardGhast.name).setRegistryName(ExampleMod.getID(HardGhast.name));
+    public static EntityType<HardWitherSkeleton> HARD_WITHER_SKELETON = (EntityType<HardWitherSkeleton>) EntityType.Builder.create(HardWitherSkeleton::new, EntityClassification.MONSTER).immuneToFire().size(0.7F, 2.4F).build(HardWitherSkeleton.name).setRegistryName(ExampleMod.getID(HardWitherSkeleton.name));
+    public static EntityType<HardBlaze> HARD_BLAZE = (EntityType<HardBlaze>) EntityType.Builder.create(HardBlaze::new, EntityClassification.MONSTER).immuneToFire().size(0.6F, 1.8F).build(HardBlaze.name).setRegistryName(ExampleMod.getID(HardBlaze.name));
 
     public static void registerALL(RegistryEvent.Register<EntityType<?>> event){
         if(!event.getName().equals(ForgeRegistries.ENTITIES.getRegistryName())) return;
@@ -38,7 +40,9 @@ public class ModEntities {
                 HARD_CAVE_SPIDER,
                 HARD_ENDERMAN,
                 HARD_GHAST,
-                HARD_Z_PIGMAN
+                HARD_Z_PIGMAN,
+                HARD_WITHER_SKELETON,
+                HARD_BLAZE
         );
     }
 }
