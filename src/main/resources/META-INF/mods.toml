@@ -16,7 +16,7 @@ modId="examplemod" #mandatory
 # The version number of the mod - there's a few well known ${} variables useable here or just hardcode it
 version="${file.jarVersion}" #mandatory
  # A display name for the mod
-displayName="Messin Around mod" #mandatory
+displayName="Temperature Expantion" #mandatory
 # A URL to query for updates for this mod. See the JSON update specification <here>
 updateJSONURL="http://None.com" #optional
 # A URL for the "homepage" for this mod, displayed in the mod UI
@@ -24,12 +24,12 @@ displayURL="http://None.com" #optional
 # A file name (in the root of the mod JAR) containing a logo for display
 logoFile="examplemod.png" #optional
 # A text field displayed in the mod UI
-credits="Me and my fingers" #optional
+credits="TTML" #optional
 # A text field displayed in the mod UI
-authors="A kid with 3 remaining brain cells" #optional
+authors="TTML" #optional
 # The description text for the mod (multi line!) (#mandatory)
 description='''
-Just seeing what I can do
+Adding Features that keep a Minecraft feel
 '''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
 [[dependencies.examplemod]] #optional

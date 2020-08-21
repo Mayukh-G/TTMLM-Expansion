@@ -1,11 +1,14 @@
 package com.example.examplemod.entity.changed;
 
+import com.example.examplemod.entity.original.NetherBoss;
 import com.example.examplemod.init.ModEntities;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.monster.BlazeEntity;
 import net.minecraft.world.World;
+
+import javax.annotation.Nullable;
 
 public class HardBlaze extends BlazeEntity {
     public static final String name = "hard_blaze";
@@ -22,6 +25,16 @@ public class HardBlaze extends BlazeEntity {
         this.getAttribute(SharedMonsterAttributes.FOLLOW_RANGE).setBaseValue(48.0D);
         this.getAttribute(SharedMonsterAttributes.ATTACK_KNOCKBACK).setBaseValue(3.0D);
         this.getAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(35.0D);
+    }
+
+    //make sure we dont retaliate against the boss
+    @Override
+    public void setRevengeTarget(@Nullable LivingEntity livingBase) {
+        if (livingBase instanceof NetherBoss){
+            super.setRevengeTarget(null);
+        }else {
+            super.setRevengeTarget(livingBase);
+        }
     }
 
     @Override

@@ -14,6 +14,7 @@ import net.minecraft.world.gen.feature.NoFeatureConfig;
 import net.minecraft.world.gen.feature.structure.Structure;
 import net.minecraft.world.gen.feature.structure.StructureStart;
 import net.minecraft.world.gen.feature.template.TemplateManager;
+import org.apache.logging.log4j.Level;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.Random;
@@ -29,7 +30,7 @@ public class HardFortress extends Structure<NoFeatureConfig> {
     @NotNull
     @Override
     protected ChunkPos getStartPositionForPosition(ChunkGenerator<?> chunkGenerator, Random random, int x, int z, int spacingOffsetsX, int spacingOffsetsZ) {
-        int maxDistance = 50;
+        int maxDistance = 30;
         int minDistance = 20;
 
         int xTemp = x + maxDistance * spacingOffsetsX;
@@ -96,12 +97,12 @@ public class HardFortress extends Structure<NoFeatureConfig> {
             int x = (chunkX << 4) + 7;
             int z = (chunkZ << 4) + 7;
 
-            BlockPos blockpos = new BlockPos(x, 50 + rand.nextInt(50), z);
+            BlockPos blockpos = new BlockPos(x, 70 + rand.nextInt(10), z);
             HardFortressPieces.start(templateManagerIn, blockpos, rotation, this.components, this.rand);
 
             this.recalculateStructureSize();
 
-            //ExampleMod.LOGGER.log(Level.DEBUG, "HardFortress at " + (blockpos.getX()) + " " + blockpos.getY() + " " + (blockpos.getZ()));
+            ExampleMod.LOGGER.log(Level.DEBUG, "HardFortress at " + (blockpos.getX()) + " " + blockpos.getY() + " " + (blockpos.getZ()));
         }
 
     }

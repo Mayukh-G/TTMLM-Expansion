@@ -90,5 +90,6 @@ public class SnowDungeonPieces {
 
             return super.create(worldIn, p_225577_2_, randomIn, structureBoundingBoxIn, chunkPos);
         }
+
     }
 }

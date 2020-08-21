@@ -29,6 +29,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/polished_andesite_slab": {
+    "criteria": {
+      "has_polished_andesite": "2020-08-20 19:41:33 -0400"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/quartz_pillar": {
     "criteria": {
       "has_quartz_block": "2020-08-05 14:58:12 -0400"
@@ -86,6 +92,12 @@
   "minecraft:recipes/building_blocks/polished_andesite_stairs_from_andesite_stonecutting": {
     "criteria": {
       "has_andesite": "2020-07-08 23:12:49 -0400"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_andesite_stairs": {
+    "criteria": {
+      "has_polished_andesite": "2020-08-20 19:41:33 -0400"
     },
     "done": true
   },
@@ -426,6 +438,7 @@
       "porkchop": "2020-07-31 13:02:27 -0400",
       "golden_apple": "2020-07-30 15:52:44 -0400",
       "rotten_flesh": "2020-07-18 12:35:22 -0400",
+      "golden_carrot": "2020-08-20 19:34:38 -0400",
       "enchanted_golden_apple": "2020-07-10 18:17:48 -0400",
       "carrot": "2020-07-29 12:02:26 -0400"
     },
@@ -1629,6 +1642,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/polished_andesite_stairs_from_polished_andesite_stonecutting": {
+    "criteria": {
+      "has_polished_andesite": "2020-08-20 19:41:33 -0400"
+    },
+    "done": true
+  },
   "minecraft:recipes/combat/golden_helmet": {
     "criteria": {
       "has_gold_ingot": "2020-07-12 15:54:26 -0400"
@@ -1836,6 +1855,12 @@
   "minecraft:recipes/combat/leather_chestplate": {
     "criteria": {
       "has_leather": "2020-07-10 16:16:36 -0400"
+    },
+    "done": true
+  },
+  "minecraft:end/enter_end_gateway": {
+    "criteria": {
+      "entered_end_gateway": "2020-08-20 20:20:00 -0400"
     },
     "done": true
   },
@@ -2068,6 +2093,12 @@
   "minecraft:recipes/misc/black_dye": {
     "criteria": {
       "has_ink_sac": "2020-07-28 00:12:20 -0400"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_andesite_slab_from_polished_andesite_stonecutting": {
+    "criteria": {
+      "has_polished_andesite": "2020-08-20 19:41:33 -0400"
     },
     "done": true
   },

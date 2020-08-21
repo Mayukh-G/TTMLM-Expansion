@@ -1,9 +1,11 @@
 package com.example.examplemod.entity.changed;
 
 import com.example.examplemod.ExampleMod;
+import com.example.examplemod.entity.original.NetherBoss;
 import com.example.examplemod.init.IngotVariants;
 import com.example.examplemod.init.ModEntities;
 import net.minecraft.entity.EntityType;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.monster.ZombiePigmanEntity;
 import net.minecraft.inventory.EquipmentSlotType;
@@ -13,6 +15,8 @@ import net.minecraft.util.text.TextComponent;
 import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.NotNull;
+
+import javax.annotation.Nullable;
 
 public class HardZPigMan extends ZombiePigmanEntity implements IAbstractHardZombie {
     public static final String name = "hard_zombie_pigman";
@@ -49,6 +53,16 @@ public class HardZPigMan extends ZombiePigmanEntity implements IAbstractHardZomb
         this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(6.0D);
         this.getAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(30.0D);
         this.getAttribute(SharedMonsterAttributes.ARMOR).setBaseValue(5.0D);
+    }
+
+    //make sure we dont retaliate against the boss
+    @Override
+    public void setRevengeTarget(@Nullable LivingEntity livingBase) {
+        if (livingBase instanceof NetherBoss){
+            super.setRevengeTarget(null);
+        }else {
+            super.setRevengeTarget(livingBase);
+        }
     }
 
     @NotNull

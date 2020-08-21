@@ -1,5 +1,6 @@
 package com.example.examplemod.entity.changed;
 
+import com.example.examplemod.entity.original.NetherBoss;
 import com.example.examplemod.init.IngotVariants;
 import com.example.examplemod.init.ModEntities;
 import net.minecraft.enchantment.EnchantmentHelper;
@@ -22,6 +23,8 @@ import net.minecraft.world.Difficulty;
 import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.NotNull;
+
+import javax.annotation.Nullable;
 
 public class HardWitherSkeleton extends WitherSkeletonEntity {
     public static final String name = "hard_wither_skeleton";
@@ -66,15 +69,28 @@ public class HardWitherSkeleton extends WitherSkeletonEntity {
         }
     }
 
+    //make sure we dont retaliate against the boss
+    @Override
+    public void setRevengeTarget(@Nullable LivingEntity livingBase) {
+        if (livingBase instanceof NetherBoss || livingBase instanceof HardWitherSkeleton){
+            super.setRevengeTarget(null);
+        }else {
+            super.setRevengeTarget(livingBase);
+        }
+    }
+
     @Override
     protected void setEquipmentBasedOnDifficulty(DifficultyInstance difficulty) {
         if(this.rand.nextInt(9) <= 4){
             this.setItemStackToSlot(EquipmentSlotType.MAINHAND, new ItemStack(IngotVariants.BLAZING_ALLOY.getIngotSwordItem()));
             this.setItemStackToSlot(EquipmentSlotType.CHEST, new ItemStack(IngotVariants.BLAZING_ALLOY.getChestplateItem()));
+            this.inventoryArmorDropChances[EquipmentSlotType.CHEST.getIndex()] = 0;
         }else {
             this.setItemStackToSlot(EquipmentSlotType.MAINHAND, new ItemStack(Items.BOW));
             this.setItemStackToSlot(EquipmentSlotType.LEGS, new ItemStack(IngotVariants.BLAZING_ALLOY.getLegginsItem()));
+            this.inventoryArmorDropChances[EquipmentSlotType.LEGS.getIndex()] = 0;
         }
+        this.inventoryHandsDropChances[EquipmentSlotType.MAINHAND.getIndex()] = 0F;
     }
 
     @Override

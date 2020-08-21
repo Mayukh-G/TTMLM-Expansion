@@ -79,5 +79,6 @@
   "entity.examplemod.hard_zombie_pigman": "Hard Zombie Pigman",
   "entity.examplemod.hard_ghast": "Hard Ghast",
   "entity.examplemod.hard_wither_skeleton": "Hard Wither Skeleton",
-  "entity.examplemod.hard_blaze": "Hard Blaze"
+  "entity.examplemod.hard_blaze": "Hard Blaze",
+  "entity.examplemod.nether_boss": "Challenger"
 }

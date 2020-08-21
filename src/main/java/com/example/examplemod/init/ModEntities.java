@@ -3,6 +3,7 @@ package com.example.examplemod.init;
 import com.example.examplemod.ExampleMod;
 import com.example.examplemod.entity.changed.*;
 
+import com.example.examplemod.entity.original.NetherBoss;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.goal.Goal;
@@ -26,6 +27,8 @@ public class ModEntities {
     public static EntityType<HardGhast> HARD_GHAST = (EntityType<HardGhast>) EntityType.Builder.create(HardGhast::new, EntityClassification.MONSTER).immuneToFire().size(4.0F, 4.0F).build(HardGhast.name).setRegistryName(ExampleMod.getID(HardGhast.name));
     public static EntityType<HardWitherSkeleton> HARD_WITHER_SKELETON = (EntityType<HardWitherSkeleton>) EntityType.Builder.create(HardWitherSkeleton::new, EntityClassification.MONSTER).immuneToFire().size(0.7F, 2.4F).build(HardWitherSkeleton.name).setRegistryName(ExampleMod.getID(HardWitherSkeleton.name));
     public static EntityType<HardBlaze> HARD_BLAZE = (EntityType<HardBlaze>) EntityType.Builder.create(HardBlaze::new, EntityClassification.MONSTER).immuneToFire().size(0.6F, 1.8F).build(HardBlaze.name).setRegistryName(ExampleMod.getID(HardBlaze.name));
+    //Boss
+    public static EntityType<NetherBoss> NETHER_BOSS = (EntityType<NetherBoss>) EntityType.Builder.create(NetherBoss::new, EntityClassification.MONSTER).immuneToFire().size(1.4F, 4.0F).build(NetherBoss.name).setRegistryName(ExampleMod.getID(NetherBoss.name));
 
     public static void registerALL(RegistryEvent.Register<EntityType<?>> event){
         if(!event.getName().equals(ForgeRegistries.ENTITIES.getRegistryName())) return;
@@ -42,7 +45,8 @@ public class ModEntities {
                 HARD_GHAST,
                 HARD_Z_PIGMAN,
                 HARD_WITHER_SKELETON,
-                HARD_BLAZE
+                HARD_BLAZE,
+                NETHER_BOSS
         );
     }
 }

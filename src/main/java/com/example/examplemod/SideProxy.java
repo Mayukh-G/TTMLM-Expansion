@@ -1,5 +1,7 @@
 package com.example.examplemod;
 
+import com.example.examplemod.client.renders.NetherBossRender;
+import com.example.examplemod.entity.original.NetherBoss;
 import com.example.examplemod.init.*;
 import com.example.examplemod.entity.SpawnEntities;
 import com.example.examplemod.item.weapons.IngotVariantSwords;
@@ -7,6 +9,7 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.renderer.entity.*;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.SpawnReason;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -165,7 +168,10 @@ public class SideProxy {
                         world.setBlockState(PosUpNorth, airState);
                         world.setBlockState(PosUpSouth, airState);
                     }
-                    //world.addEntity();
+                    NetherBoss boss = new NetherBoss(ModEntities.NETHER_BOSS, world);
+                    boss.setPosition(blockPos.getX(), blockPos.getY(), blockPos.getZ());
+                    boss.onInitialSpawn(world, world.getDifficultyForLocation(boss.getPosition()), SpawnReason.EVENT, null, null);
+                    world.addEntity(boss);
                     ExampleMod.LOGGER.debug("SPAWN ATTEMPT FOR NETHER BOSS");
                 }
             }
@@ -191,6 +197,7 @@ public class SideProxy {
             RenderingRegistry.registerEntityRenderingHandler(ModEntities.HARD_GHAST, GhastRenderer::new);
             RenderingRegistry.registerEntityRenderingHandler(ModEntities.HARD_WITHER_SKELETON, WitherSkeletonRenderer::new);
             RenderingRegistry.registerEntityRenderingHandler(ModEntities.HARD_BLAZE, BlazeRenderer::new);
+            RenderingRegistry.registerEntityRenderingHandler(ModEntities.NETHER_BOSS, NetherBossRender::new);
 
         }
     }
