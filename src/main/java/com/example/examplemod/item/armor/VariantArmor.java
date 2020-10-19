@@ -28,7 +28,7 @@ public class VariantArmor extends ArmorItem { //Stop being lazy and do recipies 
 
     @Override
     @Nonnull
-    public Multimap<String, AttributeModifier> getAttributeModifiers(@Nonnull EquipmentSlotType equipmentSlot) { //UUIDS were the problem, knockback still wonky af
+    public Multimap<String, AttributeModifier> getAttributeModifiers(@Nonnull EquipmentSlotType equipmentSlot) {
         Multimap<String, AttributeModifier> multimap = super.getAttributeModifiers(equipmentSlot);
         if (equipmentSlot == this.slot) {
             multimap.put(SharedMonsterAttributes.ARMOR.getName(), new AttributeModifier(ARMOR_MODIFIERS[equipmentSlot.getIndex()], "Armor modifier", this.damageReduceAmount, AttributeModifier.Operation.ADDITION));

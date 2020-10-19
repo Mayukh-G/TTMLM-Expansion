@@ -56,8 +56,7 @@ public class ExampleMod
     }
 
     public static boolean isDevBuild() {
-        String version = getVersion();
-        return "NONE".equals(version);
+        return "NONE".equals(getVersion());
     }
 
     public static ResourceLocation getID(String path){

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "examplemod:item/weak_ender_alloy_chestplate"
+  }
+}
