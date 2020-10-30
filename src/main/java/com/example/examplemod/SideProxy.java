@@ -4,6 +4,13 @@ import com.example.examplemod.client.renders.NetherBossRender;
 import com.example.examplemod.entity.original.NetherBoss;
 import com.example.examplemod.init.*;
 import com.example.examplemod.entity.SpawnEntities;
+import com.example.examplemod.item.tools.capabilities.ESLCapability;
+import com.example.examplemod.item.tools.capabilities.EnderStorageLinker;
+import com.example.examplemod.item.tools.capabilities.IEnderStorageLink;
+import com.example.examplemod.item.tools.lootmodifiers.BlazingToolCondition;
+import com.example.examplemod.item.tools.lootmodifiers.BlazingingTouchModifier;
+import com.example.examplemod.item.tools.lootmodifiers.EnderToolCondition;
+import com.example.examplemod.item.tools.lootmodifiers.EnderTouchModifier;
 import com.example.examplemod.item.weapons.IngotVariantSwords;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
@@ -13,6 +20,7 @@ import net.minecraft.entity.SpawnReason;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.ToolItem;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraft.world.biome.Biome;
@@ -21,15 +29,23 @@ import net.minecraft.world.gen.GenerationStage;
 import net.minecraft.world.gen.feature.IFeatureConfig;
 import net.minecraft.world.gen.placement.IPlacementConfig;
 import net.minecraft.world.gen.placement.Placement;
+import net.minecraft.world.storage.loot.conditions.LootConditionManager;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.common.capabilities.CapabilityManager;
+import net.minecraftforge.common.loot.GlobalLootModifierSerializer;
+import net.minecraftforge.event.AttachCapabilitiesEvent;
+import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.event.entity.living.LivingHurtEvent;
 import net.minecraftforge.event.world.BlockEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.*;
 import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.ForgeRegistries;
+
+import javax.annotation.Nonnull;
 
 // You can use EventBusSubscriber to automatically subscribe events on the contained class (this is subscribing to the MOD
 // Event bus for receiving Registry Events)
@@ -47,10 +63,12 @@ public class SideProxy {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(StructureInit::registerFeatures);
 
         //Other
+        MinecraftForge.EVENT_BUS.register(this);
         MinecraftForge.EVENT_BUS.addListener(SideProxy::serverStarting);
         MinecraftForge.EVENT_BUS.addListener(SpawnEntities::trySpawning);
         MinecraftForge.EVENT_BUS.addListener(SideProxy::onAttackVariantSword);
         MinecraftForge.EVENT_BUS.addListener(SideProxy::checkNetherBossSpawn);
+        MinecraftForge.EVENT_BUS.addListener(SideProxy::onCapabilitiesAttach);
     }
 
     private static void commonSetup(FMLCommonSetupEvent event){
@@ -67,6 +85,11 @@ public class SideProxy {
                 .withPlacement(Placement.NOPE.configure(IPlacementConfig.NO_PLACEMENT_CONFIG)));
             }
         }
+        // Loot conditions
+        LootConditionManager.registerCondition(new BlazingToolCondition.Serializer());
+        LootConditionManager.registerCondition(new EnderToolCondition.Serializer());
+        //Capabilities
+        ESLCapability.register();
     }
     private static void enqueueIMC(final InterModEnqueueEvent event) {
 
@@ -84,6 +107,19 @@ public class SideProxy {
         //Generate ores
         WorldGenOres.onInitBiomesGen();
     }
+    //     You can use EventBusSubscriber to automatically subscribe events on the contained class (this is subscribing to the MOD
+    //     Event bus for receiving Registry Events
+    //     Being used for General Registries (Loot functions)
+    @Mod.EventBusSubscriber(modid = ExampleMod.MOD_ID, bus=Mod.EventBusSubscriber.Bus.MOD)
+    public static class RegistryEvents {
+        @SubscribeEvent
+        public static void onLootFunctionRegistry(@Nonnull final RegistryEvent.Register<GlobalLootModifierSerializer<?>> lootRegisterEvent) {
+            lootRegisterEvent.getRegistry().registerAll(
+                    new BlazingingTouchModifier.Serializer().setRegistryName(ExampleMod.getID("blazing_touch_modifier")),
+                    new EnderTouchModifier.Serializer().setRegistryName(ExampleMod.getID("ender_touch_modifier"))
+            );
+        }
+    }
 
     public static void onAttackVariantSword(LivingHurtEvent event){
         Object attacker = event.getSource().getTrueSource(); // Getting whom attacked
@@ -95,12 +131,21 @@ public class SideProxy {
                 if(Entityattacker instanceof PlayerEntity) { //If attacker is a Player
                     PlayerEntity PlayerAttacker = (PlayerEntity) Entityattacker;
                     ((IngotVariantSwords) HeldItem).onAttack(event.getEntityLiving(), PlayerAttacker, event.getAmount());
-
                 }else { //If attacker is not a player
                     ((IngotVariantSwords) HeldItem).onAttack(event.getEntityLiving(), null, event.getAmount());
                 }
             }
         }
+    }
+
+    public static void onCapabilitiesAttach(AttachCapabilitiesEvent<ItemStack> event){
+//        Item item = event.getObject().getItem();
+//        if(item instanceof ToolItem){
+//            ToolItem tool = (ToolItem) item;
+//            if(tool.getTier() == IngotVariantTiers.ENDER){
+//                event.addCapability(ExampleMod.getID("esl_capability"), new EnderStorageLinker(event.getObject()));
+//            }
+//        }
     }
 
     public static void checkNetherBossSpawn(BlockEvent.EntityPlaceEvent event){
@@ -202,13 +247,13 @@ public class SideProxy {
         }
     }
 
-    static class Server extends SideProxy {
-        Server() {
-            FMLJavaModLoadingContext.get().getModEventBus().addListener(Server::serverSetup);
-        }
-
-        private static void serverSetup(FMLDedicatedServerSetupEvent event) {
-
-        }
+static class Server extends SideProxy {
+    Server() {
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(Server::serverSetup);
     }
+
+    private static void serverSetup(FMLDedicatedServerSetupEvent event) {
+
+    }
+}
 }

@@ -82,7 +82,7 @@ public class HardWitherSkeleton extends WitherSkeletonEntity {
     @Override
     protected void setEquipmentBasedOnDifficulty(DifficultyInstance difficulty) {
         if(this.rand.nextInt(9) <= 4){
-            this.setItemStackToSlot(EquipmentSlotType.MAINHAND, new ItemStack(IngotVariants.BLAZING_ALLOY.getIngotSwordItem()));
+            this.setItemStackToSlot(EquipmentSlotType.MAINHAND, new ItemStack(IngotVariants.BLAZING_ALLOY.getSwordItem()));
             this.setItemStackToSlot(EquipmentSlotType.CHEST, new ItemStack(IngotVariants.BLAZING_ALLOY.getChestplateItem()));
             this.inventoryArmorDropChances[EquipmentSlotType.CHEST.getIndex()] = 0;
         }else {

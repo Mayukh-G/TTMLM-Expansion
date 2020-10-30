@@ -39,7 +39,7 @@ public class HardZPigMan extends ZombiePigmanEntity implements IAbstractHardZomb
 
     @Override
     protected void setEquipmentBasedOnDifficulty(DifficultyInstance difficulty) {
-        this.setItemStackToSlot(EquipmentSlotType.MAINHAND, new ItemStack(IngotVariants.WEAK_BLAZING_AllOY.getIngotSwordItem()));
+        this.setItemStackToSlot(EquipmentSlotType.MAINHAND, new ItemStack(IngotVariants.WEAK_BLAZING_AllOY.getSwordItem()));
         this.setItemStackToSlot(EquipmentSlotType.HEAD, new ItemStack(IngotVariants.BLAZING_ALLOY.getHelmetItem()));
         this.inventoryHandsDropChances[EquipmentSlotType.MAINHAND.getIndex()] = 0F;
         this.inventoryArmorDropChances[EquipmentSlotType.HEAD.getIndex()] = 0;

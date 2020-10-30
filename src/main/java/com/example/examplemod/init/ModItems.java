@@ -25,23 +25,26 @@ public class ModItems {
         }
         //Ingot Variant Items
         for(IngotVariants ingotVariants: IngotVariants.values()){
-            register(ingotVariants.getIngotVariantName(), ingotVariants.getIngotItem());
+            register(ingotVariants.getVariantName(), ingotVariants.getIngotItem());
         }
         //Ingot Variant Sword Items
         for(IngotVariants ingotVariants: IngotVariants.values()){
-            register(ingotVariants.getIngotVariantName()+ "_sword", ingotVariants.getIngotSwordItem());
+            register(ingotVariants.getVariantName()+ "_sword", ingotVariants.getSwordItem());
+        }
+        //Ingot Variant Pickaxe Items
+        for(IngotVariants ingotVariants: IngotVariants.values()){
+            register(ingotVariants.getVariantName()+ "_pickaxe", ingotVariants.getPickaxeItem());
         }
         //Ingot Variant ArmorItems
-
         for (IngotVariants ingotVariants: IngotVariants.values()){
             //Helmets
-            register(ingotVariants.getIngotVariantName() + "_helmet", ingotVariants.getHelmetItem());
+            register(ingotVariants.getVariantName() + "_helmet", ingotVariants.getHelmetItem());
             //Chestplates
-            register(ingotVariants.getIngotVariantName() + "_chestplate", ingotVariants.getChestplateItem());
+            register(ingotVariants.getVariantName() + "_chestplate", ingotVariants.getChestplateItem());
             //Leggings
-            register(ingotVariants.getIngotVariantName() + "_leggings", ingotVariants.getLegginsItem());
+            register(ingotVariants.getVariantName() + "_leggings", ingotVariants.getLegginsItem());
             //Boots
-            register(ingotVariants.getIngotVariantName() + "_boots", ingotVariants.getBootsItem());
+            register(ingotVariants.getVariantName() + "_boots", ingotVariants.getBootsItem());
         }
 
 

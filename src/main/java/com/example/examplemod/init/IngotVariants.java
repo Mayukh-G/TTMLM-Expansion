@@ -2,6 +2,7 @@ package com.example.examplemod.init;
 
 import com.example.examplemod.ExampleMod;
 import com.example.examplemod.item.armor.VariantArmor;
+import com.example.examplemod.item.tools.IngotVariantPickaxes;
 import com.example.examplemod.item.weapons.IngotVariantSwords;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
@@ -37,7 +38,7 @@ public enum IngotVariants {
     private final LazyValue<Block> ingotBlocks;
     private final LazyValue<SwordItem> ingotSwordItems;
 //    private final LazyValue<AxeItem> ingotAxeItems;
-//    private final LazyValue<PickaxeItem> ingotPickaxeItems;
+    private final LazyValue<PickaxeItem> ingotPickaxeItems;
 //    private final LazyValue<ShovelItem> ingotShovelItems;
 //    private final LazyValue<HoeItem> ingotHoeItems;
     private final LazyValue<ArmorItem> ingotHelmetItems;
@@ -64,6 +65,7 @@ public enum IngotVariants {
         ingotChestplateItems = new LazyValue<>(() -> new VariantArmor(this.material, EquipmentSlotType.CHEST, new Item.Properties()));
         ingotLeggingsItems = new LazyValue<>(() -> new VariantArmor(this.material, EquipmentSlotType.LEGS, new Item.Properties()));
         ingotBootsItems = new LazyValue<>(() -> new VariantArmor(this.material, EquipmentSlotType.FEET, new Item.Properties()));
+        ingotPickaxeItems = new LazyValue<>(() -> new IngotVariantPickaxes(this.tier, this.atkDmg - 2, (float)(this.atkSpeed - 0.3), this.getVariant(), new Item.Properties()));
     }
 
 
@@ -71,7 +73,7 @@ public enum IngotVariants {
         return this;
     }
 
-    public String getIngotVariantName(){
+    public String getVariantName(){
         return name().toLowerCase(Locale.ROOT);
     }
 
@@ -83,7 +85,7 @@ public enum IngotVariants {
         return ingotBlocks.getValue();
     }
 
-    public SwordItem getIngotSwordItem(){
+    public SwordItem getSwordItem(){
         return ingotSwordItems.getValue();
     }
 
@@ -101,6 +103,10 @@ public enum IngotVariants {
 
     public ArmorItem getBootsItem(){
         return ingotBootsItems.getValue();
+    }
+
+    public PickaxeItem getPickaxeItem(){
+        return ingotPickaxeItems.getValue();
     }
 
 }

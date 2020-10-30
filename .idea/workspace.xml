@@ -2,20 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9b96a67-8588-4e05-a58e-58a5085116ad" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Mayukh.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/ExampleMod$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/ExampleMod$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/ExampleMod.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/ExampleMod.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/downloadMCMeta/version.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/downloadMCMeta/version.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/META-INF/mods.toml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/META-INF/mods.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/SideProxy$Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/SideProxy$Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/SideProxy$Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/SideProxy$Server.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/SideProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/SideProxy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/entity/changed/HardWitherSkeleton.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/entity/changed/HardWitherSkeleton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/entity/changed/HardZPigMan.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/entity/changed/HardZPigMan.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/init/IngotVariants.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/init/IngotVariants.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/init/ModBlocks.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/init/ModBlocks.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/init/ModItems.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/init/ModItems.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/item/armor/VariantArmor.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/item/armor/VariantArmor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-10-19-1.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-10-19-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-10-19-2.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-1.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-1.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-2.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-3.log.gz" afterDir="false" />
@@ -24,10 +33,12 @@
       <change beforePath="$PROJECT_DIR$/run/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/latest.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/latest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/options.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/options.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/advancements/380df991-f603-344c-a090-369bad2a924a.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/advancements/380df991-f603-344c-a090-369bad2a924a.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/data/raids.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/data/raids.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/level.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/level.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/level.dat_old" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/level.dat_old" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/playerdata/380df991-f603-344c-a090-369bad2a924a.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/playerdata/380df991-f603-344c-a090-369bad2a924a.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/poi/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/poi/r.-1.-1.mca" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/region/r.-1.-1.mca" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/region/r.-1.0.mca" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/region/r.0.-1.mca" afterDir="false" />
@@ -36,6 +47,12 @@
       <change beforePath="$PROJECT_DIR$/run/saves/New World/stats/380df991-f603-344c-a090-369bad2a924a.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/stats/380df991-f603-344c-a090-369bad2a924a.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/usercache.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/usercache.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/ExampleMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/examplemod/ExampleMod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/SideProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/examplemod/SideProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/entity/changed/HardWitherSkeleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/examplemod/entity/changed/HardWitherSkeleton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/entity/changed/HardZPigMan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/examplemod/entity/changed/HardZPigMan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/init/IngotVariants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/examplemod/init/IngotVariants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/init/ModBlocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/examplemod/init/ModBlocks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/init/ModItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/examplemod/init/ModItems.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/item/armor/VariantArmor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/examplemod/item/armor/VariantArmor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -93,6 +110,7 @@
         <option value="FxmlFile" />
         <option value="JSON file" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -109,27 +127,29 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="ignore.virus.scanning.warn.message" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="show.migrate.to.gradle.popup" value="false" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Mayukh\Forge Modding\src\main\resources\data\examplemod\loot_modifiers" />
+      <recent name="C:\Users\Mayukh\Forge Modding\src\main\resources\data\examplemod\loot_tables" />
+      <recent name="C:\Users\Mayukh\Forge Modding\src\main\resources\assets\examplemod\textures" />
+      <recent name="C:\Users\Mayukh\Forge Modding\src\main\resources\data\examplemod" />
+      <recent name="C:\Users\Mayukh\Forge Modding\src\main\resources\assets\examplemod\structures" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.examplemod.entity.changed" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Mayukh\Forge Modding\src\main\resources\assets\examplemod\models\item" />
       <recent name="C:\Users\Mayukh\Forge Modding\src\main\resources\data\examplemod\structures\snow" />
       <recent name="C:\Users\Mayukh\Forge Modding\src\main\resources\data\examplemod\structures\fortress" />
       <recent name="C:\Users\Mayukh\Forge Modding\src\main\resources\assets\examplemod\structures\fortress" />
       <recent name="C:\Users\Mayukh\Forge Modding\src\main\resources\data\examplemod\structures\Fortress" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.example.examplemod.entity.changed" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Mayukh\Forge Modding\src\main\resources\assets\examplemod\textures" />
-      <recent name="C:\Users\Mayukh\Forge Modding\src\main\resources\data\examplemod" />
-      <recent name="C:\Users\Mayukh\Forge Modding\src\main\resources\assets\examplemod\structures" />
-      <recent name="C:\Users\Mayukh\Forge Modding\src\main\resources\assets\examplemod" />
     </key>
   </component>
   <component name="RunManager" selected="Application.runClient">
@@ -178,18 +198,14 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="426" y="331" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1594848800575">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="426" y="331" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594848800575" />
     <state x="626" y="336" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596656256424">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="626" y="336" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1596656256424" />
-    <state x="742" y="189" key="#com.intellij.ide.util.MemberChooser" timestamp="1597874730570">
+    <state x="742" y="189" key="#com.intellij.ide.util.MemberChooser" timestamp="1604023256217">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="742" y="189" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1597874730570" />
+    <state x="742" y="189" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1604023256217" />
     <state x="337" y="469" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1595818814468">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -202,62 +218,58 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="540" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595910358764" />
-    <state x="729" y="290" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1597171083377">
+    <state x="729" y="290" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1603945348173">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="729" y="290" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597171083377" />
-    <state width="402" height="466" key="DebuggerActiveHint" timestamp="1594773427136">
+    <state x="729" y="290" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603945348173" />
+    <state x="756" y="218" key="#xdebugger.evaluate" timestamp="1604022709413">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="402" height="466" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1594773427136" />
+    <state x="756" y="218" key="#xdebugger.evaluate/0.0.1920.1040@0.0.1920.1040" timestamp="1604022709413" />
     <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1599926869162">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1599926869162" />
-    <state width="1394" height="199" key="GridCell.Tab.0.bottom" timestamp="1603080928086">
+    <state width="1394" height="204" key="GridCell.Tab.0.bottom" timestamp="1604024675856">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1394" height="199" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603080928086" />
-    <state width="1394" height="199" key="GridCell.Tab.0.center" timestamp="1603080928086">
+    <state width="1394" height="204" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604024675856" />
+    <state width="1394" height="204" key="GridCell.Tab.0.center" timestamp="1604024675856">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1394" height="199" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603080928086" />
-    <state width="1394" height="199" key="GridCell.Tab.0.left" timestamp="1603080928085">
+    <state width="1394" height="204" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604024675856" />
+    <state width="1394" height="204" key="GridCell.Tab.0.left" timestamp="1604024675856">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1394" height="199" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603080928085" />
-    <state width="1394" height="199" key="GridCell.Tab.0.right" timestamp="1603080928086">
+    <state width="1394" height="204" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604024675856" />
+    <state width="1394" height="204" key="GridCell.Tab.0.right" timestamp="1604024675856">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1394" height="199" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603080928086" />
-    <state width="1877" height="239" key="GridCell.Tab.1.bottom" timestamp="1597969406160">
+    <state width="1394" height="204" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604024675856" />
+    <state width="1394" height="204" key="GridCell.Tab.1.bottom" timestamp="1604024841987">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="239" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597969406160" />
-    <state width="1877" height="239" key="GridCell.Tab.1.center" timestamp="1597969406159">
+    <state width="1394" height="204" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604024841987" />
+    <state width="1394" height="204" key="GridCell.Tab.1.center" timestamp="1604024841987">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="239" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597969406159" />
-    <state width="1877" height="239" key="GridCell.Tab.1.left" timestamp="1597969406159">
+    <state width="1394" height="204" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604024841987" />
+    <state width="1394" height="204" key="GridCell.Tab.1.left" timestamp="1604024841986">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="239" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597969406159" />
-    <state width="1877" height="239" key="GridCell.Tab.1.right" timestamp="1597969406159">
+    <state width="1394" height="204" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604024841986" />
+    <state width="1394" height="204" key="GridCell.Tab.1.right" timestamp="1604024841987">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="239" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597969406159" />
-    <state x="445" y="367" key="com.intellij.ide.util.TipDialog" timestamp="1603077349683">
+    <state width="1394" height="204" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604024841987" />
+    <state x="445" y="367" key="com.intellij.ide.util.TipDialog" timestamp="1603987553530">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="445" y="367" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603077349683" />
+    <state x="445" y="367" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603987553530" />
     <state x="261" y="312" width="847" height="605" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1595969242541">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="261" y="312" width="847" height="605" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1040@0.0.1920.1040" timestamp="1595969242541" />
-    <state x="623" y="333" width="540" height="499" key="extract.method.dialog" timestamp="1594827292003">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="623" y="333" width="540" height="499" key="extract.method.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594827292003" />
     <state x="393" y="160" key="new project wizard" timestamp="1599926908337">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -266,10 +278,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="535" y="260" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1596908398090" />
-    <state x="1046" y="217" width="672" height="677" key="search.everywhere.popup" timestamp="1603077699187">
+    <state x="1134" y="260" width="672" height="676" key="search.everywhere.popup" timestamp="1604026045185">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1046" y="217" width="672" height="677" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1603077699187" />
+    <state x="1134" y="260" width="672" height="676" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1604026045185" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -278,6 +290,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/example/examplemod/entity/changed/HardZombie.java</url>
           <line>47</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/examplemod/item/tools/lootmodifiers/EnderTouchModifier.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

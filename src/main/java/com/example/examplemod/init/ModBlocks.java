@@ -35,7 +35,7 @@ public class ModBlocks {
         mutableAlloyOreEnd = register("end_mutable_alloy_ore", new OreBlocks());
 
         for (IngotVariants ingotVariants: IngotVariants.values()){
-            register(ingotVariants.getIngotVariantName() + "_block", ingotVariants.getIngotBlock());
+            register(ingotVariants.getVariantName() + "_block", ingotVariants.getIngotBlock());
         }
 
 

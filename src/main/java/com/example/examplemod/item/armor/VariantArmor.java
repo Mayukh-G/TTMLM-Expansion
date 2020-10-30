@@ -59,7 +59,7 @@ public class VariantArmor extends ArmorItem { //Stop being lazy and do recipies 
                     else { index = 1; }
                     multimap.put(SharedMonsterAttributes.MAX_HEALTH.getName(), new AttributeModifier(HEALTH_BONUS_PLUS_25[index],"Heath Bonus", 0.25D, AttributeModifier.Operation.MULTIPLY_BASE));
                 }
-            } else {
+            } else if(this.material == VariantArmorMaterial.VARIANT_BLAZING){
                 if(this.slot == EquipmentSlotType.CHEST || this.slot == EquipmentSlotType.LEGS){
                     if(this.slot == EquipmentSlotType.CHEST) { index = 0; }
                     else { index = 1;}
