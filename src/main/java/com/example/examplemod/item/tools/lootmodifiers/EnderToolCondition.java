@@ -6,6 +6,7 @@ import com.google.gson.JsonDeserializationContext;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonSerializationContext;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.ToolItem;
 import net.minecraft.world.storage.loot.LootContext;
 import net.minecraft.world.storage.loot.LootParameters;
@@ -22,10 +23,13 @@ public class EnderToolCondition implements ILootCondition {
 
     @Override
     public boolean test(LootContext lootContext) {
-        Item held = Objects.requireNonNull(lootContext.get(LootParameters.TOOL)).getItem();
-        if(held instanceof ToolItem){
-            ToolItem tool = (ToolItem) held;
-            return tool.getTier() == IngotVariantTiers.ENDER || tool.getTier() == IngotVariantTiers.WEAK_ENDER;
+        ItemStack heldStack = (lootContext.get(LootParameters.TOOL));
+        if (heldStack != null) {
+            Item held = heldStack.getItem();
+            if (held instanceof ToolItem) {
+                ToolItem tool = (ToolItem) held;
+                return tool.getTier() == IngotVariantTiers.ENDER || tool.getTier() == IngotVariantTiers.WEAK_ENDER;
+            }
         }
         return false;
     }

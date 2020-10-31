@@ -47,17 +47,18 @@ public class EnderTouchModifier extends LootModifier {
         ItemStack toolItemStack = context.get(LootParameters.TOOL);
         LazyOptional<IEnderStorageLink> toolOptional = toolItemStack.getCapability(ESLCapability.ENDER_STORAGE_LINK_CAPABILITY, null);
         IEnderStorageLink linker = toolOptional.orElse(EnderStorageLinker.factory());
-        if(linker.getContainer() != null){
-            ChestTileEntity container = linker.getContainer();
+        if(linker.getContainer(context.getWorld()) != null){
+            ChestTileEntity container = linker.getContainer(context.getWorld());
             LazyOptional<IItemHandler> containerOptional = container.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null);
             IItemHandler itemHandler = containerOptional.orElseThrow(Error::new);
 
             int maxSlot = itemHandler.getSlots();
             ItemStack remainder;
             int j = 0;
-            for (int i = 0; i < maxSlot || generatedLoot.size() == 0; i++){
-                remainder = itemHandler.insertItem(i, generatedLoot.get(i - j), false);
-                if (!remainder.isEmpty()){
+            for (int i = 0; i < maxSlot && generatedLoot.size() > 0; i++){
+                remainder = itemHandler.insertItem(i, generatedLoot.get(j), false);
+                if (remainder.isEmpty()){
+                    generatedLoot.remove(j);
                     j++;
                 }
             }

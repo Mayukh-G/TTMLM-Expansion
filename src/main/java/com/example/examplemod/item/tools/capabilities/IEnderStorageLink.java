@@ -2,14 +2,14 @@ package com.example.examplemod.item.tools.capabilities;
 
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.ChestTileEntity;
-import net.minecraft.tileentity.TileEntity;
+import net.minecraft.world.World;
 
 public interface IEnderStorageLink {
 
-    ChestTileEntity getContainer();
+    ChestTileEntity getContainer(World world);
 
     ItemStack getLinkedTool();
 
-    void link(ChestTileEntity container);
+    boolean link(ChestTileEntity container);
 
 }

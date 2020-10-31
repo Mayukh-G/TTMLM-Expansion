@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "examplemod:item/weak_ender_alloy_pickaxe"
+  }
+}
