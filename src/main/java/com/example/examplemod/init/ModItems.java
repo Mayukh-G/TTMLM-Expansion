@@ -26,17 +26,20 @@ public class ModItems {
         //Ingot Variant Items
         for(IngotVariants ingotVariants: IngotVariants.values()){
             register(ingotVariants.getVariantName(), ingotVariants.getIngotItem());
-        }
-        //Ingot Variant Sword Items
-        for(IngotVariants ingotVariants: IngotVariants.values()){
+
+            //Ingot Variant Sword Items
             register(ingotVariants.getVariantName()+ "_sword", ingotVariants.getSwordItem());
-        }
-        //Ingot Variant Pickaxe Items
-        for(IngotVariants ingotVariants: IngotVariants.values()){
+
+            //Ingot Variant Pickaxe Items
             register(ingotVariants.getVariantName()+ "_pickaxe", ingotVariants.getPickaxeItem());
-        }
-        //Ingot Variant ArmorItems
-        for (IngotVariants ingotVariants: IngotVariants.values()){
+
+            //Ingot Variant Axe Items
+            register(ingotVariants.getVariantName() + "_axe", ingotVariants.getAxeItem());
+
+            //Ingot Variant Shovel Items
+            register(ingotVariants.getVariantName() + "_shovel", ingotVariants.getShovelItem());
+
+            //Ingot Variant ArmorItems
             //Helmets
             register(ingotVariants.getVariantName() + "_helmet", ingotVariants.getHelmetItem());
             //Chestplates
@@ -46,8 +49,6 @@ public class ModItems {
             //Boots
             register(ingotVariants.getVariantName() + "_boots", ingotVariants.getBootsItem());
         }
-
-
     }
     private static <T extends Item> T register(String name, T item) {
         ResourceLocation id = ExampleMod.getID(name);

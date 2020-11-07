@@ -1,5 +1,7 @@
 package com.example.examplemod.item.tools.lootmodifiers;
 
+import com.example.examplemod.init.IngotVariantTiers;
+import com.example.examplemod.init.ModBlocks;
 import com.example.examplemod.item.tools.capabilities.ESLCapability;
 import com.example.examplemod.item.tools.capabilities.EnderStorageLinker;
 import com.example.examplemod.item.tools.capabilities.IEnderStorageLink;
@@ -9,6 +11,7 @@ import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.inventory.container.ChestContainer;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.ToolItem;
 import net.minecraft.tileentity.ChestTileEntity;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.ResourceLocation;
@@ -39,27 +42,27 @@ public class EnderTouchModifier extends LootModifier {
     @Override
     protected List<ItemStack> doApply(List<ItemStack> generatedLoot, LootContext context) {
         /*
-            For Chest Linking, Try Creating NBT tags containing the object itself, if need be create new NBM writer and
-             reader classes. REad the NBT tag with the object here and store it into a variable, from that variable you
-             will have access to the inventory of that object and will be able to modify as you wish
-             ^^ Above does not work well, too long and clustered, use Capabilities instead.
+            For Chest Linking, Used a capability that Stores the NBT data of a chest tile entity then wrote deserializers
+            to convert the NBT back into the original Chest tile entity. Used IItemhandler to put items into chests.
          */
         ItemStack toolItemStack = context.get(LootParameters.TOOL);
-        LazyOptional<IEnderStorageLink> toolOptional = toolItemStack.getCapability(ESLCapability.ENDER_STORAGE_LINK_CAPABILITY, null);
-        IEnderStorageLink linker = toolOptional.orElse(EnderStorageLinker.factory());
-        if(linker.getContainer(context.getWorld()) != null){
-            ChestTileEntity container = linker.getContainer(context.getWorld());
-            LazyOptional<IItemHandler> containerOptional = container.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null);
-            IItemHandler itemHandler = containerOptional.orElseThrow(Error::new);
+        if(((ToolItem) toolItemStack.getItem()).getTier() == IngotVariantTiers.ENDER) {
+            LazyOptional<IEnderStorageLink> toolOptional = toolItemStack.getCapability(ESLCapability.ENDER_STORAGE_LINK_CAPABILITY, null);
+            IEnderStorageLink linker = toolOptional.orElseThrow(Error::new);
+            if (linker.getContainer(context.getWorld()) != null) {
+                ChestTileEntity container = linker.getContainer(context.getWorld());
+                LazyOptional<IItemHandler> containerOptional = container.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null);
+                IItemHandler itemHandler = containerOptional.orElseThrow(Error::new);
 
-            int maxSlot = itemHandler.getSlots();
-            ItemStack remainder;
-            int j = 0;
-            for (int i = 0; i < maxSlot && generatedLoot.size() > 0; i++){
-                remainder = itemHandler.insertItem(i, generatedLoot.get(j), false);
-                if (remainder.isEmpty()){
-                    generatedLoot.remove(j);
-                    j++;
+                int maxSlot = itemHandler.getSlots();
+                ItemStack remainder;
+                int j = 0;
+                for (int i = 0; i < maxSlot && generatedLoot.size() > 0; i++) {
+                    remainder = itemHandler.insertItem(i, generatedLoot.get(j), false);
+                    if (remainder.isEmpty()) {
+                        generatedLoot.remove(j);
+                        j++;
+                    }
                 }
             }
         }

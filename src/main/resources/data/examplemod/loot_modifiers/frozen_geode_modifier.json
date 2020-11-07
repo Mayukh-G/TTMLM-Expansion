@@ -1,0 +1,7 @@
+{
+  "conditions":[
+    {
+      "condition": "examplemod:is_frozen_geode"
+    }
+  ]
+}

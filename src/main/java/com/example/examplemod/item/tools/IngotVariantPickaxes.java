@@ -6,7 +6,6 @@ import com.example.examplemod.init.IngotVariants;
 import com.example.examplemod.item.tools.capabilities.ESLCapability;
 import com.example.examplemod.item.tools.capabilities.EnderStorageLinker;
 import com.example.examplemod.item.tools.capabilities.IEnderStorageLink;
-import javafx.concurrent.Worker;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.*;
@@ -25,7 +24,6 @@ import org.jetbrains.annotations.NotNull;
 
 import javax.annotation.Nullable;
 import java.util.List;
-import java.util.Optional;
 
 
 public class IngotVariantPickaxes extends PickaxeItem {
@@ -90,6 +88,21 @@ public class IngotVariantPickaxes extends PickaxeItem {
             case BLAZING_ALLOY:
                 tooltip.add(new StringTextComponent("\u00A76\u00A7oBlazing Touch :\u00A7d Cook what you mine!"));
                 break;
+            case FREEZING_ALLOY:
+                ITextComponent freezInfo = new StringTextComponent("Freezing Touch : ")
+                        .applyTextStyles(TextFormatting.BLUE, TextFormatting.ITALIC);
+                freezInfo.appendSibling(new StringTextComponent("Geode drops! [13%] per Block").applyTextStyle(TextFormatting.LIGHT_PURPLE));
+                tooltip.add(freezInfo);
+                break;
+            case WEAK_FREEZING_ALLOY:
+                ITextComponent wfreezInfo = new StringTextComponent("Freezing Touch : ")
+                        .applyTextStyles(TextFormatting.BLUE, TextFormatting.ITALIC);
+                wfreezInfo.appendSibling(new StringTextComponent("Geode drops! [4%] per Block").applyTextStyle(TextFormatting.LIGHT_PURPLE));
+                tooltip.add(wfreezInfo);
+                break;
+            case WEAK_ENDER_ALLOY:
+                tooltip.add(new StringTextComponent("Ender Touch : Teleports what you mine!")
+                        .applyTextStyles(TextFormatting.LIGHT_PURPLE, TextFormatting.ITALIC));
         }
     }
 
@@ -141,6 +154,6 @@ public class IngotVariantPickaxes extends PickaxeItem {
                 }
             }
         }
-        return ActionResultType.PASS;
+        return super.onItemUse(context);
     }
 }

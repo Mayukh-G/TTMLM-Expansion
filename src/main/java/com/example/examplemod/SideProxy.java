@@ -5,12 +5,7 @@ import com.example.examplemod.entity.original.NetherBoss;
 import com.example.examplemod.init.*;
 import com.example.examplemod.entity.SpawnEntities;
 import com.example.examplemod.item.tools.capabilities.ESLCapability;
-import com.example.examplemod.item.tools.capabilities.EnderStorageLinker;
-import com.example.examplemod.item.tools.capabilities.IEnderStorageLink;
-import com.example.examplemod.item.tools.lootmodifiers.BlazingToolCondition;
-import com.example.examplemod.item.tools.lootmodifiers.BlazingingTouchModifier;
-import com.example.examplemod.item.tools.lootmodifiers.EnderToolCondition;
-import com.example.examplemod.item.tools.lootmodifiers.EnderTouchModifier;
+import com.example.examplemod.item.tools.lootmodifiers.*;
 import com.example.examplemod.item.weapons.IngotVariantSwords;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
@@ -20,7 +15,6 @@ import net.minecraft.entity.SpawnReason;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ToolItem;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraft.world.biome.Biome;
@@ -31,7 +25,6 @@ import net.minecraft.world.gen.placement.IPlacementConfig;
 import net.minecraft.world.gen.placement.Placement;
 import net.minecraft.world.storage.loot.conditions.LootConditionManager;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.common.capabilities.CapabilityManager;
 import net.minecraftforge.common.loot.GlobalLootModifierSerializer;
 import net.minecraftforge.event.AttachCapabilitiesEvent;
 import net.minecraftforge.event.RegistryEvent;
@@ -88,6 +81,8 @@ public class SideProxy {
         // Loot conditions
         LootConditionManager.registerCondition(new BlazingToolCondition.Serializer());
         LootConditionManager.registerCondition(new EnderToolCondition.Serializer());
+        LootConditionManager.registerCondition(new FreezingToolCondition.Serializer());
+        LootConditionManager.registerCondition(new FrozenGeodeCondition.Serializer());
         //Capabilities
         ESLCapability.register();
     }
@@ -115,8 +110,10 @@ public class SideProxy {
         @SubscribeEvent
         public static void onLootFunctionRegistry(@Nonnull final RegistryEvent.Register<GlobalLootModifierSerializer<?>> lootRegisterEvent) {
             lootRegisterEvent.getRegistry().registerAll(
-                    new BlazingingTouchModifier.Serializer().setRegistryName(ExampleMod.getID("blazing_touch_modifier")),
-                    new EnderTouchModifier.Serializer().setRegistryName(ExampleMod.getID("ender_touch_modifier"))
+                    new BlazingTouchModifier.Serializer().setRegistryName(ExampleMod.getID("blazing_touch_modifier")),
+                    new EnderTouchModifier.Serializer().setRegistryName(ExampleMod.getID("ender_touch_modifier")),
+                    new FreeingTouchModifier.Serializer().setRegistryName(ExampleMod.getID("freezing_touch_modifier")),
+                    new FrozenGeodeModifier.Serializer().setRegistryName(ExampleMod.getID("frozen_geode_modifier"))
             );
         }
     }

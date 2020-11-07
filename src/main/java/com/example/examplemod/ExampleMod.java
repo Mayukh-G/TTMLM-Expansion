@@ -27,7 +27,7 @@ public class ExampleMod
     public static final ItemGroup ITEM_GROUP = new ItemGroup(MOD_ID) {
         @Override
         public ItemStack createIcon() {
-            return new ItemStack(ModBlocks.bigSlip);
+            return new ItemStack(ModBlocks.mutableAlloyOre);
         }
 
         @Override
@@ -37,9 +37,9 @@ public class ExampleMod
     };
 
     public ExampleMod() {
-        DistExecutor.unsafeRunForDist(
-                () -> () -> new SideProxy.Client(),
-                () -> () -> new SideProxy.Server()
+        DistExecutor.safeRunForDist(
+                () -> SideProxy.Client::new,
+                () -> SideProxy.Server::new
         );
     }
 

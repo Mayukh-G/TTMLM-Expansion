@@ -1,5 +1,5 @@
 {
-  "block.examplemod.big_slip": "Slippery Stone",
+  "block.examplemod.frozen_geode": "Frozen Geode",
   "block.examplemod.blazing_carbon_ore": "Blazing Carbon Ore",
   "block.examplemod.blazing_carbon_block": "Blazing Carbon Block",
   "block.examplemod.blazing_carbon_block_upper": "Blazing Carbon Block Top Half",
@@ -23,6 +23,7 @@
 
   "item.examplemod.blazing_carbon": "Blazing Carbon",
   "item.examplemod.freezing_carbon": "Freezing Carbon",
+
   "item.examplemod.mutable_alloy": "Mutable Alloy",
   "item.examplemod.weak_blazing_alloy": "Weak Blazing Alloy",
   "item.examplemod.weak_freezing_alloy": "Weak Freezing Alloy",
@@ -30,6 +31,7 @@
   "item.examplemod.blazing_alloy": "Blazing Alloy",
   "item.examplemod.freezing_alloy": "Freezing Alloy",
   "item.examplemod.ender_alloy": "Ender Alloy",
+
   "item.examplemod.mutable_alloy_sword": "Mutable Alloy Sword",
   "item.examplemod.weak_blazing_alloy_sword": "Weak Blazing Alloy Sword",
   "item.examplemod.weak_freezing_alloy_sword": "Weak Freezing Alloy Sword",
@@ -37,6 +39,7 @@
   "item.examplemod.blazing_alloy_sword": "Blazing Alloy Sword",
   "item.examplemod.freezing_alloy_sword": "Freezing Alloy Sword",
   "item.examplemod.ender_alloy_sword": "Ender Alloy Sword",
+
   "item.examplemod.mutable_alloy_helmet": "Mutable Alloy Helmet",
   "item.examplemod.mutable_alloy_chestplate": "Mutable Alloy Chestplate",
   "item.examplemod.mutable_alloy_leggings": "Mutable Alloy Leggings",
@@ -65,6 +68,7 @@
   "item.examplemod.ender_alloy_chestplate": "Ender Alloy Chestplate",
   "item.examplemod.ender_alloy_leggings": "Ender Alloy Leggings",
   "item.examplemod.ender_alloy_boots": "Ender Alloy Boots",
+
   "item.examplemod.mutable_alloy_pickaxe": "Mutable Alloy Pickaxe",
   "item.examplemod.weak_blazing_alloy_pickaxe": "Weak Blazing Alloy Pickaxe",
   "item.examplemod.weak_freezing_alloy_pickaxe": "Weak Freezing Alloy Pickaxe",
@@ -72,6 +76,23 @@
   "item.examplemod.blazing_alloy_pickaxe": "Blazing Alloy Pickaxe",
   "item.examplemod.freezing_alloy_pickaxe": "Freezing Alloy Pickaxe",
   "item.examplemod.ender_alloy_pickaxe": "Ender Alloy Pickaxe",
+
+  "item.examplemod.mutable_alloy_axe": "Mutable Alloy Axe",
+  "item.examplemod.weak_blazing_alloy_axe": "Weak Blazing Alloy Axe",
+  "item.examplemod.weak_freezing_alloy_axe": "Weak Freezing Alloy Axe",
+  "item.examplemod.weak_ender_alloy_axe": "Weak Ender Alloy Axe",
+  "item.examplemod.blazing_alloy_axe": "Blazing Alloy Axe",
+  "item.examplemod.freezing_alloy_axe": "Freezing Alloy Axe",
+  "item.examplemod.ender_alloy_axe": "Ender Alloy Axe",
+
+  "item.examplemod.mutable_alloy_shovel": "Mutable Alloy Shovel",
+  "item.examplemod.weak_blazing_alloy_shovel": "Weak Blazing Alloy Shovel",
+  "item.examplemod.weak_freezing_alloy_shovel": "Weak Freezing Alloy Shovel",
+  "item.examplemod.weak_ender_alloy_shovel": "Weak Ender Alloy Shovel",
+  "item.examplemod.blazing_alloy_shovel": "Blazing Alloy Shovel",
+  "item.examplemod.freezing_alloy_shovel": "Freezing Alloy Shovel",
+  "item.examplemod.ender_alloy_shovel": "Ender Alloy Shovel",
+
 
 
   "entity.examplemod.hard_zombie": "Hard Zombie",

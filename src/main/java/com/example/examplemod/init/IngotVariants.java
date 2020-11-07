@@ -2,7 +2,9 @@ package com.example.examplemod.init;
 
 import com.example.examplemod.ExampleMod;
 import com.example.examplemod.item.armor.VariantArmor;
+import com.example.examplemod.item.tools.IngotVariantAxes;
 import com.example.examplemod.item.tools.IngotVariantPickaxes;
+import com.example.examplemod.item.tools.IngotVariantShovels;
 import com.example.examplemod.item.weapons.IngotVariantSwords;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
@@ -37,9 +39,9 @@ public enum IngotVariants {
     private final LazyValue<Item> ingotItems;
     private final LazyValue<Block> ingotBlocks;
     private final LazyValue<SwordItem> ingotSwordItems;
-//    private final LazyValue<AxeItem> ingotAxeItems;
+    private final LazyValue<AxeItem> ingotAxeItems;
     private final LazyValue<PickaxeItem> ingotPickaxeItems;
-//    private final LazyValue<ShovelItem> ingotShovelItems;
+    private final LazyValue<ShovelItem> ingotShovelItems;
 //    private final LazyValue<HoeItem> ingotHoeItems;
     private final LazyValue<ArmorItem> ingotHelmetItems;
     private final LazyValue<ArmorItem> ingotChestplateItems;
@@ -65,7 +67,9 @@ public enum IngotVariants {
         ingotChestplateItems = new LazyValue<>(() -> new VariantArmor(this.material, EquipmentSlotType.CHEST, new Item.Properties()));
         ingotLeggingsItems = new LazyValue<>(() -> new VariantArmor(this.material, EquipmentSlotType.LEGS, new Item.Properties()));
         ingotBootsItems = new LazyValue<>(() -> new VariantArmor(this.material, EquipmentSlotType.FEET, new Item.Properties()));
-        ingotPickaxeItems = new LazyValue<>(() -> new IngotVariantPickaxes(this.tier, this.atkDmg - 2, (float)(this.atkSpeed - 0.3), this.getVariant(), new Item.Properties()));
+        ingotPickaxeItems = new LazyValue<>(() -> new IngotVariantPickaxes(this.tier, this.atkDmg - 3, (float)(this.atkSpeed - 0.3), this.getVariant(), new Item.Properties()));
+        ingotAxeItems = new LazyValue<>(() -> new IngotVariantAxes(this.tier, this.atkDmg + 1, (float)(this.atkSpeed - 0.5), this.getVariant(), new Item.Properties()));
+        ingotShovelItems = new LazyValue<>(() -> new IngotVariantShovels(this.tier, this.atkDmg - 4, (float)(this.atkSpeed - 0.3), this.getVariant(), new Item.Properties()));
     }
 
 
@@ -108,5 +112,11 @@ public enum IngotVariants {
     public PickaxeItem getPickaxeItem(){
         return ingotPickaxeItems.getValue();
     }
+
+    public AxeItem getAxeItem() {
+        return ingotAxeItems.getValue();
+    }
+
+    public ShovelItem getShovelItem() { return ingotShovelItems.getValue(); }
 
 }

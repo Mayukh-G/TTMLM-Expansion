@@ -15,7 +15,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import javax.annotation.Nullable;
 
 public class ModBlocks {
-    public static Block bigSlip;
+    public static Block frozenGeode;
     public static Block mutableAlloyOre;
     public static Block mutableAlloyOreNether;
     public static Block mutableAlloyOreEnd;
@@ -24,9 +24,9 @@ public class ModBlocks {
     public static void  registerAll(RegistryEvent.Register<Block> event) {
         if (!event.getName().equals(ForgeRegistries.BLOCKS.getRegistryName())) return;
 
-        bigSlip = register("big_slip", new Block(Block.Properties.create(Material.ROCK)
-                .hardnessAndResistance(1.5f,6f)
-                .sound(SoundType.STONE)
+        frozenGeode = register("frozen_geode", new Block(Block.Properties.create(Material.ICE)
+                .hardnessAndResistance(0.98F,0.5F)
+                .sound(SoundType.GLASS)
         ));
 
         //IngotVariant Registration
@@ -63,7 +63,6 @@ public class ModBlocks {
     }
 
     private static <T extends Block> T register(String name,T block ) {
-        //If statement here for carbon
         BlockItem item = new BlockItem(block, new Item.Properties().group(ExampleMod.ITEM_GROUP));
         return register(name, block, item);
     }
