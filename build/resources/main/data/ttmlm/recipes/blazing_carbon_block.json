@@ -1,0 +1,19 @@
+{
+  "type": "crafting_shaped",
+  "group": "ttmlm:blazing_carbon_block",
+  "pattern": [
+    "X",
+    "I"
+  ],
+  "key": {
+    "X" : {
+      "item": "ttmlm:blazing_carbon_block_upper"
+    },
+    "I": {
+      "item": "ttmlm:blazing_carbon_block_lower"
+    }
+  },
+  "result": {
+    "item": "ttmlm:blazing_carbon_block"
+  }
+}

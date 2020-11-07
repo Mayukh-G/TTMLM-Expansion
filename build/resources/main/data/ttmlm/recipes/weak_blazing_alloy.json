@@ -1,0 +1,19 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "XIX",
+    "IXI",
+    "XIX"
+  ],
+  "key": {
+    "X" : {
+      "item": "ttmlm:mutable_alloy"
+    },
+    "I": {
+      "item": "ttmlm:blazing_carbon"
+    }
+  },
+  "result": {
+    "item": "ttmlm:weak_blazing_alloy"
+  }
+}

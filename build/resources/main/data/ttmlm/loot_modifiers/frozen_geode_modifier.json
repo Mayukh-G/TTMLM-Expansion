@@ -1,0 +1,7 @@
+{
+  "conditions":[
+    {
+      "condition": "ttmlm:is_frozen_geode"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "conditions":[
+    {
+      "condition": "ttmlm:is_blazing_tool"
+    }
+  ]
+}

@@ -5,7 +5,7 @@ Time: 29/10/20 9:43 PM
 Description: Exception in server tick loop
 
 java.lang.ClassCastException: net.minecraft.world.server.ServerWorld cannot be cast to net.minecraft.item.ItemStack
-	at com.example.examplemod.SideProxy.onCapabilitiesAttach(SideProxy.java:142) ~[main/:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onCapabilitiesAttach(SideProxy.java:142) ~[main/:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}

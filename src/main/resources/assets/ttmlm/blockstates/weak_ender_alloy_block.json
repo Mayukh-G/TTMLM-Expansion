@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model":"ttmlm:block/weak_ender_alloy_block"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "ttmlm:block/ender_alloy_block"
+  }
+}

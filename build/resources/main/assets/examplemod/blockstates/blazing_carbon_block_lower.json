@@ -1,7 +1,0 @@
-{
-  "variants": {
-    "type=top": {"model": "examplemod:block/blazing_carbon_block_lower_top"},
-    "type=bottom": {"model": "examplemod:block/blazing_carbon_block_lower"},
-    "type=double": {"model": "examplemod:block/blazing_carbon_block_lower_double"}
-  }
-}

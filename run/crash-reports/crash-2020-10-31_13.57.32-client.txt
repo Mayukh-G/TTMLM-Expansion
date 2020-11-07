@@ -5,10 +5,10 @@ Time: 31/10/20 1:57 PM
 Description: Initializing game
 
 java.lang.NullPointerException: Initializing game
-	at com.example.examplemod.item.tools.capabilities.EnderStorageLinker.getCapability(EnderStorageLinker.java:42) ~[main/:?] {re:classloading}
+	at com.example.ttmlm.item.tools.capabilities.EnderStorageLinker.getCapability(EnderStorageLinker.java:42) ~[main/:?] {re:classloading}
 	at net.minecraftforge.common.capabilities.CapabilityDispatcher.getCapability(CapabilityDispatcher.java:102) ~[forge-1.15.2-31.2.29_mapped_snapshot_20200514-1.15.1-recomp.jar:?] {re:classloading}
 	at net.minecraftforge.common.capabilities.CapabilityProvider.getCapability(CapabilityProvider.java:118) ~[forge-1.15.2-31.2.29_mapped_snapshot_20200514-1.15.1-recomp.jar:?] {re:classloading}
-	at com.example.examplemod.item.tools.IngotVariantPickaxes.addInformation(IngotVariantPickaxes.java:61) ~[main/:?] {re:classloading}
+	at com.example.ttmlm.item.tools.IngotVariantPickaxes.addInformation(IngotVariantPickaxes.java:61) ~[main/:?] {re:classloading}
 	at net.minecraft.item.ItemStack.getTooltip(ItemStack.java:647) ~[forge-1.15.2-31.2.29_mapped_snapshot_20200514-1.15.1-recomp.jar:?] {re:classloading}
 	at net.minecraft.client.Minecraft.lambda$populateSearchTreeManager$8(Minecraft.java:590) ~[forge-1.15.2-31.2.29_mapped_snapshot_20200514-1.15.1-recomp.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
 	at net.minecraft.client.util.SearchTree.index(SearchTree.java:43) ~[forge-1.15.2-31.2.29_mapped_snapshot_20200514-1.15.1-recomp.jar:?] {re:classloading,pl:runtimedistcleaner:A}
@@ -37,10 +37,10 @@ A detailed walkthrough of the error, its code path and all known details is as f
 -- Head --
 Thread: Render thread
 Stacktrace:
-	at com.example.examplemod.item.tools.capabilities.EnderStorageLinker.getCapability(EnderStorageLinker.java:42)
+	at com.example.ttmlm.item.tools.capabilities.EnderStorageLinker.getCapability(EnderStorageLinker.java:42)
 	at net.minecraftforge.common.capabilities.CapabilityDispatcher.getCapability(CapabilityDispatcher.java:102)
 	at net.minecraftforge.common.capabilities.CapabilityProvider.getCapability(CapabilityProvider.java:118)
-	at com.example.examplemod.item.tools.IngotVariantPickaxes.addInformation(IngotVariantPickaxes.java:61)
+	at com.example.ttmlm.item.tools.IngotVariantPickaxes.addInformation(IngotVariantPickaxes.java:61)
 	at net.minecraft.item.ItemStack.getTooltip(ItemStack.java:647)
 	at net.minecraft.client.Minecraft.lambda$populateSearchTreeManager$8(Minecraft.java:590)
 	at net.minecraft.client.util.SearchTree.index(SearchTree.java:43)

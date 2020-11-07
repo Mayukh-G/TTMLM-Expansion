@@ -1,6 +1,0 @@
-{
-  "parent": "examplemod:item/scimitartype",
-  "textures": {
-    "layer0": "examplemod:item/blazing_alloy_sword"
-  }
-}

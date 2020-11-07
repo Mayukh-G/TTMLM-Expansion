@@ -7,14 +7,14 @@ Description: Exception ticking world
 java.lang.IllegalArgumentException: Attribute is already registered!
 	at net.minecraft.entity.ai.attributes.AbstractAttributeMap.registerAttribute(AbstractAttributeMap.java:34) ~[forge-1.15.2-31.2.29_mapped_snapshot_20200514-1.15.1-recomp.jar:?] {re:classloading}
 	at net.minecraft.entity.ai.attributes.AttributeMap.registerAttribute(AttributeMap.java:30) ~[forge-1.15.2-31.2.29_mapped_snapshot_20200514-1.15.1-recomp.jar:?] {re:classloading}
-	at com.example.examplemod.entity.changed.HardZombie.registerAttributes(HardZombie.java:26) ~[main/:?] {re:classloading}
+	at com.example.ttmlm.entity.changed.HardZombie.registerAttributes(HardZombie.java:26) ~[main/:?] {re:classloading}
 	at net.minecraft.entity.LivingEntity.<init>(LivingEntity.java:201) ~[forge-1.15.2-31.2.29_mapped_snapshot_20200514-1.15.1-recomp.jar:?] {re:classloading}
 	at net.minecraft.entity.MobEntity.<init>(MobEntity.java:99) ~[forge-1.15.2-31.2.29_mapped_snapshot_20200514-1.15.1-recomp.jar:?] {re:classloading,pl:accesstransformer:B}
 	at net.minecraft.entity.CreatureEntity.<init>(CreatureEntity.java:13) ~[forge-1.15.2-31.2.29_mapped_snapshot_20200514-1.15.1-recomp.jar:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.<init>(MonsterEntity.java:26) ~[forge-1.15.2-31.2.29_mapped_snapshot_20200514-1.15.1-recomp.jar:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.<init>(ZombieEntity.java:83) ~[forge-1.15.2-31.2.29_mapped_snapshot_20200514-1.15.1-recomp.jar:?] {re:classloading}
-	at com.example.examplemod.entity.changed.HardZombie.<init>(HardZombie.java:16) ~[main/:?] {re:classloading}
-	at com.example.examplemod.entity.SpawnEntities.trySpawning(SpawnEntities.java:29) ~[main/:?] {re:classloading}
+	at com.example.ttmlm.entity.changed.HardZombie.<init>(HardZombie.java:16) ~[main/:?] {re:classloading}
+	at com.example.ttmlm.entity.SpawnEntities.trySpawning(SpawnEntities.java:29) ~[main/:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -42,14 +42,14 @@ Thread: Server thread
 Stacktrace:
 	at net.minecraft.entity.ai.attributes.AbstractAttributeMap.registerAttribute(AbstractAttributeMap.java:34)
 	at net.minecraft.entity.ai.attributes.AttributeMap.registerAttribute(AttributeMap.java:30)
-	at com.example.examplemod.entity.changed.HardZombie.registerAttributes(HardZombie.java:26)
+	at com.example.ttmlm.entity.changed.HardZombie.registerAttributes(HardZombie.java:26)
 	at net.minecraft.entity.LivingEntity.<init>(LivingEntity.java:201)
 	at net.minecraft.entity.MobEntity.<init>(MobEntity.java:99)
 	at net.minecraft.entity.CreatureEntity.<init>(CreatureEntity.java:13)
 	at net.minecraft.entity.monster.MonsterEntity.<init>(MonsterEntity.java:26)
 	at net.minecraft.entity.monster.ZombieEntity.<init>(ZombieEntity.java:83)
-	at com.example.examplemod.entity.changed.HardZombie.<init>(HardZombie.java:16)
-	at com.example.examplemod.entity.SpawnEntities.trySpawning(SpawnEntities.java:29)
+	at com.example.ttmlm.entity.changed.HardZombie.<init>(HardZombie.java:16)
+	at com.example.ttmlm.entity.SpawnEntities.trySpawning(SpawnEntities.java:29)
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212)
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204)
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258)

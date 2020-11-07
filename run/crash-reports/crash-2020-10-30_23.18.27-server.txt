@@ -7,7 +7,7 @@ Description: Ticking entity
 java.lang.IndexOutOfBoundsException: Index: 1, Size: 0
 	at java.util.ArrayList.rangeCheck(ArrayList.java:657) ~[?:1.8.0_231] {}
 	at java.util.ArrayList.get(ArrayList.java:433) ~[?:1.8.0_231] {}
-	at com.example.examplemod.item.tools.lootmodifiers.EnderTouchModifier.doApply(EnderTouchModifier.java:59) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.tools.lootmodifiers.EnderTouchModifier.doApply(EnderTouchModifier.java:59) ~[?:?] {re:classloading}
 	at net.minecraftforge.common.loot.LootModifier.apply(LootModifier.java:53) ~[?:?] {re:classloading}
 	at net.minecraftforge.common.ForgeHooks.modifyLoot(ForgeHooks.java:1194) ~[?:?] {re:classloading}
 	at net.minecraft.world.storage.loot.LootTable.generate(LootTable.java:86) ~[?:?] {re:classloading}
@@ -37,7 +37,7 @@ Thread: Server thread
 Stacktrace:
 	at java.util.ArrayList.rangeCheck(ArrayList.java:657)
 	at java.util.ArrayList.get(ArrayList.java:433)
-	at com.example.examplemod.item.tools.lootmodifiers.EnderTouchModifier.doApply(EnderTouchModifier.java:59)
+	at com.example.ttmlm.item.tools.lootmodifiers.EnderTouchModifier.doApply(EnderTouchModifier.java:59)
 	at net.minecraftforge.common.loot.LootModifier.apply(LootModifier.java:53)
 	at net.minecraftforge.common.ForgeHooks.modifyLoot(ForgeHooks.java:1194)
 	at net.minecraft.world.storage.loot.LootTable.generate(LootTable.java:86)

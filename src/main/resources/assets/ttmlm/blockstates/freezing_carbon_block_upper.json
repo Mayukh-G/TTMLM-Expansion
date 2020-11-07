@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "type=top": {"model": "ttmlm:block/freezing_carbon_block_upper_top"},
+    "type=bottom": {"model": "ttmlm:block/freezing_carbon_block_upper"},
+    "type=double": {"model": "ttmlm:block/freezing_carbon_block_upper_double"}
+  }
+}

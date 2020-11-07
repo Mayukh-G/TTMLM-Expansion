@@ -11,8 +11,8 @@ java.lang.NullPointerException: Ticking entity
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:1013) ~[?:?] {re:classloading}
 	at net.minecraft.entity.player.PlayerEntity.attackEntityFrom(PlayerEntity.java:922) ~[?:?] {re:classloading,pl:accesstransformer:B}
 	at net.minecraft.entity.player.ServerPlayerEntity.attackEntityFrom(ServerPlayerEntity.java:565) ~[?:?] {re:classloading,pl:accesstransformer:B}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:197) ~[main/:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:70) ~[main/:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:197) ~[main/:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:70) ~[main/:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -68,8 +68,8 @@ Stacktrace:
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:1013)
 	at net.minecraft.entity.player.PlayerEntity.attackEntityFrom(PlayerEntity.java:922)
 	at net.minecraft.entity.player.ServerPlayerEntity.attackEntityFrom(ServerPlayerEntity.java:565)
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:197)
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:70)
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:197)
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:70)
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212)
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204)
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258)

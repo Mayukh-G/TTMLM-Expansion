@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "type=top": {"model": "ttmlm:block/blazing_carbon_block_lower_top"},
+    "type=bottom": {"model": "ttmlm:block/blazing_carbon_block_lower"},
+    "type=double": {"model": "ttmlm:block/blazing_carbon_block_lower_double"}
+  }
+}

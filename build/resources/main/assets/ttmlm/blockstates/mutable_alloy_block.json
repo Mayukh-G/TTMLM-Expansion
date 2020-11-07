@@ -1,0 +1,7 @@
+{
+  "variants": {
+      "": {
+        "model":"ttmlm:block/mutable_alloy_block"
+      }
+  }
+}

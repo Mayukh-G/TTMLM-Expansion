@@ -1,0 +1,20 @@
+{
+  "type": "crafting_shaped",
+  "group": "ttmlm:blazing_carbon_block",
+  "pattern": [
+    "OOO",
+    "XOX",
+    "XXX"
+  ],
+  "key": {
+    "X" : {
+      "item": "ttmlm:blazing_carbon"
+    },
+    "O": {
+      "item": "minecraft:fire_charge"
+    }
+  },
+  "result": {
+    "item": "ttmlm:blazing_carbon_block_lower"
+  }
+}

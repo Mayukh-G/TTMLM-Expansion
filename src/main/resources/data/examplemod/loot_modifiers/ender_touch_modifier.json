@@ -1,7 +1,0 @@
-{
-  "conditions":[
-    {
-      "condition": "examplemod:is_ender_tool"
-    }
-  ]
-}

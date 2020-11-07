@@ -6,8 +6,8 @@ Description: Ticking entity
 
 java.lang.NullPointerException: Ticking entity
 	at java.util.Objects.requireNonNull(Objects.java:203) ~[?:1.8.0_231] {}
-	at com.example.examplemod.item.tools.lootmodifiers.BlazingToolCondition.test(BlazingToolCondition.java:25) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.tools.lootmodifiers.BlazingToolCondition.test(BlazingToolCondition.java:17) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.tools.lootmodifiers.BlazingToolCondition.test(BlazingToolCondition.java:25) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.tools.lootmodifiers.BlazingToolCondition.test(BlazingToolCondition.java:17) ~[?:?] {re:classloading}
 	at net.minecraftforge.common.loot.LootModifier.apply(LootModifier.java:53) ~[?:?] {re:classloading}
 	at net.minecraftforge.common.ForgeHooks.modifyLoot(ForgeHooks.java:1194) ~[?:?] {re:classloading}
 	at net.minecraft.world.storage.loot.LootTable.generate(LootTable.java:86) ~[?:?] {re:classloading}
@@ -42,8 +42,8 @@ A detailed walkthrough of the error, its code path and all known details is as f
 Thread: Server thread
 Stacktrace:
 	at java.util.Objects.requireNonNull(Objects.java:203)
-	at com.example.examplemod.item.tools.lootmodifiers.BlazingToolCondition.test(BlazingToolCondition.java:25)
-	at com.example.examplemod.item.tools.lootmodifiers.BlazingToolCondition.test(BlazingToolCondition.java:17)
+	at com.example.ttmlm.item.tools.lootmodifiers.BlazingToolCondition.test(BlazingToolCondition.java:25)
+	at com.example.ttmlm.item.tools.lootmodifiers.BlazingToolCondition.test(BlazingToolCondition.java:17)
 	at net.minecraftforge.common.loot.LootModifier.apply(LootModifier.java:53)
 	at net.minecraftforge.common.ForgeHooks.modifyLoot(ForgeHooks.java:1194)
 	at net.minecraft.world.storage.loot.LootTable.generate(LootTable.java:86)

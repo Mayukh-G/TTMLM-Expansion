@@ -1,0 +1,12 @@
+{
+  "type": "crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "ttmlm:freezing_alloy_block"
+    }
+  ],
+  "result": {
+    "item": "ttmlm:freezing_alloy",
+    "count": 9
+  }
+}

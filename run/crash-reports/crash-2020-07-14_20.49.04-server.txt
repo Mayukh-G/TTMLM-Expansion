@@ -28,8 +28,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -37,8 +37,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -46,8 +46,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -55,8 +55,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -64,8 +64,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -73,8 +73,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -82,8 +82,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -91,8 +91,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -100,8 +100,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -109,8 +109,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -118,8 +118,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -127,8 +127,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -136,8 +136,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -145,8 +145,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -154,8 +154,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -163,8 +163,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -172,8 +172,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -181,8 +181,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -190,8 +190,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -199,8 +199,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -208,8 +208,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -217,8 +217,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -226,8 +226,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -235,8 +235,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -244,8 +244,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -253,8 +253,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -262,8 +262,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -271,8 +271,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -280,8 +280,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -289,8 +289,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -298,8 +298,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -307,8 +307,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -316,8 +316,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -325,8 +325,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -334,8 +334,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -343,8 +343,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -352,8 +352,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -361,8 +361,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -370,8 +370,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -379,8 +379,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -388,8 +388,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -397,8 +397,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -406,8 +406,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -415,8 +415,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -424,8 +424,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -433,8 +433,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -442,8 +442,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -451,8 +451,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -460,8 +460,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -469,8 +469,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -478,8 +478,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -487,8 +487,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -496,8 +496,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -505,8 +505,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -514,8 +514,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -523,8 +523,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -532,8 +532,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -541,8 +541,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -550,8 +550,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -559,8 +559,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -568,8 +568,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -577,8 +577,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -586,8 +586,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -595,8 +595,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -604,8 +604,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -613,8 +613,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -622,8 +622,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -631,8 +631,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -640,8 +640,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -649,8 +649,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -658,8 +658,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -667,8 +667,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -676,8 +676,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -685,8 +685,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -694,8 +694,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -703,8 +703,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -712,8 +712,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -721,8 +721,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -730,8 +730,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -739,8 +739,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -748,8 +748,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -757,8 +757,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -766,8 +766,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -775,8 +775,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -784,8 +784,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -793,8 +793,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -802,8 +802,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -811,8 +811,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -820,8 +820,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -829,8 +829,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -838,8 +838,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -847,8 +847,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -856,8 +856,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -865,8 +865,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -874,8 +874,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -883,8 +883,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -892,8 +892,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -901,8 +901,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -910,8 +910,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -919,8 +919,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -928,8 +928,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -937,8 +937,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -946,8 +946,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -955,8 +955,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -964,8 +964,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -973,8 +973,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -982,8 +982,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -991,8 +991,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -1000,8 +1000,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -1009,8 +1009,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -1018,8 +1018,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -1027,8 +1027,8 @@ java.lang.StackOverflowError: Exception in server tick loop
 	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:886) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:68) ~[?:?] {re:classloading}
 	at net.minecraft.entity.monster.ZombieEntity.attackEntityFrom(ZombieEntity.java:335) ~[?:?] {re:classloading}
-	at com.example.examplemod.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
-	at com.example.examplemod.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
+	at com.example.ttmlm.item.weapons.IngotVariantSwords.onAttack(IngotVariantSwords.java:50) ~[?:?] {re:classloading}
+	at com.example.ttmlm.SideProxy.onAttackVariantSword(SideProxy.java:66) ~[?:?] {re:classloading}
 
 
 A detailed walkthrough of the error, its code path and all known details is as follows:

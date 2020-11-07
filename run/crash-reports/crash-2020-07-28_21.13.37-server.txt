@@ -5,15 +5,15 @@ Time: 28/07/20 9:13 PM
 Description: Exception ticking world
 
 java.lang.NullPointerException: Exception ticking world
-	at com.example.examplemod.entity.changed.HardSkeleton.registerAttributes(HardSkeleton.java:94) ~[main/:?] {re:classloading}
+	at com.example.ttmlm.entity.changed.HardSkeleton.registerAttributes(HardSkeleton.java:94) ~[main/:?] {re:classloading}
 	at net.minecraft.entity.LivingEntity.<init>(LivingEntity.java:201) ~[forge-1.15.2-31.2.29_mapped_snapshot_20200514-1.15.1-recomp.jar:?] {re:classloading}
 	at net.minecraft.entity.MobEntity.<init>(MobEntity.java:99) ~[forge-1.15.2-31.2.29_mapped_snapshot_20200514-1.15.1-recomp.jar:?] {re:classloading,pl:accesstransformer:B}
 	at net.minecraft.entity.CreatureEntity.<init>(CreatureEntity.java:13) ~[forge-1.15.2-31.2.29_mapped_snapshot_20200514-1.15.1-recomp.jar:?] {re:classloading}
 	at net.minecraft.entity.monster.MonsterEntity.<init>(MonsterEntity.java:26) ~[forge-1.15.2-31.2.29_mapped_snapshot_20200514-1.15.1-recomp.jar:?] {re:classloading}
 	at net.minecraft.entity.monster.AbstractSkeletonEntity.<init>(AbstractSkeletonEntity.java:68) ~[forge-1.15.2-31.2.29_mapped_snapshot_20200514-1.15.1-recomp.jar:?] {re:classloading,pl:accesstransformer:B}
 	at net.minecraft.entity.monster.SkeletonEntity.<init>(SkeletonEntity.java:13) ~[forge-1.15.2-31.2.29_mapped_snapshot_20200514-1.15.1-recomp.jar:?] {re:classloading,pl:accesstransformer:B}
-	at com.example.examplemod.entity.changed.HardSkeleton.<init>(HardSkeleton.java:38) ~[main/:?] {re:classloading}
-	at com.example.examplemod.entity.SpawnEntities.trySpawning(SpawnEntities.java:79) ~[main/:?] {re:classloading}
+	at com.example.ttmlm.entity.changed.HardSkeleton.<init>(HardSkeleton.java:38) ~[main/:?] {re:classloading}
+	at com.example.ttmlm.entity.SpawnEntities.trySpawning(SpawnEntities.java:79) ~[main/:?] {re:classloading}
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-2.2.0-service.jar:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
@@ -39,15 +39,15 @@ A detailed walkthrough of the error, its code path and all known details is as f
 -- Head --
 Thread: Server thread
 Stacktrace:
-	at com.example.examplemod.entity.changed.HardSkeleton.registerAttributes(HardSkeleton.java:94)
+	at com.example.ttmlm.entity.changed.HardSkeleton.registerAttributes(HardSkeleton.java:94)
 	at net.minecraft.entity.LivingEntity.<init>(LivingEntity.java:201)
 	at net.minecraft.entity.MobEntity.<init>(MobEntity.java:99)
 	at net.minecraft.entity.CreatureEntity.<init>(CreatureEntity.java:13)
 	at net.minecraft.entity.monster.MonsterEntity.<init>(MonsterEntity.java:26)
 	at net.minecraft.entity.monster.AbstractSkeletonEntity.<init>(AbstractSkeletonEntity.java:68)
 	at net.minecraft.entity.monster.SkeletonEntity.<init>(SkeletonEntity.java:13)
-	at com.example.examplemod.entity.changed.HardSkeleton.<init>(HardSkeleton.java:38)
-	at com.example.examplemod.entity.SpawnEntities.trySpawning(SpawnEntities.java:79)
+	at com.example.ttmlm.entity.changed.HardSkeleton.<init>(HardSkeleton.java:38)
+	at com.example.ttmlm.entity.SpawnEntities.trySpawning(SpawnEntities.java:79)
 	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212)
 	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204)
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258)

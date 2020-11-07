@@ -1,9 +1,9 @@
 {
   "replace": false,
   "entries": [
-    "examplemod:blazing_touch_modifier",
-    "examplemod:ender_touch_modifier",
-    "examplemod:frozen_geode_modifier",
-    "examplemod:freezing_touch_modifier"
+    "ttmlm:blazing_touch_modifier",
+    "ttmlm:ender_touch_modifier",
+    "ttmlm:frozen_geode_modifier",
+    "ttmlm:freezing_touch_modifier"
   ]
 }

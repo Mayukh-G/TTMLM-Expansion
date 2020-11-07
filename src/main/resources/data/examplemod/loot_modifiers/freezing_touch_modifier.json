@@ -1,7 +1,0 @@
-{
-  "conditions":[
-    {
-      "condition": "examplemod:is_freezing_tool"
-    }
-  ]
-}

@@ -4,7 +4,7 @@
 Time: 06/08/20 12:22 PM
 Description: Rendering overlay
 
-java.lang.ClassCastException: com.example.examplemod.structures.HardFortress cannot be cast to net.minecraft.block.Block
+java.lang.ClassCastException: com.example.ttmlm.structures.HardFortress cannot be cast to net.minecraft.block.Block
 	at net.minecraft.client.renderer.model.ModelBakery.processLoading(ModelBakery.java:179) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
 	at net.minecraftforge.client.model.ModelLoader.<init>(ModelLoader.java:72) ~[?:?] {re:classloading}
 	at net.minecraft.client.renderer.model.ModelManager.prepare(ModelManager.java:58) ~[?:?] {re:classloading,pl:runtimedistcleaner:A}

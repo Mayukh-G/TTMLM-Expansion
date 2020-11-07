@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "ttmlm:item/freezing_alloy_axe"
+  }
+}

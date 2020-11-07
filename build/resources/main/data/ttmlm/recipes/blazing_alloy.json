@@ -1,0 +1,22 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "OXO",
+    "XIX",
+    "OXO"
+  ],
+  "key": {
+    "X" : {
+      "item": "ttmlm:mutable_alloy_block"
+    },
+    "I": {
+      "item": "ttmlm:weak_blazing_alloy_block"
+    },
+    "O": {
+      "item": "ttmlm:blazing_carbon_block"
+    }
+  },
+  "result": {
+    "item": "ttmlm:blazing_alloy"
+  }
+}
