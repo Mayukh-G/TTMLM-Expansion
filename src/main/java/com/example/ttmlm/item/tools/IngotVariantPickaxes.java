@@ -13,6 +13,8 @@ import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.tileentity.ChestTileEntity;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.ActionResultType;
+import net.minecraft.util.SoundCategory;
+import net.minecraft.util.SoundEvents;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.text.*;
 import net.minecraft.world.World;
@@ -143,6 +145,7 @@ public class IngotVariantPickaxes extends PickaxeItem {
                             }else {
                                 player.sendStatusMessage(successUnLink, true);
                             }
+                            world.playSound(player, pos, SoundEvents.ENTITY_ENDERMAN_TELEPORT, SoundCategory.BLOCKS, 1.0f, 1.0f);
                             return ActionResultType.SUCCESS;
                         } else {
                             player.sendStatusMessage(warn, true);

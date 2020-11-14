@@ -3,6 +3,7 @@ package com.example.ttmlm.init;
 import com.example.ttmlm.TTMLM;
 import com.example.ttmlm.item.armor.VariantArmor;
 import com.example.ttmlm.item.tools.IngotVariantAxes;
+import com.example.ttmlm.item.tools.IngotVariantHoes;
 import com.example.ttmlm.item.tools.IngotVariantPickaxes;
 import com.example.ttmlm.item.tools.IngotVariantShovels;
 import com.example.ttmlm.item.weapons.IngotVariantSwords;
@@ -42,7 +43,7 @@ public enum IngotVariants {
     private final LazyValue<AxeItem> ingotAxeItems;
     private final LazyValue<PickaxeItem> ingotPickaxeItems;
     private final LazyValue<ShovelItem> ingotShovelItems;
-//    private final LazyValue<HoeItem> ingotHoeItems;
+    private final LazyValue<HoeItem> ingotHoeItems;
     private final LazyValue<ArmorItem> ingotHelmetItems;
     private final LazyValue<ArmorItem> ingotChestplateItems;
     private final LazyValue<ArmorItem> ingotLeggingsItems;
@@ -70,6 +71,7 @@ public enum IngotVariants {
         ingotPickaxeItems = new LazyValue<>(() -> new IngotVariantPickaxes(this.tier, this.atkDmg - 3, (float)(this.atkSpeed - 0.3), this.getVariant(), new Item.Properties()));
         ingotAxeItems = new LazyValue<>(() -> new IngotVariantAxes(this.tier, this.atkDmg + 1, (float)(this.atkSpeed - 0.5), this.getVariant(), new Item.Properties()));
         ingotShovelItems = new LazyValue<>(() -> new IngotVariantShovels(this.tier, this.atkDmg - 4, (float)(this.atkSpeed - 0.3), this.getVariant(), new Item.Properties()));
+        ingotHoeItems = new LazyValue<>(() -> new IngotVariantHoes(this.tier, (float)(this.atkSpeed - 0.3), this.getVariant(), new Item.Properties()));
     }
 
 
@@ -118,5 +120,7 @@ public enum IngotVariants {
     }
 
     public ShovelItem getShovelItem() { return ingotShovelItems.getValue(); }
+
+    public HoeItem getHoeItem() { return ingotHoeItems.getValue(); }
 
 }

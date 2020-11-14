@@ -93,6 +93,14 @@
   "item.ttmlm.freezing_alloy_shovel": "Freezing Alloy Shovel",
   "item.ttmlm.ender_alloy_shovel": "Ender Alloy Shovel",
 
+  "item.ttmlm.mutable_alloy_hoe": "Mutable Alloy Hoe",
+  "item.ttmlm.weak_blazing_alloy_hoe": "Weak Blazing Alloy Hoe",
+  "item.ttmlm.weak_freezing_alloy_hoe": "Weak Freezing Alloy Hoe",
+  "item.ttmlm.weak_ender_alloy_hoe": "Weak Ender Alloy Hoe",
+  "item.ttmlm.blazing_alloy_hoe": "Blazing Alloy Hoe",
+  "item.ttmlm.freezing_alloy_hoe": "Freezing Alloy Hoe",
+  "item.ttmlm.ender_alloy_hoe": "Ender Alloy Hoe",
+
 
 
   "entity.ttmlm.hard_zombie": "Hard Zombie",

@@ -39,6 +39,9 @@ public class ModItems {
             //Ingot Variant Shovel Items
             register(ingotVariants.getVariantName() + "_shovel", ingotVariants.getShovelItem());
 
+            //Ingot Variant Hoe Items
+            register(ingotVariants.getVariantName() + "_hoe", ingotVariants.getHoeItem());
+
             //Ingot Variant ArmorItems
             //Helmets
             register(ingotVariants.getVariantName() + "_helmet", ingotVariants.getHelmetItem());

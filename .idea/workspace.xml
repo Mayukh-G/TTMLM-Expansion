@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9b96a67-8588-4e05-a58e-58a5085116ad" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" afterDir="false" />
@@ -9,443 +10,19 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Mayukh.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/Mayukh.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/ExampleMod$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/ExampleMod.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/SideProxy$Client.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/SideProxy$RegistryEvents.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/SideProxy$Server.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/SideProxy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/block/OreBlocks.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/client/models/NetherBossModel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/client/renders/NetherBossRender.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/entity/SpawnEntities.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/entity/ai/goal/EndermanGoals$FindPlayerGoal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/entity/ai/goal/EndermanGoals$PlaceBlockGoal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/entity/ai/goal/EndermanGoals$StareGoal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/entity/ai/goal/EndermanGoals$TakeBlockGoal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/entity/ai/goal/EndermanGoals.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/entity/ai/goal/GhastGoals$FireballAttackGoal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/entity/ai/goal/GhastGoals$LookAroundGoal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/entity/ai/goal/GhastGoals$RandomFlyGoal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/entity/ai/goal/GhastGoals.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/entity/ai/goal/HardCreeperSwellGoal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/entity/changed/HardBlaze.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/entity/changed/HardCaveSpider.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/entity/changed/HardCreeper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/entity/changed/HardDrowned.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/entity/changed/HardEnderman.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/entity/changed/HardGhast.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/entity/changed/HardHusk.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/entity/changed/HardSkeleton$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/entity/changed/HardSkeleton.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/entity/changed/HardSpider.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/entity/changed/HardStray$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/entity/changed/HardStray.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/entity/changed/HardWitherSkeleton$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/entity/changed/HardWitherSkeleton.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/entity/changed/HardZPigMan.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/entity/changed/HardZombie.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/entity/changed/IAbstractHardZombie$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/entity/changed/IAbstractHardZombie.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/entity/original/NetherBoss$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/entity/original/NetherBoss$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/entity/original/NetherBoss$NetherBossExplode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/entity/original/NetherBoss$SummonHoardGoal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/entity/original/NetherBoss.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/init/CoalVariants.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/init/IngotVariantTiers.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/init/IngotVariants.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/init/ModBlocks.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/init/ModEntities.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/init/ModItems.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/init/StructureInit.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/init/VariantArmorMaterial.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/init/WorldGenOres.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/item/BlockItemsForVariantBlocks.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/item/CoalVariantsItems.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/item/armor/VariantArmor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/item/tools/IngotVariantAxes$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/item/tools/IngotVariantAxes.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/item/tools/IngotVariantPickaxes$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/item/tools/IngotVariantPickaxes.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/item/tools/IngotVariantShovels$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/item/tools/IngotVariantShovels.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/item/tools/capabilities/ESLCapability$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/item/tools/capabilities/ESLCapability$Storage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/item/tools/capabilities/ESLCapability.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/item/tools/capabilities/EnderStorageLinker.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/item/tools/capabilities/IEnderStorageLink.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/item/tools/lootmodifiers/BlazingToolCondition$Serializer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/item/tools/lootmodifiers/BlazingToolCondition.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/item/tools/lootmodifiers/BlazingTouchModifier$Serializer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/item/tools/lootmodifiers/BlazingTouchModifier.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/item/tools/lootmodifiers/EnderToolCondition$Serializer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/item/tools/lootmodifiers/EnderToolCondition.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/item/tools/lootmodifiers/EnderTouchModifier$Serializer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/item/tools/lootmodifiers/EnderTouchModifier.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/item/tools/lootmodifiers/FreeingTouchModifier$Serializer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/item/tools/lootmodifiers/FreeingTouchModifier.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/item/tools/lootmodifiers/FreezingToolCondition$Serializer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/item/tools/lootmodifiers/FreezingToolCondition.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/item/tools/lootmodifiers/FrozenGeodeCondition$Serializer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/item/tools/lootmodifiers/FrozenGeodeCondition.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/item/tools/lootmodifiers/FrozenGeodeModifier$Serializer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/item/tools/lootmodifiers/FrozenGeodeModifier.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/item/weapons/IngotVariantSwords$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/item/weapons/IngotVariantSwords$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/item/weapons/IngotVariantSwords$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/item/weapons/IngotVariantSwords$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/item/weapons/IngotVariantSwords$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/item/weapons/IngotVariantSwords$6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/item/weapons/IngotVariantSwords$7.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/item/weapons/IngotVariantSwords.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/structures/HardFortress$Start.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/structures/HardFortress.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/structures/HardFortressPieces$IndividualPiece.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/structures/HardFortressPieces$Piece.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/structures/HardFortressPieces.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/structures/SnowDungeon$Start.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/structures/SnowDungeon.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/structures/SnowDungeonPieces$Piece.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/examplemod/structures/SnowDungeonPieces.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/META-INF/mods.toml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/META-INF/mods.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/blockstates/blazing_alloy_block.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/blockstates/blazing_carbon_block.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/blockstates/blazing_carbon_block_lower.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/blockstates/blazing_carbon_block_upper.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/blockstates/blazing_carbon_ore.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/blockstates/end_mutable_alloy_ore.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/blockstates/ender_alloy_block.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/blockstates/freezing_alloy_block.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/blockstates/freezing_carbon_block.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/blockstates/freezing_carbon_block_lower.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/blockstates/freezing_carbon_block_upper.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/blockstates/freezing_carbon_ore.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/blockstates/frozen_geode.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/blockstates/mutable_alloy_block.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/blockstates/mutable_alloy_ore.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/blockstates/nether_mutable_alloy_ore.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/blockstates/weak_blazing_alloy_block.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/blockstates/weak_ender_alloy_block.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/blockstates/weak_freezing_alloy_block.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/lang/en_us.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/block/blazing_alloy_block.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/block/blazing_carbon_block.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/block/blazing_carbon_block_lower.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/block/blazing_carbon_block_lower_double.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/block/blazing_carbon_block_lower_top.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/block/blazing_carbon_block_upper.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/block/blazing_carbon_block_upper_double.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/block/blazing_carbon_block_upper_top.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/block/blazing_carbon_ore.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/block/end_mutable_alloy_ore.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/block/ender_alloy_block.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/block/freezing_alloy_block.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/block/freezing_carbon_block.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/block/freezing_carbon_block_lower.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/block/freezing_carbon_block_lower_double.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/block/freezing_carbon_block_lower_top.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/block/freezing_carbon_block_upper.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/block/freezing_carbon_block_upper_double.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/block/freezing_carbon_block_upper_top.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/block/freezing_carbon_ore.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/block/frozen_geode.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/block/mutable_alloy_block.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/block/mutable_alloy_ore.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/block/nether_mutable_alloy_ore.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/block/weak_blazing_alloy_block.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/block/weak_ender_alloy_block.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/block/weak_freezing_alloy_block.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/blazing_alloy.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/blazing_alloy_axe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/blazing_alloy_block.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/blazing_alloy_boots.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/blazing_alloy_chestplate.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/blazing_alloy_helmet.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/blazing_alloy_leggings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/blazing_alloy_pickaxe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/blazing_alloy_shovel.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/blazing_alloy_sword.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/blazing_carbon.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/blazing_carbon_block.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/blazing_carbon_block_lower.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/blazing_carbon_block_upper.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/blazing_carbon_ore.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/cleavertype.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/end_mutable_alloy_ore.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/ender_alloy.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/ender_alloy_axe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/ender_alloy_block.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/ender_alloy_boots.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/ender_alloy_chestplate.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/ender_alloy_helmet.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/ender_alloy_leggings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/ender_alloy_pickaxe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/ender_alloy_shovel.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/ender_alloy_sword.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/freezing_alloy.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/freezing_alloy_axe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/freezing_alloy_block.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/freezing_alloy_boots.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/freezing_alloy_chestplate.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/freezing_alloy_helmet.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/freezing_alloy_leggings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/freezing_alloy_pickaxe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/freezing_alloy_shovel.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/freezing_alloy_sword.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/freezing_carbon.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/freezing_carbon_block.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/freezing_carbon_block_lower.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/freezing_carbon_block_upper.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/freezing_carbon_ore.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/frozen_geode.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/mutable_alloy.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/mutable_alloy_axe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/mutable_alloy_block.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/mutable_alloy_boots.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/mutable_alloy_chestplate.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/mutable_alloy_helmet.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/mutable_alloy_leggings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/mutable_alloy_ore.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/mutable_alloy_pickaxe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/mutable_alloy_shovel.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/mutable_alloy_sword.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/nether_mutable_alloy_ore.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/scimitartype.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/weak_blazing_alloy.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/weak_blazing_alloy_axe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/weak_blazing_alloy_block.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/weak_blazing_alloy_boots.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/weak_blazing_alloy_chestplate.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/weak_blazing_alloy_helmet.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/weak_blazing_alloy_leggings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/weak_blazing_alloy_pickaxe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/weak_blazing_alloy_shovel.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/weak_blazing_alloy_sword.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/weak_ender_alloy.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/weak_ender_alloy_axe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/weak_ender_alloy_block.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/weak_ender_alloy_boots.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/weak_ender_alloy_chestplate.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/weak_ender_alloy_helmet.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/weak_ender_alloy_leggings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/weak_ender_alloy_pickaxe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/weak_ender_alloy_shovel.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/weak_ender_alloy_sword.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/weak_freezing_alloy.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/weak_freezing_alloy_axe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/weak_freezing_alloy_block.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/weak_freezing_alloy_boots.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/weak_freezing_alloy_chestplate.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/weak_freezing_alloy_helmet.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/weak_freezing_alloy_leggings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/weak_freezing_alloy_pickaxe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/weak_freezing_alloy_shovel.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/models/item/weak_freezing_alloy_sword.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/block/big_slip.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/block/blazing_alloy_block.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/block/blazing_carbon_block.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/block/blazing_carbon_block_altside.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/block/blazing_carbon_block_lower_double.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/block/blazing_carbon_block_upper_double.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/block/blazing_carbon_ore.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/block/end_mutable_alloy_ore.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/block/ender_alloy_block.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/block/freezing_alloy_block.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/block/freezing_carbon_block.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/block/freezing_carbon_block_altside.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/block/freezing_carbon_block_lower_double.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/block/freezing_carbon_block_upper_double.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/block/freezing_carbon_ore.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/block/frozen_geode.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/block/mutable_alloy_block.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/block/mutable_alloy_ore.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/block/nether_mutable_alloy_ore.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/block/weak_blazing_alloy_block.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/block/weak_ender_alloy_block.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/block/weak_freezing_alloy_block.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/entity/nether_boss.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/item/blazing_alloy.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/item/blazing_alloy_boots.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/item/blazing_alloy_chestplate.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/item/blazing_alloy_helmet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/item/blazing_alloy_leggings.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/item/blazing_alloy_sword.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/item/blazing_carbon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/item/ender_alloy.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/item/ender_alloy_boots.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/item/ender_alloy_chestplate.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/item/ender_alloy_helmet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/item/ender_alloy_leggings.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/item/ender_alloy_sword.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/item/freezing_alloy.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/item/freezing_alloy_boots.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/item/freezing_alloy_chestplate.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/item/freezing_alloy_helmet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/item/freezing_alloy_leggings.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/item/freezing_alloy_sword.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/item/freezing_carbon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/item/mutable_alloy.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/item/mutable_alloy_sword.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/item/weak_blazing_alloy.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/item/weak_blazing_alloy_boots.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/item/weak_blazing_alloy_chestplate.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/item/weak_blazing_alloy_helmet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/item/weak_blazing_alloy_leggings.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/item/weak_blazing_alloy_sword.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/item/weak_ender_alloy.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/item/weak_ender_alloy_boots.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/item/weak_ender_alloy_chestplate.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/item/weak_ender_alloy_helmet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/item/weak_ender_alloy_leggings.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/item/weak_ender_alloy_sword.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/item/weak_freezing_alloy.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/item/weak_freezing_alloy_boots.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/item/weak_freezing_alloy_chestplate.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/item/weak_freezing_alloy_helmet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/item/weak_freezing_alloy_leggings.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/item/weak_freezing_alloy_sword.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/models/armor/ender_layer_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/models/armor/ender_layer_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/models/armor/variant_blazing_layer_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/models/armor/variant_blazing_layer_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/models/armor/variant_freezing_layer_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/models/armor/variant_freezing_layer_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/models/armor/weak_ender_layer_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/models/armor/weak_ender_layer_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/models/armor/weak_variant_blazing_layer_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/models/armor/weak_variant_blazing_layer_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/models/armor/weak_variant_freezing_layer_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/examplemod/textures/models/armor/weak_variant_freezing_layer_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/loot_modifiers/blazing_touch_modifier.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/loot_modifiers/ender_touch_modifier.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/loot_modifiers/freezing_touch_modifier.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/loot_modifiers/frozen_geode_modifier.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/loot_tables/blocks/blazing_alloy_block.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/loot_tables/blocks/blazing_carbon_block.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/loot_tables/blocks/blazing_carbon_block_lower.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/loot_tables/blocks/blazing_carbon_block_upper.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/loot_tables/blocks/blazing_carbon_ore.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/loot_tables/blocks/end_mutable_alloy_ore.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/loot_tables/blocks/ender_alloy_block.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/loot_tables/blocks/freezing_alloy_block.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/loot_tables/blocks/freezing_carbon_block.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/loot_tables/blocks/freezing_carbon_block_lower.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/loot_tables/blocks/freezing_carbon_block_upper.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/loot_tables/blocks/freezing_carbon_ore.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/loot_tables/blocks/frozen_geode.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/loot_tables/blocks/mutable_alloy_block.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/loot_tables/blocks/mutable_alloy_ore.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/loot_tables/blocks/nether_mutable_alloy_ore.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/loot_tables/blocks/weak_blazing_alloy_block.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/loot_tables/blocks/weak_ender_alloy_block.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/loot_tables/blocks/weak_freezing_alloy_block.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/loot_tables/chests/hard_fortress.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/loot_tables/entities/hard_blaze.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/loot_tables/entities/hard_cave_spider.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/loot_tables/entities/hard_creeper.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/loot_tables/entities/hard_drowned.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/loot_tables/entities/hard_enderman.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/loot_tables/entities/hard_ghast.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/loot_tables/entities/hard_husk.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/loot_tables/entities/hard_skeleton.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/loot_tables/entities/hard_spider.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/loot_tables/entities/hard_stray.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/loot_tables/entities/hard_wither_skeleton.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/loot_tables/entities/hard_zombie.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/loot_tables/entities/hard_zombie_pigman.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/loot_tables/entities/leader_zombie_type.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/recipes/blazing_alloy.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/recipes/blazing_alloy_block.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/recipes/blazing_alloy_decompression.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/recipes/blazing_alloy_sword.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/recipes/blazing_carbon_block.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/recipes/blazing_carbon_block_lower.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/recipes/blazing_carbon_block_upper.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/recipes/ender_alloy.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/recipes/ender_alloy_block.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/recipes/ender_alloy_decompression.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/recipes/ender_alloy_sword.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/recipes/freezing_alloy.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/recipes/freezing_alloy_block.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/recipes/freezing_alloy_decompression.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/recipes/freezing_alloy_sword.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/recipes/freezing_carbon_block.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/recipes/freezing_carbon_block_lower.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/recipes/freezing_carbon_block_upper.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/recipes/freezing_carbon_from_blasting.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/recipes/freezing_carbon_from_smelting.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/recipes/mutable_alloy_block.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/recipes/mutable_alloy_sword.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/recipes/weak_blazing_alloy.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/recipes/weak_blazing_alloy_block.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/recipes/weak_blazing_alloy_decompression.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/recipes/weak_blazing_alloy_sword.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/recipes/weak_ender_alloy.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/recipes/weak_ender_alloy_block.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/recipes/weak_ender_alloy_decompression.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/recipes/weak_ender_alloy_sword.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/recipes/weak_freezing_alloy.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/recipes/weak_freezing_alloy_block.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/recipes/weak_freezing_alloy_decompression.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/recipes/weak_freezing_alloy_sword.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/structures/fortress/fortress_big_entrance.nbt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/structures/fortress/fortress_boss_room.nbt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/structures/fortress/fortress_deadend_chest.nbt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/structures/fortress/fortress_deadend_spawner.nbt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/structures/fortress/fortress_hallway_01.nbt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/structures/fortress/fortress_hallway_02.nbt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/structures/fortress/fortress_hallway_03.nbt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/structures/fortress/fortress_inside_turn.nbt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/structures/fortress/fortress_outside_turn.nbt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/structures/fortress/fortress_small_entrance.nbt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/structures/fortress/fortress_small_hallway_01.nbt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/structures/fortress/fortress_small_treasure_deadend.nbt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/structures/fortress/fortress_transition.nbt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/structures/snow/snow_base.nbt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/examplemod/structures/snow/snow_dungeon.nbt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/forge/loot_modifiers/global_loot_modifiers.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/data/forge/loot_modifiers/global_loot_modifiers.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/forge/tags/blocks/material_blocks/blazing_carbon.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/data/forge/tags/blocks/material_blocks/blazing_carbon.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/forge/tags/blocks/material_blocks/freezing_carbon.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/data/forge/tags/blocks/material_blocks/freezing_carbon.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/forge/tags/blocks/ores/blazing_carbon.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/data/forge/tags/blocks/ores/blazing_carbon.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/forge/tags/blocks/ores/freezing_carbon.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/data/forge/tags/blocks/ores/freezing_carbon.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/forge/tags/items/carbon_variants/blazing_carbon.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/data/forge/tags/items/carbon_variants/blazing_carbon.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/forge/tags/items/carbon_variants/freezing_carbon.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/data/forge/tags/items/carbon_variants/freezing_carbon.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/forge/tags/items/material_blocks/blazing_carbon.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/data/forge/tags/items/material_blocks/blazing_carbon.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/forge/tags/items/material_blocks/freezing_carbon.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/data/forge/tags/items/material_blocks/freezing_carbon.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/forge/tags/items/ores/blazing_carbon.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/data/forge/tags/items/ores/blazing_carbon.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/forge/tags/items/ores/freezing_carbon.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/data/forge/tags/items/ores/freezing_carbon.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/pack.mcmeta" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/pack.mcmeta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/crash-reports/crash-2020-07-14_20.24.12-server.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/crash-reports/crash-2020-07-14_20.24.12-server.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/crash-reports/crash-2020-07-14_20.49.04-server.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/crash-reports/crash-2020-07-14_20.49.04-server.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/crash-reports/crash-2020-07-15_21.47.52-server.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/crash-reports/crash-2020-07-15_21.47.52-server.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/crash-reports/crash-2020-07-25_19.03.26-server.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/crash-reports/crash-2020-07-25_19.03.26-server.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/crash-reports/crash-2020-07-25_21.58.10-server.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/crash-reports/crash-2020-07-25_21.58.10-server.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/crash-reports/crash-2020-07-26_16.08.12-server.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/crash-reports/crash-2020-07-26_16.08.12-server.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/crash-reports/crash-2020-07-27_18.47.05-server.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/crash-reports/crash-2020-07-27_18.47.05-server.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/crash-reports/crash-2020-07-28_21.10.12-server.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/crash-reports/crash-2020-07-28_21.10.12-server.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/crash-reports/crash-2020-07-28_21.13.37-server.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/crash-reports/crash-2020-07-28_21.13.37-server.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/crash-reports/crash-2020-08-02_21.17.09-server.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/crash-reports/crash-2020-08-02_21.17.09-server.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/crash-reports/crash-2020-08-06_12.22.36-client.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/crash-reports/crash-2020-08-06_12.22.36-client.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/crash-reports/crash-2020-08-18_13.56.06-server.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/crash-reports/crash-2020-08-18_13.56.06-server.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/crash-reports/crash-2020-08-18_14.02.51-server.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/crash-reports/crash-2020-08-18_14.02.51-server.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/crash-reports/crash-2020-08-18_14.10.36-server.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/crash-reports/crash-2020-08-18_14.10.36-server.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/crash-reports/crash-2020-08-19_01.27.14-server.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/crash-reports/crash-2020-08-19_01.27.14-server.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/crash-reports/crash-2020-08-19_16.47.09-server.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/crash-reports/crash-2020-08-19_16.47.09-server.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/crash-reports/crash-2020-10-29_21.43.28-server.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/crash-reports/crash-2020-10-29_21.43.28-server.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/crash-reports/crash-2020-10-30_23.18.27-server.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/crash-reports/crash-2020-10-30_23.18.27-server.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/crash-reports/crash-2020-10-31_00.29.49-client.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/crash-reports/crash-2020-10-31_00.29.49-client.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/crash-reports/crash-2020-10-31_11.42.15-server.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/crash-reports/crash-2020-10-31_11.42.15-server.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/crash-reports/crash-2020-10-31_11.49.35-server.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/crash-reports/crash-2020-10-31_11.49.35-server.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/crash-reports/crash-2020-10-31_13.57.32-client.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/crash-reports/crash-2020-10-31_13.57.32-client.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/crash-reports/crash-2020-10-31_14.00.08-client.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/crash-reports/crash-2020-10-31_14.00.08-client.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/crash-reports/crash-2020-10-31_14.02.03-client.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/crash-reports/crash-2020-10-31_14.02.03-client.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/crash-reports/crash-2020-10-31_14.03.59-client.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/crash-reports/crash-2020-10-31_14.03.59-client.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/crash-reports/crash-2020-11-02_15.46.09-server.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/crash-reports/crash-2020-11-02_15.46.09-server.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-11-06-1.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-11-06-1.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/ttmlm/init/IngotVariants.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/ttmlm/init/IngotVariants.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/ttmlm/init/ModItems.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/ttmlm/init/ModItems.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/ttmlm/item/tools/IngotVariantAxes$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/ttmlm/item/tools/IngotVariantAxes$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/ttmlm/item/tools/IngotVariantAxes.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/ttmlm/item/tools/IngotVariantAxes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/ttmlm/item/tools/IngotVariantPickaxes$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/ttmlm/item/tools/IngotVariantPickaxes$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/ttmlm/item/tools/IngotVariantPickaxes.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/ttmlm/item/tools/IngotVariantPickaxes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/ttmlm/item/tools/IngotVariantShovels$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/ttmlm/item/tools/IngotVariantShovels$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/ttmlm/item/tools/IngotVariantShovels.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/ttmlm/item/tools/IngotVariantShovels.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-11-06-1.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-11-06-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-11-06-2.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-11-06-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-11-06-3.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-11-06-4.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-11-06-4.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-1.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-1.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-2.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-3.log.gz" afterDir="false" />
@@ -453,6 +30,7 @@
       <change beforePath="$PROJECT_DIR$/run/logs/debug-5.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-5.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/latest.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/latest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/advancements/380df991-f603-344c-a090-369bad2a924a.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/advancements/380df991-f603-344c-a090-369bad2a924a.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/data/raids.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/data/raids.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/level.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/level.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/level.dat_old" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/level.dat_old" afterDir="false" />
@@ -464,369 +42,12 @@
       <change beforePath="$PROJECT_DIR$/run/saves/New World/session.lock" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/session.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/stats/380df991-f603-344c-a090-369bad2a924a.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/stats/380df991-f603-344c-a090-369bad2a924a.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/usercache.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/usercache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/ExampleMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/TTMLM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/SideProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/SideProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/block/OreBlocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/block/OreBlocks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/client/models/NetherBossModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/client/models/NetherBossModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/client/renders/NetherBossRender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/client/renders/NetherBossRender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/entity/SpawnEntities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/entity/SpawnEntities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/entity/ai/goal/EndermanGoals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/entity/ai/goal/EndermanGoals.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/entity/ai/goal/GhastGoals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/entity/ai/goal/GhastGoals.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/entity/ai/goal/HardCreeperSwellGoal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/entity/ai/goal/HardCreeperSwellGoal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/entity/changed/HardBlaze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/entity/changed/HardBlaze.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/entity/changed/HardCaveSpider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/entity/changed/HardCaveSpider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/entity/changed/HardCreeper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/entity/changed/HardCreeper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/entity/changed/HardDrowned.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/entity/changed/HardDrowned.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/entity/changed/HardEnderman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/entity/changed/HardEnderman.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/entity/changed/HardGhast.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/entity/changed/HardGhast.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/entity/changed/HardHusk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/entity/changed/HardHusk.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/entity/changed/HardSkeleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/entity/changed/HardSkeleton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/entity/changed/HardSpider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/entity/changed/HardSpider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/entity/changed/HardStray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/entity/changed/HardStray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/entity/changed/HardWitherSkeleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/entity/changed/HardWitherSkeleton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/entity/changed/HardZPigMan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/entity/changed/HardZPigMan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/entity/changed/HardZombie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/entity/changed/HardZombie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/entity/changed/IAbstractHardZombie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/entity/changed/IAbstractHardZombie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/entity/original/NetherBoss.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/entity/original/NetherBoss.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/init/CoalVariants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/init/CoalVariants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/init/IngotVariantTiers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/init/IngotVariantTiers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/init/IngotVariants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/init/IngotVariants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/init/ModBlocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/init/ModBlocks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/init/ModEntities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/init/ModEntities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/init/ModItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/init/ModItems.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/init/StructureInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/init/StructureInit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/init/VariantArmorMaterial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/init/VariantArmorMaterial.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/init/WorldGenOres.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/init/WorldGenOres.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/item/BlockItemsForVariantBlocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/item/BlockItemsForVariantBlocks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/item/CoalVariantsItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/item/CoalVariantsItems.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/item/armor/VariantArmor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/item/armor/VariantArmor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/item/tools/IngotVariantAxes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/item/tools/IngotVariantAxes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/item/tools/IngotVariantPickaxes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/item/tools/IngotVariantPickaxes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/item/tools/IngotVariantShovels.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/item/tools/IngotVariantShovels.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/item/tools/capabilities/ESLCapability.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/item/tools/capabilities/ESLCapability.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/item/tools/capabilities/EnderStorageLinker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/item/tools/capabilities/EnderStorageLinker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/item/tools/capabilities/IEnderStorageLink.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/item/tools/capabilities/IEnderStorageLink.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/item/tools/lootmodifiers/BlazingToolCondition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/item/tools/lootmodifiers/BlazingToolCondition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/item/tools/lootmodifiers/BlazingTouchModifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/item/tools/lootmodifiers/BlazingTouchModifier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/item/tools/lootmodifiers/EnderToolCondition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/item/tools/lootmodifiers/EnderToolCondition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/item/tools/lootmodifiers/EnderTouchModifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/item/tools/lootmodifiers/EnderTouchModifier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/item/tools/lootmodifiers/FreeingTouchModifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/item/tools/lootmodifiers/FreeingTouchModifier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/item/tools/lootmodifiers/FreezingToolCondition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/item/tools/lootmodifiers/FreezingToolCondition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/item/tools/lootmodifiers/FrozenGeodeCondition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/item/tools/lootmodifiers/FrozenGeodeCondition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/item/tools/lootmodifiers/FrozenGeodeModifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/item/tools/lootmodifiers/FrozenGeodeModifier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/item/weapons/IngotVariantSwords.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/item/weapons/IngotVariantSwords.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/structures/HardFortress.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/structures/HardFortress.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/structures/HardFortressPieces.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/structures/HardFortressPieces.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/structures/SnowDungeon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/structures/SnowDungeon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examplemod/structures/SnowDungeonPieces.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/structures/SnowDungeonPieces.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/mods.toml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/mods.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/blockstates/blazing_alloy_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/blockstates/blazing_alloy_block.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/blockstates/blazing_carbon_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/blockstates/blazing_carbon_block.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/blockstates/blazing_carbon_block_lower.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/blockstates/blazing_carbon_block_lower.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/blockstates/blazing_carbon_block_upper.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/blockstates/blazing_carbon_block_upper.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/blockstates/blazing_carbon_ore.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/blockstates/blazing_carbon_ore.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/blockstates/end_mutable_alloy_ore.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/blockstates/end_mutable_alloy_ore.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/blockstates/ender_alloy_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/blockstates/ender_alloy_block.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/blockstates/freezing_alloy_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/blockstates/freezing_alloy_block.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/blockstates/freezing_carbon_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/blockstates/freezing_carbon_block.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/blockstates/freezing_carbon_block_lower.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/blockstates/freezing_carbon_block_lower.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/blockstates/freezing_carbon_block_upper.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/blockstates/freezing_carbon_block_upper.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/blockstates/freezing_carbon_ore.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/blockstates/freezing_carbon_ore.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/blockstates/frozen_geode.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/blockstates/frozen_geode.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/blockstates/mutable_alloy_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/blockstates/mutable_alloy_block.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/blockstates/mutable_alloy_ore.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/blockstates/mutable_alloy_ore.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/blockstates/nether_mutable_alloy_ore.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/blockstates/nether_mutable_alloy_ore.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/blockstates/weak_blazing_alloy_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/blockstates/weak_blazing_alloy_block.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/blockstates/weak_ender_alloy_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/blockstates/weak_ender_alloy_block.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/blockstates/weak_freezing_alloy_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/blockstates/weak_freezing_alloy_block.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/lang/en_us.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/lang/en_us.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/block/blazing_alloy_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/block/blazing_alloy_block.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/block/blazing_carbon_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/block/blazing_carbon_block.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/block/blazing_carbon_block_lower.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/block/blazing_carbon_block_lower.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/block/blazing_carbon_block_lower_double.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/block/blazing_carbon_block_lower_double.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/block/blazing_carbon_block_lower_top.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/block/blazing_carbon_block_lower_top.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/block/blazing_carbon_block_upper.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/block/blazing_carbon_block_upper.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/block/blazing_carbon_block_upper_double.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/block/blazing_carbon_block_upper_double.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/block/blazing_carbon_block_upper_top.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/block/blazing_carbon_block_upper_top.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/block/blazing_carbon_ore.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/block/blazing_carbon_ore.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/block/end_mutable_alloy_ore.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/block/end_mutable_alloy_ore.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/block/ender_alloy_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/block/ender_alloy_block.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/block/freezing_alloy_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/block/freezing_alloy_block.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/block/freezing_carbon_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/block/freezing_carbon_block.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/block/freezing_carbon_block_lower.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/block/freezing_carbon_block_lower.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/block/freezing_carbon_block_lower_double.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/block/freezing_carbon_block_lower_double.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/block/freezing_carbon_block_lower_top.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/block/freezing_carbon_block_lower_top.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/block/freezing_carbon_block_upper.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/block/freezing_carbon_block_upper.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/block/freezing_carbon_block_upper_double.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/block/freezing_carbon_block_upper_double.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/block/freezing_carbon_block_upper_top.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/block/freezing_carbon_block_upper_top.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/block/freezing_carbon_ore.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/block/freezing_carbon_ore.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/block/frozen_geode.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/block/frozen_geode.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/block/mutable_alloy_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/block/mutable_alloy_block.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/block/mutable_alloy_ore.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/block/mutable_alloy_ore.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/block/nether_mutable_alloy_ore.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/block/nether_mutable_alloy_ore.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/block/weak_blazing_alloy_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/block/weak_blazing_alloy_block.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/block/weak_ender_alloy_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/block/weak_ender_alloy_block.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/block/weak_freezing_alloy_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/block/weak_freezing_alloy_block.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/blazing_alloy.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/blazing_alloy.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/blazing_alloy_axe.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/blazing_alloy_axe.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/blazing_alloy_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/blazing_alloy_block.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/blazing_alloy_boots.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/blazing_alloy_boots.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/blazing_alloy_chestplate.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/blazing_alloy_chestplate.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/blazing_alloy_helmet.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/blazing_alloy_helmet.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/blazing_alloy_leggings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/blazing_alloy_leggings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/blazing_alloy_pickaxe.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/blazing_alloy_pickaxe.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/blazing_alloy_shovel.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/blazing_alloy_shovel.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/blazing_alloy_sword.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/blazing_alloy_sword.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/blazing_carbon.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/blazing_carbon.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/blazing_carbon_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/blazing_carbon_block.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/blazing_carbon_block_lower.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/blazing_carbon_block_lower.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/blazing_carbon_block_upper.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/blazing_carbon_block_upper.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/blazing_carbon_ore.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/blazing_carbon_ore.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/cleavertype.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/cleavertype.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/end_mutable_alloy_ore.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/end_mutable_alloy_ore.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/ender_alloy.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/ender_alloy.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/ender_alloy_axe.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/ender_alloy_axe.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/ender_alloy_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/ender_alloy_block.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/ender_alloy_boots.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/ender_alloy_boots.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/ender_alloy_chestplate.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/ender_alloy_chestplate.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/ender_alloy_helmet.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/ender_alloy_helmet.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/ender_alloy_leggings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/ender_alloy_leggings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/ender_alloy_pickaxe.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/ender_alloy_pickaxe.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/ender_alloy_shovel.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/ender_alloy_shovel.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/ender_alloy_sword.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/ender_alloy_sword.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/freezing_alloy.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/freezing_alloy.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/freezing_alloy_axe.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/freezing_alloy_axe.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/freezing_alloy_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/freezing_alloy_block.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/freezing_alloy_boots.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/freezing_alloy_boots.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/freezing_alloy_chestplate.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/freezing_alloy_chestplate.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/freezing_alloy_helmet.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/freezing_alloy_helmet.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/freezing_alloy_leggings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/freezing_alloy_leggings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/freezing_alloy_pickaxe.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/freezing_alloy_pickaxe.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/freezing_alloy_shovel.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/freezing_alloy_shovel.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/freezing_alloy_sword.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/freezing_alloy_sword.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/freezing_carbon.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/freezing_carbon.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/freezing_carbon_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/freezing_carbon_block.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/freezing_carbon_block_lower.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/freezing_carbon_block_lower.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/freezing_carbon_block_upper.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/freezing_carbon_block_upper.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/freezing_carbon_ore.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/freezing_carbon_ore.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/frozen_geode.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/frozen_geode.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/mutable_alloy.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/mutable_alloy.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/mutable_alloy_axe.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/mutable_alloy_axe.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/mutable_alloy_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/mutable_alloy_block.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/mutable_alloy_boots.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/mutable_alloy_boots.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/mutable_alloy_chestplate.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/mutable_alloy_chestplate.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/mutable_alloy_helmet.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/mutable_alloy_helmet.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/mutable_alloy_leggings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/mutable_alloy_leggings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/mutable_alloy_ore.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/mutable_alloy_ore.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/mutable_alloy_pickaxe.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/mutable_alloy_pickaxe.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/mutable_alloy_shovel.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/mutable_alloy_shovel.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/mutable_alloy_sword.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/mutable_alloy_sword.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/nether_mutable_alloy_ore.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/nether_mutable_alloy_ore.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/scimitartype.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/scimitartype.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/weak_blazing_alloy.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/weak_blazing_alloy.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/weak_blazing_alloy_axe.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/weak_blazing_alloy_axe.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/weak_blazing_alloy_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/weak_blazing_alloy_block.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/weak_blazing_alloy_boots.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/weak_blazing_alloy_boots.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/weak_blazing_alloy_chestplate.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/weak_blazing_alloy_chestplate.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/weak_blazing_alloy_helmet.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/weak_blazing_alloy_helmet.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/weak_blazing_alloy_leggings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/weak_blazing_alloy_leggings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/weak_blazing_alloy_pickaxe.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/weak_blazing_alloy_pickaxe.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/weak_blazing_alloy_shovel.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/weak_blazing_alloy_shovel.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/weak_blazing_alloy_sword.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/weak_blazing_alloy_sword.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/weak_ender_alloy.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/weak_ender_alloy.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/weak_ender_alloy_axe.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/weak_ender_alloy_axe.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/weak_ender_alloy_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/weak_ender_alloy_block.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/weak_ender_alloy_boots.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/weak_ender_alloy_boots.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/weak_ender_alloy_chestplate.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/weak_ender_alloy_chestplate.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/weak_ender_alloy_helmet.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/weak_ender_alloy_helmet.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/weak_ender_alloy_leggings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/weak_ender_alloy_leggings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/weak_ender_alloy_pickaxe.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/weak_ender_alloy_pickaxe.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/weak_ender_alloy_shovel.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/weak_ender_alloy_shovel.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/weak_ender_alloy_sword.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/weak_ender_alloy_sword.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/weak_freezing_alloy.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/weak_freezing_alloy.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/weak_freezing_alloy_axe.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/weak_freezing_alloy_axe.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/weak_freezing_alloy_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/weak_freezing_alloy_block.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/weak_freezing_alloy_boots.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/weak_freezing_alloy_boots.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/weak_freezing_alloy_chestplate.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/weak_freezing_alloy_chestplate.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/weak_freezing_alloy_helmet.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/weak_freezing_alloy_helmet.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/weak_freezing_alloy_leggings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/weak_freezing_alloy_leggings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/weak_freezing_alloy_pickaxe.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/weak_freezing_alloy_pickaxe.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/weak_freezing_alloy_shovel.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/weak_freezing_alloy_shovel.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item/weak_freezing_alloy_sword.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/weak_freezing_alloy_sword.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/block/big_slip.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/block/big_slip.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/block/blazing_alloy_block.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/block/blazing_alloy_block.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/block/blazing_carbon_block.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/block/blazing_carbon_block.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/block/blazing_carbon_block_altside.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/block/blazing_carbon_block_altside.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/block/blazing_carbon_block_lower_double.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/block/blazing_carbon_block_lower_double.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/block/blazing_carbon_block_upper_double.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/block/blazing_carbon_block_upper_double.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/block/blazing_carbon_ore.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/block/blazing_carbon_ore.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/block/end_mutable_alloy_ore.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/block/end_mutable_alloy_ore.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/block/ender_alloy_block.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/block/ender_alloy_block.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/block/freezing_alloy_block.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/block/freezing_alloy_block.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/block/freezing_carbon_block.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/block/freezing_carbon_block.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/block/freezing_carbon_block_altside.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/block/freezing_carbon_block_altside.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/block/freezing_carbon_block_lower_double.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/block/freezing_carbon_block_lower_double.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/block/freezing_carbon_block_upper_double.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/block/freezing_carbon_block_upper_double.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/block/freezing_carbon_ore.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/block/freezing_carbon_ore.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/block/frozen_geode.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/block/frozen_geode.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/block/mutable_alloy_block.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/block/mutable_alloy_block.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/block/mutable_alloy_ore.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/block/mutable_alloy_ore.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/block/nether_mutable_alloy_ore.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/block/nether_mutable_alloy_ore.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/block/weak_blazing_alloy_block.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/block/weak_blazing_alloy_block.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/block/weak_ender_alloy_block.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/block/weak_ender_alloy_block.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/block/weak_freezing_alloy_block.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/block/weak_freezing_alloy_block.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/entity/nether_boss.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/entity/nether_boss.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/item/blazing_alloy.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/item/blazing_alloy.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/item/blazing_alloy_boots.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/item/blazing_alloy_boots.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/item/blazing_alloy_chestplate.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/item/blazing_alloy_chestplate.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/item/blazing_alloy_helmet.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/item/blazing_alloy_helmet.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/item/blazing_alloy_leggings.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/item/blazing_alloy_leggings.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/item/blazing_alloy_sword.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/item/blazing_alloy_sword.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/item/blazing_carbon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/item/blazing_carbon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/item/ender_alloy.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/item/ender_alloy.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/item/ender_alloy_boots.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/item/ender_alloy_boots.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/item/ender_alloy_chestplate.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/item/ender_alloy_chestplate.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/item/ender_alloy_helmet.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/item/ender_alloy_helmet.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/item/ender_alloy_leggings.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/item/ender_alloy_leggings.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/item/ender_alloy_sword.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/item/ender_alloy_sword.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/item/freezing_alloy.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/item/freezing_alloy.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/item/freezing_alloy_boots.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/item/freezing_alloy_boots.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/item/freezing_alloy_chestplate.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/item/freezing_alloy_chestplate.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/item/freezing_alloy_helmet.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/item/freezing_alloy_helmet.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/item/freezing_alloy_leggings.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/item/freezing_alloy_leggings.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/item/freezing_alloy_sword.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/item/freezing_alloy_sword.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/item/freezing_carbon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/item/freezing_carbon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/item/mutable_alloy.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/item/mutable_alloy.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/item/mutable_alloy_sword.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/item/mutable_alloy_sword.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/item/weak_blazing_alloy.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/item/weak_blazing_alloy.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/item/weak_blazing_alloy_boots.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/item/weak_blazing_alloy_boots.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/item/weak_blazing_alloy_chestplate.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/item/weak_blazing_alloy_chestplate.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/item/weak_blazing_alloy_helmet.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/item/weak_blazing_alloy_helmet.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/item/weak_blazing_alloy_leggings.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/item/weak_blazing_alloy_leggings.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/item/weak_blazing_alloy_sword.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/item/weak_blazing_alloy_sword.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/item/weak_ender_alloy.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/item/weak_ender_alloy.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/item/weak_ender_alloy_boots.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/item/weak_ender_alloy_boots.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/item/weak_ender_alloy_chestplate.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/item/weak_ender_alloy_chestplate.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/item/weak_ender_alloy_helmet.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/item/weak_ender_alloy_helmet.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/item/weak_ender_alloy_leggings.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/item/weak_ender_alloy_leggings.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/item/weak_ender_alloy_sword.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/item/weak_ender_alloy_sword.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/item/weak_freezing_alloy.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/item/weak_freezing_alloy.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/item/weak_freezing_alloy_boots.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/item/weak_freezing_alloy_boots.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/item/weak_freezing_alloy_chestplate.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/item/weak_freezing_alloy_chestplate.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/item/weak_freezing_alloy_helmet.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/item/weak_freezing_alloy_helmet.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/item/weak_freezing_alloy_leggings.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/item/weak_freezing_alloy_leggings.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/item/weak_freezing_alloy_sword.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/item/weak_freezing_alloy_sword.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/models/armor/ender_layer_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/models/armor/ender_layer_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/models/armor/ender_layer_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/models/armor/ender_layer_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/models/armor/variant_blazing_layer_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/models/armor/variant_blazing_layer_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/models/armor/variant_blazing_layer_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/models/armor/variant_blazing_layer_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/models/armor/variant_freezing_layer_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/models/armor/variant_freezing_layer_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/models/armor/variant_freezing_layer_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/models/armor/variant_freezing_layer_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/models/armor/weak_ender_layer_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/models/armor/weak_ender_layer_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/models/armor/weak_ender_layer_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/models/armor/weak_ender_layer_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/models/armor/weak_variant_blazing_layer_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/models/armor/weak_variant_blazing_layer_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/models/armor/weak_variant_blazing_layer_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/models/armor/weak_variant_blazing_layer_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/models/armor/weak_variant_freezing_layer_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/models/armor/weak_variant_freezing_layer_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/examplemod/textures/models/armor/weak_variant_freezing_layer_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/models/armor/weak_variant_freezing_layer_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/loot_modifiers/blazing_touch_modifier.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/loot_modifiers/blazing_touch_modifier.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/loot_modifiers/ender_touch_modifier.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/loot_modifiers/ender_touch_modifier.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/loot_modifiers/freezing_touch_modifier.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/loot_modifiers/freezing_touch_modifier.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/loot_modifiers/frozen_geode_modifier.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/loot_modifiers/frozen_geode_modifier.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/loot_tables/blocks/blazing_alloy_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/loot_tables/blocks/blazing_alloy_block.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/loot_tables/blocks/blazing_carbon_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/loot_tables/blocks/blazing_carbon_block.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/loot_tables/blocks/blazing_carbon_block_lower.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/loot_tables/blocks/blazing_carbon_block_lower.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/loot_tables/blocks/blazing_carbon_block_upper.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/loot_tables/blocks/blazing_carbon_block_upper.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/loot_tables/blocks/blazing_carbon_ore.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/loot_tables/blocks/blazing_carbon_ore.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/loot_tables/blocks/end_mutable_alloy_ore.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/loot_tables/blocks/end_mutable_alloy_ore.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/loot_tables/blocks/ender_alloy_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/loot_tables/blocks/ender_alloy_block.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/loot_tables/blocks/freezing_alloy_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/loot_tables/blocks/freezing_alloy_block.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/loot_tables/blocks/freezing_carbon_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/loot_tables/blocks/freezing_carbon_block.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/loot_tables/blocks/freezing_carbon_block_lower.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/loot_tables/blocks/freezing_carbon_block_lower.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/loot_tables/blocks/freezing_carbon_block_upper.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/loot_tables/blocks/freezing_carbon_block_upper.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/loot_tables/blocks/freezing_carbon_ore.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/loot_tables/blocks/freezing_carbon_ore.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/loot_tables/blocks/frozen_geode.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/loot_tables/blocks/frozen_geode.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/loot_tables/blocks/mutable_alloy_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/loot_tables/blocks/mutable_alloy_block.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/loot_tables/blocks/mutable_alloy_ore.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/loot_tables/blocks/mutable_alloy_ore.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/loot_tables/blocks/nether_mutable_alloy_ore.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/loot_tables/blocks/nether_mutable_alloy_ore.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/loot_tables/blocks/weak_blazing_alloy_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/loot_tables/blocks/weak_blazing_alloy_block.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/loot_tables/blocks/weak_ender_alloy_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/loot_tables/blocks/weak_ender_alloy_block.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/loot_tables/blocks/weak_freezing_alloy_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/loot_tables/blocks/weak_freezing_alloy_block.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/loot_tables/chests/hard_fortress.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/loot_tables/chests/hard_fortress.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/loot_tables/entities/hard_blaze.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/loot_tables/entities/hard_blaze.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/loot_tables/entities/hard_cave_spider.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/loot_tables/entities/hard_cave_spider.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/loot_tables/entities/hard_creeper.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/loot_tables/entities/hard_creeper.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/loot_tables/entities/hard_drowned.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/loot_tables/entities/hard_drowned.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/loot_tables/entities/hard_enderman.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/loot_tables/entities/hard_enderman.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/loot_tables/entities/hard_ghast.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/loot_tables/entities/hard_ghast.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/loot_tables/entities/hard_husk.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/loot_tables/entities/hard_husk.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/loot_tables/entities/hard_skeleton.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/loot_tables/entities/hard_skeleton.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/loot_tables/entities/hard_spider.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/loot_tables/entities/hard_spider.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/loot_tables/entities/hard_stray.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/loot_tables/entities/hard_stray.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/loot_tables/entities/hard_wither_skeleton.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/loot_tables/entities/hard_wither_skeleton.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/loot_tables/entities/hard_zombie.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/loot_tables/entities/hard_zombie.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/loot_tables/entities/hard_zombie_pigman.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/loot_tables/entities/hard_zombie_pigman.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/loot_tables/entities/leader_zombie_type.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/loot_tables/entities/leader_zombie_type.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/recipes/blazing_alloy.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/recipes/blazing_alloy.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/recipes/blazing_alloy_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/recipes/blazing_alloy_block.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/recipes/blazing_alloy_decompression.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/recipes/blazing_alloy_decompression.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/recipes/blazing_alloy_sword.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/recipes/blazing_alloy_sword.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/recipes/blazing_carbon_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/recipes/blazing_carbon_block.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/recipes/blazing_carbon_block_lower.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/recipes/blazing_carbon_block_lower.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/recipes/blazing_carbon_block_upper.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/recipes/blazing_carbon_block_upper.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/recipes/ender_alloy.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/recipes/ender_alloy.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/recipes/ender_alloy_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/recipes/ender_alloy_block.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/recipes/ender_alloy_decompression.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/recipes/ender_alloy_decompression.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/recipes/ender_alloy_sword.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/recipes/ender_alloy_sword.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/recipes/freezing_alloy.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/recipes/freezing_alloy.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/recipes/freezing_alloy_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/recipes/freezing_alloy_block.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/recipes/freezing_alloy_decompression.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/recipes/freezing_alloy_decompression.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/recipes/freezing_alloy_sword.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/recipes/freezing_alloy_sword.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/recipes/freezing_carbon_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/recipes/freezing_carbon_block.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/recipes/freezing_carbon_block_lower.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/recipes/freezing_carbon_block_lower.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/recipes/freezing_carbon_block_upper.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/recipes/freezing_carbon_block_upper.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/recipes/freezing_carbon_from_blasting.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/recipes/freezing_carbon_from_blasting.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/recipes/freezing_carbon_from_smelting.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/recipes/freezing_carbon_from_smelting.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/recipes/mutable_alloy_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/recipes/mutable_alloy_block.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/recipes/mutable_alloy_sword.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/recipes/mutable_alloy_sword.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/recipes/weak_blazing_alloy.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/recipes/weak_blazing_alloy.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/recipes/weak_blazing_alloy_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/recipes/weak_blazing_alloy_block.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/recipes/weak_blazing_alloy_decompression.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/recipes/weak_blazing_alloy_decompression.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/recipes/weak_blazing_alloy_sword.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/recipes/weak_blazing_alloy_sword.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/recipes/weak_ender_alloy.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/recipes/weak_ender_alloy.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/recipes/weak_ender_alloy_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/recipes/weak_ender_alloy_block.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/recipes/weak_ender_alloy_decompression.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/recipes/weak_ender_alloy_decompression.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/recipes/weak_ender_alloy_sword.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/recipes/weak_ender_alloy_sword.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/recipes/weak_freezing_alloy.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/recipes/weak_freezing_alloy.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/recipes/weak_freezing_alloy_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/recipes/weak_freezing_alloy_block.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/recipes/weak_freezing_alloy_decompression.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/recipes/weak_freezing_alloy_decompression.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/recipes/weak_freezing_alloy_sword.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/recipes/weak_freezing_alloy_sword.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/structures/fortress/fortress_big_entrance.nbt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/structures/fortress/fortress_big_entrance.nbt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/structures/fortress/fortress_boss_room.nbt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/structures/fortress/fortress_boss_room.nbt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/structures/fortress/fortress_deadend_chest.nbt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/structures/fortress/fortress_deadend_chest.nbt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/structures/fortress/fortress_deadend_spawner.nbt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/structures/fortress/fortress_deadend_spawner.nbt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/structures/fortress/fortress_hallway_01.nbt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/structures/fortress/fortress_hallway_01.nbt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/structures/fortress/fortress_hallway_02.nbt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/structures/fortress/fortress_hallway_02.nbt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/structures/fortress/fortress_hallway_03.nbt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/structures/fortress/fortress_hallway_03.nbt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/structures/fortress/fortress_inside_turn.nbt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/structures/fortress/fortress_inside_turn.nbt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/structures/fortress/fortress_outside_turn.nbt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/structures/fortress/fortress_outside_turn.nbt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/structures/fortress/fortress_small_entrance.nbt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/structures/fortress/fortress_small_entrance.nbt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/structures/fortress/fortress_small_hallway_01.nbt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/structures/fortress/fortress_small_hallway_01.nbt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/structures/fortress/fortress_small_treasure_deadend.nbt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/structures/fortress/fortress_small_treasure_deadend.nbt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/structures/fortress/fortress_transition.nbt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/structures/fortress/fortress_transition.nbt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/structures/snow/snow_base.nbt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/structures/snow/snow_base.nbt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/examplemod/structures/snow/snow_dungeon.nbt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/structures/snow/snow_dungeon.nbt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/forge/loot_modifiers/global_loot_modifiers.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/forge/loot_modifiers/global_loot_modifiers.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/forge/tags/blocks/material_blocks/blazing_carbon.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/forge/tags/blocks/material_blocks/blazing_carbon.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/forge/tags/blocks/material_blocks/freezing_carbon.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/forge/tags/blocks/material_blocks/freezing_carbon.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/forge/tags/blocks/ores/blazing_carbon.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/forge/tags/blocks/ores/blazing_carbon.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/forge/tags/blocks/ores/freezing_carbon.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/forge/tags/blocks/ores/freezing_carbon.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/forge/tags/items/carbon_variants/blazing_carbon.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/forge/tags/items/carbon_variants/blazing_carbon.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/forge/tags/items/carbon_variants/freezing_carbon.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/forge/tags/items/carbon_variants/freezing_carbon.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/forge/tags/items/material_blocks/blazing_carbon.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/forge/tags/items/material_blocks/blazing_carbon.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/forge/tags/items/material_blocks/freezing_carbon.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/forge/tags/items/material_blocks/freezing_carbon.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/forge/tags/items/ores/blazing_carbon.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/forge/tags/items/ores/blazing_carbon.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/forge/tags/items/ores/freezing_carbon.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/forge/tags/items/ores/freezing_carbon.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/pack.mcmeta" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pack.mcmeta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/init/IngotVariants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/init/IngotVariants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/init/ModItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/init/ModItems.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/item/tools/IngotVariantAxes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/item/tools/IngotVariantAxes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/item/tools/IngotVariantPickaxes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/item/tools/IngotVariantPickaxes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/item/tools/IngotVariantShovels.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/item/tools/IngotVariantShovels.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/lang/en_us.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/lang/en_us.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -901,29 +122,29 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="ignore.virus.scanning.warn.message" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/assets/examplemod/models/item" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="show.migrate.to.gradle.popup" value="false" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Mayukh\Forge Modding\src\main\resources\assets\examplemod\models\item" />
-      <recent name="C:\Users\Mayukh\Forge Modding\src\main\resources\data\examplemod\loot_modifiers" />
-      <recent name="C:\Users\Mayukh\Forge Modding\src\main\resources\data\examplemod\structures\snow" />
-      <recent name="C:\Users\Mayukh\Forge Modding\src\main\resources\data\examplemod\structures\fortress" />
-      <recent name="C:\Users\Mayukh\Forge Modding\src\main\resources\assets\examplemod\structures\fortress" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.example.examplemod.item.tools.lootmodifiers" />
-      <recent name="com.example.examplemod.entity.changed" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Mayukh\Forge Modding\src\main\resources\data\examplemod\loot_modifiers" />
       <recent name="C:\Users\Mayukh\Forge Modding\src\main\resources\data\examplemod\loot_tables" />
       <recent name="C:\Users\Mayukh\Forge Modding\src\main\resources\assets\examplemod\textures" />
       <recent name="C:\Users\Mayukh\Forge Modding\src\main\resources\data\examplemod" />
       <recent name="C:\Users\Mayukh\Forge Modding\src\main\resources\assets\examplemod\structures" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.examplemod.item.tools.lootmodifiers" />
+      <recent name="com.example.examplemod.entity.changed" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Mayukh\Forge Modding\src\main\resources\assets\ttmlm\models\item" />
+      <recent name="C:\Users\Mayukh\Forge Modding\src\main\resources\assets\examplemod\models\item" />
+      <recent name="C:\Users\Mayukh\Forge Modding\src\main\resources\data\examplemod\loot_modifiers" />
+      <recent name="C:\Users\Mayukh\Forge Modding\src\main\resources\data\examplemod\structures\snow" />
+      <recent name="C:\Users\Mayukh\Forge Modding\src\main\resources\data\examplemod\structures\fortress" />
     </key>
   </component>
   <component name="RunManager" selected="Application.runClient">
@@ -980,10 +201,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="626" y="336" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1604715906364" />
-    <state x="742" y="189" key="#com.intellij.ide.util.MemberChooser" timestamp="1604431498252">
+    <state x="742" y="189" key="#com.intellij.ide.util.MemberChooser" timestamp="1605125012083">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="742" y="189" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1604431498252" />
+    <state x="742" y="189" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1605125012083" />
     <state x="794" y="412" width="416" height="291" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1596912892805">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -992,62 +213,62 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="729" y="290" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603945348173" />
-    <state x="756" y="218" key="#xdebugger.evaluate" timestamp="1604297996230">
+    <state x="756" y="218" key="#xdebugger.evaluate" timestamp="1605381011083">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="756" y="218" key="#xdebugger.evaluate/0.0.1920.1040@0.0.1920.1040" timestamp="1604297996230" />
+    <state x="756" y="218" key="#xdebugger.evaluate/0.0.1920.1040@0.0.1920.1040" timestamp="1605381011083" />
     <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1599926869162">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1599926869162" />
-    <state width="1394" height="199" key="GridCell.Tab.0.bottom" timestamp="1604724052930">
+    <state width="1394" height="199" key="GridCell.Tab.0.bottom" timestamp="1605393228137">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1394" height="199" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604724052930" />
-    <state width="1394" height="199" key="GridCell.Tab.0.center" timestamp="1604724052930">
+    <state width="1394" height="199" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605393228137" />
+    <state width="1394" height="199" key="GridCell.Tab.0.center" timestamp="1605393228137">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1394" height="199" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604724052930" />
-    <state width="1394" height="199" key="GridCell.Tab.0.left" timestamp="1604724052930">
+    <state width="1394" height="199" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605393228137" />
+    <state width="1394" height="199" key="GridCell.Tab.0.left" timestamp="1605393228137">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1394" height="199" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604724052930" />
-    <state width="1394" height="199" key="GridCell.Tab.0.right" timestamp="1604724052930">
+    <state width="1394" height="199" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605393228137" />
+    <state width="1394" height="199" key="GridCell.Tab.0.right" timestamp="1605393228137">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1394" height="199" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604724052930" />
-    <state width="1394" height="255" key="GridCell.Tab.1.bottom" timestamp="1604720173393">
+    <state width="1394" height="199" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605393228137" />
+    <state width="1394" height="133" key="GridCell.Tab.1.bottom" timestamp="1605392533348">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1394" height="255" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604720173393" />
-    <state width="1394" height="255" key="GridCell.Tab.1.center" timestamp="1604720173393">
+    <state width="1394" height="133" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605392533348" />
+    <state width="1394" height="133" key="GridCell.Tab.1.center" timestamp="1605392533348">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1394" height="255" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604720173393" />
-    <state width="1394" height="255" key="GridCell.Tab.1.left" timestamp="1604720173393">
+    <state width="1394" height="133" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605392533348" />
+    <state width="1394" height="133" key="GridCell.Tab.1.left" timestamp="1605392533348">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1394" height="255" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604720173393" />
-    <state width="1394" height="255" key="GridCell.Tab.1.right" timestamp="1604720173393">
+    <state width="1394" height="133" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605392533348" />
+    <state width="1394" height="133" key="GridCell.Tab.1.right" timestamp="1605392533348">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1394" height="255" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604720173393" />
-    <state x="467" y="326" key="com.intellij.ide.util.TipDialog" timestamp="1604715618049">
+    <state width="1394" height="133" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605392533348" />
+    <state x="467" y="326" key="com.intellij.ide.util.TipDialog" timestamp="1605371820650">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="467" y="326" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604715618049" />
+    <state x="467" y="326" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605371820650" />
     <state x="393" y="160" key="new project wizard" timestamp="1599926908337">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="393" y="160" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1599926908337" />
-    <state x="535" y="260" key="run.anything.popup" timestamp="1604107769645">
+    <state x="535" y="260" key="run.anything.popup" timestamp="1605123696570">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="535" y="260" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1604107769645" />
-    <state x="1134" y="260" width="672" height="676" key="search.everywhere.popup" timestamp="1604717625995">
+    <state x="535" y="260" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1605123696570" />
+    <state x="1134" y="260" width="672" height="676" key="search.everywhere.popup" timestamp="1605124883673">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1134" y="260" width="672" height="676" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1604717625995" />
+    <state x="1134" y="260" width="672" height="676" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1605124883673" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
