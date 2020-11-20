@@ -11,18 +11,24 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/ttmlm/init/IngotVariants.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/ttmlm/init/IngotVariants.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/ttmlm/init/ModItems.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/ttmlm/init/ModItems.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/ttmlm/item/tools/IngotVariantAxes$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/ttmlm/item/tools/IngotVariantAxes$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/ttmlm/item/tools/IngotVariantAxes.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/ttmlm/item/tools/IngotVariantAxes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/ttmlm/item/tools/IngotVariantPickaxes$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/ttmlm/item/tools/IngotVariantPickaxes$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/ttmlm/item/tools/IngotVariantPickaxes.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/ttmlm/item/tools/IngotVariantPickaxes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/ttmlm/item/tools/IngotVariantShovels$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/ttmlm/item/tools/IngotVariantShovels$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/ttmlm/item/tools/IngotVariantShovels.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/ttmlm/item/tools/IngotVariantShovels.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-11-06-1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-11-06-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-11-06-2.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-11-06-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-11-06-3.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-11-06-4.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-11-06-4.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/ttmlm/item/tools/IngotVariantHoes.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/ttmlm/item/tools/IngotVariantHoes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-11-14-1.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-11-14-10.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-11-14-10.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-11-14-11.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-11-14-11.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-11-14-12.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-11-14-12.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-11-14-13.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-11-14-13.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-11-14-14.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-11-14-14.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-11-14-15.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-11-14-15.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-11-14-16.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-11-14-16.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-11-14-17.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-11-14-17.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-11-14-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-11-14-2.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-11-14-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-11-14-3.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-11-14-4.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-11-14-4.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-11-14-5.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-11-14-5.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-11-14-6.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-11-14-6.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-11-14-7.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-11-14-7.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-11-14-8.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-11-14-8.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-11-14-9.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-11-14-9.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-1.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-1.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-2.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-3.log.gz" afterDir="false" />
@@ -30,7 +36,6 @@
       <change beforePath="$PROJECT_DIR$/run/logs/debug-5.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-5.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/latest.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/latest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/advancements/380df991-f603-344c-a090-369bad2a924a.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/advancements/380df991-f603-344c-a090-369bad2a924a.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/data/raids.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/data/raids.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/level.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/level.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/level.dat_old" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/level.dat_old" afterDir="false" />
@@ -42,12 +47,7 @@
       <change beforePath="$PROJECT_DIR$/run/saves/New World/session.lock" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/session.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/stats/380df991-f603-344c-a090-369bad2a924a.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/stats/380df991-f603-344c-a090-369bad2a924a.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/usercache.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/usercache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/init/IngotVariants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/init/IngotVariants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/init/ModItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/init/ModItems.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/item/tools/IngotVariantAxes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/item/tools/IngotVariantAxes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/item/tools/IngotVariantPickaxes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/item/tools/IngotVariantPickaxes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/item/tools/IngotVariantShovels.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/item/tools/IngotVariantShovels.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/lang/en_us.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/lang/en_us.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/item/tools/IngotVariantHoes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/item/tools/IngotVariantHoes.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,14 +201,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="626" y="336" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1604715906364" />
-    <state x="742" y="189" key="#com.intellij.ide.util.MemberChooser" timestamp="1605125012083">
+    <state x="742" y="189" key="#com.intellij.ide.util.MemberChooser" timestamp="1605835215910">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="742" y="189" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1605125012083" />
-    <state x="794" y="412" width="416" height="291" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1596912892805">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="794" y="412" width="416" height="291" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1596912892805" />
+    <state x="742" y="189" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1605835215910" />
     <state x="729" y="290" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1603945348173">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -221,42 +217,42 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1599926869162" />
-    <state width="1394" height="199" key="GridCell.Tab.0.bottom" timestamp="1605393228137">
+    <state width="1394" height="199" key="GridCell.Tab.0.bottom" timestamp="1605904475165">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1394" height="199" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605393228137" />
-    <state width="1394" height="199" key="GridCell.Tab.0.center" timestamp="1605393228137">
+    <state width="1394" height="199" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605904475165" />
+    <state width="1394" height="199" key="GridCell.Tab.0.center" timestamp="1605904475165">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1394" height="199" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605393228137" />
-    <state width="1394" height="199" key="GridCell.Tab.0.left" timestamp="1605393228137">
+    <state width="1394" height="199" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605904475165" />
+    <state width="1394" height="199" key="GridCell.Tab.0.left" timestamp="1605904475165">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1394" height="199" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605393228137" />
-    <state width="1394" height="199" key="GridCell.Tab.0.right" timestamp="1605393228137">
+    <state width="1394" height="199" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605904475165" />
+    <state width="1394" height="199" key="GridCell.Tab.0.right" timestamp="1605904475165">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1394" height="199" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605393228137" />
-    <state width="1394" height="133" key="GridCell.Tab.1.bottom" timestamp="1605392533348">
+    <state width="1394" height="199" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605904475165" />
+    <state width="1394" height="133" key="GridCell.Tab.1.bottom" timestamp="1605902210788">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1394" height="133" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605392533348" />
-    <state width="1394" height="133" key="GridCell.Tab.1.center" timestamp="1605392533348">
+    <state width="1394" height="133" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605902210788" />
+    <state width="1394" height="133" key="GridCell.Tab.1.center" timestamp="1605902210788">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1394" height="133" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605392533348" />
-    <state width="1394" height="133" key="GridCell.Tab.1.left" timestamp="1605392533348">
+    <state width="1394" height="133" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605902210788" />
+    <state width="1394" height="133" key="GridCell.Tab.1.left" timestamp="1605902210788">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1394" height="133" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605392533348" />
-    <state width="1394" height="133" key="GridCell.Tab.1.right" timestamp="1605392533348">
+    <state width="1394" height="133" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605902210788" />
+    <state width="1394" height="133" key="GridCell.Tab.1.right" timestamp="1605902210788">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1394" height="133" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605392533348" />
-    <state x="467" y="326" key="com.intellij.ide.util.TipDialog" timestamp="1605371820650">
+    <state width="1394" height="133" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605902210788" />
+    <state x="467" y="326" key="com.intellij.ide.util.TipDialog" timestamp="1605900200023">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="467" y="326" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605371820650" />
+    <state x="467" y="326" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605900200023" />
     <state x="393" y="160" key="new project wizard" timestamp="1599926908337">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -265,10 +261,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="535" y="260" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1605123696570" />
-    <state x="1134" y="260" width="672" height="676" key="search.everywhere.popup" timestamp="1605124883673">
+    <state x="1134" y="260" width="672" height="676" key="search.everywhere.popup" timestamp="1605847997207">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1134" y="260" width="672" height="676" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1605124883673" />
+    <state x="1134" y="260" width="672" height="676" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1605847997207" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
