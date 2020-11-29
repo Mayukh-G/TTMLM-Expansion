@@ -1,0 +1,22 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "OXO",
+    "XIX",
+    "OXO"
+  ],
+  "key": {
+    "X" : {
+      "item": "ttmlm:blazing_alloy"
+    },
+    "I": {
+      "item": "ttmlm:weak_blazing_alloy_pickaxe"
+    },
+    "O": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result": {
+    "item": "ttmlm:blazing_alloy_pickaxe"
+  }
+}

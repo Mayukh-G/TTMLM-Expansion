@@ -1,0 +1,22 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "XIX",
+    "IOI",
+    "XIX"
+  ],
+  "key": {
+    "X" : {
+      "item": "ttmlm:blazing_alloy"
+    },
+    "I" : {
+      "item": "ttmlm:mutable_alloy_block"
+    },
+    "O" : {
+      "item": "ttmlm:weak_blazing_alloy_leggings"
+    }
+  },
+  "result": {
+    "item": "ttmlm:blazing_alloy_leggings"
+  }
+}

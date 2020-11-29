@@ -1,0 +1,22 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "XIX",
+    "IOI",
+    "XIX"
+  ],
+  "key": {
+    "X" : {
+      "item": "ttmlm:freezing_alloy"
+    },
+    "I" : {
+      "item": "ttmlm:mutable_alloy_block"
+    },
+    "O" : {
+      "item": "ttmlm:weak_freezing_alloy_leggings"
+    }
+  },
+  "result": {
+    "item": "ttmlm:freezing_alloy_leggings"
+  }
+}

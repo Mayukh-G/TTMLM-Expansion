@@ -1,0 +1,22 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "OXO",
+    "XIX",
+    "OXO"
+  ],
+  "key": {
+    "X" : {
+      "item": "ttmlm:ender_alloy"
+    },
+    "I": {
+      "item": "ttmlm:weak_ender_alloy_hoe"
+    },
+    "O": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result": {
+    "item": "ttmlm:ender_alloy_hoe"
+  }
+}

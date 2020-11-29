@@ -1,0 +1,19 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    " XX",
+    " IX",
+    " I "
+  ],
+  "key": {
+    "X" : {
+      "item": "ttmlm:weak_freezing_alloy"
+    },
+    "I": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "ttmlm:weak_freezing_alloy_axe"
+  }
+}

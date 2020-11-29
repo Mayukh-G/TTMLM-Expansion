@@ -1,0 +1,19 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "XXX",
+    " I ",
+    " I "
+  ],
+  "key": {
+    "X" : {
+      "item": "ttmlm:weak_blazing_alloy"
+    },
+    "I": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "ttmlm:weak_blazing_alloy_pickaxe"
+  }
+}

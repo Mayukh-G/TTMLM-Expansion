@@ -12,23 +12,20 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/ttmlm/item/tools/IngotVariantHoes.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/ttmlm/item/tools/IngotVariantHoes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-11-14-1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-11-14-10.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-11-14-10.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-11-14-11.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-11-14-11.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-11-14-12.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-11-14-12.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-11-14-13.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-11-14-13.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-11-14-14.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-11-14-14.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-11-14-15.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-11-14-15.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-11-14-16.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-11-14-16.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-11-14-17.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-11-14-17.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-11-14-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-11-14-2.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-11-14-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-11-14-3.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-11-14-4.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-11-14-4.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-11-14-5.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-11-14-5.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-11-14-6.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-11-14-6.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-11-14-7.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-11-14-7.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-11-14-8.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-11-14-8.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-11-14-9.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-11-14-9.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/data/ttmlm/recipes/ender_alloy_sword.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/data/ttmlm/recipes/ender_alloy_sword.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-11-20-1.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-11-20-10.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-11-20-10.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-11-20-11.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-11-20-11.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-11-20-12.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-11-20-12.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-11-20-13.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-11-20-13.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-11-20-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-11-20-2.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-11-20-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-11-20-3.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-11-20-4.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-11-20-4.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-11-20-5.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-11-20-5.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-11-20-6.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-11-20-6.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-11-20-7.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-11-20-7.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-11-20-8.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-11-20-8.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-11-20-9.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-11-20-9.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-1.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-1.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-2.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-3.log.gz" afterDir="false" />
@@ -47,7 +44,7 @@
       <change beforePath="$PROJECT_DIR$/run/saves/New World/session.lock" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/session.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/stats/380df991-f603-344c-a090-369bad2a924a.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/stats/380df991-f603-344c-a090-369bad2a924a.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/usercache.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/usercache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/item/tools/IngotVariantHoes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/item/tools/IngotVariantHoes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/ttmlm/recipes/ender_alloy_sword.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/recipes/ender_alloy_sword.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +119,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="ignore.virus.scanning.warn.message" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/data/ttmlm/recipes" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="show.migrate.to.gradle.popup" value="false" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
@@ -140,11 +137,11 @@
       <recent name="com.example.examplemod.entity.changed" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Mayukh\Forge Modding\src\main\resources\data\ttmlm\recipes" />
       <recent name="C:\Users\Mayukh\Forge Modding\src\main\resources\assets\ttmlm\models\item" />
       <recent name="C:\Users\Mayukh\Forge Modding\src\main\resources\assets\examplemod\models\item" />
       <recent name="C:\Users\Mayukh\Forge Modding\src\main\resources\data\examplemod\loot_modifiers" />
       <recent name="C:\Users\Mayukh\Forge Modding\src\main\resources\data\examplemod\structures\snow" />
-      <recent name="C:\Users\Mayukh\Forge Modding\src\main\resources\data\examplemod\structures\fortress" />
     </key>
   </component>
   <component name="RunManager" selected="Application.runClient">
@@ -217,42 +214,42 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1599926869162" />
-    <state width="1394" height="199" key="GridCell.Tab.0.bottom" timestamp="1605904475165">
+    <state width="1394" height="199" key="GridCell.Tab.0.bottom" timestamp="1606632037469">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1394" height="199" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605904475165" />
-    <state width="1394" height="199" key="GridCell.Tab.0.center" timestamp="1605904475165">
+    <state width="1394" height="199" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606632037469" />
+    <state width="1394" height="199" key="GridCell.Tab.0.center" timestamp="1606632037469">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1394" height="199" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605904475165" />
-    <state width="1394" height="199" key="GridCell.Tab.0.left" timestamp="1605904475165">
+    <state width="1394" height="199" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606632037469" />
+    <state width="1394" height="199" key="GridCell.Tab.0.left" timestamp="1606632037469">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1394" height="199" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605904475165" />
-    <state width="1394" height="199" key="GridCell.Tab.0.right" timestamp="1605904475165">
+    <state width="1394" height="199" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606632037469" />
+    <state width="1394" height="199" key="GridCell.Tab.0.right" timestamp="1606632037469">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1394" height="199" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605904475165" />
-    <state width="1394" height="133" key="GridCell.Tab.1.bottom" timestamp="1605902210788">
+    <state width="1394" height="199" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606632037469" />
+    <state width="1394" height="133" key="GridCell.Tab.1.bottom" timestamp="1605912444664">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1394" height="133" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605902210788" />
-    <state width="1394" height="133" key="GridCell.Tab.1.center" timestamp="1605902210788">
+    <state width="1394" height="133" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605912444664" />
+    <state width="1394" height="133" key="GridCell.Tab.1.center" timestamp="1605912444664">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1394" height="133" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605902210788" />
-    <state width="1394" height="133" key="GridCell.Tab.1.left" timestamp="1605902210788">
+    <state width="1394" height="133" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605912444664" />
+    <state width="1394" height="133" key="GridCell.Tab.1.left" timestamp="1605912444664">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1394" height="133" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605902210788" />
-    <state width="1394" height="133" key="GridCell.Tab.1.right" timestamp="1605902210788">
+    <state width="1394" height="133" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605912444664" />
+    <state width="1394" height="133" key="GridCell.Tab.1.right" timestamp="1605912444664">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1394" height="133" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605902210788" />
-    <state x="467" y="326" key="com.intellij.ide.util.TipDialog" timestamp="1605900200023">
+    <state width="1394" height="133" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605912444664" />
+    <state x="467" y="326" key="com.intellij.ide.util.TipDialog" timestamp="1606627497534">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="467" y="326" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605900200023" />
+    <state x="467" y="326" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606627497534" />
     <state x="393" y="160" key="new project wizard" timestamp="1599926908337">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -261,10 +258,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="535" y="260" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1605123696570" />
-    <state x="1134" y="260" width="672" height="676" key="search.everywhere.popup" timestamp="1605847997207">
+    <state x="1134" y="260" width="672" height="676" key="search.everywhere.popup" timestamp="1606433196361">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1134" y="260" width="672" height="676" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1605847997207" />
+    <state x="1134" y="260" width="672" height="676" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606433196361" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
