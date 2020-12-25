@@ -80,7 +80,7 @@ public class HardFortressPieces {
         for(int i = 0; i < totalPieces; i++){
             int select = random.nextInt(100);
             //Force a turn piece so structure stays with in 18x18 area where start pos is the center
-            if(chunkCounter/16 >= 7){
+            if((float)chunkCounter/16 >= 6.5){
                 chunkCounter = 0;
                 if(!prevPiece.small) {
                     prevPiece = IndividualPiece.addTranstion(totalDisplacement[1], totalDisplacement[0], rotation, x, z, pos, pieceList, templateManager);

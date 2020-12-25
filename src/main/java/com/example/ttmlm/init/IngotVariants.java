@@ -52,8 +52,9 @@ public enum IngotVariants {
     IngotVariants(int attackDmg, float attackspeed, IItemTier tier, IArmorMaterial material){
 
         this.atkDmg = attackDmg;
-        this.atkSpeed = attackspeed;
         this.tier = tier;
+        this.atkSpeed = (this.tier == IngotVariantTiers.ENDER || this.tier == IngotVariantTiers.WEAK_ENDER) ?
+                (float)(attackspeed + 0.3) : attackspeed;
         this.material = material;
 
         ingotItems = new LazyValue<>(() -> new Item(new Item.Properties().group(TTMLM.ITEM_GROUP_RESOURCES)));
@@ -69,7 +70,7 @@ public enum IngotVariants {
         ingotLeggingsItems = new LazyValue<>(() -> new VariantArmor(this.material, EquipmentSlotType.LEGS, new Item.Properties()));
         ingotBootsItems = new LazyValue<>(() -> new VariantArmor(this.material, EquipmentSlotType.FEET, new Item.Properties()));
         ingotPickaxeItems = new LazyValue<>(() -> new IngotVariantPickaxes(this.tier, this.atkDmg - 3, (float)(this.atkSpeed - 0.3), this.getVariant(), new Item.Properties()));
-        ingotAxeItems = new LazyValue<>(() -> new IngotVariantAxes(this.tier, this.atkDmg + 1, (float)(this.atkSpeed - 0.5), this.getVariant(), new Item.Properties()));
+        ingotAxeItems = new LazyValue<>(() -> new IngotVariantAxes(this.tier, this.atkDmg + 1, (float)(this.atkSpeed - 0.8), this.getVariant(), new Item.Properties()));
         ingotShovelItems = new LazyValue<>(() -> new IngotVariantShovels(this.tier, this.atkDmg - 4, (float)(this.atkSpeed - 0.3), this.getVariant(), new Item.Properties()));
         ingotHoeItems = new LazyValue<>(() -> new IngotVariantHoes(this.tier, (float)(this.atkSpeed - 0.3), this.getVariant(), new Item.Properties()));
     }

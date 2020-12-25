@@ -1,0 +1,15 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "X X",
+    "X X"
+  ],
+  "key": {
+    "X" : {
+      "item": "ttmlm:weak_blazing_alloy"
+    }
+  },
+  "result": {
+    "item": "ttmlm:weak_blazing_alloy_boots"
+  }
+}
