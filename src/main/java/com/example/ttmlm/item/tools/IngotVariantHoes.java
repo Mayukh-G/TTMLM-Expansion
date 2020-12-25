@@ -43,11 +43,9 @@ public class IngotVariantHoes extends HoeItem {
                 tooltip.add(freezInfo);
                 break;
             case BLAZING_ALLOY:
-            case WEAK_BLAZING_AllOY:
                 tooltip.add(new StringTextComponent("\u00A76\u00A7oToasty! :\u00A7d Right click to shoot a fireball"));
                 break;
             case ENDER_ALLOY:
-            case WEAK_ENDER_ALLOY:
                 ITextComponent enderBaseInfo = new StringTextComponent("But How!? : Right click to toss an ender pearl")
                         .applyTextStyles(TextFormatting.LIGHT_PURPLE, TextFormatting.ITALIC);
                 tooltip.add(enderBaseInfo);
@@ -114,7 +112,7 @@ public class IngotVariantHoes extends HoeItem {
                     return ActionResult.resultFail(playerIn.getHeldItem(handIn));
                 }
             }
-            else if ((this.variant == IngotVariants.ENDER_ALLOY || this.variant == IngotVariants.WEAK_ENDER_ALLOY) && !playerIn.isCrouching()){ // Throw an Ender Pearl
+            else if ((this.variant == IngotVariants.ENDER_ALLOY) && !playerIn.isCrouching()){ // Throw an Ender Pearl
                 EnderPearlEntity pearlEntity = new EnderPearlEntity(worldIn, playerIn);
                 pearlEntity.setMotion(playerIn.getLookVec().mul(1.5D, 1.5D, 1.5D));
                 worldIn.addEntity(pearlEntity);
@@ -124,7 +122,7 @@ public class IngotVariantHoes extends HoeItem {
                 playerIn.getHeldItemMainhand().damageItem(15, playerIn, (animation) -> { animation.sendBreakAnimation(handIn);});
                 return ActionResult.resultSuccess(playerIn.getHeldItem(handIn));
             }
-            else if ((this.variant == IngotVariants.BLAZING_ALLOY|| this.variant == IngotVariants.WEAK_BLAZING_AllOY) && !playerIn.isCrouching()){ // Shoot Fireball
+            else if ((this.variant == IngotVariants.BLAZING_ALLOY) && !playerIn.isCrouching()){ // Shoot Fireball
                 Random rand = new Random();
                 double aX = playerIn.getLookVec().x + rand.nextGaussian() * 0.05;
                 double aY = playerIn.getLookVec().y + rand.nextGaussian() * 0.05;
