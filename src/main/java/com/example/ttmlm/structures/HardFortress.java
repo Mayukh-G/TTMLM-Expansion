@@ -20,7 +20,6 @@ import org.jetbrains.annotations.NotNull;
 import java.util.Random;
 import java.util.function.Function;
 
-// ---------------- Use Block Event to check if structure is complete then spawn boss
 
 public class HardFortress extends Structure<NoFeatureConfig> {
     public HardFortress(Function<Dynamic<?>, ? extends NoFeatureConfig> config){
