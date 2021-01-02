@@ -4,6 +4,7 @@ A simple expansion that adds one new boss, harder mobs, and new materials all wh
 ### Features
 * <h4>3 new ore types<h4>
 * <h4>10 new material types(tools, swords, armor, ect...)<h4>
+
    <br>![Axes](readme_img/Axes.png)</br>
    * Mutable Alloy acts as the base
    <br>![Alloy](readme_img/MutableOres.png)</br>
