@@ -1,6 +1,0 @@
-{
-  "parent": "ttmlm:item/cleavertype",
-  "textures": {
-    "layer0": "ttmlm:item/ender_alloy_pickaxe"
-  }
-}

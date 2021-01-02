@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "ttmlm:block/freezing_carbon_block_altside",
-    "top": "ttmlm:block/freezing_carbon_block",
-    "side": "ttmlm:block/freezing_carbon_block_upper_double"
-  }
-}

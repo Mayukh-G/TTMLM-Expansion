@@ -1,7 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "#forge:material_blocks/blazing_carbon",
-    "#forge:material_blocks/freezing_carbon"
-  ]
-}

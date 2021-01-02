@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "ttmlm:block/blazing_carbon_block",
-    "top": "ttmlm:block/blazing_carbon_block_altside",
-    "side": "ttmlm:block/blazing_carbon_block_lower_double"
-  }
-}

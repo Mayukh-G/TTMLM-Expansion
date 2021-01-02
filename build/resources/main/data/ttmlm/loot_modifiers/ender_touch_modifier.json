@@ -1,7 +1,0 @@
-{
-  "conditions":[
-    {
-      "condition": "ttmlm:is_ender_tool"
-    }
-  ]
-}

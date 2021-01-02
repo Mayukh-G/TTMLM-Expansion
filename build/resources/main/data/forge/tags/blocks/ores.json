@@ -1,7 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "#forge:ores/blazing_carbon",
-    "#forge:ores/freezing_carbon"
-  ]
-}
