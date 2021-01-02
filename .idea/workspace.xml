@@ -7,35 +7,14 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/ttmlm/init/IngotVariants.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/ttmlm/init/IngotVariants.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/ttmlm/structures/HardFortressPieces.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/ttmlm/structures/HardFortressPieces.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/ttmlm/models/item/blazing_alloy_axe.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/ttmlm/models/item/blazing_alloy_axe.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/ttmlm/models/item/blazing_alloy_pickaxe.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/ttmlm/models/item/blazing_alloy_pickaxe.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/ttmlm/models/item/ender_alloy_axe.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/ttmlm/models/item/ender_alloy_axe.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/ttmlm/models/item/ender_alloy_pickaxe.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/ttmlm/models/item/ender_alloy_pickaxe.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/ttmlm/models/item/freezing_alloy_axe.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/ttmlm/models/item/freezing_alloy_axe.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/ttmlm/models/item/freezing_alloy_pickaxe.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/ttmlm/models/item/freezing_alloy_pickaxe.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/ttmlm/models/item/weak_blazing_alloy_shovel.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/ttmlm/models/item/weak_blazing_alloy_shovel.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/ttmlm/textures/item/weak_blazing_alloy_boots.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/ttmlm/textures/item/weak_blazing_alloy_boots.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/ttmlm/textures/item/weak_blazing_alloy_chestplate.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/ttmlm/textures/item/weak_blazing_alloy_chestplate.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/ttmlm/textures/item/weak_blazing_alloy_helmet.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/ttmlm/textures/item/weak_blazing_alloy_helmet.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/ttmlm/textures/item/weak_blazing_alloy_leggings.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/ttmlm/textures/item/weak_blazing_alloy_leggings.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/ttmlm/textures/models/armor/weak_variant_blazing_layer_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/ttmlm/textures/models/armor/weak_variant_blazing_layer_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/ttmlm/textures/models/armor/weak_variant_blazing_layer_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/ttmlm/textures/models/armor/weak_variant_blazing_layer_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/ttmlm/recipes/weak_ender_alloy_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/data/ttmlm/recipes/weak_ender_alloy_block.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/ttmlm/structures/fortress/fortress_boss_room.nbt" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/data/ttmlm/structures/fortress/fortress_boss_room.nbt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/ttmlm/structures/fortress/fortress_deadend_chest.nbt" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/data/ttmlm/structures/fortress/fortress_deadend_chest.nbt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/ttmlm/structures/fortress/fortress_hallway_01.nbt" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/data/ttmlm/structures/fortress/fortress_hallway_01.nbt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/ttmlm/structures/fortress/fortress_small_treasure_deadend.nbt" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/data/ttmlm/structures/fortress/fortress_small_treasure_deadend.nbt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/ttmlm/structures/snow/snow_dungeon.nbt" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/data/ttmlm/structures/snow/snow_dungeon.nbt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-11-29-1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-11-29-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-11-29-2.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-11-29-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-11-29-3.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/ttmlm/item/tools/IngotVariantHoes$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/ttmlm/item/tools/IngotVariantHoes$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/ttmlm/item/tools/IngotVariantHoes.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/ttmlm/item/tools/IngotVariantHoes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/ttmlm/structures/HardFortress$Start.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/ttmlm/structures/HardFortress$Start.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/ttmlm/structures/HardFortress.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/ttmlm/structures/HardFortress.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-1.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-1.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-2.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-3.log.gz" afterDir="false" />
@@ -43,54 +22,23 @@
       <change beforePath="$PROJECT_DIR$/run/logs/debug-5.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-5.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/latest.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/latest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/DIM-1/data/raids_nether.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/DIM-1/data/raids_nether.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/DIM-1/poi/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/DIM-1/poi/r.0.-1.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/DIM-1/region/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/DIM-1/region/r.-1.-1.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/DIM-1/region/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/DIM-1/region/r.-1.0.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/DIM-1/region/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/DIM-1/region/r.0.-1.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/DIM-1/region/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/DIM-1/region/r.0.0.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/DIM-1/region/r.1.1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/DIM-1/region/r.1.1.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/advancements/380df991-f603-344c-a090-369bad2a924a.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/advancements/380df991-f603-344c-a090-369bad2a924a.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/data/raids.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/data/raids.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/generated/minecraft/structures/fortress_boss_room.nbt" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/generated/minecraft/structures/fortress_boss_room.nbt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/generated/minecraft/structures/fortress_deadend_chest.nbt" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/generated/minecraft/structures/fortress_deadend_chest.nbt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/generated/minecraft/structures/fortress_hallway_01.nbt" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/generated/minecraft/structures/fortress_hallway_01.nbt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/generated/minecraft/structures/fortress_small_treasure_deadend.nbt" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/generated/minecraft/structures/fortress_small_treasure_deadend.nbt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/generated/minecraft/structures/snow_dungeon.nbt" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/generated/minecraft/structures/snow_dungeon.nbt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/level.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/level.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/level.dat_old" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/level.dat_old" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/playerdata/380df991-f603-344c-a090-369bad2a924a.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/playerdata/380df991-f603-344c-a090-369bad2a924a.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/poi/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/poi/r.-1.-1.mca" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/region/r.-1.-1.mca" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/region/r.-1.0.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.-2.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/region/r.-2.-1.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.-2.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/region/r.-2.0.mca" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/region/r.0.-1.mca" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/region/r.0.0.mca" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/session.lock" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/session.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/stats/380df991-f603-344c-a090-369bad2a924a.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/stats/380df991-f603-344c-a090-369bad2a924a.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/usercache.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/usercache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/init/IngotVariants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/init/IngotVariants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/structures/HardFortressPieces.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ttmlm/structures/HardFortressPieces.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/blazing_alloy_axe.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/blazing_alloy_axe.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/blazing_alloy_pickaxe.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/blazing_alloy_pickaxe.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/ender_alloy_axe.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/ender_alloy_axe.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/ender_alloy_pickaxe.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/ender_alloy_pickaxe.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/freezing_alloy_axe.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/freezing_alloy_axe.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/freezing_alloy_pickaxe.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/freezing_alloy_pickaxe.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/weak_blazing_alloy_shovel.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/weak_blazing_alloy_shovel.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/item/weak_blazing_alloy_boots.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/item/weak_blazing_alloy_boots.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/item/weak_blazing_alloy_chestplate.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/item/weak_blazing_alloy_chestplate.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/item/weak_blazing_alloy_helmet.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/item/weak_blazing_alloy_helmet.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/item/weak_blazing_alloy_leggings.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/item/weak_blazing_alloy_leggings.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/models/armor/weak_variant_blazing_layer_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/models/armor/weak_variant_blazing_layer_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/models/armor/weak_variant_blazing_layer_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/textures/models/armor/weak_variant_blazing_layer_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/ttmlm/recipes/weak_ender_alloy_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/recipes/weak_ender_alloy_block.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/ttmlm/structures/fortress/fortress_boss_room.nbt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/structures/fortress/fortress_boss_room.nbt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/ttmlm/structures/fortress/fortress_deadend_chest.nbt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/structures/fortress/fortress_deadend_chest.nbt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/ttmlm/structures/fortress/fortress_hallway_01.nbt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/structures/fortress/fortress_hallway_01.nbt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/ttmlm/structures/fortress/fortress_small_treasure_deadend.nbt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/structures/fortress/fortress_small_treasure_deadend.nbt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/ttmlm/structures/snow/snow_dungeon.nbt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ttmlm/structures/snow/snow_dungeon.nbt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/blazing_alloy_hoe.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/blazing_alloy_hoe.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/blazing_alloy_shovel.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/blazing_alloy_shovel.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/ender_alloy_hoe.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/ender_alloy_hoe.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/ender_alloy_shovel.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/ender_alloy_shovel.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/freezing_alloy_hoe.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/freezing_alloy_hoe.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/freezing_alloy_shovel.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ttmlm/models/item/freezing_alloy_shovel.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,6 +81,11 @@
                 <item name="main" type="396b929e:GradleViewContributor$SourceSetNode" />
                 <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
               </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Forge Modding" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
             </expand>
             <select />
           </tree_state>
@@ -152,6 +105,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="031b22f7dd3dee55ada6d13ab3b0d9952abcfeb3" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1e71Uzy3ogrAxfTyMsIb6qDduxn" />
@@ -236,10 +194,14 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="370" y="222" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604720135828">
+    <state x="596" y="220" key="#Notifications" timestamp="1609566294627">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="370" y="222" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604720135828" />
+    <state x="596" y="220" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1609566294627" />
+    <state x="111" y="135" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1609567272249">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="111" y="135" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609567272249" />
     <state x="626" y="336" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604715906364">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -256,22 +218,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="756" y="218" key="#xdebugger.evaluate/0.0.1920.1040@0.0.1920.1040" timestamp="1605381011083" />
-    <state width="1394" height="199" key="GridCell.Tab.0.bottom" timestamp="1608857808626">
+    <state width="1399" height="199" key="GridCell.Tab.0.bottom" timestamp="1609568231994">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1394" height="199" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608857808626" />
-    <state width="1394" height="199" key="GridCell.Tab.0.center" timestamp="1608857808625">
+    <state width="1399" height="199" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1609568231994" />
+    <state width="1399" height="199" key="GridCell.Tab.0.center" timestamp="1609568231994">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1394" height="199" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608857808625" />
-    <state width="1394" height="199" key="GridCell.Tab.0.left" timestamp="1608857808625">
+    <state width="1399" height="199" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1609568231994" />
+    <state width="1399" height="199" key="GridCell.Tab.0.left" timestamp="1609568231994">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1394" height="199" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608857808625" />
-    <state width="1394" height="199" key="GridCell.Tab.0.right" timestamp="1608857808626">
+    <state width="1399" height="199" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1609568231994" />
+    <state width="1399" height="199" key="GridCell.Tab.0.right" timestamp="1609568231994">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1394" height="199" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608857808626" />
+    <state width="1399" height="199" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1609568231994" />
     <state width="1394" height="133" key="GridCell.Tab.1.bottom" timestamp="1605912444664">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -288,6 +250,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1394" height="133" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605912444664" />
+    <state x="782" y="273" key="RollbackChangesDialog" timestamp="1609566463695">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="782" y="273" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609566463695" />
+    <state x="375" y="199" width="1259" height="727" key="com.intellij.dvcs.ui.CompareBranchesDialog" timestamp="1609566708311">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="375" y="199" width="1259" height="727" key="com.intellij.dvcs.ui.CompareBranchesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609566708311" />
     <state x="467" y="326" key="com.intellij.ide.util.TipDialog" timestamp="1608831402694">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
