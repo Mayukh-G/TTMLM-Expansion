@@ -24,10 +24,10 @@ A simple expansion that adds one new boss, harder mobs, and new materials all wh
 
 * <h4>2 new structures<h4>
 
-  * Snow Dungeon
+  * Snow Dungeon  
   <br>![Snow](readme_img/Snowdungeon.png)</br>
   <br>![Snow](readme_img/SnowdunegonInside.png)</br>
-  * Hard Fortress
+  * Hard Fortress  
   <br>![Snow](readme_img/HardFortress.png)</br>
 
 * <h4>A New Boss<h4>
