@@ -2,8 +2,8 @@
 A simple expansion that adds one new boss, harder mobs, and new materials all while not straying too far from the vanilla gameplay.
 
 ### Features
-* ####3 new ore types
-* ####10 new material types(tools, swords, armor, ect...)
+* <h4>3 new ore types<h4>
+* <h4>10 new material types(tools, swords, armor, ect...)<h4>
    <br>![Axes](readme_img/Axes.png)</br>
    * Mutable Alloy acts as the base
    <br>![Alloy](readme_img/MutableOres.png)</br>
@@ -13,7 +13,7 @@ A simple expansion that adds one new boss, harder mobs, and new materials all wh
    <br>![Link](readme_img/link.PNG)</br>
   
 
-* ####Increased the difficulty and changed AI on mobs
+* <h4>Increased the difficulty and changed AI on mobs<h4>
 
   * New behavior added to skeleton
   * New leader zombies
@@ -21,7 +21,7 @@ A simple expansion that adds one new boss, harder mobs, and new materials all wh
   * Unflinching creepers
   * and more!
 
-* ####2 new structures
+* <h4>2 new structures<h4>
 
   * Snow Dungeon
   <br>![Snow](readme_img/Snowdungeon.png)</br>
@@ -29,8 +29,8 @@ A simple expansion that adds one new boss, harder mobs, and new materials all wh
   * Hard Fortress
   <br>![Snow](readme_img/HardFortress.png)</br>
 
-* ####A New Boss
+* <h4>A New Boss<h4>
 <br>![Boss](readme_img/BossRoom.png)</br>  
 
-* ####More to come
+* <h4>More to come<h4>
 
