@@ -30,6 +30,7 @@ authors="TTML" #optional
 # The description text for the mod (multi line!) (#mandatory)
 description='''
 Adding Features that keep a Minecraft feel
+Ideally use forge v.31.2.47
 '''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
 [[dependencies.ttmlm]] #optional
