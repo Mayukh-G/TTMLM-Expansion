@@ -6,10 +6,10 @@ A simple expansion that adds one new boss, harder mobs, and new materials all wh
 * <h4>10 new material types(tools, swords, armor, ect...)<h4>
 
    <br>![Axes](readme_img/Axes.png)</br>
-   * Mutable Alloy acts as the base
-   <br>![Alloy](readme_img/MutableOres.png)</br>
+   * Mutable Alloy acts as the base  
+   <br>![Alloy](readme_img/MutableOres.png)</br> 
    * Each with their own unique attributes
-   * For example Link/Unlink
+   * For example Link/Unlink  
    <br>![Unlink](readme_img/unlink.PNG)</br>
    <br>![Link](readme_img/link.PNG)</br>
   
