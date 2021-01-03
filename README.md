@@ -1,4 +1,4 @@
-# TTMLM EXPANTION
+# TTMLM EXPANSION
 A simple expansion that adds one new boss, harder mobs, and new materials all while not straying too far from the vanilla gameplay.
 
 ### Features
