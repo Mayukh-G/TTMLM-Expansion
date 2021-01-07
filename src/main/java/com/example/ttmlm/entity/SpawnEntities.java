@@ -1,6 +1,10 @@
 package com.example.ttmlm.entity;
 
 import com.example.ttmlm.entity.changed.*;
+import com.example.ttmlm.entity.original.HardDrownedSwarmCaller;
+import com.example.ttmlm.entity.original.HardHuskSwarmCaller;
+import com.example.ttmlm.entity.original.HardZPigManSwarmCaller;
+import com.example.ttmlm.entity.original.HardZombieSwarmCaller;
 import com.example.ttmlm.init.ModEntities;
 import net.minecraft.entity.*;
 import net.minecraft.entity.monster.*;
@@ -38,53 +42,62 @@ public class SpawnEntities {
                 if(entity instanceof ZombieEntity && !(entity instanceof IAbstractHardZombie)){
                     if(entity.getType() == EntityType.HUSK){
                         //Summon Husk and set pos
-                        HardHusk husk = new HardHusk(ModEntities.HARD_HUSK, world);
-                        husk.setPositionAndRotation(X, Y, Z, entity.rotationYaw, entity.rotationPitch);
-                        husk.onInitialSpawn(world, world.getDifficultyForLocation(husk.getPosition()), SpawnReason.MOB_SUMMONED, null, null);
-                        if(husk.isLEADER){
-                            husk.setLeaderAttributes();
-                            husk.setCustomName(husk.leaderName);
-                            husk.setCustomNameVisible(true);
+                        if (world.rand.nextInt(99) <= 4){
+                            HardHuskSwarmCaller husk = new HardHuskSwarmCaller(ModEntities.HARD_HUSK_SC, world);
+                            husk.setPositionAndRotation(X, Y, Z, entity.rotationYaw, entity.rotationPitch);
+                            husk.onInitialSpawn(world, world.getDifficultyForLocation(husk.getPosition()), SpawnReason.MOB_SUMMONED, null, null);
+                            world.addEntity(husk);
                         }
-                        world.addEntity(husk);
+                        else {
+                            HardHusk husk = new HardHusk(ModEntities.HARD_HUSK, world);
+                            husk.setPositionAndRotation(X, Y, Z, entity.rotationYaw, entity.rotationPitch);
+                            husk.onInitialSpawn(world, world.getDifficultyForLocation(husk.getPosition()), SpawnReason.MOB_SUMMONED, null, null);
+                            world.addEntity(husk);
+                        }
                     }else if(entity.getType() == EntityType.ZOMBIE_PIGMAN){
                         //Summon ZPigman and set pos
-                        HardZPigMan pigZombie = new HardZPigMan(ModEntities.HARD_Z_PIGMAN, world);
-                        pigZombie.setPositionAndRotation(X, Y, Z, entity.rotationYaw, entity.rotationPitch);
-                        pigZombie.onInitialSpawn(world, world.getDifficultyForLocation(pigZombie.getPosition()), SpawnReason.MOB_SUMMONED, null, null);
-                        if(pigZombie.isLEADER){
-                            pigZombie.setLeaderAttributes();
-                            pigZombie.setCustomName(pigZombie.leaderName);
-                            pigZombie.setCustomNameVisible(true);
+                        if (world.rand.nextInt(99) <= 4) {
+                            HardZPigManSwarmCaller pigZombie = new HardZPigManSwarmCaller(ModEntities.HARD_Z_PIGMAN_SC, world);
+                            pigZombie.setPositionAndRotation(X, Y, Z, entity.rotationYaw, entity.rotationPitch);
+                            pigZombie.onInitialSpawn(world, world.getDifficultyForLocation(pigZombie.getPosition()), SpawnReason.MOB_SUMMONED, null, null);
+                            world.addEntity(pigZombie);
+                        }else {
+                            HardZPigMan pigZombie = new HardZPigMan(ModEntities.HARD_Z_PIGMAN, world);
+                            pigZombie.setPositionAndRotation(X, Y, Z, entity.rotationYaw, entity.rotationPitch);
+                            pigZombie.onInitialSpawn(world, world.getDifficultyForLocation(pigZombie.getPosition()), SpawnReason.MOB_SUMMONED, null, null);
+                            world.addEntity(pigZombie);
                         }
-                        world.addEntity(pigZombie);
 
                     }else if(entity.getType() == EntityType.ZOMBIE_VILLAGER){
-                        //not going to change them, because they are not true zombies they are weak I guess
+                        //not going to change them, because they are not true zombies
                         return;
                     }else if (entity.getType() == EntityType.DROWNED){
                         //Summon Drowned
-                        HardDrowned drowned = new HardDrowned(ModEntities.HARD_DROWNED, world);
-                        drowned.setPositionAndRotation(X, Y, Z, entity.rotationYaw, entity.rotationPitch);
-                        drowned.onInitialSpawn(world, world.getDifficultyForLocation(drowned.getPosition()), SpawnReason.MOB_SUMMONED, null, null);
-                        if(drowned.isLEADER){ //FIX THIS when u leave the world it resets name,
-                            drowned.setLeaderAttributes();
-                            drowned.setCustomName(drowned.leaderName); // add this to tick or something
-                            drowned.setCustomNameVisible(true);
+                        if (world.rand.nextInt(99) <= 4) {
+                            HardDrownedSwarmCaller drowned = new HardDrownedSwarmCaller(ModEntities.HARD_DROWNED_SC, world);
+                            drowned.setPositionAndRotation(X, Y, Z, entity.rotationYaw, entity.rotationPitch);
+                            drowned.onInitialSpawn(world, world.getDifficultyForLocation(drowned.getPosition()), SpawnReason.MOB_SUMMONED, null, null);
+                            world.addEntity(drowned);
+                        }else {
+                            HardDrowned drowned = new HardDrowned(ModEntities.HARD_DROWNED, world);
+                            drowned.setPositionAndRotation(X, Y, Z, entity.rotationYaw, entity.rotationPitch);
+                            drowned.onInitialSpawn(world, world.getDifficultyForLocation(drowned.getPosition()), SpawnReason.MOB_SUMMONED, null, null);
+                            world.addEntity(drowned);
                         }
-                        world.addEntity(drowned);
                     }
                     else {
                         //summon Zombie and set pos
-                        HardZombie zombie = new HardZombie(ModEntities.HARD_ZOMBIE, world);
-                        zombie.setPositionAndRotation(X, Y, Z, entity.rotationYaw, entity.rotationPitch);
-                        zombie.onInitialSpawn(world, world.getDifficultyForLocation(zombie.getPosition()), SpawnReason.MOB_SUMMONED, null, null);
-                        if(zombie.isLEADER){
-                            zombie.setLeaderAttributes();
-                            zombie.setCustomName(zombie.leaderName);
-                            zombie.setCustomNameVisible(true);
+                        if (world.rand.nextInt(99) <= 4) {
+                            HardZombieSwarmCaller zombie = new HardZombieSwarmCaller(ModEntities.HARD_ZOMBIE_SC, world);
+                            zombie.setPositionAndRotation(X, Y, Z, entity.rotationYaw, entity.rotationPitch);
+                            zombie.onInitialSpawn(world, world.getDifficultyForLocation(zombie.getPosition()), SpawnReason.MOB_SUMMONED, null, null);
+                            world.addEntity(zombie);
+                        }else {
+                            HardZombie zombie = new HardZombie(ModEntities.HARD_ZOMBIE, world);
+                            zombie.setPositionAndRotation(X, Y, Z, entity.rotationYaw, entity.rotationPitch);
+                            zombie.onInitialSpawn(world, world.getDifficultyForLocation(zombie.getPosition()), SpawnReason.MOB_SUMMONED, null, null);
+                            world.addEntity(zombie);
                         }
-                        world.addEntity(zombie);
                     }
                     event.setCanceled(true);
                 }

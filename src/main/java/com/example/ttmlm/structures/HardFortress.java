@@ -101,7 +101,7 @@ public class HardFortress extends Structure<NoFeatureConfig> {
 
             this.recalculateStructureSize();
 
-            TTMLM.LOGGER.log(Level.DEBUG, "HardFortress at " + (blockpos.getX()) + " " + blockpos.getY() + " " + (blockpos.getZ()));
+            if (TTMLM.isDevBuild()) TTMLM.LOGGER.log(Level.DEBUG, "HardFortress at " + (blockpos.getX()) + " " + blockpos.getY() + " " + (blockpos.getZ()));
         }
 
     }

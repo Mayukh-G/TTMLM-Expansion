@@ -29,7 +29,7 @@ public class BlazingTouchModifier extends LootModifier {
     @Override
     protected List<ItemStack> doApply(List<ItemStack> generatedLoot, LootContext context) {
         //Check if Loot dropped
-        if (!generatedLoot.isEmpty()) {
+        if (!generatedLoot.isEmpty() && !context.getWorld().isRemote) {
             for (ItemStack stack : generatedLoot) {
                 //Getting recipes from world (datapacks)
                 Optional<FurnaceRecipe> optional = context.getWorld().getRecipeManager().getRecipe(IRecipeType.SMELTING, new Inventory(stack), context.getWorld());

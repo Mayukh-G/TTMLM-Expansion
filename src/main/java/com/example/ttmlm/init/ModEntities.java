@@ -3,7 +3,7 @@ package com.example.ttmlm.init;
 import com.example.ttmlm.TTMLM;
 import com.example.ttmlm.entity.changed.*;
 
-import com.example.ttmlm.entity.original.NetherBoss;
+import com.example.ttmlm.entity.original.*;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.EntityType;
 import net.minecraftforge.event.RegistryEvent;
@@ -27,7 +27,11 @@ public class ModEntities {
     public static EntityType<HardBlaze> HARD_BLAZE = (EntityType<HardBlaze>) EntityType.Builder.create(HardBlaze::new, EntityClassification.MONSTER).immuneToFire().size(0.6F, 1.8F).build(HardBlaze.name).setRegistryName(TTMLM.getID(HardBlaze.name));
     //Boss
     public static EntityType<NetherBoss> NETHER_BOSS = (EntityType<NetherBoss>) EntityType.Builder.create(NetherBoss::new, EntityClassification.MONSTER).immuneToFire().size(1.4F, 4.0F).build(NetherBoss.name).setRegistryName(TTMLM.getID(NetherBoss.name));
-
+    //SwarmCallers
+    public static EntityType<HardZombieSwarmCaller> HARD_ZOMBIE_SC = (EntityType<HardZombieSwarmCaller>) EntityType.Builder.create(HardZombieSwarmCaller::new, EntityClassification.MONSTER).size(1.0F, 2.2F).build(HardZombieSwarmCaller.name).setRegistryName(TTMLM.getID(HardZombieSwarmCaller.name));
+    public static EntityType<HardHuskSwarmCaller> HARD_HUSK_SC = (EntityType<HardHuskSwarmCaller>) EntityType.Builder.create(HardHuskSwarmCaller::new, EntityClassification.MONSTER).size(1.0F, 2.2F).build(HardHuskSwarmCaller.name).setRegistryName(TTMLM.getID(HardHuskSwarmCaller.name));
+    public static EntityType<HardDrownedSwarmCaller> HARD_DROWNED_SC = (EntityType<HardDrownedSwarmCaller>) EntityType.Builder.create(HardDrownedSwarmCaller::new, EntityClassification.MONSTER).size(1.0F, 2.2F).build(HardDrownedSwarmCaller.name).setRegistryName(TTMLM.getID(HardDrownedSwarmCaller.name));
+    public static EntityType<HardZPigManSwarmCaller> HARD_Z_PIGMAN_SC = (EntityType<HardZPigManSwarmCaller>) EntityType.Builder.create(HardZPigManSwarmCaller::new, EntityClassification.MONSTER).size(1.0F, 2.2F).immuneToFire().build(HardZPigManSwarmCaller.name).setRegistryName(TTMLM.getID(HardZPigManSwarmCaller.name));
     public static void registerALL(RegistryEvent.Register<EntityType<?>> event){
         if(!event.getName().equals(ForgeRegistries.ENTITIES.getRegistryName())) return;
         ForgeRegistries.ENTITIES.registerAll(
@@ -44,7 +48,11 @@ public class ModEntities {
                 HARD_Z_PIGMAN,
                 HARD_WITHER_SKELETON,
                 HARD_BLAZE,
-                NETHER_BOSS
+                NETHER_BOSS,
+                HARD_ZOMBIE_SC,
+                HARD_HUSK_SC,
+                HARD_DROWNED_SC,
+                HARD_Z_PIGMAN_SC
         );
     }
 }

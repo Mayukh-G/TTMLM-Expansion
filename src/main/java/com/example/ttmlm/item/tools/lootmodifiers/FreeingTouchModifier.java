@@ -30,7 +30,7 @@ public class FreeingTouchModifier extends LootModifier {
     @Override
     protected List<ItemStack> doApply(List<ItemStack> generatedLoot, LootContext context) {
         //Check if Loot dropped and check for nulls
-        if (!generatedLoot.isEmpty()) {
+        if (!generatedLoot.isEmpty() && !context.getWorld().isRemote) {
             ItemStack stack = context.get(LootParameters.TOOL);
             if(stack != null){
                 if(stack.getItem() instanceof ToolItem){

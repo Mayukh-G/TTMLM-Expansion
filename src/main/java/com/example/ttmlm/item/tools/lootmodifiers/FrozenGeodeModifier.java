@@ -30,39 +30,41 @@ public class FrozenGeodeModifier extends LootModifier {
     @Nonnull
     @Override
     protected List<ItemStack> doApply(List<ItemStack> generatedLoot, LootContext context) {
-        IItemTier tier = ((ToolItem) context.get(LootParameters.TOOL).getItem()).getTier();
-        if(!(tier == IngotVariantTiers.ENDER || tier == IngotVariantTiers.WEAK_ENDER)) {
-            Random random = new Random();
-            int choice = random.nextInt(100); //0-99
-            int amm = random.nextInt(5);
-            ItemStack stack;
-            // Basically just sets the loot to be one of the following and randomizes the amm from 1-5
-            generatedLoot.remove(0);
-            amm++;
-            if (choice <= 29) { // 30%
-                stack = new ItemStack(Items.CLAY_BALL);
-                stack.setCount(amm);
-                generatedLoot.add(stack);
-            } else if (choice <= 54) { //25%
-                stack = new ItemStack(Items.COAL);
-                stack.setCount(amm);
-                generatedLoot.add(stack);
-            } else if (choice <= 74) { //20%
-                stack = new ItemStack(Items.IRON_INGOT);
-                stack.setCount(amm);
-                generatedLoot.add(stack);
-            } else if (choice <= 84) { //10%
-                stack = new ItemStack(Items.GOLD_INGOT);
-                stack.setCount(amm);
-                generatedLoot.add(stack);
-            } else if (choice <= 94) { //10%
-                stack = new ItemStack(Items.LAPIS_LAZULI);
-                stack.setCount(amm);
-                generatedLoot.add(stack);
-            } else if (choice <= 99) { //5%
-                stack = new ItemStack(Items.DIAMOND);
-                stack.setCount(amm);
-                generatedLoot.add(stack);
+        if (!context.getWorld().isRemote) {
+            IItemTier tier = ((ToolItem) context.get(LootParameters.TOOL).getItem()).getTier();
+            if (!(tier == IngotVariantTiers.ENDER || tier == IngotVariantTiers.WEAK_ENDER)) {
+                Random random = new Random();
+                int choice = random.nextInt(100); //0-99
+                int amm = random.nextInt(5);
+                ItemStack stack;
+                // Basically just sets the loot to be one of the following and randomizes the amm from 1-5
+                generatedLoot.remove(0);
+                amm++;
+                if (choice <= 29) { // 30%
+                    stack = new ItemStack(Items.CLAY_BALL);
+                    stack.setCount(amm);
+                    generatedLoot.add(stack);
+                } else if (choice <= 54) { //25%
+                    stack = new ItemStack(Items.COAL);
+                    stack.setCount(amm);
+                    generatedLoot.add(stack);
+                } else if (choice <= 74) { //20%
+                    stack = new ItemStack(Items.IRON_INGOT);
+                    stack.setCount(amm);
+                    generatedLoot.add(stack);
+                } else if (choice <= 84) { //10%
+                    stack = new ItemStack(Items.GOLD_INGOT);
+                    stack.setCount(amm);
+                    generatedLoot.add(stack);
+                } else if (choice <= 94) { //10%
+                    stack = new ItemStack(Items.LAPIS_LAZULI);
+                    stack.setCount(amm);
+                    generatedLoot.add(stack);
+                } else if (choice <= 99) { //5%
+                    stack = new ItemStack(Items.DIAMOND);
+                    stack.setCount(amm);
+                    generatedLoot.add(stack);
+                }
             }
         }
         return generatedLoot;

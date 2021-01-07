@@ -1,6 +1,6 @@
 package com.example.ttmlm;
 
-import com.example.ttmlm.client.renders.NetherBossRender;
+import com.example.ttmlm.client.renders.*;
 import com.example.ttmlm.entity.original.NetherBoss;
 import com.example.ttmlm.init.*;
 import com.example.ttmlm.entity.SpawnEntities;
@@ -119,17 +119,19 @@ public class SideProxy {
     }
 
     public static void onAttackVariantSword(LivingHurtEvent event){
-        Object attacker = event.getSource().getTrueSource(); // Getting whom attacked
-        if(attacker instanceof LivingEntity){
-            LivingEntity Entityattacker = (LivingEntity)attacker; //If LivingEntity type is attacker
-            ItemStack HeldItemStack = Entityattacker.getHeldItemMainhand();
-            Item HeldItem = HeldItemStack.getItem(); //Checking what was used to attack
-            if(HeldItem instanceof IngotVariantSwords){
-                if(Entityattacker instanceof PlayerEntity) { //If attacker is a Player
-                    PlayerEntity PlayerAttacker = (PlayerEntity) Entityattacker;
-                    ((IngotVariantSwords) HeldItem).onAttack(event.getEntityLiving(), PlayerAttacker, event.getAmount());
-                }else { //If attacker is not a player
-                    ((IngotVariantSwords) HeldItem).onAttack(event.getEntityLiving(), null, event.getAmount());
+        if (!event.getEntityLiving().world.isRemote) {
+            Object attacker = event.getSource().getTrueSource(); // Getting whom attacked
+            if (attacker instanceof LivingEntity) {
+                LivingEntity Entityattacker = (LivingEntity) attacker; //If LivingEntity type is attacker
+                ItemStack HeldItemStack = Entityattacker.getHeldItemMainhand();
+                Item HeldItem = HeldItemStack.getItem(); //Checking what was used to attack
+                if (HeldItem instanceof IngotVariantSwords) {
+                    if (Entityattacker instanceof PlayerEntity) { //If attacker is a Player
+                        PlayerEntity PlayerAttacker = (PlayerEntity) Entityattacker;
+                        ((IngotVariantSwords) HeldItem).onAttack(event.getEntityLiving(), PlayerAttacker, event.getAmount());
+                    } else { //If attacker is not a player
+                        ((IngotVariantSwords) HeldItem).onAttack(event.getEntityLiving(), null, event.getAmount());
+                    }
                 }
             }
         }
@@ -240,7 +242,10 @@ public class SideProxy {
             RenderingRegistry.registerEntityRenderingHandler(ModEntities.HARD_WITHER_SKELETON, WitherSkeletonRenderer::new);
             RenderingRegistry.registerEntityRenderingHandler(ModEntities.HARD_BLAZE, BlazeRenderer::new);
             RenderingRegistry.registerEntityRenderingHandler(ModEntities.NETHER_BOSS, NetherBossRender::new);
-
+            RenderingRegistry.registerEntityRenderingHandler(ModEntities.HARD_ZOMBIE_SC, HardZombieSCRender::new);
+            RenderingRegistry.registerEntityRenderingHandler(ModEntities.HARD_HUSK_SC, HardHuskSCRender::new);
+            RenderingRegistry.registerEntityRenderingHandler(ModEntities.HARD_DROWNED_SC, HardDrownedSCRender::new);
+            RenderingRegistry.registerEntityRenderingHandler(ModEntities.HARD_Z_PIGMAN_SC, HardZPigManSCRender::new);
         }
     }
 
@@ -250,7 +255,7 @@ static class Server extends SideProxy {
     }
 
     private static void serverSetup(FMLDedicatedServerSetupEvent event) {
-
+        TTMLM.LOGGER.debug("----PHYSICAL SERVER DETECTED-----");
     }
 }
 }

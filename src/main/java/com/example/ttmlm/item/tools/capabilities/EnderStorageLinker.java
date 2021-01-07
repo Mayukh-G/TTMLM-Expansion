@@ -24,7 +24,6 @@ public class EnderStorageLinker implements IEnderStorageLink, ICapabilityProvide
 
     @Nonnull
     private ItemStack linkedTool;
-    private static Logger LOGGER = LogManager.getLogger();
 
     private final LazyOptional<IEnderStorageLink> holder = LazyOptional.of(() -> this);
 

@@ -99,7 +99,7 @@ public class SnowDungeon extends Structure<NoFeatureConfig> {
 
             this.recalculateStructureSize();
 
-            TTMLM.LOGGER.log(Level.DEBUG, "SnowDungeon at " + (blockpos.getX()) + " " + blockpos.getY() + " " + (blockpos.getZ()));
+            if (TTMLM.isDevBuild()) TTMLM.LOGGER.log(Level.DEBUG, "SnowDungeon at " + (blockpos.getX()) + " " + blockpos.getY() + " " + (blockpos.getZ()));
         }
 
     }

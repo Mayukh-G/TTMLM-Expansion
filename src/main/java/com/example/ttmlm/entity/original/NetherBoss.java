@@ -380,7 +380,10 @@ public class NetherBoss extends MonsterEntity implements IRangedAttackMob { //Fi
         }
 
         private boolean isNotSpawnable(MonsterEntity monsterEntity){
-            return !this.boss.world.checkNoEntityCollision(monsterEntity) && !this.boss.world.hasNoCollisions(monsterEntity) && this.boss.world.containsAnyLiquid(monsterEntity.getBoundingBox());
+            return !this.boss.world.checkNoEntityCollision(monsterEntity)
+                    && !this.boss.world.hasNoCollisions(monsterEntity)
+                    && this.boss.world.containsAnyLiquid(monsterEntity.getBoundingBox())
+                    && !this.boss.world.isRemote;
         }
     }
 }

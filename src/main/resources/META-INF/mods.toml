@@ -18,9 +18,9 @@ version="${file.jarVersion}" #mandatory
  # A display name for the mod
 displayName="TTMLM Expansion" #mandatory
 # A URL to query for updates for this mod. See the JSON update specification <here>
-updateJSONURL="http://None.com" #optional
+#updateJSONURL="" #optional
 # A URL for the "homepage" for this mod, displayed in the mod UI
-displayURL="http://None.com" #optional
+displayURL="https://www.curseforge.com/minecraft/mc-mods/ttmlm-expansion" #optional
 # A file name (in the root of the mod JAR) containing a logo for display
 #logoFile="ttmlm.png" #optional
 # A text field displayed in the mod UI
@@ -30,7 +30,7 @@ authors="TTML" #optional
 # The description text for the mod (multi line!) (#mandatory)
 description='''
 A simple expansion that adds one new boss, harder mobs, and new materials all while not straying too far from the vanilla gameplay.
-Ideally use forge v.31.2.47
+Ideally use forge v.31)
 '''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
 [[dependencies.ttmlm]] #optional

@@ -13,11 +13,9 @@ import org.jetbrains.annotations.NotNull;
 
 public class HardZombie extends ZombieEntity implements IAbstractHardZombie {
     public static final String name = "hard_zombie";
-    public boolean isLEADER;
 
     public HardZombie(EntityType<?> type, World world){
         super( ModEntities.HARD_ZOMBIE, world);
-        this.isLEADER = rand.nextInt(99) <= 5;
     }
 
     @Override
@@ -31,30 +29,10 @@ public class HardZombie extends ZombieEntity implements IAbstractHardZombie {
         this.getAttribute(SPAWN_REINFORCEMENTS_CHANCE).setBaseValue(0.2D);
     }
 
-    @Override
-    public void tick() {
-        super.tick();
-        TextComponent currentName = (TextComponent) this.getCustomName();
-        if (currentName != this.leaderName && this.isLEADER){
-            this.setCustomName(this.leaderName);
-            this.setCustomNameVisible(true);
-        }
-    }
-
-    @NotNull
-    @Override
-    protected ResourceLocation getLootTable() {
-        if(this.isLEADER) {
-            return TTMLM.getID("entities/leader_zombie_type");
-        }else {
-            return super.getLootTable();
-        }
-    }
-
-    @Override
-    public void setLeaderAttributes() {
-        this.getAttribute(SPAWN_REINFORCEMENTS_CHANCE).setBaseValue(0.4D);
-        this.getAttribute(SharedMonsterAttributes.ARMOR).setBaseValue(this.getAttribute(SharedMonsterAttributes.ARMOR).getValue() * 4.0D);
-        this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).getValue() + 0.05D);
-    }
+//    @Override
+//    public void setLeaderAttributes() {
+//        this.getAttribute(SPAWN_REINFORCEMENTS_CHANCE).setBaseValue(0.4D);
+//        this.getAttribute(SharedMonsterAttributes.ARMOR).setBaseValue(this.getAttribute(SharedMonsterAttributes.ARMOR).getValue() * 4.0D);
+//        this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).getValue() + 0.05D);
+//    }
 }
