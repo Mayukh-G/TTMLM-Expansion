@@ -4,8 +4,10 @@ import com.example.ttmlm.entity.original.NetherBoss;
 import com.example.ttmlm.init.ModEntities;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.SharedMonsterAttributes;
+import net.minecraft.entity.ai.attributes.AttributeModifierMap;
+import net.minecraft.entity.ai.attributes.Attributes;
 import net.minecraft.entity.monster.BlazeEntity;
+import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.world.World;
 
 import javax.annotation.Nullable;
@@ -17,35 +19,47 @@ public class HardBlaze extends BlazeEntity {
         super(ModEntities.HARD_BLAZE, world);
     }
 
-    @Override
-    protected void registerAttributes() {
-        super.registerAttributes();
-        this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(8.0D);
-        this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.3D);
-        this.getAttribute(SharedMonsterAttributes.FOLLOW_RANGE).setBaseValue(48.0D);
-        this.getAttribute(SharedMonsterAttributes.ATTACK_KNOCKBACK).setBaseValue(3.0D);
-        this.getAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(35.0D);
+    public static AttributeModifierMap.MutableAttribute createAttributes(){
+        return MonsterEntity.createMonsterAttributes()
+                .add(Attributes.ATTACK_DAMAGE, 8.0D)
+                .add(Attributes.ARMOR_TOUGHNESS, 0.3D)
+                .add(Attributes.FOLLOW_RANGE, 48.0D)
+                .add(Attributes.ATTACK_KNOCKBACK, 3.0D)
+                .add(Attributes.MAX_HEALTH, 35.0D)
+                .add(Attributes.MOVEMENT_SPEED, 0.3D);
     }
 
-    //make sure we dont retaliate against the boss
+//    @Override
+//    protected void registerAttributes() {
+//        super.registerAttributes();
+//        this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(8.0D);
+//        this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.3D);
+//        this.getAttribute(SharedMonsterAttributes.FOLLOW_RANGE).setBaseValue(48.0D);
+//        this.getAttribute(SharedMonsterAttributes.ATTACK_KNOCKBACK).setBaseValue(3.0D);
+//        this.getAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(35.0D);
+//    }
+
+    //Make sure we don't retaliate against the boss
     @Override
-    public void setRevengeTarget(@Nullable LivingEntity livingBase) {
+    public void setTarget(@Nullable LivingEntity livingBase) {
         if (livingBase instanceof NetherBoss){
-            super.setRevengeTarget(null);
+            super.setTarget(null);
         }else {
-            super.setRevengeTarget(livingBase);
+            super.setTarget(livingBase);
         }
     }
 
     @Override
-    public void livingTick() {
-        LivingEntity target = this.getAttackTarget();
+    public void baseTick() {
+        LivingEntity target = this.getTarget();
         if(target != null){
-            if(this.getDistanceSq(target) < 3.0D){
-                this.attackEntityAsMob(target);
+            if(this.distanceToSqr(target) < 3.0D){
+                this.doHurtTarget(target);
             }
         }
-        super.livingTick();
+        super.baseTick();
     }
+
+
 
 }

@@ -9,6 +9,7 @@ import net.minecraft.block.material.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.text.TextFormatting;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.registries.ForgeRegistries;
 
@@ -24,8 +25,8 @@ public class ModBlocks {
     public static void  registerAll(RegistryEvent.Register<Block> event) {
         if (!event.getName().equals(ForgeRegistries.BLOCKS.getRegistryName())) return;
 
-        frozenGeode = register("frozen_geode", new Block(Block.Properties.create(Material.ICE)
-                .hardnessAndResistance(0.98F,0.5F)
+        frozenGeode = register("frozen_geode", new Block(Block.Properties.of(Material.ICE)
+                .strength(0.98F,0.5F)
                 .sound(SoundType.GLASS)
         ));
 
@@ -43,7 +44,7 @@ public class ModBlocks {
         for(CoalVariants coalVariants : CoalVariants.values()){
             //Custom BlockItem Subclass so item can be detected as fuel
             register(coalVariants.getCoalVariantName() + "_block", coalVariants.getCoalVariantBlock(),
-                    new BlockItemsForVariantBlocks(coalVariants.getCoalVariantBlock(), new Item.Properties().group(TTMLM.ITEM_GROUP_BLOCK).group(TTMLM.ITEM_GROUP_RESOURCES), coalVariants.getCoalVariantName() + "_block")
+                    new BlockItemsForVariantBlocks(coalVariants.getCoalVariantBlock(), new Item.Properties().tab(TTMLM.ITEM_GROUP_BLOCK).tab(TTMLM.ITEM_GROUP_RESOURCES), coalVariants.getCoalVariantName() + "_block")
             );
         }
 
@@ -63,7 +64,7 @@ public class ModBlocks {
     }
 
     private static <T extends Block> T register(String name,T block ) {
-        BlockItem item = new BlockItem(block, new Item.Properties().group(TTMLM.ITEM_GROUP_BLOCK));
+        BlockItem item = new BlockItem(block, new Item.Properties().tab(TTMLM.ITEM_GROUP_BLOCK));
         return register(name, block, item);
     }
 

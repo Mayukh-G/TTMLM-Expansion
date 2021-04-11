@@ -1,15 +1,16 @@
 package com.example.ttmlm.entity.original;
 
 import com.example.ttmlm.TTMLM;
-import com.example.ttmlm.entity.changed.HardZombie;
 import com.example.ttmlm.entity.changed.IAbstractHardZombie;
 import com.example.ttmlm.init.IngotVariants;
 import com.example.ttmlm.init.ModEntities;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.SharedMonsterAttributes;
+import net.minecraft.entity.ai.attributes.AttributeModifierMap;
+import net.minecraft.entity.ai.attributes.Attributes;
 import net.minecraft.entity.ai.goal.Goal;
+import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.monster.ZombieEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.inventory.EquipmentSlotType;
@@ -36,53 +37,64 @@ public class HardZombieSwarmCaller extends ZombieEntity implements IAbstractHard
     }
 
     @Override
-    protected void applyEntityAI() {
-        super.applyEntityAI();
+    protected void addBehaviourGoals() {
+        super.addBehaviourGoals();
         this.goalSelector.addGoal(7, new HardZombieSwarmCaller.BuffAllies(this));
     }
 
+
+    public static AttributeModifierMap.MutableAttribute createZombieSCAttributes() {
+        return MonsterEntity.createMonsterAttributes()
+                .add(Attributes.MAX_HEALTH, 50.0D)
+                .add(Attributes.ATTACK_DAMAGE, 7.0D)
+                .add(Attributes.FOLLOW_RANGE, 22.0D)
+                .add(Attributes.MOVEMENT_SPEED, 0.4D)
+                .add(Attributes.ARMOR, 11.0D)
+                .add(Attributes.SPAWN_REINFORCEMENTS_CHANCE, 0.35D);
+    }
+
+//    @Override
+//    protected void registerAttributes() {
+//        super.registerAttributes();
+//        this.getAttribute(SharedMonsterAttributes.FOLLOW_RANGE).setBaseValue(22.0D);
+//        this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.40D);
+//        this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(7.0D);
+//        this.getAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(50.0D);
+//        this.getAttribute(SharedMonsterAttributes.ARMOR).setBaseValue(11.0D);
+//        this.getAttribute(SPAWN_REINFORCEMENTS_CHANCE).setBaseValue(0.35D);
+//    }
+
     @Override
-    protected void registerAttributes() {
-        super.registerAttributes();
-        this.getAttribute(SharedMonsterAttributes.FOLLOW_RANGE).setBaseValue(35.0D);
-        this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.40D);
-        this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(7.0D);
-        this.getAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(50.0D);
-        this.getAttribute(SharedMonsterAttributes.ARMOR).setBaseValue(11.0D);
-        this.getAttribute(SPAWN_REINFORCEMENTS_CHANCE).setBaseValue(0.35D);
+    public boolean canBreatheUnderwater() {
+        return true;
     }
 
     @Override
-    protected boolean shouldDrown() {
-        return false;
-    }
-
-    @Override
-    protected float getSoundPitch() {
+    protected float getVoicePitch() {
         return 0.5F;
     }
 
     @NotNull
     @Override
-    protected ResourceLocation getLootTable() {
+    protected ResourceLocation getDefaultLootTable() {
         return TTMLM.getID("entities/leader_zombie_type");
     }
 
     @Override
-    public boolean isChild() {
+    public boolean isBaby() {
         return false;
     }
 
     @Override
-    protected void setEquipmentBasedOnDifficulty(@NotNull DifficultyInstance difficulty) {
-        if (this.rand.nextFloat() < (this.world.getDifficulty() == Difficulty.HARD ? 0.05F : 0.01F)) {
-            int i = this.rand.nextInt(3);
+    protected void populateDefaultEquipmentSlots(@NotNull DifficultyInstance difficulty) {
+        if (this.random.nextFloat() < (this.level.getDifficulty() == Difficulty.HARD ? 0.05F : 0.01F)) {
+            int i = this.random.nextInt(3);
             if (i == 0) {
-                this.setItemStackToSlot(EquipmentSlotType.MAINHAND, new ItemStack(IngotVariants.WEAK_FREEZING_ALLOY.getShovelItem()));
+                this.setItemSlot(EquipmentSlotType.MAINHAND, new ItemStack(IngotVariants.WEAK_FREEZING_ALLOY.getShovelItem()));
             } else {
-                this.setItemStackToSlot(EquipmentSlotType.MAINHAND, new ItemStack(IngotVariants.FREEZING_ALLOY.getAxeItem()));
+                this.setItemSlot(EquipmentSlotType.MAINHAND, new ItemStack(IngotVariants.FREEZING_ALLOY.getAxeItem()));
             }
-            this.inventoryHandsDropChances[EquipmentSlotType.MAINHAND.getIndex()] = 0F;
+            this.handDropChances[EquipmentSlotType.MAINHAND.getIndex()] = 0F;
         }
     }
 
@@ -95,38 +107,37 @@ public class HardZombieSwarmCaller extends ZombieEntity implements IAbstractHard
         }
 
         @Override
-        public boolean shouldExecute() {
-            return this.swarmCaller.getAttackTarget() != null;
+        public boolean canUse() {
+            return this.swarmCaller.getTarget() != null;
         }
-
 
         @Override
         public void tick() {
             if (this.counter >= 300){
-                World world = this.swarmCaller.world;
-                if(!world.isRemote){
-                    BlockPos minP = this.swarmCaller.getPosition().north(10).east(10).down(5);
-                    BlockPos maxP = this.swarmCaller.getPosition().south(10).west(10).up(5);
+                World world = this.swarmCaller.level;
+                if(!world.isClientSide){
+                    BlockPos minP = this.swarmCaller.blockPosition().north(10).east(10).below(5);
+                    BlockPos maxP = this.swarmCaller.blockPosition().south(10).west(10).above(5);
                     AxisAlignedBB aabbP = new AxisAlignedBB(minP, maxP);
-                    List<Entity> listZombie =  world.getEntitiesWithinAABBExcludingEntity(this.swarmCaller, aabbP);
-                    List<PlayerEntity> listPlayer = world.getEntitiesWithinAABB(PlayerEntity.class, aabbP);
+                    List<Entity> listZombie =  world.getEntities(this.swarmCaller, aabbP);
+                    List<PlayerEntity> listPlayer = world.getEntitiesOfClass(PlayerEntity.class, aabbP);
                     if(!listZombie.isEmpty()){
-                        EffectInstance zombieHeal = new EffectInstance(Effects.INSTANT_DAMAGE, 100, 1);
+                        EffectInstance zombieHeal = new EffectInstance(Effects.HARM, 100, 1);
                         for (Entity entity : listZombie) {
                             if (entity instanceof IAbstractHardZombie) {
-                                ((LivingEntity) (entity)).addPotionEffect(zombieHeal);
+                                ((LivingEntity) (entity)).addEffect(zombieHeal);
                             }
                         }
                     }
                     if(!listPlayer.isEmpty()){
                         EffectInstance playerWeak = new EffectInstance(Effects.WEAKNESS, 170);
-                        EffectInstance playerSlow = new EffectInstance(Effects.SLOWNESS, 100, 1);
+                        EffectInstance playerSlow = new EffectInstance(Effects.MOVEMENT_SLOWDOWN, 100, 1);
                         for (PlayerEntity playerEntity : listPlayer) {
-                            playerEntity.addPotionEffect(playerWeak);
-                            playerEntity.addPotionEffect(playerSlow);
+                            playerEntity.addEffect(playerWeak);
+                            playerEntity.addEffect(playerSlow);
                         }
                     }
-                    world.playSound(null, this.swarmCaller.getPosition(), SoundEvents.ENTITY_ZOMBIE_PIGMAN_DEATH, SoundCategory.HOSTILE, 2.5F, 0.5F);
+                    world.playSound(null, this.swarmCaller.blockPosition(), SoundEvents.ZOGLIN_DEATH, SoundCategory.HOSTILE, 2.5F, 0.5F);
                     this.counter = 0;
                 }
             }

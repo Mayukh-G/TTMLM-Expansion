@@ -2,6 +2,7 @@ package com.example.ttmlm.entity.original;
 
 import com.example.ttmlm.TTMLM;
 import com.example.ttmlm.entity.changed.IAbstractHardZombie;
+import com.example.ttmlm.init.IngotVariants;
 import com.example.ttmlm.init.ModEntities;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
@@ -9,12 +10,12 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.ai.attributes.AttributeModifierMap;
 import net.minecraft.entity.ai.attributes.Attributes;
 import net.minecraft.entity.ai.goal.Goal;
-import net.minecraft.entity.monster.DrownedEntity;
 import net.minecraft.entity.monster.MonsterEntity;
+import net.minecraft.entity.monster.ZoglinEntity;
+import net.minecraft.entity.monster.ZombifiedPiglinEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Effects;
 import net.minecraft.util.ResourceLocation;
@@ -26,40 +27,41 @@ import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.NotNull;
 
+import javax.annotation.Nullable;
 import java.util.List;
 
-public class HardDrownedSwarmCaller extends DrownedEntity implements IAbstractHardZombie {
-    public static final String name = "hard_drowned_sc";
+public class HardZPiglinSwarmCaller extends ZombifiedPiglinEntity implements IAbstractHardZombie {
+    public static final String name = "hard_zombie_piglin_sc";
 
-    public HardDrownedSwarmCaller(EntityType<?> type, World world) {
-        super(ModEntities.HARD_DROWNED_SC, world);
+    public HardZPiglinSwarmCaller(EntityType<?> type, World world) {
+        super(ModEntities.HARD_Z_PIGLIN_SC, world);
     }
 
     @Override
-    protected void addBehaviourGoals() {
-        super.addBehaviourGoals();
-        this.goalSelector.addGoal(7, new HardDrownedSwarmCaller.BuffAllies(this));
+    protected void registerGoals() {
+        super.registerGoals();
+        this.goalSelector.addGoal(7, new HardZPiglinSwarmCaller.BuffAllies(this));
     }
 
-    public static AttributeModifierMap.MutableAttribute createDrownedSCAttributes() {
+    public static AttributeModifierMap.MutableAttribute createZPiglinSCAttributes() {
         return MonsterEntity.createMonsterAttributes()
                 .add(Attributes.MAX_HEALTH, 50.0D)
                 .add(Attributes.ATTACK_DAMAGE, 7.0D)
                 .add(Attributes.FOLLOW_RANGE, 22.0D)
-                .add(Attributes.MOVEMENT_SPEED, 0.4D)
+                .add(Attributes.MOVEMENT_SPEED, 0.43D)
                 .add(Attributes.ARMOR, 11.0D)
-                .add(Attributes.SPAWN_REINFORCEMENTS_CHANCE, 0.4D);
+                .add(Attributes.SPAWN_REINFORCEMENTS_CHANCE, 0);
     }
 
 //    @Override
 //    protected void registerAttributes() {
 //        super.registerAttributes();
+//        this.getAttribute(SPAWN_REINFORCEMENTS_CHANCE).setBaseValue(0.0D);
 //        this.getAttribute(SharedMonsterAttributes.FOLLOW_RANGE).setBaseValue(22.0D);
-//        this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.40D);
+//        this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.43D);
 //        this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(7.0D);
 //        this.getAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(50.0D);
 //        this.getAttribute(SharedMonsterAttributes.ARMOR).setBaseValue(11.0D);
-//        this.getAttribute(SPAWN_REINFORCEMENTS_CHANCE).setBaseValue(0.4D);
 //    }
 
     @Override
@@ -85,21 +87,26 @@ public class HardDrownedSwarmCaller extends DrownedEntity implements IAbstractHa
 
     @Override
     protected void populateDefaultEquipmentSlots(@NotNull DifficultyInstance difficulty) {
-        if ((double) this.random.nextFloat() > 0.9D) {
-            int i = this.random.nextInt(16);
-            if (i < 10) {
-                this.setItemSlot(EquipmentSlotType.MAINHAND, new ItemStack(Items.TRIDENT));
-            } else {
-                this.setItemSlot(EquipmentSlotType.MAINHAND, new ItemStack(Items.FISHING_ROD));
-            }
+        this.setItemSlot(EquipmentSlotType.MAINHAND, new ItemStack(IngotVariants.WEAK_BLAZING_AllOY.getSwordItem()));
+        this.setItemSlot(EquipmentSlotType.HEAD, new ItemStack(IngotVariants.BLAZING_ALLOY.getHelmetItem()));
+        this.handDropChances[EquipmentSlotType.MAINHAND.getIndex()] = 0F;
+        this.armorDropChances[EquipmentSlotType.HEAD.getIndex()] = 0;
+    }
+
+    @Override
+    public void setTarget(@Nullable LivingEntity livingBase) {
+        if (livingBase instanceof NetherBoss){
+            super.setTarget(null);
+        }else {
+            super.setTarget(livingBase);
         }
     }
 
     static class BuffAllies extends Goal{
-        private HardDrownedSwarmCaller swarmCaller;
+        private HardZPiglinSwarmCaller swarmCaller;
         private int counter = 0;
 
-        BuffAllies(HardDrownedSwarmCaller caller){
+        BuffAllies(HardZPiglinSwarmCaller caller){
             this.swarmCaller = caller;
         }
 
@@ -127,8 +134,8 @@ public class HardDrownedSwarmCaller extends DrownedEntity implements IAbstractHa
                         }
                     }
                     if(!listPlayer.isEmpty()){
-                        EffectInstance playerWeak = new EffectInstance(Effects.DIG_SLOWDOWN, 170);
-                        EffectInstance playerSlow = new EffectInstance(Effects.MOVEMENT_SLOWDOWN, 100, 1);
+                        EffectInstance playerWeak = new EffectInstance(Effects.CONFUSION, 170, 1);
+                        EffectInstance playerSlow = new EffectInstance(Effects.WEAKNESS, 100);
                         for (PlayerEntity playerEntity : listPlayer) {
                             playerEntity.addEffect(playerWeak);
                             playerEntity.addEffect(playerSlow);

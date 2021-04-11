@@ -6,10 +6,10 @@ import net.minecraft.item.IItemTier;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.item.ToolItem;
+import net.minecraft.loot.LootContext;
+import net.minecraft.loot.LootParameters;
+import net.minecraft.loot.conditions.ILootCondition;
 import net.minecraft.util.ResourceLocation;
-import net.minecraft.world.storage.loot.LootContext;
-import net.minecraft.world.storage.loot.LootParameters;
-import net.minecraft.world.storage.loot.conditions.ILootCondition;
 import net.minecraftforge.common.loot.GlobalLootModifierSerializer;
 import net.minecraftforge.common.loot.LootModifier;
 
@@ -30,8 +30,8 @@ public class FrozenGeodeModifier extends LootModifier {
     @Nonnull
     @Override
     protected List<ItemStack> doApply(List<ItemStack> generatedLoot, LootContext context) {
-        if (!context.getWorld().isRemote) {
-            IItemTier tier = ((ToolItem) context.get(LootParameters.TOOL).getItem()).getTier();
+        if (!context.getLevel().isClientSide) {
+            IItemTier tier = ((ToolItem) context.getParamOrNull(LootParameters.TOOL).getItem()).getTier();
             if (!(tier == IngotVariantTiers.ENDER || tier == IngotVariantTiers.WEAK_ENDER)) {
                 Random random = new Random();
                 int choice = random.nextInt(100); //0-99
@@ -74,6 +74,11 @@ public class FrozenGeodeModifier extends LootModifier {
         @Override
         public FrozenGeodeModifier read(ResourceLocation name, JsonObject json, ILootCondition[] conditionsIn) {
             return new FrozenGeodeModifier(conditionsIn);
+        }
+
+        @Override
+        public JsonObject write(FrozenGeodeModifier instance) {
+            return makeConditions(instance.conditions);
         }
     }
 }

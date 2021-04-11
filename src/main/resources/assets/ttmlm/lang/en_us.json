@@ -121,7 +121,7 @@
   "entity.ttmlm.hard_zombie_sc": "\u00A75Swarm Caller Zombie",
   "entity.ttmlm.hard_husk_sc": "\u00A75Swarm Caller Husk",
   "entity.ttmlm.hard_drowned_sc": "\u00A75Swarm Caller Drowned",
-  "entity.ttmlm.hard_zombie_pigman_sc": "\u00A75Swarm Caller Zombie Pigman",
+  "entity.ttmlm.hard_zombie_piglin_sc": "\u00A75Swarm Caller Zombie Pigman",
 
   "entity.ttmlm.nether_boss": "Challenger"
 

@@ -57,9 +57,9 @@ public enum IngotVariants {
                 (float)(attackspeed + 0.3) : attackspeed;
         this.material = material;
 
-        ingotItems = new LazyValue<>(() -> new Item(new Item.Properties().group(TTMLM.ITEM_GROUP_RESOURCES)));
-        ingotBlocks = new LazyValue<>(() -> new Block(Block.Properties.create(Material.IRON)
-                .hardnessAndResistance(5f,6f)
+        ingotItems = new LazyValue<>(() -> new Item(new Item.Properties().tab(TTMLM.ITEM_GROUP_RESOURCES)));
+        ingotBlocks = new LazyValue<>(() -> new Block(Block.Properties.of(Material.METAL)
+                .strength(5f,6f)
                 .sound(SoundType.METAL)
                 .harvestLevel(2)
                 .harvestTool(ToolType.PICKAXE)
@@ -85,43 +85,43 @@ public enum IngotVariants {
     }
 
     public Item getIngotItem() {
-        return ingotItems.getValue();
+        return ingotItems.get();
     }
 
     public Block getIngotBlock(){
-        return ingotBlocks.getValue();
+        return ingotBlocks.get();
     }
 
     public SwordItem getSwordItem(){
-        return ingotSwordItems.getValue();
+        return ingotSwordItems.get();
     }
 
     public ArmorItem getHelmetItem() {
-        return ingotHelmetItems.getValue();
+        return ingotHelmetItems.get();
     }
 
     public ArmorItem getChestplateItem(){
-        return ingotChestplateItems.getValue();
+        return ingotChestplateItems.get();
     }
 
     public ArmorItem getLegginsItem(){
-        return ingotLeggingsItems.getValue();
+        return ingotLeggingsItems.get();
     }
 
     public ArmorItem getBootsItem(){
-        return ingotBootsItems.getValue();
+        return ingotBootsItems.get();
     }
 
     public PickaxeItem getPickaxeItem(){
-        return ingotPickaxeItems.getValue();
+        return ingotPickaxeItems.get();
     }
 
     public AxeItem getAxeItem() {
-        return ingotAxeItems.getValue();
+        return ingotAxeItems.get();
     }
 
-    public ShovelItem getShovelItem() { return ingotShovelItems.getValue(); }
+    public ShovelItem getShovelItem() { return ingotShovelItems.get(); }
 
-    public HoeItem getHoeItem() { return ingotHoeItems.getValue(); }
+    public HoeItem getHoeItem() { return ingotHoeItems.get(); }
 
 }

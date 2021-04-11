@@ -1,7 +1,7 @@
 package com.example.ttmlm.item.tools.lootmodifiers;
 
-import com.example.ttmlm.TTMLM;
 import com.example.ttmlm.init.IngotVariantTiers;
+import com.example.ttmlm.init.ModConditions;
 import com.google.common.collect.ImmutableList;
 import com.google.gson.JsonDeserializationContext;
 import com.google.gson.JsonObject;
@@ -9,25 +9,27 @@ import com.google.gson.JsonSerializationContext;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.*;
-import net.minecraft.world.storage.loot.LootContext;
-import net.minecraft.world.storage.loot.LootParameters;
-import net.minecraft.world.storage.loot.conditions.ILootCondition;
+import net.minecraft.loot.ILootSerializer;
+import net.minecraft.loot.LootConditionType;
+import net.minecraft.loot.LootContext;
+import net.minecraft.loot.LootParameters;
+import net.minecraft.loot.conditions.ILootCondition;
 import org.jetbrains.annotations.NotNull;
 
 
 public class FreezingToolCondition implements ILootCondition {
     private static FreezingToolCondition INSTANCE = new FreezingToolCondition();
     private final ImmutableList<BlockState> ALLOWED_BLOCKS = ImmutableList.of(
-            Blocks.ANDESITE.getDefaultState(),
-            Blocks.DIORITE.getDefaultState(),
-            Blocks.GRANITE.getDefaultState(),
-            Blocks.STONE.getDefaultState(),
-            Blocks.DIRT.getDefaultState(),
-            Blocks.GRAVEL.getDefaultState(),
-            Blocks.SAND.getDefaultState(),
-            Blocks.RED_SAND.getDefaultState(),
-            Blocks.SANDSTONE.getDefaultState(),
-            Blocks.RED_SANDSTONE.getDefaultState()
+            Blocks.ANDESITE.defaultBlockState(),
+            Blocks.DIORITE.defaultBlockState(),
+            Blocks.GRANITE.defaultBlockState(),
+            Blocks.STONE.defaultBlockState(),
+            Blocks.DIRT.defaultBlockState(),
+            Blocks.GRAVEL.defaultBlockState(),
+            Blocks.SAND.defaultBlockState(),
+            Blocks.RED_SAND.defaultBlockState(),
+            Blocks.SANDSTONE.defaultBlockState(),
+            Blocks.RED_SANDSTONE.defaultBlockState()
     );
 
 
@@ -36,8 +38,8 @@ public class FreezingToolCondition implements ILootCondition {
 
     @Override
     public boolean test(LootContext lootContext) {
-        ItemStack heldStack = (lootContext.get(LootParameters.TOOL));
-        BlockState state = lootContext.get(LootParameters.BLOCK_STATE);
+        ItemStack heldStack = (lootContext.getParamOrNull(LootParameters.TOOL));
+        BlockState state = lootContext.getParamOrNull(LootParameters.BLOCK_STATE);
         if (heldStack != null && ALLOWED_BLOCKS.contains(state)){
             Item held = heldStack.getItem();
             if(held instanceof ToolItem && !(held instanceof AxeItem)){
@@ -53,9 +55,15 @@ public class FreezingToolCondition implements ILootCondition {
         return () -> INSTANCE;
     }
 
-    public static class Serializer extends AbstractSerializer<FreezingToolCondition> {
+    @NotNull
+    @Override
+    public LootConditionType getType() {
+        return ModConditions.FREEZING_TOOL;
+    }
+
+    public static class Serializer implements ILootSerializer<FreezingToolCondition> {
         public Serializer() {
-            super(TTMLM.getID("is_freezing_tool"), FreezingToolCondition.class);
+//            super(TTMLM.getID("is_freezing_tool"), FreezingToolCondition.class);
         }
 
         public void serialize(@NotNull JsonObject json, @NotNull FreezingToolCondition value, @NotNull JsonSerializationContext context) {

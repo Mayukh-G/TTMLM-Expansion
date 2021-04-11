@@ -13,9 +13,9 @@ import javax.annotation.Nullable;
 
 public class OreBlocks extends OreBlock {
     public OreBlocks() {
-        this(Properties.create(Material.ROCK)
-        .hardnessAndResistance(4f,6f)
-        .sound(SoundType.STONE));
+        this(Properties.of(Material.STONE)
+                .strength(4f,6f)
+                .sound(SoundType.STONE));
     }
     public OreBlocks(Properties builder) {
         super(builder);

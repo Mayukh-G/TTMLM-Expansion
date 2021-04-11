@@ -9,6 +9,7 @@ import net.minecraft.util.Rotation;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.ChunkPos;
 import net.minecraft.util.math.MutableBoundingBox;
+import net.minecraft.world.IServerWorld;
 import net.minecraft.world.IWorld;
 import net.minecraft.world.gen.ChunkGenerator;
 import net.minecraft.world.gen.feature.structure.StructurePiece;
@@ -65,12 +66,12 @@ public class HardFortressPieces {
 
         if(random.nextBoolean()){
             rotationOffset = new BlockPos(0,0,2).rotate(rotation);
-            blockPos = rotationOffset.add(x, pos.getY(), z);
+            blockPos = rotationOffset.offset(x, pos.getY(), z);
             pieceList.add(new HardFortressPieces.Piece(templateManager, SMALL_ENTRANCE, blockPos, rotation));
             prevPiece = SmallEntrance;
         }else {
             rotationOffset = new BlockPos(0,0,0).rotate(rotation);
-            blockPos = rotationOffset.add(x, pos.getY(), z);
+            blockPos = rotationOffset.offset(x, pos.getY(), z);
             pieceList.add(new HardFortressPieces.Piece(templateManager, ENTRANCE, blockPos, rotation));
             prevPiece = Entrance;
         }
@@ -98,7 +99,7 @@ public class HardFortressPieces {
             //Small Treasure
             else if(select <= 4){ // 5%
                 if(prevPiece == OutsideTurn || prevPiece == InsideTurn){
-                    rotation = rotation.add(Rotation.CLOCKWISE_90);
+                    rotation = rotation.getRotated(Rotation.CLOCKWISE_90);
                     IndividualPiece.initialUpdateDisplacement(totalDisplacement, prevPiece);
                 }
                 if(!prevPiece.small) {
@@ -107,7 +108,7 @@ public class HardFortressPieces {
                     chunkCounter += prevPiece.x;
                 }
                 rotationOffset = new BlockPos(totalDisplacement[0], 0, totalDisplacement[1] + 2).rotate(rotation);
-                blockPos = rotationOffset.add(x, pos.getY(), z);
+                blockPos = rotationOffset.offset(x, pos.getY(), z);
                 pieceList.add(new HardFortressPieces.Piece(templateManager, SMALL_TREASURE, blockPos, rotation));
                 prevPiece = SmallTreasure;
                 IndividualPiece.updateDisplacement(prevPiece, totalDisplacement);
@@ -116,7 +117,7 @@ public class HardFortressPieces {
             //Small Hallways
             else if(select <= 29){ //25%
                 if(prevPiece == OutsideTurn || prevPiece == InsideTurn){
-                    rotation = rotation.add(Rotation.CLOCKWISE_90);
+                    rotation = rotation.getRotated(Rotation.CLOCKWISE_90);
                     IndividualPiece.initialUpdateDisplacement(totalDisplacement, prevPiece);
                 }
                 if(!prevPiece.small) {
@@ -125,7 +126,7 @@ public class HardFortressPieces {
                     chunkCounter += prevPiece.x;
                 }
                 rotationOffset = new BlockPos(totalDisplacement[0], 0, totalDisplacement[1] + 2).rotate(rotation);
-                blockPos = rotationOffset.add(x, pos.getY(), z);
+                blockPos = rotationOffset.offset(x, pos.getY(), z);
                 pieceList.add(new HardFortressPieces.Piece(templateManager, SMALL_HALLWAY, blockPos, rotation));
                 prevPiece = SmallHallway;
                 IndividualPiece.updateDisplacement(prevPiece, totalDisplacement);
@@ -134,17 +135,17 @@ public class HardFortressPieces {
             //Hallway 03 common large
             else if(select <= 54){ //25%
                 if(prevPiece == OutsideTurn || prevPiece == InsideTurn){
-                    rotation = rotation.add(Rotation.CLOCKWISE_90);
+                    rotation = rotation.getRotated(Rotation.CLOCKWISE_90);
                     IndividualPiece.initialUpdateDisplacement(totalDisplacement, prevPiece);
                 }
                 if(prevPiece.small){
                     // flipped 180 to fit better, displacement values changed accordingly
-                    prevPiece = IndividualPiece.addTranstion(-totalDisplacement[1] - 8, -totalDisplacement[0] - 5, rotation.add(Rotation.CLOCKWISE_180), x, z, pos, pieceList, templateManager);
+                    prevPiece = IndividualPiece.addTranstion(-totalDisplacement[1] - 8, -totalDisplacement[0] - 5, rotation.getRotated(Rotation.CLOCKWISE_180), x, z, pos, pieceList, templateManager);
                     IndividualPiece.updateDisplacement(prevPiece, totalDisplacement);
                     chunkCounter += prevPiece.x;
                 }
                 rotationOffset = new BlockPos(totalDisplacement[0], 0, totalDisplacement[1]).rotate(rotation);
-                blockPos = rotationOffset.add(x, pos.getY(), z);
+                blockPos = rotationOffset.offset(x, pos.getY(), z);
                 pieceList.add(new HardFortressPieces.Piece(templateManager, HALLWAY_03, blockPos, rotation));
                 prevPiece = Hallway03;
                 IndividualPiece.updateDisplacement(prevPiece, totalDisplacement);
@@ -153,17 +154,17 @@ public class HardFortressPieces {
             //Hallway 02 large
             else if(select <= 69){ //15%
                 if(prevPiece == OutsideTurn || prevPiece == InsideTurn){
-                    rotation = rotation.add(Rotation.CLOCKWISE_90);
+                    rotation = rotation.getRotated(Rotation.CLOCKWISE_90);
                     IndividualPiece.initialUpdateDisplacement(totalDisplacement, prevPiece);
                 }
                 if(prevPiece.small){
                     // flipped 180 to fit better, displacement values changed accordingly
-                    prevPiece = IndividualPiece.addTranstion(-totalDisplacement[1] - 8, -totalDisplacement[0] - 5, rotation.add(Rotation.CLOCKWISE_180), x, z, pos, pieceList, templateManager);
+                    prevPiece = IndividualPiece.addTranstion(-totalDisplacement[1] - 8, -totalDisplacement[0] - 5, rotation.getRotated(Rotation.CLOCKWISE_180), x, z, pos, pieceList, templateManager);
                     IndividualPiece.updateDisplacement(prevPiece, totalDisplacement);
                     chunkCounter += prevPiece.x;
                 }
                 rotationOffset = new BlockPos(totalDisplacement[0], 0, totalDisplacement[1]).rotate(rotation);
-                blockPos = rotationOffset.add(x, pos.getY(), z);
+                blockPos = rotationOffset.offset(x, pos.getY(), z);
                 pieceList.add(new HardFortressPieces.Piece(templateManager, HALLWAY_02, blockPos, rotation));
                 prevPiece = Hallway02;
                 IndividualPiece.updateDisplacement(prevPiece, totalDisplacement);
@@ -172,17 +173,17 @@ public class HardFortressPieces {
             //Hallway 01 large
             else if(select <= 74){ //5%
                 if(prevPiece == OutsideTurn || prevPiece == InsideTurn){
-                    rotation = rotation.add(Rotation.CLOCKWISE_90);
+                    rotation = rotation.getRotated(Rotation.CLOCKWISE_90);
                     IndividualPiece.initialUpdateDisplacement(totalDisplacement, prevPiece);
                 }
                 if(prevPiece.small){
                     // flipped 180 to fit better, displacement values changed accordingly
-                    prevPiece = IndividualPiece.addTranstion(-totalDisplacement[1] - 8, -totalDisplacement[0] - 5, rotation.add(Rotation.CLOCKWISE_180), x, z, pos, pieceList, templateManager);
+                    prevPiece = IndividualPiece.addTranstion(-totalDisplacement[1] - 8, -totalDisplacement[0] - 5, rotation.getRotated(Rotation.CLOCKWISE_180), x, z, pos, pieceList, templateManager);
                     IndividualPiece.updateDisplacement(prevPiece, totalDisplacement);
                     chunkCounter += prevPiece.x;
                 }
                 rotationOffset = new BlockPos(totalDisplacement[0], 0, totalDisplacement[1]).rotate(rotation);
-                blockPos = rotationOffset.add(x, pos.getY()-1, z);
+                blockPos = rotationOffset.offset(x, pos.getY()-1, z);
                 pieceList.add(new HardFortressPieces.Piece(templateManager, HALLWAY_01, blockPos, rotation));
                 prevPiece = Hallway01;
                 IndividualPiece.updateDisplacement(prevPiece, totalDisplacement);
@@ -191,17 +192,17 @@ public class HardFortressPieces {
             // Dead end spawner Large
             else if(select <= 89){ //15%
                 if(prevPiece == OutsideTurn || prevPiece == InsideTurn){
-                    rotation = rotation.add(Rotation.CLOCKWISE_90);
+                    rotation = rotation.getRotated(Rotation.CLOCKWISE_90);
                     IndividualPiece.initialUpdateDisplacement(totalDisplacement, prevPiece);
                 }
                 if(prevPiece.small){
                     // flipped 180 to fit better, displacement values changed accordingly
-                    prevPiece = IndividualPiece.addTranstion(-totalDisplacement[1] - 8, -totalDisplacement[0] - 5, rotation.add(Rotation.CLOCKWISE_180), x, z, pos, pieceList, templateManager);
+                    prevPiece = IndividualPiece.addTranstion(-totalDisplacement[1] - 8, -totalDisplacement[0] - 5, rotation.getRotated(Rotation.CLOCKWISE_180), x, z, pos, pieceList, templateManager);
                     IndividualPiece.updateDisplacement(prevPiece, totalDisplacement);
                     chunkCounter += prevPiece.x;
                 }
                 rotationOffset = new BlockPos(totalDisplacement[0], 0, totalDisplacement[1]).rotate(rotation);
-                blockPos = rotationOffset.add(x, pos.getY(), z);
+                blockPos = rotationOffset.offset(x, pos.getY(), z);
                 pieceList.add(new HardFortressPieces.Piece(templateManager, DEADEND_SPAWNER, blockPos, rotation));
                 prevPiece = DeadendSpawner;
                 IndividualPiece.updateDisplacement(prevPiece, totalDisplacement);
@@ -210,17 +211,17 @@ public class HardFortressPieces {
             // Dead end Chest Large
             else if(select <= 99){ //10%
                 if(prevPiece == OutsideTurn || prevPiece == InsideTurn){
-                    rotation = rotation.add(Rotation.CLOCKWISE_90);
+                    rotation = rotation.getRotated(Rotation.CLOCKWISE_90);
                     IndividualPiece.initialUpdateDisplacement(totalDisplacement, prevPiece);
                 }
                 if(prevPiece.small){
                     // flipped 180 to fit better, displacement values changed accordingly
-                    prevPiece = IndividualPiece.addTranstion(-totalDisplacement[1] - 8, -totalDisplacement[0] - 5, rotation.add(Rotation.CLOCKWISE_180), x, z, pos, pieceList, templateManager);
+                    prevPiece = IndividualPiece.addTranstion(-totalDisplacement[1] - 8, -totalDisplacement[0] - 5, rotation.getRotated(Rotation.CLOCKWISE_180), x, z, pos, pieceList, templateManager);
                     IndividualPiece.updateDisplacement(prevPiece, totalDisplacement);
                     chunkCounter += prevPiece.x;
                 }
                 rotationOffset = new BlockPos(totalDisplacement[0], 0, totalDisplacement[1]).rotate(rotation);
-                blockPos = rotationOffset.add(x, pos.getY(), z);
+                blockPos = rotationOffset.offset(x, pos.getY(), z);
                 pieceList.add(new HardFortressPieces.Piece(templateManager, DEADEND_CHEST, blockPos, rotation));
                 prevPiece = DeadendChest;
                 IndividualPiece.updateDisplacement(prevPiece, totalDisplacement);
@@ -230,7 +231,7 @@ public class HardFortressPieces {
             small hallway*/
             else{
                 if(prevPiece == OutsideTurn || prevPiece == InsideTurn){
-                    rotation = rotation.add(Rotation.CLOCKWISE_90);
+                    rotation = rotation.getRotated(Rotation.CLOCKWISE_90);
                     IndividualPiece.initialUpdateDisplacement(totalDisplacement, prevPiece);
                 }
                 if(!prevPiece.small) {
@@ -239,7 +240,7 @@ public class HardFortressPieces {
                     chunkCounter += prevPiece.x;
                 }
                 rotationOffset = new BlockPos(totalDisplacement[0], 0, totalDisplacement[1] + 2).rotate(rotation);
-                blockPos = rotationOffset.add(x, pos.getY(), z);
+                blockPos = rotationOffset.offset(x, pos.getY(), z);
                 pieceList.add(new HardFortressPieces.Piece(templateManager, SMALL_HALLWAY, blockPos, rotation));
                 prevPiece = SmallHallway;
                 IndividualPiece.updateDisplacement(prevPiece, totalDisplacement);
@@ -248,16 +249,16 @@ public class HardFortressPieces {
         }
         //Boss room
         if(prevPiece == OutsideTurn || prevPiece == InsideTurn){
-            rotation = rotation.add(Rotation.CLOCKWISE_90);
+            rotation = rotation.getRotated(Rotation.CLOCKWISE_90);
             IndividualPiece.initialUpdateDisplacement(totalDisplacement, prevPiece);
         }
         if(prevPiece.small){
             // flipped 180 to fit better, displacement values changed accordingly
-            prevPiece = IndividualPiece.addTranstion(-totalDisplacement[1] - 8, -totalDisplacement[0] - 5, rotation.add(Rotation.CLOCKWISE_180), x, z, pos, pieceList, templateManager);
+            prevPiece = IndividualPiece.addTranstion(-totalDisplacement[1] - 8, -totalDisplacement[0] - 5, rotation.getRotated(Rotation.CLOCKWISE_180), x, z, pos, pieceList, templateManager);
             IndividualPiece.updateDisplacement(prevPiece, totalDisplacement);
         }
         rotationOffset = new BlockPos(totalDisplacement[0], 0, totalDisplacement[1] - 4).rotate(rotation);
-        blockPos = rotationOffset.add(x, pos.getY(), z);
+        blockPos = rotationOffset.offset(x, pos.getY(), z);
         pieceList.add(new HardFortressPieces.Piece(templateManager, BOSS_ROOM, blockPos, rotation));
         IndividualPiece.updateDisplacement(prevPiece, totalDisplacement);
     }
@@ -278,21 +279,21 @@ public class HardFortressPieces {
 
         public static IndividualPiece addTranstion(int totalDisplacementZ, int totalDisplacementX, Rotation rotation, int x, int z, BlockPos pos, List<StructurePiece> pieceList, TemplateManager templateManager){
             BlockPos rotationOffset = new BlockPos(totalDisplacementX, 0, totalDisplacementZ).rotate(rotation);
-            BlockPos blockPos = rotationOffset.add(x, pos.getY(), z);
+            BlockPos blockPos = rotationOffset.offset(x, pos.getY(), z);
             pieceList.add(new HardFortressPieces.Piece(templateManager, TRANSITION, blockPos, rotation));
             return Transition;
         }
 
         public static IndividualPiece addOutsideTurn(int totalDisplacementZ, int totalDisplacementX, Rotation rotation, int x, int z, BlockPos pos, List<StructurePiece> pieceList, TemplateManager templateManager){
             BlockPos rotationOffset = new BlockPos(totalDisplacementX, 0, totalDisplacementZ + 2).rotate(rotation);
-            BlockPos blockPos = rotationOffset.add(x, pos.getY(), z);
+            BlockPos blockPos = rotationOffset.offset(x, pos.getY(), z);
             pieceList.add(new HardFortressPieces.Piece(templateManager, OUTSIDE_TURN, blockPos, rotation));
             return OutsideTurn;
         }
 
         public static IndividualPiece addInsideTurn(int totalDisplacementZ, int totalDisplacementX, Rotation rotation, int x, int z, BlockPos pos, List<StructurePiece> pieceList, TemplateManager templateManager){
             BlockPos rotationOffset = new BlockPos(totalDisplacementX, 0, totalDisplacementZ + 2).rotate(rotation);
-            BlockPos blockPos = rotationOffset.add(x, pos.getY(), z);
+            BlockPos blockPos = rotationOffset.offset(x, pos.getY(), z);
             pieceList.add(new HardFortressPieces.Piece(templateManager, INSIDE_TURN, blockPos, rotation));
             return InsideTurn;
         }
@@ -314,17 +315,17 @@ public class HardFortressPieces {
         private Rotation rotation;
 
         public Piece(TemplateManager templateManagerIn, ResourceLocation resourceLocationIn, BlockPos pos, Rotation rotationIn) {
-            super(StructureInit.HFP, 0);
+            super(StructureInit.TTStructures.HFP, 0);
             this.resourceLocation = resourceLocationIn;
             BlockPos blockpos = new BlockPos(0, 1, 0);
-            this.templatePosition = pos.add(blockpos.getX(), blockpos.getY(), blockpos.getZ());
+            this.templatePosition = pos.offset(blockpos.getX(), blockpos.getY(), blockpos.getZ());
             this.rotation = rotationIn;
             this.setupPiece(templateManagerIn);
         }
 
         public Piece(TemplateManager templateManagerIn, CompoundNBT tagCompound)
         {
-            super(StructureInit.HFP, tagCompound);
+            super(StructureInit.TTStructures.HFP, tagCompound);
             this.resourceLocation = new ResourceLocation(tagCompound.getString("Template"));
             this.rotation = Rotation.valueOf(tagCompound.getString("Rot"));
             this.setupPiece(templateManagerIn);
@@ -332,31 +333,39 @@ public class HardFortressPieces {
 
         private void setupPiece(TemplateManager templateManager)
         {
-            Template template = templateManager.getTemplateDefaulted(this.resourceLocation);
+            Template template = templateManager.getOrCreate(this.resourceLocation);
             PlacementSettings placementsettings = new PlacementSettings().setRotation(this.rotation).setMirror(Mirror.NONE);
             this.setup(template, this.templatePosition, placementsettings);
         }
 
         @Override
-        protected void readAdditional(CompoundNBT tagCompound)
-        {
-            super.readAdditional(tagCompound);
-            tagCompound.putString("Template", this.resourceLocation.toString());
-            tagCompound.putString("Rot", this.rotation.name());
+        protected void addAdditionalSaveData(CompoundNBT p_143011_1_) {
+            super.addAdditionalSaveData(p_143011_1_);
+            p_143011_1_.putString("Template", this.resourceLocation.toString());
+            p_143011_1_.putString("Rot", this.rotation.name());
         }
+
+        //        @Override
+//        protected void readAdditional(CompoundNBT tagCompound)
+//        {
+//            super.readAdditional(tagCompound);
+//            tagCompound.putString("Template", this.resourceLocation.toString());
+//            tagCompound.putString("Rot", this.rotation.name());
+//        }
 
         @Override
-        protected void handleDataMarker(@NotNull String function, @NotNull BlockPos pos, @NotNull IWorld worldIn, @NotNull Random rand, @NotNull MutableBoundingBox sbb) {
+        protected void handleDataMarker(@NotNull String p_186175_1_, @NotNull BlockPos p_186175_2_, @NotNull IServerWorld p_186175_3_, @NotNull Random p_186175_4_, MutableBoundingBox p_186175_5_) {
+
         }
 
-        @Override
-        public boolean create(@NotNull IWorld worldIn, ChunkGenerator<?> p_225577_2_, @NotNull Random randomIn, @NotNull MutableBoundingBox structureBoundingBoxIn, ChunkPos chunkPos)
-        {
-            PlacementSettings placementsettings = (new PlacementSettings()).setRotation(this.rotation).setMirror(Mirror.NONE);
-            BlockPos blockpos = new BlockPos(0,1,0);
-            this.templatePosition.add(Template.transformedBlockPos(placementsettings, new BlockPos(-blockpos.getX(), 0, -blockpos.getZ())));
-
-            return super.create(worldIn, p_225577_2_, randomIn, structureBoundingBoxIn, chunkPos);
-        }
+//        @Override
+//        public boolean create(@NotNull IWorld worldIn, ChunkGenerator<?> p_225577_2_, @NotNull Random randomIn, @NotNull MutableBoundingBox structureBoundingBoxIn, ChunkPos chunkPos)
+//        {
+//            PlacementSettings placementsettings = (new PlacementSettings()).setRotation(this.rotation).setMirror(Mirror.NONE);
+//            BlockPos blockpos = new BlockPos(0,1,0);
+//            this.templatePosition.add(Template.transformedBlockPos(placementsettings, new BlockPos(-blockpos.getX(), 0, -blockpos.getZ())));
+//
+//            return super.create(worldIn, p_225577_2_, randomIn, structureBoundingBoxIn, chunkPos);
+//        }
     }
 }

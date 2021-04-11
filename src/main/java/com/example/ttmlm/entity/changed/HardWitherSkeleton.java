@@ -6,10 +6,12 @@ import com.example.ttmlm.init.ModEntities;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.SharedMonsterAttributes;
+import net.minecraft.entity.ai.attributes.AttributeModifierMap;
+import net.minecraft.entity.ai.attributes.Attributes;
 import net.minecraft.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.entity.ai.goal.RangedBowAttackGoal;
 import net.minecraft.entity.monster.AbstractSkeletonEntity;
+import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.monster.WitherSkeletonEntity;
 import net.minecraft.entity.projectile.AbstractArrowEntity;
 import net.minecraft.entity.projectile.ArrowEntity;
@@ -31,15 +33,15 @@ public class HardWitherSkeleton extends WitherSkeletonEntity {
     private final RangedBowAttackGoal<AbstractSkeletonEntity> aiArrow = new RangedBowAttackGoal<>(this, 1.0D, 17, 20.0F);
     private final MeleeAttackGoal aiAttack = new MeleeAttackGoal(this, 1.3D, false) {
         //Reset task when interrupted
-        public void resetTask() {
-            super.resetTask();
-            HardWitherSkeleton.this.setAggroed(false);
+        public void stop() {
+            super.stop();
+            HardWitherSkeleton.this.setAggressive(false);
         }
 
         //Start doing task
-        public void startExecuting() {
-            super.startExecuting();
-            HardWitherSkeleton.this.setAggroed(true);
+        public void start() {
+            super.start();
+            HardWitherSkeleton.this.setAggressive(true);
         }
     };
 
@@ -48,19 +50,19 @@ public class HardWitherSkeleton extends WitherSkeletonEntity {
     }
 
     @Override
-    public void setCombatTask() {
+    public void reassessWeaponGoal() {
         if(!(this.aiArrow == null) && !(this.aiAttack == null)) {
-            if (this.world != null && !this.world.isRemote) {
+            if (this.level != null && !this.level.isClientSide) {
                 this.goalSelector.removeGoal(this.aiAttack);
                 this.goalSelector.removeGoal(this.aiArrow);
-                ItemStack itemstack = this.getHeldItem(ProjectileHelper.getHandWith(this, Items.BOW));
+                ItemStack itemstack = this.getItemInHand(ProjectileHelper.getWeaponHoldingHand(this, Items.BOW));
                 if (itemstack.getItem() instanceof net.minecraft.item.BowItem) {
                     int i = 17;
-                    if (this.world.getDifficulty() != Difficulty.HARD) {
+                    if (this.level.getDifficulty() != Difficulty.HARD) {
                         i = 20;
                     }
 
-                    this.aiArrow.setAttackCooldown(i);
+                    this.aiArrow.setMinAttackInterval(i);
                     this.goalSelector.addGoal(4, this.aiArrow);
                 } else {
                     this.goalSelector.addGoal(4, this.aiAttack);
@@ -69,52 +71,53 @@ public class HardWitherSkeleton extends WitherSkeletonEntity {
         }
     }
 
-    //make sure we dont retaliate against the boss
+    //Make sure we don't retaliate against the boss
     @Override
-    public void setRevengeTarget(@Nullable LivingEntity livingBase) {
+    public void setTarget(@Nullable LivingEntity livingBase) {
         if (livingBase instanceof NetherBoss || livingBase instanceof HardWitherSkeleton){
-            super.setRevengeTarget(null);
+            super.setTarget(null);
         }else {
-            super.setRevengeTarget(livingBase);
+            super.setTarget(livingBase);
         }
     }
 
     @Override
-    protected void setEquipmentBasedOnDifficulty(DifficultyInstance difficulty) {
-        if(this.rand.nextInt(9) <= 4){
-            this.setItemStackToSlot(EquipmentSlotType.MAINHAND, new ItemStack(IngotVariants.BLAZING_ALLOY.getSwordItem()));
-            this.setItemStackToSlot(EquipmentSlotType.CHEST, new ItemStack(IngotVariants.BLAZING_ALLOY.getChestplateItem()));
-            this.inventoryArmorDropChances[EquipmentSlotType.CHEST.getIndex()] = 0;
+    protected void populateDefaultEquipmentSlots(DifficultyInstance difficulty) {
+        if(this.random.nextBoolean()){
+            this.setItemSlot(EquipmentSlotType.MAINHAND, new ItemStack(IngotVariants.BLAZING_ALLOY.getSwordItem()));
+            this.setItemSlot(EquipmentSlotType.CHEST, new ItemStack(IngotVariants.BLAZING_ALLOY.getChestplateItem()));
+            this.armorDropChances[EquipmentSlotType.CHEST.getIndex()] = 0;
         }else {
-            this.setItemStackToSlot(EquipmentSlotType.MAINHAND, new ItemStack(Items.BOW));
-            this.setItemStackToSlot(EquipmentSlotType.LEGS, new ItemStack(IngotVariants.BLAZING_ALLOY.getLegginsItem()));
-            this.inventoryArmorDropChances[EquipmentSlotType.LEGS.getIndex()] = 0;
+            this.setItemSlot(EquipmentSlotType.MAINHAND, new ItemStack(Items.BOW));
+            this.setItemSlot(EquipmentSlotType.LEGS, new ItemStack(IngotVariants.BLAZING_ALLOY.getLegginsItem()));
+            this.armorDropChances[EquipmentSlotType.LEGS.getIndex()] = 0;
         }
-        this.inventoryHandsDropChances[EquipmentSlotType.MAINHAND.getIndex()] = 0F;
+        this.handDropChances[EquipmentSlotType.MAINHAND.getIndex()] = 0F;
+
     }
 
     @Override
-    protected void setEnchantmentBasedOnDifficulty(@NotNull DifficultyInstance difficulty) {
-        float f = difficulty.getClampedAdditionalDifficulty();
+    protected void populateDefaultEquipmentEnchantments(@NotNull DifficultyInstance difficulty) {
+        float f = difficulty.getEffectiveDifficulty();
         for(EquipmentSlotType equipmentslottype : EquipmentSlotType.values()) {
-            if (equipmentslottype.getSlotType() == EquipmentSlotType.Group.ARMOR) {
-                ItemStack itemstack = this.getItemStackFromSlot(equipmentslottype);
-                if (!itemstack.isEmpty() && this.rand.nextFloat() < 0.5F * f) {
-                    this.setItemStackToSlot(equipmentslottype, EnchantmentHelper.addRandomEnchantment(this.rand, itemstack, (int)(5.0F + f * (float)this.rand.nextInt(18)), false));
+            if (equipmentslottype.getType() == EquipmentSlotType.Group.ARMOR) {
+                ItemStack itemstack = this.getItemBySlot(equipmentslottype);
+                if (!itemstack.isEmpty() && this.random.nextFloat() < 0.5F * f) {
+                    this.setItemSlot(equipmentslottype, EnchantmentHelper.enchantItem(this.random, itemstack, (int)(5.0F + f * (float)this.random.nextInt(18)), false));
                 }
             }
         }
     }
 
     @Override
-    public void livingTick() {
-        super.livingTick();
-        if (this.world != null && !this.world.isRemote) {
-            ItemStack heldItem = this.getHeldItem(ProjectileHelper.getHandWith(this, Items.BOW));
+    public void aiStep() {
+        super.aiStep();
+        if (this.level != null && !this.level.isClientSide) {
+            ItemStack heldItem = this.getItemInHand(ProjectileHelper.getWeaponHoldingHand(this, Items.BOW));
             if (heldItem.getItem() == Items.BOW) {
-                LivingEntity target = this.getAttackTarget();
+                LivingEntity target = this.getTarget();
                 if (target != null) {
-                    double flatDist = this.getDistanceSq(target);
+                    double flatDist = this.distanceToSqr(target);
                     if (flatDist <= 8.0D){
                         this.goalSelector.removeGoal(this.aiArrow);
                         this.goalSelector.addGoal(4, this.aiAttack);
@@ -127,20 +130,29 @@ public class HardWitherSkeleton extends WitherSkeletonEntity {
         }
     }
 
-    @Override
-    protected void registerAttributes() {
-        super.registerAttributes();
-        this.getAttribute(SharedMonsterAttributes.ATTACK_KNOCKBACK).setBaseValue(4.0D);
-        this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.3D);
-        this.getAttribute(SharedMonsterAttributes.FOLLOW_RANGE).setBaseValue(35.0D);
-        this.getAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(30.0D);
+    public static AttributeModifierMap.MutableAttribute createWSkeletonAttributes() {
+        return MonsterEntity.createMonsterAttributes()
+                .add(Attributes.MAX_HEALTH, 30.0D)
+                .add(Attributes.ATTACK_DAMAGE, 3.5D)
+                .add(Attributes.FOLLOW_RANGE, 20.0D)
+                .add(Attributes.MOVEMENT_SPEED, 0.3D)
+                .add(Attributes.ATTACK_KNOCKBACK, 4.0D);
     }
+
+//    @Override
+//    protected void registerAttributes() {
+//        super.registerAttributes();
+//        this.getAttribute(SharedMonsterAttributes.ATTACK_KNOCKBACK).setBaseValue(4.0D);
+//        this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.3D);
+//        this.getAttribute(SharedMonsterAttributes.FOLLOW_RANGE).setBaseValue(20.0D);
+//        this.getAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(30.0D);
+//    }
 
     @NotNull
     @Override
-    protected AbstractArrowEntity fireArrow(ItemStack arrowStack, float distanceFactor) {
-        AbstractArrowEntity abstractarrowentity = super.fireArrow(arrowStack, distanceFactor);
-        abstractarrowentity.setFire(100);
+    protected AbstractArrowEntity getArrow(ItemStack arrowStack, float distanceFactor) {
+        AbstractArrowEntity abstractarrowentity = super.getArrow(arrowStack, distanceFactor);
+        abstractarrowentity.setSecondsOnFire(100);
         if (abstractarrowentity instanceof ArrowEntity) {
             ((ArrowEntity)abstractarrowentity).addEffect(new EffectInstance(Effects.WITHER, 200));
         }

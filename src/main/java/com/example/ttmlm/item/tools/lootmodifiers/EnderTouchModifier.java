@@ -7,14 +7,13 @@ import com.google.gson.JsonObject;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.entity.player.ServerPlayerEntity;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ToolItem;
+import net.minecraft.loot.LootContext;
+import net.minecraft.loot.LootParameters;
+import net.minecraft.loot.conditions.ILootCondition;
 import net.minecraft.tileentity.ChestTileEntity;
 import net.minecraft.util.ResourceLocation;
-import net.minecraft.world.storage.loot.LootContext;
-import net.minecraft.world.storage.loot.LootParameters;
-import net.minecraft.world.storage.loot.conditions.ILootCondition;
 import net.minecraftforge.common.loot.GlobalLootModifierSerializer;
 import net.minecraftforge.common.loot.LootModifier;
 import net.minecraftforge.common.util.LazyOptional;
@@ -41,13 +40,13 @@ public class EnderTouchModifier extends LootModifier {
             For Chest Linking, Used a capability that Stores the NBT data of a chest tile entity then wrote deserializers
             to convert the NBT back into the original Chest tile entity. Used IItemhandler to put items into chests.
          */
-        if (!context.getWorld().isRemote) {
-            ItemStack toolItemStack = context.get(LootParameters.TOOL);
+        if (!context.getLevel().isClientSide) {
+            ItemStack toolItemStack = context.getParamOrNull(LootParameters.TOOL);
             if (((ToolItem) toolItemStack.getItem()).getTier() == IngotVariantTiers.ENDER) {
                 LazyOptional<IEnderStorageLink> toolOptional = toolItemStack.getCapability(ESLCapability.ENDER_STORAGE_LINK_CAPABILITY, null);
                 IEnderStorageLink linker = toolOptional.orElseThrow(Error::new);
-                if (linker.getContainer(context.getWorld()) != null) {
-                    ChestTileEntity container = linker.getContainer(context.getWorld());
+                if (linker.getContainer(context.getLevel()) != null) {
+                    ChestTileEntity container = linker.getContainer(context.getLevel());
                     LazyOptional<IItemHandler> containerOptional = container.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null);
                     IItemHandler itemHandler = containerOptional.orElseThrow(Error::new);
 
@@ -63,11 +62,11 @@ public class EnderTouchModifier extends LootModifier {
                     }
                 }
             }
-            Entity entity = context.get(LootParameters.THIS_ENTITY);
+            Entity entity = context.getParamOrNull(LootParameters.THIS_ENTITY);
             if (entity instanceof ServerPlayerEntity) {
                 ServerPlayerEntity player = (ServerPlayerEntity) entity;
                 PlayerInventory inv = player.inventory;
-                generatedLoot.removeIf(inv::addItemStackToInventory);
+                generatedLoot.removeIf(inv::add);
             }
         }
         return generatedLoot;
@@ -77,6 +76,11 @@ public class EnderTouchModifier extends LootModifier {
         @Override
         public EnderTouchModifier read(ResourceLocation name, JsonObject json, ILootCondition[] conditionsIn) {
             return new EnderTouchModifier(conditionsIn);
+        }
+
+        @Override
+        public JsonObject write(EnderTouchModifier instance) {
+            return makeConditions(instance.conditions);
         }
     }
 }

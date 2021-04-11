@@ -5,9 +5,9 @@ import net.minecraft.inventory.Inventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.FurnaceRecipe;
 import net.minecraft.item.crafting.IRecipeType;
+import net.minecraft.loot.LootContext;
+import net.minecraft.loot.conditions.ILootCondition;
 import net.minecraft.util.ResourceLocation;
-import net.minecraft.world.storage.loot.LootContext;
-import net.minecraft.world.storage.loot.conditions.ILootCondition;
 import net.minecraftforge.common.loot.GlobalLootModifierSerializer;
 import net.minecraftforge.common.loot.LootModifier;
 
@@ -29,13 +29,13 @@ public class BlazingTouchModifier extends LootModifier {
     @Override
     protected List<ItemStack> doApply(List<ItemStack> generatedLoot, LootContext context) {
         //Check if Loot dropped
-        if (!generatedLoot.isEmpty() && !context.getWorld().isRemote) {
+        if (!generatedLoot.isEmpty() && !context.getLevel().isClientSide) {
             for (ItemStack stack : generatedLoot) {
                 //Getting recipes from world (datapacks)
-                Optional<FurnaceRecipe> optional = context.getWorld().getRecipeManager().getRecipe(IRecipeType.SMELTING, new Inventory(stack), context.getWorld());
+                Optional<FurnaceRecipe> optional = context.getLevel().getRecipeManager().getRecipeFor(IRecipeType.SMELTING, new Inventory(stack), context.getLevel());
                 if (optional.isPresent()) {
                     // Getting result of recipes
-                    ItemStack outputStack = optional.get().getRecipeOutput();
+                    ItemStack outputStack = optional.get().getResultItem();
                     if (!outputStack.isEmpty()) {
                         int gained = stack.getCount() * outputStack.getCount();
                         // Setting Result to correct amount + replacing original ItemStack in list
@@ -54,6 +54,11 @@ public class BlazingTouchModifier extends LootModifier {
         @Override
         public BlazingTouchModifier read(ResourceLocation name, JsonObject json, ILootCondition[] conditionsIn) {
             return new BlazingTouchModifier(conditionsIn);
+        }
+
+        @Override
+        public JsonObject write(BlazingTouchModifier instance) {
+            return makeConditions(instance.conditions);
         }
     }
 }

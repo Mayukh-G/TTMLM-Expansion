@@ -49,7 +49,7 @@ public class EnderStorageLinker implements IEnderStorageLink, ICapabilityProvide
             int y = compoundNBT.getInt("y");
             int z = compoundNBT.getInt("z");
             BlockPos pos = new BlockPos(x, y, z);
-            TileEntity tEntity = world.getTileEntity(pos);
+            TileEntity tEntity = world.getBlockEntity(pos);
             if(tEntity instanceof ChestTileEntity){
                 return (ChestTileEntity) tEntity;
             }
@@ -65,12 +65,12 @@ public class EnderStorageLinker implements IEnderStorageLink, ICapabilityProvide
 
     @Override
     public boolean link(ChestTileEntity container) {
-        if(container == this.getContainer(container.getWorld())) {
+        if(container == this.getContainer(container.getLevel())) {
             this.unlink();
             return false;
         }
         CompoundNBT compoundNBT = container.serializeNBT();
-        String worldS = container.getWorld().toString();
+        String worldS = container.getLevel().toString();
         if(!this.linkedTool.hasTag()){
             this.linkedTool.setTag(new CompoundNBT());
         }

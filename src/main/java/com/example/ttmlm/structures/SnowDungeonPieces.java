@@ -9,6 +9,7 @@ import net.minecraft.util.Rotation;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.ChunkPos;
 import net.minecraft.util.math.MutableBoundingBox;
+import net.minecraft.world.IServerWorld;
 import net.minecraft.world.IWorld;
 import net.minecraft.world.gen.ChunkGenerator;
 import net.minecraft.world.gen.feature.structure.StructurePiece;
@@ -32,11 +33,11 @@ public class SnowDungeonPieces {
         int y = pos.getY();
 
         BlockPos rotationOffset = new BlockPos(0,0,0).rotate(rotation);
-        BlockPos blockPos = rotationOffset.add(x, y, z);
+        BlockPos blockPos = rotationOffset.offset(x, y, z);
         pieceList.add(new SnowDungeonPieces.Piece(templateManager, SNOW_DUNGEON, blockPos, rotation));
 
         rotationOffset = new BlockPos(3, -6, 3).rotate(rotation);
-        blockPos = rotationOffset.add(x, y, z);
+        blockPos = rotationOffset.offset(x, y, z);
         pieceList.add(new SnowDungeonPieces.Piece(templateManager, BASE, blockPos, rotation));
 
     }
@@ -46,17 +47,17 @@ public class SnowDungeonPieces {
         private Rotation rotation;
 
         public Piece(TemplateManager templateManagerIn, ResourceLocation resourceLocationIn, BlockPos pos, Rotation rotationIn) {
-            super(StructureInit.SDP, 0);
+            super(StructureInit.TTStructures.SDP, 0);
             this.resourceLocation = resourceLocationIn;
             BlockPos blockpos = new BlockPos(0, 1, 0);
-            this.templatePosition = pos.add(blockpos.getX(), blockpos.getY(), blockpos.getZ());
+            this.templatePosition = pos.offset(blockpos.getX(), blockpos.getY(), blockpos.getZ());
             this.rotation = rotationIn;
             this.setupPiece(templateManagerIn);
         }
 
         public Piece(TemplateManager templateManagerIn, CompoundNBT tagCompound)
         {
-            super(StructureInit.SDP, tagCompound);
+            super(StructureInit.TTStructures.SDP, tagCompound);
             this.resourceLocation = new ResourceLocation(tagCompound.getString("Template"));
             this.rotation = Rotation.valueOf(tagCompound.getString("Rot"));
             this.setupPiece(templateManagerIn);
@@ -64,32 +65,33 @@ public class SnowDungeonPieces {
 
         private void setupPiece(TemplateManager templateManager)
         {
-            Template template = templateManager.getTemplateDefaulted(this.resourceLocation);
+            Template template = templateManager.getOrCreate(this.resourceLocation);
             PlacementSettings placementsettings = new PlacementSettings().setRotation(this.rotation).setMirror(Mirror.NONE);
             this.setup(template, this.templatePosition, placementsettings);
         }
 
         @Override
-        protected void readAdditional(CompoundNBT tagCompound)
+        protected void addAdditionalSaveData(CompoundNBT tagCompound)
         {
-            super.readAdditional(tagCompound);
+            super.addAdditionalSaveData(tagCompound);
             tagCompound.putString("Template", this.resourceLocation.toString());
             tagCompound.putString("Rot", this.rotation.name());
         }
 
         @Override
-        protected void handleDataMarker(@NotNull String function, @NotNull BlockPos pos, @NotNull IWorld worldIn, @NotNull Random rand, @NotNull MutableBoundingBox sbb) {
+        protected void handleDataMarker(@NotNull String p_186175_1_, @NotNull BlockPos p_186175_2_, @NotNull IServerWorld p_186175_3_, @NotNull Random p_186175_4_, MutableBoundingBox p_186175_5_) {
+
         }
 
-        @Override
-        public boolean create(@NotNull IWorld worldIn, ChunkGenerator<?> p_225577_2_, @NotNull Random randomIn, @NotNull MutableBoundingBox structureBoundingBoxIn, ChunkPos chunkPos)
-        {
-            PlacementSettings placementsettings = (new PlacementSettings()).setRotation(this.rotation).setMirror(Mirror.NONE);
-            BlockPos blockpos = new BlockPos(0,1,0);
-            this.templatePosition.add(Template.transformedBlockPos(placementsettings, new BlockPos(-blockpos.getX(), 0, -blockpos.getZ())));
-
-            return super.create(worldIn, p_225577_2_, randomIn, structureBoundingBoxIn, chunkPos);
-        }
+//        @Override
+//        public boolean create(@NotNull IWorld worldIn, ChunkGenerator<?> p_225577_2_, @NotNull Random randomIn, @NotNull MutableBoundingBox structureBoundingBoxIn, ChunkPos chunkPos)
+//        {
+//            PlacementSettings placementsettings = (new PlacementSettings()).setRotation(this.rotation).setMirror(Mirror.NONE);
+//            BlockPos blockpos = new BlockPos(0,1,0);
+//            this.templatePosition.add(Template.transformedBlockPos(placementsettings, new BlockPos(-blockpos.getX(), 0, -blockpos.getZ())));
+//
+//            return super.create(worldIn, p_225577_2_, randomIn, structureBoundingBoxIn, chunkPos);
+//        }
 
     }
 }

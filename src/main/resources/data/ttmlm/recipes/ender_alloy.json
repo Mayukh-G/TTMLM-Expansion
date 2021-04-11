@@ -1,9 +1,8 @@
 {
   "type": "crafting_shaped",
   "pattern": [
-    "OXO",
-    "XIX",
-    "OXO"
+    "OOO",
+    "XIX"
   ],
   "key": {
     "X" : {

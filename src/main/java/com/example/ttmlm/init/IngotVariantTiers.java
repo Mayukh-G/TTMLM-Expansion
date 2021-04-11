@@ -3,30 +3,31 @@ package com.example.ttmlm.init;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.util.LazyValue;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.function.Supplier;
 
 public enum IngotVariantTiers implements IItemTier {
     MUTABLE(2, 250, 5.5F, 2F, 15, () -> {
-        return Ingredient.fromItems(IngotVariants.MUTABLE_ALLOY.getIngotItem());
+        return Ingredient.of(IngotVariants.MUTABLE_ALLOY.getIngotItem());
     }),
     WEAK_VARIANT_BLAZING(2, 550, 6.5F, 2F, 10, () -> {
-        return Ingredient.fromItems(IngotVariants.WEAK_BLAZING_AllOY.getIngotItem());
+        return Ingredient.of(IngotVariants.WEAK_BLAZING_AllOY.getIngotItem());
     }),
     WEAK_VARIANT_FREEZING(2, 550, 6.5F, 2F, 10, () -> {
-        return Ingredient.fromItems(IngotVariants.WEAK_FREEZING_ALLOY.getIngotItem());
+        return Ingredient.of(IngotVariants.WEAK_FREEZING_ALLOY.getIngotItem());
     }),
     WEAK_ENDER(3, 2000, 11.0F, 3F, 10, () -> {
-        return Ingredient.fromItems(IngotVariants.WEAK_ENDER_ALLOY.getIngotItem());
+        return Ingredient.of(IngotVariants.WEAK_ENDER_ALLOY.getIngotItem());
     }),
     VARIANT_BLAZING(3, 2500, 10.0F, 4F, 10, () -> {
-        return Ingredient.fromItems(IngotVariants.BLAZING_ALLOY.getIngotItem());
+        return Ingredient.of(IngotVariants.BLAZING_ALLOY.getIngotItem());
     }),
     VARIANT_FREEZING(3, 2500, 10.0F, 4F, 10, () -> {
-        return Ingredient.fromItems(IngotVariants.FREEZING_ALLOY.getIngotItem());
+        return Ingredient.of(IngotVariants.FREEZING_ALLOY.getIngotItem());
     }),
     ENDER(4, 3000, 12.0F, 5F, 19, () -> {
-        return Ingredient.fromItems(IngotVariants.ENDER_ALLOY.getIngotItem());
+        return Ingredient.of(IngotVariants.ENDER_ALLOY.getIngotItem());
     });
 
 
@@ -46,28 +47,38 @@ public enum IngotVariantTiers implements IItemTier {
         this.repairMaterial = new LazyValue<>(repairMaterialIn);
     }
 
-    public int getMaxUses() {
+    public Ingredient getRepairMaterial() {
+        return this.repairMaterial.get();
+    }
+
+    @Override
+    public int getUses() {
         return this.maxUses;
     }
 
-    public float getEfficiency() {
+    @Override
+    public float getSpeed() {
         return this.efficiency;
     }
 
-    public float getAttackDamage() {
+    @Override
+    public float getAttackDamageBonus() {
         return this.attackDamage;
     }
 
-    public int getHarvestLevel() {
+    @Override
+    public int getLevel() {
         return this.harvestLevel;
     }
 
-    public int getEnchantability() {
+    @Override
+    public int getEnchantmentValue() {
         return this.enchantability;
     }
 
-    public Ingredient getRepairMaterial() {
-        return this.repairMaterial.getValue();
+    @NotNull
+    @Override
+    public Ingredient getRepairIngredient() {
+        return this.repairMaterial.get();
     }
-
 }

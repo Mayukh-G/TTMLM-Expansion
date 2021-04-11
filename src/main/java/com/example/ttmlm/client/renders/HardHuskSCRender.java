@@ -6,6 +6,7 @@ import com.example.ttmlm.client.models.HardZombieSCModel;
 import com.example.ttmlm.entity.original.HardHuskSwarmCaller;
 import com.example.ttmlm.entity.original.HardZombieSwarmCaller;
 import com.mojang.blaze3d.matrix.MatrixStack;
+import net.minecraft.client.renderer.IRenderTypeBuffer;
 import net.minecraft.client.renderer.entity.BipedRenderer;
 import net.minecraft.client.renderer.entity.EntityRendererManager;
 import net.minecraft.client.renderer.entity.layers.BipedArmorLayer;
@@ -22,13 +23,14 @@ public class HardHuskSCRender extends BipedRenderer<HardHuskSwarmCaller, HardHus
     }
 
     @Override
-    protected void preRenderCallback(HardHuskSwarmCaller entitylivingbaseIn, MatrixStack matrixStackIn, float partialTickTime) {
-        matrixStackIn.scale(1.2F, 1.2F, 1.2F);
+    public void render(HardHuskSwarmCaller p_225623_1_, float p_225623_2_, float p_225623_3_, MatrixStack p_225623_4_, IRenderTypeBuffer p_225623_5_, int p_225623_6_) {
+        p_225623_4_.scale(1.2F, 1.2F, 1.2F);
+        super.render(p_225623_1_, p_225623_2_, p_225623_3_, p_225623_4_, p_225623_5_, p_225623_6_);
     }
 
     @NotNull
     @Override
-    public ResourceLocation getEntityTexture(@NotNull HardHuskSwarmCaller entity) {
+    public ResourceLocation getTextureLocation(@NotNull HardHuskSwarmCaller entity) {
         return TTMLM.getID("textures/entity/hard_husk_sc.png");
     }
 }

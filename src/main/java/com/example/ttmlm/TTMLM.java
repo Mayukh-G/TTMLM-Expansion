@@ -3,10 +3,11 @@ package com.example.ttmlm;
 import com.example.ttmlm.init.CoalVariants;
 import com.example.ttmlm.init.IngotVariants;
 import com.example.ttmlm.init.ModBlocks;
-import com.example.ttmlm.item.weapons.IngotVariantSwords;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.text.ITextComponent;
+import net.minecraft.util.text.StringTextComponent;
 import net.minecraftforge.fml.DistExecutor;
 import net.minecraftforge.fml.ModContainer;
 import net.minecraftforge.fml.ModList;
@@ -28,46 +29,46 @@ public class TTMLM
     //ITEM GROUP FOR CREATIVE TAB
     public static final ItemGroup ITEM_GROUP_BLOCK = new ItemGroup(MOD_ID) {
         @Override
-        public ItemStack createIcon() {
+        public ItemStack makeIcon() {
             return new ItemStack(ModBlocks.mutableAlloyOre);
         }
 
         @Override
-        public String getTranslationKey() {
-            return "Variants Blocks";
+        public ITextComponent getDisplayName() {
+            return new StringTextComponent("Variants Blocks");
         }
     };
 
     public static final ItemGroup ITEM_GROUP_TOOL = new ItemGroup(MOD_ID) {
         @Override
-        public ItemStack createIcon() {
+        public ItemStack makeIcon() {
             return new ItemStack(IngotVariants.BLAZING_ALLOY.getAxeItem());
         }
         @Override
-        public String getTranslationKey() {
-            return "Variants Tools";
+        public ITextComponent getDisplayName() {
+            return new StringTextComponent("Variants Tools");
         }
     };
 
     public static final ItemGroup ITEM_GROUP_COMBAT = new ItemGroup(MOD_ID) {
         @Override
-        public ItemStack createIcon() {
+        public ItemStack makeIcon() {
             return new ItemStack(IngotVariants.ENDER_ALLOY.getSwordItem());
         }
         @Override
-        public String getTranslationKey() {
-            return "Variants Combat";
+        public ITextComponent getDisplayName() {
+            return new StringTextComponent("Variants Combat");
         }
     };
 
     public static final ItemGroup ITEM_GROUP_RESOURCES = new ItemGroup(MOD_ID) {
         @Override
-        public ItemStack createIcon() {
+        public ItemStack makeIcon() {
             return new ItemStack(CoalVariants.FREEZING_CARBON.getCoalVariantItem());
         }
         @Override
-        public String getTranslationKey() {
-            return "Variants Resources";
+        public ITextComponent getDisplayName() {
+            return new StringTextComponent("Variants Resources");
         }
     };
 

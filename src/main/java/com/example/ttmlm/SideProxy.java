@@ -1,88 +1,122 @@
 package com.example.ttmlm;
 
 import com.example.ttmlm.client.renders.*;
-import com.example.ttmlm.entity.original.NetherBoss;
+import com.example.ttmlm.entity.changed.*;
+import com.example.ttmlm.entity.original.*;
 import com.example.ttmlm.init.*;
 import com.example.ttmlm.entity.SpawnEntities;
 import com.example.ttmlm.item.tools.capabilities.ESLCapability;
 import com.example.ttmlm.item.tools.lootmodifiers.*;
 import com.example.ttmlm.item.weapons.IngotVariantSwords;
+import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.renderer.entity.*;
+import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.SpawnReason;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.loot.ILootSerializer;
+import net.minecraft.loot.LootConditionType;
+import net.minecraft.loot.conditions.LootConditionManager;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.registry.Registry;
 import net.minecraft.world.World;
 import net.minecraft.world.biome.Biome;
-import net.minecraft.world.biome.Biomes;
-import net.minecraft.world.gen.GenerationStage;
-import net.minecraft.world.gen.feature.IFeatureConfig;
-import net.minecraft.world.gen.placement.IPlacementConfig;
-import net.minecraft.world.gen.placement.Placement;
-import net.minecraft.world.storage.loot.conditions.LootConditionManager;
+import net.minecraft.world.gen.FlatChunkGenerator;
+import net.minecraft.world.gen.feature.structure.Structure;
+import net.minecraft.world.gen.settings.DimensionStructuresSettings;
+import net.minecraft.world.server.ServerWorld;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.loot.GlobalLootModifierSerializer;
 import net.minecraftforge.event.AttachCapabilitiesEvent;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
 import net.minecraftforge.event.entity.living.LivingHurtEvent;
+import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraftforge.event.world.BlockEvent;
+import net.minecraftforge.event.world.WorldEvent;
+import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.*;
 import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.registries.ForgeRegistries;
+import org.jetbrains.annotations.NotNull;
 
 import javax.annotation.Nonnull;
+import java.util.Random;
 
 // You can use EventBusSubscriber to automatically subscribe events on the contained class (this is subscribing to the MOD
 // Event bus for receiving Registry Events)
 //@Mod.EventBusSubscriber(bus=Mod.EventBusSubscriber.Bus.MOD)
 public class SideProxy {
+    private static final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+    private static final IEventBus forgeEventBus = MinecraftForge.EVENT_BUS;
+
     SideProxy() {
         //Life-cycle events
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(SideProxy::commonSetup);
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(SideProxy::enqueueIMC);
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(SideProxy::processIMC);
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(SideProxy::loadComplete);
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(ModBlocks::registerAll);
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(ModItems::registerALL);
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(ModEntities::registerALL);
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(StructureInit::registerFeatures);
+        modEventBus.addListener(SideProxy::commonSetup);
+        modEventBus.addListener(SideProxy::enqueueIMC);
+        modEventBus.addListener(SideProxy::processIMC);
+        modEventBus.addListener(SideProxy::loadComplete);
+        //Attributes
+        modEventBus.addListener(SideProxy::addEntityAttributes);
+        // Registering
+        modEventBus.addGenericListener(Block.class, ModBlocks::registerAll);
+        modEventBus.addGenericListener(Item.class, ModItems::registerALL);
+        modEventBus.addGenericListener(EntityType.class, ModEntities::registerALL);
+        modEventBus.addGenericListener(Structure.class, SideProxy::onRegisterStructures);
 
         //Other
-        MinecraftForge.EVENT_BUS.register(this);
-        MinecraftForge.EVENT_BUS.addListener(SideProxy::serverStarting);
-        MinecraftForge.EVENT_BUS.addListener(SpawnEntities::trySpawning);
-        MinecraftForge.EVENT_BUS.addListener(SideProxy::onAttackVariantSword);
-        MinecraftForge.EVENT_BUS.addListener(SideProxy::checkNetherBossSpawn);
-        MinecraftForge.EVENT_BUS.addListener(SideProxy::onCapabilitiesAttach);
+        forgeEventBus.register(this);
+        forgeEventBus.addListener(SideProxy::serverStarting);
+        forgeEventBus.addListener(SpawnEntities::trySpawning);
+        forgeEventBus.addListener(SideProxy::onAttackVariantSword);
+        forgeEventBus.addListener(SideProxy::checkNetherBossSpawn);
+        forgeEventBus.addListener(SideProxy::biomeMod);
+        forgeEventBus.addListener(SideProxy::addDimensionalSpacing);
+    }
+
+    // This will be removed in 1.17
+    private static void addEntityAttributes(EntityAttributeCreationEvent event){
+        event.put(ModEntities.HARD_BLAZE, HardBlaze.createAttributes().build());
+        event.put(ModEntities.HARD_CAVE_SPIDER, HardCaveSpider.createCaveSpiderAttributes().build());
+        event.put(ModEntities.HARD_CREEPER, HardCreeper.createAttributes().build());
+        event.put(ModEntities.HARD_DROWNED, HardDrowned.createDrownedAttributes().build());
+        event.put(ModEntities.HARD_ENDERMAN, HardEnderman.createAttributes().build());
+        event.put(ModEntities.HARD_GHAST, HardGhast.createAttributes().build());
+        event.put(ModEntities.HARD_HUSK, HardHusk.createHuskAttributes().build());
+        event.put(ModEntities.HARD_SKELETON, HardSkeleton.createAttributes().build());
+        event.put(ModEntities.HARD_SPIDER, HardSpider.createAttributes().build());
+        event.put(ModEntities.HARD_STRAY, HardStray.createStrayAttributes().build());
+        event.put(ModEntities.HARD_ZOMBIE, HardZombie.createAttributes().build());
+        event.put(ModEntities.HARD_WITHER_SKELETON, HardWitherSkeleton.createWSkeletonAttributes().build());
+        event.put(ModEntities.HARD_Z_PIGLIN, HardZPiglin.createZpPiglinAttributes().build());
+        // Originals
+
+        event.put(ModEntities.HARD_DROWNED_SC, HardDrownedSwarmCaller.createDrownedSCAttributes().build());
+        event.put(ModEntities.HARD_HUSK_SC, HardHuskSwarmCaller.createHuskSCAttributes().build());
+        event.put(ModEntities.HARD_ZOMBIE_SC, HardZombieSwarmCaller.createZombieSCAttributes().build());
+        event.put(ModEntities.HARD_Z_PIGLIN_SC, HardZPiglinSwarmCaller.createZPiglinSCAttributes().build());
+        event.put(ModEntities.NETHER_BOSS, NetherBoss.createNetherBossAttributes().build());
     }
 
     private static void commonSetup(FMLCommonSetupEvent event){
-        //Adding structures
-        for (Biome biome : ForgeRegistries.BIOMES){
-            if(biome == Biomes.NETHER){
-                biome.addStructure(StructureInit.HARD_FORTRESS.withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
-                biome.addFeature(GenerationStage.Decoration.SURFACE_STRUCTURES, StructureInit.HARD_FORTRESS.withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG)
-                .withPlacement(Placement.NOPE.configure(IPlacementConfig.NO_PLACEMENT_CONFIG)));
-            }
-            else if(biome.getPrecipitation() == Biome.RainType.SNOW){
-                biome.addStructure(StructureInit.Snow_Dungeon.withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
-                biome.addFeature(GenerationStage.Decoration.SURFACE_STRUCTURES, StructureInit.Snow_Dungeon.withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG)
-                .withPlacement(Placement.NOPE.configure(IPlacementConfig.NO_PLACEMENT_CONFIG)));
-            }
-        }
         // Loot conditions
-        LootConditionManager.registerCondition(new BlazingToolCondition.Serializer());
-        LootConditionManager.registerCondition(new EnderToolCondition.Serializer());
-        LootConditionManager.registerCondition(new FreezingToolCondition.Serializer());
-        LootConditionManager.registerCondition(new FrozenGeodeCondition.Serializer());
+        ModConditions.registerAll();
+
+        // Old Way of Registering
+//        LootConditionManager.registerCondition(new BlazingToolCondition.Serializer());
+//        LootConditionManager.registerCondition(new EnderToolCondition.Serializer());
+//        LootConditionManager.registerCondition(new FreezingToolCondition.Serializer());
+//        LootConditionManager.registerCondition(new FrozenGeodeCondition.Serializer());
+
         //Capabilities
         ESLCapability.register();
     }
@@ -99,8 +133,6 @@ public class SideProxy {
     }
 
     public static void loadComplete(FMLLoadCompleteEvent event){
-        //Generate ores
-        WorldGenOres.onInitBiomesGen();
     }
     //     You can use EventBusSubscriber to automatically subscribe events on the contained class (this is subscribing to the MOD
     //     Event bus for receiving Registry Events
@@ -116,14 +148,44 @@ public class SideProxy {
                     new FrozenGeodeModifier.Serializer().setRegistryName(TTMLM.getID("frozen_geode_modifier"))
             );
         }
+
+    }
+
+    private static void onRegisterStructures(final RegistryEvent.Register<Structure<?>> event){
+        StructureInit.TTStructures.registerStructures(event);
+        StructureInit.TTStructuresConfig.registerConfiguredStructures();
+    }
+
+    private static void biomeMod(final BiomeLoadingEvent event){
+        //Generate ores
+        WorldGenOres.onInitBiomesGen(event);
+        if (event.getCategory() == Biome.Category.NETHER) {
+            event.getGeneration().getStructures().add(() -> StructureInit.TTStructuresConfig.CONFIG_HARD_FORTRESS);
+        }
+        else if (event.getCategory() == Biome.Category.ICY){
+            event.getGeneration().getStructures().add(() -> StructureInit.TTStructuresConfig.CONFIG_SNOW_DUNGEON);
+        }
+    }
+
+    private static void addDimensionalSpacing(final WorldEvent.Load event){
+        if(event.getWorld() instanceof ServerWorld){
+            ServerWorld serverW = (ServerWorld) event.getWorld();
+
+            if(serverW.getChunkSource().generator instanceof FlatChunkGenerator &&
+                    serverW.dimension().equals(World.OVERWORLD)){
+                return;
+            }
+            serverW.getChunkSource().generator.getSettings().structureConfig().putIfAbsent(StructureInit.TTStructures.HARD_FORTRESS, DimensionStructuresSettings.DEFAULTS.get(StructureInit.TTStructures.HARD_FORTRESS));
+            serverW.getChunkSource().generator.getSettings().structureConfig().putIfAbsent(StructureInit.TTStructures.SNOW_DUNGEON, DimensionStructuresSettings.DEFAULTS.get(StructureInit.TTStructures.SNOW_DUNGEON));
+        }
     }
 
     public static void onAttackVariantSword(LivingHurtEvent event){
-        if (!event.getEntityLiving().world.isRemote) {
-            Object attacker = event.getSource().getTrueSource(); // Getting whom attacked
+        if (!event.getEntityLiving().level.isClientSide) {
+            Object attacker = event.getSource().getDirectEntity(); // Getting whom attacked
             if (attacker instanceof LivingEntity) {
                 LivingEntity Entityattacker = (LivingEntity) attacker; //If LivingEntity type is attacker
-                ItemStack HeldItemStack = Entityattacker.getHeldItemMainhand();
+                ItemStack HeldItemStack = Entityattacker.getMainHandItem();
                 Item HeldItem = HeldItemStack.getItem(); //Checking what was used to attack
                 if (HeldItem instanceof IngotVariantSwords) {
                     if (Entityattacker instanceof PlayerEntity) { //If attacker is a Player
@@ -148,16 +210,16 @@ public class SideProxy {
     }
 
     public static void checkNetherBossSpawn(BlockEvent.EntityPlaceEvent event){
-        if(!event.getWorld().isRemote()) {
-            World world = (World) event.getWorld();
+        if(!event.getWorld().isClientSide()) {
+            ServerWorld world = (ServerWorld) event.getWorld();
             BlockState blockState = event.getPlacedBlock();
             if(blockState.getBlock() == IngotVariants.WEAK_BLAZING_AllOY.getIngotBlock()){
                 boolean activated = false;
                 boolean eastWest = false;
                 BlockPos blockPos = event.getPos();
-                BlockPos PosUp = blockPos.up();
-                BlockPos PosDown = blockPos.down();
-                BlockPos PosDownDown = PosDown.down();
+                BlockPos PosUp = blockPos.above();
+                BlockPos PosDown = blockPos.below();
+                BlockPos PosDownDown = PosDown.below();
                 BlockPos PosUpEast = PosUp.east();
                 BlockPos PosUpNorth = PosUp.north();
                 BlockPos PosUpWest = PosUp.west();
@@ -192,30 +254,30 @@ public class SideProxy {
                 }
                 if(activated){
                     //set everything to air and spawn
-                    BlockState airState = Blocks.AIR.getDefaultState();
-                    world.setBlockState(blockPos, airState);
-                    world.setBlockState(PosDown, airState);
-                    world.setBlockState(PosUp, airState);
-                    world.setBlockState(PosDownDown, airState);
+                    BlockState airState = Blocks.AIR.defaultBlockState();
+                    world.setBlockAndUpdate(blockPos, airState);
+                    world.setBlockAndUpdate(PosDown, airState);
+                    world.setBlockAndUpdate(PosUp, airState);
+                    world.setBlockAndUpdate(PosDownDown, airState);
                     if(eastWest){
-                        world.setBlockState(PosDownEast, airState);
-                        world.setBlockState(PosDownWest, airState);
-                        world.setBlockState(PosEast, airState);
-                        world.setBlockState(PosWest, airState);
-                        world.setBlockState(PosUpEast, airState);
-                        world.setBlockState(PosUpWest, airState);
+                        world.setBlockAndUpdate(PosDownEast, airState);
+                        world.setBlockAndUpdate(PosDownWest, airState);
+                        world.setBlockAndUpdate(PosEast, airState);
+                        world.setBlockAndUpdate(PosWest, airState);
+                        world.setBlockAndUpdate(PosUpEast, airState);
+                        world.setBlockAndUpdate(PosUpWest, airState);
                     }else {
-                        world.setBlockState(PosDownNorth, airState);
-                        world.setBlockState(PosDownSouth, airState);
-                        world.setBlockState(PosNorth, airState);
-                        world.setBlockState(PosSouth, airState);
-                        world.setBlockState(PosUpNorth, airState);
-                        world.setBlockState(PosUpSouth, airState);
+                        world.setBlockAndUpdate(PosDownNorth, airState);
+                        world.setBlockAndUpdate(PosDownSouth, airState);
+                        world.setBlockAndUpdate(PosNorth, airState);
+                        world.setBlockAndUpdate(PosSouth, airState);
+                        world.setBlockAndUpdate(PosUpNorth, airState);
+                        world.setBlockAndUpdate(PosUpSouth, airState);
                     }
                     NetherBoss boss = new NetherBoss(ModEntities.NETHER_BOSS, world);
-                    boss.setPosition(blockPos.getX(), blockPos.getY(), blockPos.getZ());
-                    boss.onInitialSpawn(world, world.getDifficultyForLocation(boss.getPosition()), SpawnReason.EVENT, null, null);
-                    world.addEntity(boss);
+                    boss.setPos(blockPos.getX(), blockPos.getY(), blockPos.getZ());
+                    boss.finalizeSpawn(world, world.getCurrentDifficultyAt(boss.blockPosition()), SpawnReason.EVENT, null, null);
+                    world.addFreshEntity(boss);
                     TTMLM.LOGGER.debug("SPAWN ATTEMPT FOR NETHER BOSS");
                 }
             }
@@ -224,11 +286,18 @@ public class SideProxy {
 
     static class Client extends  SideProxy {
         Client() {
-            FMLJavaModLoadingContext.get().getModEventBus().addListener(Client::clientSetup);
+            modEventBus.addListener(Client::clientSetup);
         }
 
         private static void clientSetup(FMLClientSetupEvent event) {
-            RenderingRegistry.registerEntityRenderingHandler(ModEntities.HARD_Z_PIGMAN, PigZombieRenderer::new);
+            // The Piglin Render has a map for textures, it associates resource locations with Entity Types, we need to override this
+            RenderingRegistry.registerEntityRenderingHandler(ModEntities.HARD_Z_PIGLIN, (EntityRendererManager p_i232472_1_) -> new PiglinRenderer(p_i232472_1_, new Random().nextBoolean()){
+                @NotNull
+                @Override
+                public ResourceLocation getTextureLocation(MobEntity p_110775_1_) {
+                    return new ResourceLocation("textures/entity/piglin/zombified_piglin.png");
+                }
+            });
             RenderingRegistry.registerEntityRenderingHandler(ModEntities.HARD_DROWNED, DrownedRenderer::new);
             RenderingRegistry.registerEntityRenderingHandler(ModEntities.HARD_HUSK, HuskRenderer::new);
             RenderingRegistry.registerEntityRenderingHandler(ModEntities.HARD_ZOMBIE, ZombieRenderer::new);
@@ -241,17 +310,18 @@ public class SideProxy {
             RenderingRegistry.registerEntityRenderingHandler(ModEntities.HARD_GHAST, GhastRenderer::new);
             RenderingRegistry.registerEntityRenderingHandler(ModEntities.HARD_WITHER_SKELETON, WitherSkeletonRenderer::new);
             RenderingRegistry.registerEntityRenderingHandler(ModEntities.HARD_BLAZE, BlazeRenderer::new);
+            // Originals
             RenderingRegistry.registerEntityRenderingHandler(ModEntities.NETHER_BOSS, NetherBossRender::new);
             RenderingRegistry.registerEntityRenderingHandler(ModEntities.HARD_ZOMBIE_SC, HardZombieSCRender::new);
             RenderingRegistry.registerEntityRenderingHandler(ModEntities.HARD_HUSK_SC, HardHuskSCRender::new);
             RenderingRegistry.registerEntityRenderingHandler(ModEntities.HARD_DROWNED_SC, HardDrownedSCRender::new);
-            RenderingRegistry.registerEntityRenderingHandler(ModEntities.HARD_Z_PIGMAN_SC, HardZPigManSCRender::new);
+            RenderingRegistry.registerEntityRenderingHandler(ModEntities.HARD_Z_PIGLIN_SC, HardZPiglinSCRender::new);
         }
     }
 
 static class Server extends SideProxy {
     Server() {
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(Server::serverSetup);
+        modEventBus.addListener(Server::serverSetup);
     }
 
     private static void serverSetup(FMLDedicatedServerSetupEvent event) {

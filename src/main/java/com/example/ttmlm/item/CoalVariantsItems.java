@@ -8,7 +8,7 @@ public class CoalVariantsItems extends Item {
     private final String name;
 
     public CoalVariantsItems(String variantName, Properties builder){
-        super(builder.group(TTMLM.ITEM_GROUP_RESOURCES));
+        super(builder.tab(TTMLM.ITEM_GROUP_RESOURCES));
         this.name = variantName;
     }
 

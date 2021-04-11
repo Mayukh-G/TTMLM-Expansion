@@ -4,9 +4,11 @@ import com.example.ttmlm.entity.ai.goal.HardCreeperSwellGoal;
 import com.example.ttmlm.init.ModEntities;
 import net.minecraft.entity.AreaEffectCloudEntity;
 import net.minecraft.entity.EntityType;
-import net.minecraft.entity.SharedMonsterAttributes;
+import net.minecraft.entity.ai.attributes.AttributeModifierMap;
+import net.minecraft.entity.ai.attributes.Attributes;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.monster.CreeperEntity;
+import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.passive.CatEntity;
 import net.minecraft.entity.passive.OcelotEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -41,24 +43,32 @@ public class HardCreeper extends CreeperEntity {
     }
 
     @Override
-    public boolean isCharged() {
+    public boolean isPowered() {
         return true;
     }
 
-    @Override
-    protected void registerAttributes() {
-        super.registerAttributes();
-        this.getAttribute(SharedMonsterAttributes.FOLLOW_RANGE).setBaseValue(35.0D);
-        this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.27D);
-        this.getAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(30.0D);
-        this.getAttribute(SharedMonsterAttributes.KNOCKBACK_RESISTANCE).setBaseValue(1.0D);
+    public static AttributeModifierMap.MutableAttribute createAttributes() {
+        return MonsterEntity.createMonsterAttributes()
+                .add(Attributes.MAX_HEALTH, 30.0D)
+                .add(Attributes.FOLLOW_RANGE, 20.0D)
+                .add(Attributes.MOVEMENT_SPEED, 0.27D)
+                .add(Attributes.KNOCKBACK_RESISTANCE, 1.0D);
     }
+
+//    @Override
+//    protected void registerAttributes() {
+//        super.registerAttributes();
+//        this.getAttribute(SharedMonsterAttributes.FOLLOW_RANGE).setBaseValue(20.0D);
+//        this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.27D);
+//        this.getAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(30.0D);
+//        this.getAttribute(SharedMonsterAttributes.KNOCKBACK_RESISTANCE).setBaseValue(1.0D);
+//    }
 
     @Override
     public void tick() {
         super.tick();
 
-        int i = this.getCreeperState();
+        int i = this.getSwellDir();
         this.timeSinceIgnited += i;
 
         if (this.timeSinceIgnited < 0) {
@@ -68,26 +78,26 @@ public class HardCreeper extends CreeperEntity {
         int fuseTime = 25;
         if (this.timeSinceIgnited >= fuseTime) {
             this.timeSinceIgnited = fuseTime;
-            this.addPotionEffect(new EffectInstance(Effects.BLINDNESS, 100, 2, false, false));
+            this.addEffect(new EffectInstance(Effects.BLINDNESS, 100, 2, false, false));
             this.bigBoom();
         }
 
     }
 
     private void bigBoom(){
-        if (!this.world.isRemote) {
-            Explosion.Mode explosion$mode = net.minecraftforge.event.ForgeEventFactory.getMobGriefingEvent(this.world, this) ? Explosion.Mode.DESTROY : Explosion.Mode.NONE;
+        if (!this.level.isClientSide) {
+            Explosion.Mode explosion$mode = net.minecraftforge.event.ForgeEventFactory.getMobGriefingEvent(this.level, this) ? Explosion.Mode.DESTROY : Explosion.Mode.NONE;
             this.dead = true;
-            this.world.createExplosion(this, this.getPosX(), this.getPosY(), this.getPosZ(), 6.0F, explosion$mode);
+            this.level.explode(this, this.getX(), this.getY(), this.getZ(), 3.7F, explosion$mode);
             this.remove();
             this.spawnCloud();
         }
     }
 
     private void spawnCloud(){
-        Collection<EffectInstance> collection = this.getActivePotionEffects();
+        Collection<EffectInstance> collection = this.getActiveEffects();
         if (!collection.isEmpty()) {
-            AreaEffectCloudEntity areaeffectcloudentity = new AreaEffectCloudEntity(this.world, this.getPosX(), this.getPosY(), this.getPosZ());
+            AreaEffectCloudEntity areaeffectcloudentity = new AreaEffectCloudEntity(this.level, this.getX(), this.getY(), this.getZ());
             areaeffectcloudentity.setRadius(8.0F);
             areaeffectcloudentity.setRadiusOnUse(-0.5F);
             areaeffectcloudentity.setWaitTime(10);
@@ -98,7 +108,7 @@ public class HardCreeper extends CreeperEntity {
                 areaeffectcloudentity.addEffect(new EffectInstance(effectinstance));
             }
 
-            this.world.addEntity(areaeffectcloudentity);
+            this.level.addFreshEntity(areaeffectcloudentity);
         }
     }
 }

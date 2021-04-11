@@ -25,20 +25,20 @@ public enum CoalVariants {
 
     CoalVariants() {
         oreBlocks = new LazyValue<>(OreBlocks::new);
-        coalVariantBlock = new LazyValue<>(() -> new Block(Block.Properties.create(Material.ROCK)
-                .hardnessAndResistance(3f,10f)
+        coalVariantBlock = new LazyValue<>(() -> new Block(Block.Properties.of(Material.STONE)
+                .strength(3f,10f)
                 .sound(SoundType.STONE)
                 .harvestLevel(2)
                 .harvestTool(ToolType.PICKAXE)
         ));
-        coalVariantBlocksUpper =  new LazyValue<>(() -> new SlabBlock(Block.Properties.create(Material.ROCK)
-                .hardnessAndResistance(3f,10f)
+        coalVariantBlocksUpper =  new LazyValue<>(() -> new SlabBlock(Block.Properties.of(Material.STONE)
+                .strength(3f,10f)
                 .sound(SoundType.STONE)
                 .harvestLevel(2)
                 .harvestTool(ToolType.PICKAXE)
         ));
-        coalVariantBlocksLower =  new LazyValue<>(() -> new SlabBlock(Block.Properties.create(Material.ROCK)
-                .hardnessAndResistance(3f,10f)
+        coalVariantBlocksLower =  new LazyValue<>(() -> new SlabBlock(Block.Properties.of(Material.STONE)
+                .strength(3f,10f)
                 .sound(SoundType.STONE)
                 .harvestLevel(2)
                 .harvestTool(ToolType.PICKAXE)
@@ -48,18 +48,18 @@ public enum CoalVariants {
 
     public String getCoalVariantName() { return name().toLowerCase(Locale.ROOT); }
 
-    public OreBlocks getOreBlocks(){ return oreBlocks.getValue(); }
+    public OreBlocks getOreBlocks(){ return oreBlocks.get(); }
 
-    public Block getCoalVariantBlock() { return coalVariantBlock.getValue(); }
+    public Block getCoalVariantBlock() { return coalVariantBlock.get(); }
 
     public Block getCoalVariantBlockUpper(){
-        return coalVariantBlocksUpper.getValue();
+        return coalVariantBlocksUpper.get();
     }
 
     public Block getCoalVariantBlockLower(){
-        return coalVariantBlocksLower.getValue();
+        return coalVariantBlocksLower.get();
     }
 
-    public Item getCoalVariantItem(){ return coalVariantItem.getValue(); }
+    public Item getCoalVariantItem(){ return coalVariantItem.get(); }
 
 }

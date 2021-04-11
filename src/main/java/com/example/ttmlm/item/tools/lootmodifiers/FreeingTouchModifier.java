@@ -5,10 +5,10 @@ import com.example.ttmlm.init.ModBlocks;
 import com.google.gson.JsonObject;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ToolItem;
+import net.minecraft.loot.LootContext;
+import net.minecraft.loot.LootParameters;
+import net.minecraft.loot.conditions.ILootCondition;
 import net.minecraft.util.ResourceLocation;
-import net.minecraft.world.storage.loot.LootContext;
-import net.minecraft.world.storage.loot.LootParameters;
-import net.minecraft.world.storage.loot.conditions.ILootCondition;
 import net.minecraftforge.common.loot.GlobalLootModifierSerializer;
 import net.minecraftforge.common.loot.LootModifier;
 
@@ -30,8 +30,8 @@ public class FreeingTouchModifier extends LootModifier {
     @Override
     protected List<ItemStack> doApply(List<ItemStack> generatedLoot, LootContext context) {
         //Check if Loot dropped and check for nulls
-        if (!generatedLoot.isEmpty() && !context.getWorld().isRemote) {
-            ItemStack stack = context.get(LootParameters.TOOL);
+        if (!generatedLoot.isEmpty() && !context.getLevel().isClientSide) {
+            ItemStack stack = context.getParamOrNull(LootParameters.TOOL);
             if(stack != null){
                 if(stack.getItem() instanceof ToolItem){
                     // Determining which Tier
@@ -55,6 +55,11 @@ public class FreeingTouchModifier extends LootModifier {
         @Override
         public FreeingTouchModifier read(ResourceLocation name, JsonObject json, ILootCondition[] conditionsIn) {
             return new FreeingTouchModifier(conditionsIn);
+        }
+
+        @Override
+        public JsonObject write(FreeingTouchModifier instance) {
+            return makeConditions(instance.conditions);
         }
     }
 }

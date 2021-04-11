@@ -1,0 +1,14 @@
+V.1.2.0 - 1.16
+------------------------------------------------------------------------------
+Major Goals : New Dimention, Balence Changes, Update recognition
+
+MOBS:
+
+- Creeper : Explosion radius decreased, Defuse radius decreased
+- Skeleton like : Firing radius decreased
+- Hostile Monsters (Aside from flying nether monsters) : Detection radius decreased
+
+
+ITEMS:
+
+- A lot of recipes were changed to make getting the item less of a grind

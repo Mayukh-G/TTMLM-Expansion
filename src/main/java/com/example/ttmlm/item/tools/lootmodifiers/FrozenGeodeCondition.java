@@ -1,14 +1,17 @@
 package com.example.ttmlm.item.tools.lootmodifiers;
 
-import com.example.ttmlm.TTMLM;
 import com.example.ttmlm.init.ModBlocks;
+import com.example.ttmlm.init.ModConditions;
+import com.example.ttmlm.init.ModEntities;
 import com.google.gson.JsonDeserializationContext;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonSerializationContext;
 import net.minecraft.item.PickaxeItem;
-import net.minecraft.world.storage.loot.LootContext;
-import net.minecraft.world.storage.loot.LootParameters;
-import net.minecraft.world.storage.loot.conditions.ILootCondition;
+import net.minecraft.loot.ILootSerializer;
+import net.minecraft.loot.LootConditionType;
+import net.minecraft.loot.LootContext;
+import net.minecraft.loot.LootParameters;
+import net.minecraft.loot.conditions.ILootCondition;
 import org.jetbrains.annotations.NotNull;
 
 public class FrozenGeodeCondition implements ILootCondition {
@@ -20,9 +23,9 @@ public class FrozenGeodeCondition implements ILootCondition {
 
     @Override
     public boolean test(LootContext lootContext) {
-        if(lootContext.has(LootParameters.TOOL) && lootContext.has(LootParameters.BLOCK_STATE)){
-            return lootContext.get(LootParameters.BLOCK_STATE).getBlock() == ModBlocks.frozenGeode &&
-                    lootContext.get(LootParameters.TOOL).getItem() instanceof PickaxeItem;
+        if(lootContext.hasParam(LootParameters.TOOL) && lootContext.hasParam(LootParameters.BLOCK_STATE)){
+            return lootContext.getParamOrNull(LootParameters.BLOCK_STATE).getBlock() == ModBlocks.frozenGeode &&
+                    lootContext.getParamOrNull(LootParameters.TOOL).getItem() instanceof PickaxeItem;
         }
         return false;
     }
@@ -31,9 +34,15 @@ public class FrozenGeodeCondition implements ILootCondition {
         return () -> INSTANCE;
     }
 
-    public static class Serializer extends ILootCondition.AbstractSerializer<FrozenGeodeCondition> {
+    @NotNull
+    @Override
+    public LootConditionType getType() {
+        return ModConditions.FROZEN_GEODE;
+    }
+
+    public static class Serializer implements ILootSerializer<FrozenGeodeCondition> {
         public Serializer() {
-            super(TTMLM.getID("is_frozen_geode"), FrozenGeodeCondition.class);
+//            super(TTMLM.getID("is_frozen_geode"), FrozenGeodeCondition.class);
         }
 
         public void serialize(@NotNull JsonObject json, @NotNull FrozenGeodeCondition value, @NotNull JsonSerializationContext context) {

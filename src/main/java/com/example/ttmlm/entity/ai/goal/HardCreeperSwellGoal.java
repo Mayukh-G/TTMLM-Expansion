@@ -13,35 +13,35 @@ public class HardCreeperSwellGoal extends Goal {
 
     public HardCreeperSwellGoal(CreeperEntity entitycreeperIn) {
         this.swellingHardCreeper = entitycreeperIn;
-        this.setMutexFlags(EnumSet.of(Goal.Flag.MOVE));
+        this.setFlags(EnumSet.of(Goal.Flag.MOVE));
     }
 
-    public boolean shouldExecute() {
-        LivingEntity livingentity = this.swellingHardCreeper.getAttackTarget();
-        return this.swellingHardCreeper.getCreeperState() > 0 || livingentity != null && this.swellingHardCreeper.getDistanceSq(livingentity) < 20.0D;
-    }
-
-    @Override
-    public void startExecuting() {
-        this.swellingHardCreeper.getNavigator().clearPath();
-        this.creeperAttackTarget = this.swellingHardCreeper.getAttackTarget();
+    public boolean canUse() {
+        LivingEntity livingentity = this.swellingHardCreeper.getTarget();
+        return this.swellingHardCreeper.getSwellDir() > 0 || livingentity != null && this.swellingHardCreeper.distanceToSqr(livingentity) < 20.0D;
     }
 
     @Override
-    public void resetTask() {
+    public void start() {
+        this.swellingHardCreeper.getNavigation().stop();
+        this.creeperAttackTarget = this.swellingHardCreeper.getTarget();
+    }
+
+    @Override
+    public void stop() {
         this.creeperAttackTarget = null;
     }
 
     @Override
     public void tick() {
         if (this.creeperAttackTarget == null) {
-            this.swellingHardCreeper.setCreeperState(-1);
-        } else if (this.swellingHardCreeper.getDistanceSq(this.creeperAttackTarget) > 50.0D) {
-            this.swellingHardCreeper.setCreeperState(-1);
-        } else if (!this.swellingHardCreeper.getEntitySenses().canSee(this.creeperAttackTarget)) {
-            this.swellingHardCreeper.setCreeperState(-1);
+            this.swellingHardCreeper.setSwellDir(-1);
+        } else if (this.swellingHardCreeper.distanceToSqr(this.creeperAttackTarget) > 45.0D) {
+            this.swellingHardCreeper.setSwellDir(-1);
+        } else if (!this.swellingHardCreeper.getSensing().canSee(this.creeperAttackTarget)) {
+            this.swellingHardCreeper.setSwellDir(-1);
         } else {
-            this.swellingHardCreeper.setCreeperState(1);
+            this.swellingHardCreeper.setSwellDir(1);
         }
     }
 }
