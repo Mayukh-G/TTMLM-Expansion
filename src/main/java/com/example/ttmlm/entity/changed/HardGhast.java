@@ -42,7 +42,7 @@ public class HardGhast extends GhastEntity {
         ));
     }
 
-    public static AttributeModifierMap.MutableAttribute createAttributes() {
+    public static AttributeModifierMap.MutableAttribute createGhastAttributes() {
         return MonsterEntity.createMobAttributes()
                 .add(Attributes.MAX_HEALTH, 15.0D)
                 .add(Attributes.FOLLOW_RANGE, 100.0D)

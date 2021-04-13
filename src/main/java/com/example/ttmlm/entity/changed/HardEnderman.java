@@ -17,17 +17,23 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tags.FluidTags;
 import net.minecraft.util.Direction;
-import net.minecraft.util.SoundCategory;
 import net.minecraft.util.SoundEvents;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.vector.Vector3d;
 import net.minecraft.world.World;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.function.Predicate;
 
 public class HardEnderman extends EndermanEntity {
     public static final String name = "hard_enderman";
-    private static final Predicate<LivingEntity> field_213627_bA = (p_213626_0_) -> p_213626_0_ instanceof EndermiteEntity && ((EndermiteEntity)p_213626_0_).isPlayerSpawned();
+    // Cannot use a lambda reference, when obfuscated confuses this term with the super classes terms and throws an exception
+    private static final Predicate<LivingEntity> Selector = new Predicate<LivingEntity>() {
+        @Override
+        public boolean test(LivingEntity entity) {
+            return  (entity instanceof EndermiteEntity && ((EndermiteEntity) entity).isPlayerSpawned());
+        }
+    };
 
     public HardEnderman(EntityType<? extends EndermanEntity> type, World worldIn) {
         super(ModEntities.HARD_ENDERMAN, worldIn);
@@ -45,10 +51,10 @@ public class HardEnderman extends EndermanEntity {
         this.goalSelector.addGoal(11, new EndermanGoals.TakeBlockGoal(this));
         this.targetSelector.addGoal(1, new EndermanGoals.FindPlayerGoal(this));
         this.targetSelector.addGoal(2, new HurtByTargetGoal(this));
-        this.targetSelector.addGoal(3, new NearestAttackableTargetGoal<>(this, EndermiteEntity.class, 10, true, false, field_213627_bA));
+        this.targetSelector.addGoal(3, new NearestAttackableTargetGoal<>(this, EndermiteEntity.class, 10, true, false, Selector));
     }
 
-    public static AttributeModifierMap.MutableAttribute createAttributes() {
+    public static AttributeModifierMap.MutableAttribute createEnderAttributes() {
         return MonsterEntity.createMonsterAttributes()
                 .add(Attributes.MAX_HEALTH, 60.0D)
                 .add(Attributes.ATTACK_DAMAGE, 11.0D)
@@ -65,7 +71,7 @@ public class HardEnderman extends EndermanEntity {
 //        this.getAttribute(SharedMonsterAttributes.FOLLOW_RANGE).setBaseValue(64.0D);
 //    }
 
-    public boolean isLookingAtMe(PlayerEntity player) {
+    public boolean isLookingAtMe(@NotNull PlayerEntity player) {
         ItemStack itemstack = player.inventory.armor.get(3);
         if (itemstack.getItem() == Blocks.CARVED_PUMPKIN.asItem()) {
             return false;
@@ -97,7 +103,7 @@ public class HardEnderman extends EndermanEntity {
     private boolean teleportHere(double x, double y, double z) {
         BlockPos.Mutable blockpos$mutable = new BlockPos.Mutable(x, y, z);
 
-        while(blockpos$mutable.getY() > 0 && !this.level.getBlockState(blockpos$mutable).getMaterial().blocksMotion()) {
+        while (blockpos$mutable.getY() > 0 && !this.level.getBlockState(blockpos$mutable).getMaterial().blocksMotion()) {
             blockpos$mutable.move(Direction.DOWN);
         }
 
@@ -105,11 +111,11 @@ public class HardEnderman extends EndermanEntity {
         boolean flag = blockstate.getMaterial().blocksMotion();
         boolean flag1 = blockstate.getFluidState().is(FluidTags.WATER);
         if (flag && !flag1) {
-            net.minecraftforge.event.entity.living.EnderTeleportEvent event = new net.minecraftforge.event.entity.living.EnderTeleportEvent(this, x, y, z, 0);
-            if (net.minecraftforge.common.MinecraftForge.EVENT_BUS.post(event)) return false;
+            net.minecraftforge.event.entity.living.EntityTeleportEvent.EnderEntity event = net.minecraftforge.event.ForgeEventFactory.onEnderTeleport(this, x, y, z);
+            if (event.isCanceled()) return false;
             boolean flag2 = this.randomTeleport(event.getTargetX(), event.getTargetY(), event.getTargetZ(), true);
-            if (flag2) {
-                this.level.playSound((PlayerEntity)null, this.xOld, this.yOld, this.zOld, SoundEvents.ENDERMAN_TELEPORT, SoundCategory.HOSTILE, 1.0F, 1.0F);
+            if (flag2 && !this.isSilent()) {
+                this.level.playSound(null, this.xo, this.yo, this.zo, SoundEvents.ENDERMAN_TELEPORT, this.getSoundSource(), 1.0F, 1.0F);
                 this.playSound(SoundEvents.ENDERMAN_TELEPORT, 1.0F, 1.0F);
             }
 

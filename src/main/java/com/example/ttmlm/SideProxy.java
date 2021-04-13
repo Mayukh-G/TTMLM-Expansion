@@ -89,8 +89,8 @@ public class SideProxy {
         event.put(ModEntities.HARD_CAVE_SPIDER, HardCaveSpider.createCaveSpiderAttributes().build());
         event.put(ModEntities.HARD_CREEPER, HardCreeper.createAttributes().build());
         event.put(ModEntities.HARD_DROWNED, HardDrowned.createDrownedAttributes().build());
-        event.put(ModEntities.HARD_ENDERMAN, HardEnderman.createAttributes().build());
-        event.put(ModEntities.HARD_GHAST, HardGhast.createAttributes().build());
+        event.put(ModEntities.HARD_ENDERMAN, HardEnderman.createEnderAttributes().build());
+        event.put(ModEntities.HARD_GHAST, HardGhast.createGhastAttributes().build());
         event.put(ModEntities.HARD_HUSK, HardHusk.createHuskAttributes().build());
         event.put(ModEntities.HARD_SKELETON, HardSkeleton.createAttributes().build());
         event.put(ModEntities.HARD_SPIDER, HardSpider.createAttributes().build());
