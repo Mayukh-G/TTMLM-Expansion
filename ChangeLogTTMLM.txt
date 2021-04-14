@@ -1,6 +1,6 @@
-V.1.2.0 - 1.16
+V.1.1.4 - 1.16
 ------------------------------------------------------------------------------
-Major Goals : New Dimention, Balence Changes, Update recognition
+Major Goals for next versions : New Dimension, Balance Changes, Update recognition
 
 MOBS:
 
