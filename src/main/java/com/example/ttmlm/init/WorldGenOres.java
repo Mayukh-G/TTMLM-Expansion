@@ -1,4 +1,6 @@
 package com.example.ttmlm.init;
+
+import com.example.ttmlm.config.CommonConfig;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.world.biome.Biome;
@@ -7,7 +9,8 @@ import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.OreFeatureConfig;
 import net.minecraft.world.gen.feature.template.BlockMatchRuleTest;
 import net.minecraft.world.gen.feature.template.RuleTest;
-import net.minecraft.world.gen.placement.*;
+import net.minecraft.world.gen.placement.Placement;
+import net.minecraft.world.gen.placement.TopSolidRangeConfig;
 import net.minecraftforge.common.world.BiomeGenerationSettingsBuilder;
 import net.minecraftforge.event.world.BiomeLoadingEvent;
 
@@ -18,7 +21,8 @@ public class WorldGenOres {
     public static final RuleTest END_REPLACEABLE = new BlockMatchRuleTest(Blocks.END_STONE);
 
     public static void onInitBiomesGen(final BiomeLoadingEvent event) {
-            // Cycle through custom enum
+        if (!CommonConfig.oreSwitch.get()) return; // Config
+
         for (CoalVariants coalVariants : CoalVariants.values()) {
             // If in nether and correct Enum
             if (event.getCategory() == Biome.Category.NETHER && coalVariants == CoalVariants.BLAZING_CARBON) {
@@ -30,7 +34,7 @@ public class WorldGenOres {
                             128,
                             8);
                     // If in cold place and correct Enum
-            } else if (event.getCategory() == Biome.Category.ICY && coalVariants == CoalVariants.FREEZING_CARBON) {
+            } else if ((event.getCategory() == Biome.Category.ICY || event.getCategory() == Biome.Category.TAIGA) && coalVariants == CoalVariants.FREEZING_CARBON) {
                     //Add features
                 genOre(event.getGeneration(), OreFeatureConfig.FillerBlockType.NATURAL_STONE,
                             coalVariants.getOreBlocks().defaultBlockState(),

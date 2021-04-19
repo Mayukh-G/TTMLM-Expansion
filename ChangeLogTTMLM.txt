@@ -1,3 +1,23 @@
+V.1.1.5 - 1.16
+------------------------------------------------------------------------------
+Major Goals for next versions : New Dimension, Balance Changes, Update recognition
+
+IMPORTANT :
+-   Structures are a bit buggy right now and should be disabled in the config if the server hangs or freezes often or sometimes does not load the world
+    Currently working on fixing them
+
+BUG FIXES:
+
+- Fixed an issue with Endermen and Ghasts, and Zombified Piglin
+
+
+MISC:
+
+- Potentially improved structures, they still are buggy.
+- Added a Config file with some basic options. The file is named ttmlm-common.toml
+
+================================================================================================
+
 V.1.1.4 - 1.16
 ------------------------------------------------------------------------------
 Major Goals for next versions : New Dimension, Balance Changes, Update recognition

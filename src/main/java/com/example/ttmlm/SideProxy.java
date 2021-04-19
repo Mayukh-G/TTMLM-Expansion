@@ -1,12 +1,17 @@
 package com.example.ttmlm;
 
 import com.example.ttmlm.client.renders.*;
+import com.example.ttmlm.config.CommonConfig;
+import com.example.ttmlm.config.Config;
+import com.example.ttmlm.entity.SpawnEntities;
 import com.example.ttmlm.entity.changed.*;
 import com.example.ttmlm.entity.original.*;
 import com.example.ttmlm.init.*;
-import com.example.ttmlm.entity.SpawnEntities;
 import com.example.ttmlm.item.tools.capabilities.ESLCapability;
-import com.example.ttmlm.item.tools.lootmodifiers.*;
+import com.example.ttmlm.item.tools.lootmodifiers.BlazingTouchModifier;
+import com.example.ttmlm.item.tools.lootmodifiers.EnderTouchModifier;
+import com.example.ttmlm.item.tools.lootmodifiers.FreeingTouchModifier;
+import com.example.ttmlm.item.tools.lootmodifiers.FrozenGeodeModifier;
 import com.example.ttmlm.item.weapons.IngotVariantSwords;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -19,17 +24,14 @@ import net.minecraft.entity.SpawnReason;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.loot.ILootSerializer;
-import net.minecraft.loot.LootConditionType;
-import net.minecraft.loot.conditions.LootConditionManager;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.registry.Registry;
 import net.minecraft.world.World;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.gen.FlatChunkGenerator;
 import net.minecraft.world.gen.feature.structure.Structure;
 import net.minecraft.world.gen.settings.DimensionStructuresSettings;
+import net.minecraft.world.gen.settings.StructureSeparationSettings;
 import net.minecraft.world.server.ServerWorld;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.loot.GlobalLootModifierSerializer;
@@ -40,16 +42,21 @@ import net.minecraftforge.event.entity.living.LivingHurtEvent;
 import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraftforge.event.world.BlockEvent;
 import net.minecraftforge.event.world.WorldEvent;
+import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.*;
 import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.jetbrains.annotations.NotNull;
 
 import javax.annotation.Nonnull;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Random;
 
 // You can use EventBusSubscriber to automatically subscribe events on the contained class (this is subscribing to the MOD
@@ -60,11 +67,15 @@ public class SideProxy {
     private static final IEventBus forgeEventBus = MinecraftForge.EVENT_BUS;
 
     SideProxy() {
+
+        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.commonSpec);
+
         //Life-cycle events
         modEventBus.addListener(SideProxy::commonSetup);
         modEventBus.addListener(SideProxy::enqueueIMC);
         modEventBus.addListener(SideProxy::processIMC);
         modEventBus.addListener(SideProxy::loadComplete);
+
         //Attributes
         modEventBus.addListener(SideProxy::addEntityAttributes);
         // Registering
@@ -79,8 +90,8 @@ public class SideProxy {
         forgeEventBus.addListener(SpawnEntities::trySpawning);
         forgeEventBus.addListener(SideProxy::onAttackVariantSword);
         forgeEventBus.addListener(SideProxy::checkNetherBossSpawn);
-        forgeEventBus.addListener(SideProxy::biomeMod);
-        forgeEventBus.addListener(SideProxy::addDimensionalSpacing);
+        forgeEventBus.addListener(EventPriority.NORMAL, SideProxy::addDimensionalSpacing);
+        forgeEventBus.addListener(EventPriority.HIGH, SideProxy::biomeMod);
     }
 
     // This will be removed in 1.17
@@ -158,25 +169,43 @@ public class SideProxy {
 
     private static void biomeMod(final BiomeLoadingEvent event){
         //Generate ores
+        //TODO: REDO THIS FOR 1.16 doing it this way causes problems
         WorldGenOres.onInitBiomesGen(event);
+
+        if (!CommonConfig.structSwitch.get()) return;
+
         if (event.getCategory() == Biome.Category.NETHER) {
             event.getGeneration().getStructures().add(() -> StructureInit.TTStructuresConfig.CONFIG_HARD_FORTRESS);
         }
-        else if (event.getCategory() == Biome.Category.ICY){
+        else if (event.getCategory() == Biome.Category.ICY || event.getCategory() == Biome.Category.TAIGA){
             event.getGeneration().getStructures().add(() -> StructureInit.TTStructuresConfig.CONFIG_SNOW_DUNGEON);
         }
     }
 
+//    private static Method GETCODEC_METHOD;
     private static void addDimensionalSpacing(final WorldEvent.Load event){
+        // Config Disables Structure when off
+        if (!CommonConfig.structSwitch.get()) return;
+
         if(event.getWorld() instanceof ServerWorld){
+            TTMLM.LOGGER.info("Start Dimension Spacing");
             ServerWorld serverW = (ServerWorld) event.getWorld();
 
-            if(serverW.getChunkSource().generator instanceof FlatChunkGenerator &&
-                    serverW.dimension().equals(World.OVERWORLD)){
+            if(serverW.getChunkSource().generator instanceof FlatChunkGenerator && serverW.dimension().equals(World.OVERWORLD)){
                 return;
             }
-            serverW.getChunkSource().generator.getSettings().structureConfig().putIfAbsent(StructureInit.TTStructures.HARD_FORTRESS, DimensionStructuresSettings.DEFAULTS.get(StructureInit.TTStructures.HARD_FORTRESS));
-            serverW.getChunkSource().generator.getSettings().structureConfig().putIfAbsent(StructureInit.TTStructures.SNOW_DUNGEON, DimensionStructuresSettings.DEFAULTS.get(StructureInit.TTStructures.SNOW_DUNGEON));
+
+            if (serverW.dimension().equals(World.NETHER)){
+                Map<Structure<?>, StructureSeparationSettings> tempMap = new HashMap<>(serverW.getChunkSource().generator.getSettings().structureConfig());
+                tempMap.putIfAbsent(StructureInit.TTStructures.HARD_FORTRESS, DimensionStructuresSettings.DEFAULTS.get(StructureInit.TTStructures.HARD_FORTRESS));
+                serverW.getChunkSource().generator.getSettings().structureConfig = tempMap;
+            }
+            else if (serverW.dimension().equals(World.OVERWORLD)){
+                Map<Structure<?>, StructureSeparationSettings> tempMap = new HashMap<>(serverW.getChunkSource().generator.getSettings().structureConfig());
+                tempMap.putIfAbsent(StructureInit.TTStructures.SNOW_DUNGEON, DimensionStructuresSettings.DEFAULTS.get(StructureInit.TTStructures.SNOW_DUNGEON));
+                serverW.getChunkSource().generator.getSettings().structureConfig = tempMap;
+            }
+            TTMLM.LOGGER.info("End Dimension Spacing");
         }
     }
 

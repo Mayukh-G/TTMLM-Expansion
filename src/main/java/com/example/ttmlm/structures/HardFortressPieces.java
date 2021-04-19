@@ -62,7 +62,6 @@ public class HardFortressPieces {
         IndividualPiece prevPiece;
 
         // Do math to make sure it doest extend for more than 9 chunks ie. 8th chunk has to be a turn.
-        // Might want to change dead ends to make it more obvious they have stiff behind them
 
         if(random.nextBoolean()){
             rotationOffset = new BlockPos(0,0,2).rotate(rotation);

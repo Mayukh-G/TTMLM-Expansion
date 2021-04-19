@@ -1,5 +1,6 @@
 package com.example.ttmlm.entity.ai.goal;
 
+import com.example.ttmlm.TTMLM;
 import com.example.ttmlm.entity.changed.HardGhast;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.ai.controller.MovementController;
@@ -69,27 +70,29 @@ public class GhastGoals {
                     int zchange = 0;
                     world.levelEvent((PlayerEntity) null, 1016, this.parentEntity.blockPosition(), 0);
                     //logic for head rotation
-                    if(this.parentEntity.yHeadRot >= 315 || this.parentEntity.yHeadRot < 45){ //change x
+                    if (TTMLM.isDevBuild()) TTMLM.LOGGER.debug(-this.parentEntity.yHeadRot);
+                    float rot = Math.abs(this.parentEntity.yHeadRot);
+                    if(rot >= 315 || rot < 45){ //change x
                         xchange = 5;
-                    }else if(this.parentEntity.yHeadRot >= 45 & this.parentEntity.yHeadRot < 135){ //change z
+                    }else if(rot >= 45 & rot < 135){ //change z
                         zchange = 5;
-                    }else if(this.parentEntity.yHeadRot >= 135 & this.parentEntity.yHeadRot < 225){ //change x
+                    }else if(rot >= 135 & rot < 225){ //change x
                         xchange = 5;
-                    }else if(this.parentEntity.yHeadRot >= 255 & this.parentEntity.yHeadRot < 315){ //change z
+                    }else if(rot >= 255 & rot < 315){ //change z
                         zchange = 5;
                     }
                     //Fireball one middle top
                     FireballEntity fireballentity1 = new FireballEntity(world, this.parentEntity, d2 * 2, d3 * 2, d4 * 2);
-                    fireballentity1.explosionPower = this.parentEntity.getExplosionPower();
-                    fireballentity1.setDeltaMovement(fx, fy, fz);
+                    fireballentity1.explosionPower = this.parentEntity.explodePow();
+                    fireballentity1.setPos(fx, fy, fz);
                     //FireBall two bottom 1
                     FireballEntity fireballentity2 = new FireballEntity(world, this.parentEntity, d2 * 2, d3 * 2, d4 * 2);
-                    fireballentity2.explosionPower = this.parentEntity.getExplosionPower();
-                    fireballentity2.setDeltaMovement(fx - xchange, this.parentEntity.getY() - 0.5D, fz - zchange);
+                    fireballentity2.explosionPower = this.parentEntity.explodePow();
+                    fireballentity2.setPos(fx - xchange, this.parentEntity.getY() - 0.5D, fz - zchange);
                     //FireBall three bottom 2
                     FireballEntity fireballentity3 = new FireballEntity(world, this.parentEntity, d2 * 2, d3 * 2, d4 * 2);
-                    fireballentity3.explosionPower = this.parentEntity.getExplosionPower();
-                    fireballentity3.setDeltaMovement(fx + xchange, this.parentEntity.getY() - 0.5D, fz + zchange);
+                    fireballentity3.explosionPower = this.parentEntity.explodePow();
+                    fireballentity3.setPos(fx + xchange, this.parentEntity.getY() - 0.5D, fz + zchange);
 
 
                     world.addFreshEntity(fireballentity3);

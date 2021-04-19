@@ -40,7 +40,7 @@ public class HardFortress extends Structure<NoFeatureConfig> {
     }
 
     private static final List<MobSpawnInfo.Spawners> STRUCTURE_MON = ImmutableList.of(
-            new MobSpawnInfo.Spawners(ModEntities.HARD_BLAZE, 100, 5, 7),
+            new MobSpawnInfo.Spawners(ModEntities.HARD_BLAZE, 100, 4, 6),
             new MobSpawnInfo.Spawners(ModEntities.HARD_WITHER_SKELETON, 100, 6, 8)
     );
 

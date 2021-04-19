@@ -1,5 +1,6 @@
 package com.example.ttmlm.entity;
 
+import com.example.ttmlm.config.CommonConfig;
 import com.example.ttmlm.entity.changed.*;
 import com.example.ttmlm.entity.original.HardDrownedSwarmCaller;
 import com.example.ttmlm.entity.original.HardHuskSwarmCaller;
@@ -14,13 +15,13 @@ import net.minecraftforge.event.entity.EntityJoinWorldEvent;
 public class SpawnEntities {
 
     public static void trySpawning(EntityJoinWorldEvent event){
+        if (!CommonConfig.mobSwitch.get()) return; // Config Disables mod mobs when off
         if(!event.getWorld().isClientSide && (event.getEntity() instanceof MonsterEntity || event.getEntity() instanceof FlyingEntity)){
             Entity preEntity = event.getEntity();
             //Check is entity is inside chunk
-            if (preEntity.isAddedToWorld()){
+            if (preEntity.inChunk){
                 return;
             }
-            //.get() functions are slightly slow if used too much, minimising use by storing into variables
             ServerWorld world = (ServerWorld) event.getWorld();
             double X = preEntity.getX();
             double Y = preEntity.getY();
