@@ -27,6 +27,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.text.IFormattableTextComponent;
+import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
@@ -36,9 +37,9 @@ import net.minecraft.world.gen.feature.structure.Structure;
 import net.minecraft.world.gen.settings.DimensionStructuresSettings;
 import net.minecraft.world.gen.settings.StructureSeparationSettings;
 import net.minecraft.world.server.ServerWorld;
+import net.minecraftforge.common.ForgeHooks;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.loot.GlobalLootModifierSerializer;
-import net.minecraftforge.event.AttachCapabilitiesEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
 import net.minecraftforge.event.entity.living.LivingHurtEvent;
@@ -49,6 +50,7 @@ import net.minecraftforge.event.world.WorldEvent;
 import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.VersionChecker;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
@@ -61,6 +63,7 @@ import net.minecraftforge.forgespi.language.IModInfo;
 import org.jetbrains.annotations.NotNull;
 
 import javax.annotation.Nonnull;
+import javax.annotation.Nullable;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
@@ -72,6 +75,8 @@ import java.util.UUID;
 public class SideProxy {
     private static final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
     private static final IEventBus forgeEventBus = MinecraftForge.EVENT_BUS;
+    @Nullable
+    private static final IModInfo modInfo = (ModList.get().getModContainerById(TTMLM.MOD_ID).isPresent()) ? ModList.get().getModContainerById(TTMLM.MOD_ID).get().getModInfo() : null;
 
     SideProxy() {
 
@@ -97,7 +102,7 @@ public class SideProxy {
         forgeEventBus.addListener(SpawnEntities::trySpawning);
         forgeEventBus.addListener(SideProxy::onAttackVariantSword);
         forgeEventBus.addListener(SideProxy::checkNetherBossSpawn);
-        forgeEventBus.addListener(SideProxy::playerJoin);
+        forgeEventBus.addListener(SideProxy::playerJoinVersionChecker);
         forgeEventBus.addListener(EventPriority.NORMAL, SideProxy::addDimensionalSpacing);
         forgeEventBus.addListener(EventPriority.HIGH, SideProxy::biomeMod);
     }
@@ -175,24 +180,29 @@ public class SideProxy {
         StructureInit.TTStructuresConfig.registerConfiguredStructures();
     }
 
-    private static void playerJoin(final PlayerEvent.PlayerLoggedInEvent event){
+    private static void playerJoinVersionChecker(final PlayerEvent.PlayerLoggedInEvent event){
         IFormattableTextComponent header = new StringTextComponent("[TTMLM Expansion Version Checker] STATUS : ").withStyle(TextFormatting.GOLD);
         IFormattableTextComponent outdated = header.copy().append(new StringTextComponent("OUTDATED").withStyle(TextFormatting.YELLOW));
         IFormattableTextComponent upToDate = header.copy().append(new StringTextComponent("UP-TO-DATE").withStyle(TextFormatting.GREEN));
         IFormattableTextComponent failed = header.copy().append(new StringTextComponent("FAILED").withStyle(TextFormatting.RED));
 
-        IModInfo info = ModLoadingContext.get().getActiveContainer().getModInfo();
-        VersionChecker.CheckResult result = VersionChecker.getResult(info);
-        if (result.status == VersionChecker.Status.OUTDATED){
-            String target_version = result.target.toString();
-            String log_url = result.changes.getOrDefault(result.target, "NOT FOUND");
-            IFormattableTextComponent sendMsg = outdated.append(new StringTextComponent(String.format("Target Version: %1$s\nChangelog: %2$s\nAvailable at: %3$s", target_version, log_url, result.url)).withStyle(TextFormatting.YELLOW));
+        VersionChecker.CheckResult checkResult = VersionChecker.getResult(modInfo);
+
+        if (checkResult.status == VersionChecker.Status.OUTDATED){
+            String target_version = checkResult.target.toString();
+            ITextComponent log_url = ForgeHooks.newChatWithLinks(checkResult.changes.getOrDefault(checkResult.target, "NOT FOUND"));
+            ITextComponent download_url = ForgeHooks.newChatWithLinks(checkResult.url);
+
+            IFormattableTextComponent sendMsg = outdated.copy().append(new StringTextComponent(String.format("\nTarget Version: %1$s\nChangelog: ", target_version)).withStyle(TextFormatting.YELLOW));
+            sendMsg.append(log_url);
+            sendMsg.append(new StringTextComponent("\nAvailable at: ").withStyle(TextFormatting.YELLOW));
+            sendMsg.append(download_url);
             event.getPlayer().sendMessage(sendMsg, UUID.randomUUID());
         }
-        else if (result.status == VersionChecker.Status.UP_TO_DATE){
+        else if (checkResult.status == VersionChecker.Status.UP_TO_DATE){
             event.getPlayer().sendMessage(upToDate, UUID.randomUUID());
         }
-        else if (result.status == VersionChecker.Status.FAILED || result.status == VersionChecker.Status.PENDING){
+        else if (checkResult.status == VersionChecker.Status.FAILED || checkResult.status == VersionChecker.Status.PENDING){
             event.getPlayer().sendMessage(failed, UUID.randomUUID());
         }
     }
@@ -259,7 +269,7 @@ public class SideProxy {
         }
     }
 
-    public static void onCapabilitiesAttach(AttachCapabilitiesEvent<ItemStack> event){
+//    public static void onCapabilitiesAttach(AttachCapabilitiesEvent<ItemStack> event){
 //        Item item = event.getObject().getItem();
 //        if(item instanceof ToolItem){
 //            ToolItem tool = (ToolItem) item;
@@ -267,7 +277,7 @@ public class SideProxy {
 //                event.addCapability(ExampleMod.getID("esl_capability"), new EnderStorageLinker(event.getObject()));
 //            }
 //        }
-    }
+//    }
 
     public static void checkNetherBossSpawn(BlockEvent.EntityPlaceEvent event){
         if(!event.getWorld().isClientSide()) {

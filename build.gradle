@@ -54,8 +54,12 @@ def change_update_json() {
 
         if (!absent){
             HashMap inner = (HashMap) info.get('promos')
-            inner.putIfAbsent(mc_version + "-latest", version.toString())
-            inner.putIfAbsent(mc_version + "-recommended", version.toString())
+            if (inner.replace(mc_version + "-latest", version.toString()) == null){
+                inner.putIfAbsent(mc_version + "-latest", version.toString())
+            }
+            if (inner.replace(mc_version + "-recommended", version.toString()) == null){
+                inner.putIfAbsent(mc_version + "-recommended", version.toString())
+            }
             info.replace('promos', inner)
         }
 
@@ -66,8 +70,8 @@ def change_update_json() {
                 (mc_version): [ (version.toString()) : changelog],
 
                 "promos": [
-                        (mc_version.toString() + "-latest"): version.toString(),
-                        (mc_version.toString() + "-recommended"): version.toString()
+                        (mc_version + "-latest"): version.toString(),
+                        (mc_version + "-recommended"): version.toString()
                 ]
         ]
     }
