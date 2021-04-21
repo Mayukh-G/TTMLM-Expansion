@@ -1,3 +1,6 @@
+import groovy.json.JsonSlurper
+import groovy.json.JsonOutput
+
 buildscript {
     repositories {
         maven { url = 'https://files.minecraftforge.net/maven' }
@@ -13,19 +16,78 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = "${mod_version}"
+version = "${mc_version}" + "-" + "${mod_version}"
 group = 'com.ttml.ttmlm' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'TTMLM Expansion'
 
 sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
 
+def change_update_json() {
+    // Create back_up
+    def slurper = new JsonSlurper()
+    File backup$json = new File("update_backup.json")
+    File update$json = new File('update.json')
+    assert update$json.exists() && backup$json.exists()
+    if (!update$json.readLines()) update$json.write("{\n}")
+
+    backup$json.write(JsonOutput.prettyPrint(JsonOutput.toJson(slurper.parse(update$json))))
+
+    // Segment Automatically update the update.json file
+    Map info = slurper.parse(update$json) as Map
+    if (!info.isEmpty()) {
+        // Homepage
+        info.putIfAbsent('homepage', new_version_download)
+
+        // Adding newer version to update.json
+        boolean absent = info.get(mc_version) == null
+        info.putIfAbsent(mc_version, [(version.toString()): changelog])
+
+        if (!absent){
+            HashMap inner = (HashMap) info.get(mc_version)
+            inner.putIfAbsent(version.toString(), changelog)
+            info.replace(mc_version, inner)
+        }
+
+        // Check and add promo
+        absent = info.get('promos') == null
+        info.putIfAbsent('promos', [(mc_version + "-latest"): version.toString(), (mc_version + "-recommended"): version.toString()])
+
+        if (!absent){
+            HashMap inner = (HashMap) info.get('promos')
+            inner.putIfAbsent(mc_version + "-latest", version.toString())
+            inner.putIfAbsent(mc_version + "-recommended", version.toString())
+            info.replace('promos', inner)
+        }
+
+    } else {
+        info = [
+                "homepage": new_version_download,
+
+                (mc_version): [ (version.toString()) : changelog],
+
+                "promos": [
+                        (mc_version.toString() + "-latest"): version.toString(),
+                        (mc_version.toString() + "-recommended"): version.toString()
+                ]
+        ]
+    }
+
+    String input_string = JsonOutput.toJson(info)
+    update$json.write(JsonOutput.prettyPrint(input_string))
+}
+
 minecraft {
+
+    // Change the update.json file. Fill it up if it's empty or add to it if it's not
+    // Just a simple groovy script
+    change_update_json()
+
     // The mappings can be changed at any time, and must be in the following format.
     // snapshot_YYYYMMDD   Snapshot are built nightly.
     // stable_#            Stables are built at the discretion of the MCP team.
     // Use non-default mappings at your own risk. they may not always work.
     // Simply re-run your setup task after changing the mappings to update your workspace.
-    mappings channel: 'official', version: '1.16.5'
+    mappings channel: 'official', version: "${mc_version}"
     // Make sure necessary fields are public
     accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
     // makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
@@ -101,7 +163,7 @@ dependencies {
     // Specify the version of Minecraft to use, If this is any group other then 'net.minecraft' it is assumed
     // that the dep is a ForgeGradle 'patcher' dependency. And it's patches will be applied.
     // The userdev artifact is a special name and will get all sorts of transformations applied to it.
-    minecraft "net.minecraftforge:forge:${forge_version}"
+    minecraft "net.minecraftforge:forge:${mc_version}-${forge_version}"
 
     // You may put jars on which you depend on in ./libs or you may define them like so..
     // compile "some.group:artifact:version:classifier"

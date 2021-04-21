@@ -26,6 +26,9 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.text.IFormattableTextComponent;
+import net.minecraft.util.text.StringTextComponent;
+import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.gen.FlatChunkGenerator;
@@ -39,6 +42,7 @@ import net.minecraftforge.event.AttachCapabilitiesEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
 import net.minecraftforge.event.entity.living.LivingHurtEvent;
+import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraftforge.event.world.BlockEvent;
 import net.minecraftforge.event.world.WorldEvent;
@@ -46,18 +50,21 @@ import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.ModLoadingContext;
+import net.minecraftforge.fml.VersionChecker;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.*;
 import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.forgespi.language.IModInfo;
 import org.jetbrains.annotations.NotNull;
 
 import javax.annotation.Nonnull;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
+import java.util.UUID;
 
 // You can use EventBusSubscriber to automatically subscribe events on the contained class (this is subscribing to the MOD
 // Event bus for receiving Registry Events)
@@ -90,6 +97,7 @@ public class SideProxy {
         forgeEventBus.addListener(SpawnEntities::trySpawning);
         forgeEventBus.addListener(SideProxy::onAttackVariantSword);
         forgeEventBus.addListener(SideProxy::checkNetherBossSpawn);
+        forgeEventBus.addListener(SideProxy::playerJoin);
         forgeEventBus.addListener(EventPriority.NORMAL, SideProxy::addDimensionalSpacing);
         forgeEventBus.addListener(EventPriority.HIGH, SideProxy::biomeMod);
     }
@@ -167,11 +175,34 @@ public class SideProxy {
         StructureInit.TTStructuresConfig.registerConfiguredStructures();
     }
 
+    private static void playerJoin(final PlayerEvent.PlayerLoggedInEvent event){
+        IFormattableTextComponent header = new StringTextComponent("[TTMLM Expansion Version Checker] STATUS : ").withStyle(TextFormatting.GOLD);
+        IFormattableTextComponent outdated = header.copy().append(new StringTextComponent("OUTDATED").withStyle(TextFormatting.YELLOW));
+        IFormattableTextComponent upToDate = header.copy().append(new StringTextComponent("UP-TO-DATE").withStyle(TextFormatting.GREEN));
+        IFormattableTextComponent failed = header.copy().append(new StringTextComponent("FAILED").withStyle(TextFormatting.RED));
+
+        IModInfo info = ModLoadingContext.get().getActiveContainer().getModInfo();
+        VersionChecker.CheckResult result = VersionChecker.getResult(info);
+        if (result.status == VersionChecker.Status.OUTDATED){
+            String target_version = result.target.toString();
+            String log_url = result.changes.getOrDefault(result.target, "NOT FOUND");
+            IFormattableTextComponent sendMsg = outdated.append(new StringTextComponent(String.format("Target Version: %1$s\nChangelog: %2$s\nAvailable at: %3$s", target_version, log_url, result.url)).withStyle(TextFormatting.YELLOW));
+            event.getPlayer().sendMessage(sendMsg, UUID.randomUUID());
+        }
+        else if (result.status == VersionChecker.Status.UP_TO_DATE){
+            event.getPlayer().sendMessage(upToDate, UUID.randomUUID());
+        }
+        else if (result.status == VersionChecker.Status.FAILED || result.status == VersionChecker.Status.PENDING){
+            event.getPlayer().sendMessage(failed, UUID.randomUUID());
+        }
+    }
+
     private static void biomeMod(final BiomeLoadingEvent event){
         //Generate ores
-        //TODO: REDO THIS FOR 1.16 doing it this way causes problems
+
         WorldGenOres.onInitBiomesGen(event);
 
+        //TODO: Something about structures is causing problems
         if (!CommonConfig.structSwitch.get()) return;
 
         if (event.getCategory() == Biome.Category.NETHER) {
