@@ -67,6 +67,9 @@ public class IngotVariantSwords extends SwordItem {
     public void onAttack(LivingEntity entityAttacked, @Nullable PlayerEntity playerEntity, float amountDealt) {
         //Line underneath mitigated dmg
         amountDealt = CombatRules.getDamageAfterAbsorb(amountDealt, (float) entityAttacked.getArmorValue(), (float) entityAttacked.getAttribute(Attributes.ARMOR_TOUGHNESS).getValue());
+
+        if (TTMLM.isDevBuild()) TTMLM.LOGGER.info("DMG:" + amountDealt + "Current HP: " + entityAttacked.getHealth());
+
         World attackedEntityWorld = entityAttacked.level;
         switch (this.variant) {
             case WEAK_BLAZING_AllOY:

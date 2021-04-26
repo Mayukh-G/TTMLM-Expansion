@@ -212,7 +212,7 @@ public class SideProxy {
 
         WorldGenOres.onInitBiomesGen(event);
 
-        //TODO: Something about structures is causing problems
+
         if (!CommonConfig.structSwitch.get()) return;
 
         if (event.getCategory() == Biome.Category.NETHER) {

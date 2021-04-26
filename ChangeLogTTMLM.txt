@@ -1,3 +1,18 @@
+V.1.1.6 - 1.16 (Last Patch Before 1.2.0)
+------------------------------------------------------------------------------
+Major Goals for next versions : New Dimension
+
+BUG FIXES:
+
+- Fixed the issue where harder mobs would not keep the attributes modifiers, the items, and the effects that the original had
+- Fixed the bug where structures would cause the server to hang forever
+
+MISC:
+
+- Added Update recognition
+
+================================================================================================
+
 V.1.1.5 - 1.16
 ------------------------------------------------------------------------------
 Major Goals for next versions : New Dimension, Balance Changes, Update recognition

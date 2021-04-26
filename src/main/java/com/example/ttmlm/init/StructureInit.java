@@ -22,7 +22,7 @@ import net.minecraftforge.event.RegistryEvent;
 import java.util.HashMap;
 import java.util.Map;
 
-public class StructureInit { //TODO : SOMETHING IS WRONG WITH STRCUTURES, causes the server to hang forever. Mainly HardFortress but sometimes also Snow dungeon
+public class StructureInit {
 
     public static class TTStructures{
 
