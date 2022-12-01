@@ -1,0 +1,49 @@
+V.1.1.6 - 1.16 (Last Patch Before 1.2.0)
+------------------------------------------------------------------------------
+Major Goals for next versions : New Dimension
+
+BUG FIXES:
+
+- Fixed the issue where harder mobs would not keep the attributes modifiers, the items, and the effects that the original had
+- Fixed the bug where structures would cause the server to hang forever
+
+MISC:
+
+- Added Update recognition
+
+================================================================================================
+
+V.1.1.5 - 1.16
+------------------------------------------------------------------------------
+Major Goals for next versions : New Dimension, Balance Changes, Update recognition
+
+IMPORTANT :
+-   Structures are a bit buggy right now and should be disabled in the config if the server hangs or freezes often or sometimes does not load the world
+    Currently working on fixing them
+
+BUG FIXES:
+
+- Fixed an issue with Endermen and Ghasts, and Zombified Piglin
+
+
+MISC:
+
+- Potentially improved structures, they still are buggy.
+- Added a Config file with some basic options. The file is named ttmlm-common.toml
+
+================================================================================================
+
+V.1.1.4 - 1.16
+------------------------------------------------------------------------------
+Major Goals for next versions : New Dimension, Balance Changes, Update recognition
+
+MOBS:
+
+- Creeper : Explosion radius decreased, Defuse radius decreased
+- Skeleton like : Firing radius decreased
+- Hostile Monsters (Aside from flying nether monsters) : Detection radius decreased
+
+
+ITEMS:
+
+- A lot of recipes were changed to make getting the item less of a grind
