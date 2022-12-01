@@ -1,0 +1,20 @@
+{
+  "type": "crafting_shaped",
+  "group": "ttmlm:blazing_carbon_block",
+  "pattern": [
+    "XXX",
+    "XIX",
+    "III"
+  ],
+  "key": {
+    "X" : {
+      "item": "ttmlm:blazing_carbon"
+    },
+    "I": {
+      "item": "minecraft:blaze_rod"
+    }
+  },
+  "result": {
+    "item": "ttmlm:blazing_carbon_block_upper"
+  }
+}

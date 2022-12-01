@@ -1,0 +1,19 @@
+{
+  "type": "crafting_shaped",
+  "group": "ttmlm:freezing_carbon_block",
+  "pattern": [
+    "X",
+    "I"
+  ],
+  "key": {
+    "X" : {
+      "item": "ttmlm:freezing_carbon_block_upper"
+    },
+    "I": {
+      "item": "ttmlm:freezing_carbon_block_lower"
+    }
+  },
+  "result": {
+    "item": "ttmlm:freezing_carbon_block"
+  }
+}

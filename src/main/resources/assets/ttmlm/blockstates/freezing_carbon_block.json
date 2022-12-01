@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model":"ttmlm:block/freezing_carbon_block"
+    }
+  }
+}

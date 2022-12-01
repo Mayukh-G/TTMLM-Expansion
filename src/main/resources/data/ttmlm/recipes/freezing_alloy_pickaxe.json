@@ -1,0 +1,22 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "OOO",
+    "XIX",
+    "OOO"
+  ],
+  "key": {
+    "X" : {
+      "item": "ttmlm:freezing_alloy"
+    },
+    "I": {
+      "item": "ttmlm:weak_freezing_alloy_pickaxe"
+    },
+    "O": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result": {
+    "item": "ttmlm:freezing_alloy_pickaxe"
+  }
+}

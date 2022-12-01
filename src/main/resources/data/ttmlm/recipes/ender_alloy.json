@@ -1,0 +1,21 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "OOO",
+    "XIX"
+  ],
+  "key": {
+    "X" : {
+      "item": "ttmlm:mutable_alloy_block"
+    },
+    "I": {
+      "item": "ttmlm:weak_ender_alloy_block"
+    },
+    "O": {
+      "item": "minecraft:ender_eye"
+    }
+  },
+  "result": {
+    "item": "ttmlm:ender_alloy"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model":"ttmlm:block/ender_alloy_block"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "IXI",
+    "DOD",
+    "IXI"
+  ],
+  "key": {
+    "X" : {
+      "item": "ttmlm:blazing_alloy"
+    },
+    "I" : {
+      "item": "ttmlm:mutable_alloy_block"
+    },
+    "O" : {
+      "item": "ttmlm:weak_blazing_alloy_boots"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result": {
+    "item": "ttmlm:blazing_alloy_boots"
+  }
+}

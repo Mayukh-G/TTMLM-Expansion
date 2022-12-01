@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "ttmlm:freezing_carbon_ore"
+  },
+  "result": "ttmlm:freezing_carbon",
+  "experience": 3,
+  "cookingtime": 400
+}

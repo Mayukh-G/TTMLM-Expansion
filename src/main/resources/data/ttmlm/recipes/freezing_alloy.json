@@ -1,0 +1,21 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "XOX",
+    "XIX"
+  ],
+  "key": {
+    "X" : {
+      "item": "ttmlm:mutable_alloy_block"
+    },
+    "I": {
+      "item": "ttmlm:weak_freezing_alloy_block"
+    },
+    "O": {
+      "item": "ttmlm:freezing_carbon_block"
+    }
+  },
+  "result": {
+    "item": "ttmlm:freezing_alloy"
+  }
+}

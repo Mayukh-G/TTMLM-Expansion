@@ -1,0 +1,6 @@
+{
+  "parent": "ttmlm:item/cleavertype",
+  "textures": {
+    "layer0": "ttmlm:item/freezing_alloy_shovel"
+  }
+}
